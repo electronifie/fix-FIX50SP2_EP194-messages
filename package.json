@@ -10,5 +10,8 @@
   "license": "ISC",
   "dependencies": {
     "invert-obj": "^1.0.0"
+  },
+  "devDependencies": {
+    "quickfix-codegen": "0.0.0"
   }
 }
