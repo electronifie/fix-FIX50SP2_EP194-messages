@@ -1,0 +1,176 @@
+var ApplicationSequenceControl = require('../components/ApplicationSequenceControl');
+var Instrument = require('../components/Instrument');
+var InstrumentExtension = require('../components/InstrumentExtension');
+var UndInstrmtGrp = require('../components/UndInstrmtGrp');
+var Stipulations = require('../components/Stipulations');
+var InstrmtLegGrp = require('../components/InstrmtLegGrp');
+var SpreadOrBenchmarkCurveData = require('../components/SpreadOrBenchmarkCurveData');
+var YieldData = require('../components/YieldData');
+var MarketSegmentGrp = require('../components/MarketSegmentGrp');
+var SecurityReportID = require('../fields/SecurityReportID');
+var SecurityReqID = require('../fields/SecurityReqID');
+var SecurityResponseID = require('../fields/SecurityResponseID');
+var SecurityResponseType = require('../fields/SecurityResponseType');
+var ClearingBusinessDate = require('../fields/ClearingBusinessDate');
+var SecurityUpdateAction = require('../fields/SecurityUpdateAction');
+var CorporateAction = require('../fields/CorporateAction');
+var Currency = require('../fields/Currency');
+var Text = require('../fields/Text');
+var EncodedTextLen = require('../fields/EncodedTextLen');
+var EncodedText = require('../fields/EncodedText');
+var NumOfSimpleInstruments = require('../fields/NumOfSimpleInstruments');
+var LastUpdateTime = require('../fields/LastUpdateTime');
+var TransactTime = require('../fields/TransactTime');
+
+function SecurityDefinitionUpdateReport (securityDefinitionUpdateReport) {
+  this.message = securityDefinitionUpdateReport;
+}
+
+SecurityDefinitionUpdateReport.prototype.applicationSequenceControl = function () {
+  return this.message.groups[SecurityDefinitionUpdateReport.Tags.ApplicationSequenceControl]
+    .map(function (applicationSequenceControl) {
+      return new ApplicationSequenceControl(applicationSequenceControl);
+  });
+};
+
+SecurityDefinitionUpdateReport.prototype.instrument = function () {
+  return this.message.groups[SecurityDefinitionUpdateReport.Tags.Instrument]
+    .map(function (instrument) {
+      return new Instrument(instrument);
+  });
+};
+
+SecurityDefinitionUpdateReport.prototype.instrumentExtension = function () {
+  return this.message.groups[SecurityDefinitionUpdateReport.Tags.InstrumentExtension]
+    .map(function (instrumentExtension) {
+      return new InstrumentExtension(instrumentExtension);
+  });
+};
+
+SecurityDefinitionUpdateReport.prototype.undInstrmtGrp = function () {
+  return this.message.groups[SecurityDefinitionUpdateReport.Tags.UndInstrmtGrp]
+    .map(function (undInstrmtGrp) {
+      return new UndInstrmtGrp(undInstrmtGrp);
+  });
+};
+
+SecurityDefinitionUpdateReport.prototype.stipulations = function () {
+  return this.message.groups[SecurityDefinitionUpdateReport.Tags.Stipulations]
+    .map(function (stipulations) {
+      return new Stipulations(stipulations);
+  });
+};
+
+SecurityDefinitionUpdateReport.prototype.instrmtLegGrp = function () {
+  return this.message.groups[SecurityDefinitionUpdateReport.Tags.InstrmtLegGrp]
+    .map(function (instrmtLegGrp) {
+      return new InstrmtLegGrp(instrmtLegGrp);
+  });
+};
+
+SecurityDefinitionUpdateReport.prototype.spreadOrBenchmarkCurveData = function () {
+  return this.message.groups[SecurityDefinitionUpdateReport.Tags.SpreadOrBenchmarkCurveData]
+    .map(function (spreadOrBenchmarkCurveData) {
+      return new SpreadOrBenchmarkCurveData(spreadOrBenchmarkCurveData);
+  });
+};
+
+SecurityDefinitionUpdateReport.prototype.yieldData = function () {
+  return this.message.groups[SecurityDefinitionUpdateReport.Tags.YieldData]
+    .map(function (yieldData) {
+      return new YieldData(yieldData);
+  });
+};
+
+SecurityDefinitionUpdateReport.prototype.marketSegmentGrp = function () {
+  return this.message.groups[SecurityDefinitionUpdateReport.Tags.MarketSegmentGrp]
+    .map(function (marketSegmentGrp) {
+      return new MarketSegmentGrp(marketSegmentGrp);
+  });
+};
+
+SecurityDefinitionUpdateReport.prototype.securityReportId = function () {
+  return new SecurityReportID(this.message.tags[SecurityDefinitionUpdateReport.Tags.SecurityReportID]);
+};
+
+SecurityDefinitionUpdateReport.prototype.securityReqId = function () {
+  return new SecurityReqID(this.message.tags[SecurityDefinitionUpdateReport.Tags.SecurityReqID]);
+};
+
+SecurityDefinitionUpdateReport.prototype.securityResponseId = function () {
+  return new SecurityResponseID(this.message.tags[SecurityDefinitionUpdateReport.Tags.SecurityResponseID]);
+};
+
+SecurityDefinitionUpdateReport.prototype.securityResponseType = function () {
+  return new SecurityResponseType(this.message.tags[SecurityDefinitionUpdateReport.Tags.SecurityResponseType]);
+};
+
+SecurityDefinitionUpdateReport.prototype.clearingBusinessDate = function () {
+  return new ClearingBusinessDate(this.message.tags[SecurityDefinitionUpdateReport.Tags.ClearingBusinessDate]);
+};
+
+SecurityDefinitionUpdateReport.prototype.securityUpdateAction = function () {
+  return new SecurityUpdateAction(this.message.tags[SecurityDefinitionUpdateReport.Tags.SecurityUpdateAction]);
+};
+
+SecurityDefinitionUpdateReport.prototype.corporateAction = function () {
+  return new CorporateAction(this.message.tags[SecurityDefinitionUpdateReport.Tags.CorporateAction]);
+};
+
+SecurityDefinitionUpdateReport.prototype.currency = function () {
+  return new Currency(this.message.tags[SecurityDefinitionUpdateReport.Tags.Currency]);
+};
+
+SecurityDefinitionUpdateReport.prototype.text = function () {
+  return new Text(this.message.tags[SecurityDefinitionUpdateReport.Tags.Text]);
+};
+
+SecurityDefinitionUpdateReport.prototype.encodedTextLen = function () {
+  return new EncodedTextLen(this.message.tags[SecurityDefinitionUpdateReport.Tags.EncodedTextLen]);
+};
+
+SecurityDefinitionUpdateReport.prototype.encodedText = function () {
+  return new EncodedText(this.message.tags[SecurityDefinitionUpdateReport.Tags.EncodedText]);
+};
+
+SecurityDefinitionUpdateReport.prototype.numOfSimpleInstruments = function () {
+  return new NumOfSimpleInstruments(this.message.tags[SecurityDefinitionUpdateReport.Tags.NumOfSimpleInstruments]);
+};
+
+SecurityDefinitionUpdateReport.prototype.lastUpdateTime = function () {
+  return new LastUpdateTime(this.message.tags[SecurityDefinitionUpdateReport.Tags.LastUpdateTime]);
+};
+
+SecurityDefinitionUpdateReport.prototype.transactTime = function () {
+  return new TransactTime(this.message.tags[SecurityDefinitionUpdateReport.Tags.TransactTime]);
+};
+
+SecurityDefinitionUpdateReport.Tags = {
+  ApplicationSequenceControl: '1180',
+  Instrument: '55',
+  InstrumentExtension: '668',
+  UndInstrmtGrp: '711',
+  Stipulations: '232',
+  InstrmtLegGrp: '555',
+  SpreadOrBenchmarkCurveData: '218',
+  YieldData: '235',
+  MarketSegmentGrp: '1310',
+  SecurityReportID: '964',
+  SecurityReqID: '320',
+  SecurityResponseID: '322',
+  SecurityResponseType: '323',
+  ClearingBusinessDate: '715',
+  SecurityUpdateAction: '980',
+  CorporateAction: '292',
+  Currency: '15',
+  Text: '58',
+  EncodedTextLen: '354',
+  EncodedText: '355',
+  NumOfSimpleInstruments: '1606',
+  LastUpdateTime: '779',
+  TransactTime: '60',
+};
+
+SecurityDefinitionUpdateReport.msgType = 'BP';
+
+module.exports = SecurityDefinitionUpdateReport;
