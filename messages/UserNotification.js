@@ -10,6 +10,8 @@ function UserNotification (userNotification) {
 }
 
 UserNotification.prototype.usernameGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[UserNotification.Tags.UsernameGrp] === undefined) return null;
   return this.message.groups[UserNotification.Tags.UsernameGrp]
     .map(function (usernameGrp) {
       return new UsernameGrp(usernameGrp);
@@ -17,6 +19,8 @@ UserNotification.prototype.usernameGrp = function () {
 };
 
 UserNotification.prototype.throttleParamsGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[UserNotification.Tags.ThrottleParamsGrp] === undefined) return null;
   return this.message.groups[UserNotification.Tags.ThrottleParamsGrp]
     .map(function (throttleParamsGrp) {
       return new ThrottleParamsGrp(throttleParamsGrp);

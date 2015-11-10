@@ -25,6 +25,8 @@ function SecurityListUpdateReport (securityListUpdateReport) {
 }
 
 SecurityListUpdateReport.prototype.applicationSequenceControl = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[SecurityListUpdateReport.Tags.ApplicationSequenceControl] === undefined) return null;
   return this.message.groups[SecurityListUpdateReport.Tags.ApplicationSequenceControl]
     .map(function (applicationSequenceControl) {
       return new ApplicationSequenceControl(applicationSequenceControl);
@@ -32,6 +34,8 @@ SecurityListUpdateReport.prototype.applicationSequenceControl = function () {
 };
 
 SecurityListUpdateReport.prototype.secLstUpdRelSymGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[SecurityListUpdateReport.Tags.SecLstUpdRelSymGrp] === undefined) return null;
   return this.message.groups[SecurityListUpdateReport.Tags.SecLstUpdRelSymGrp]
     .map(function (secLstUpdRelSymGrp) {
       return new SecLstUpdRelSymGrp(secLstUpdRelSymGrp);

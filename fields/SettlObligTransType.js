@@ -10,10 +10,10 @@ SettlObligTransType.prototype.value = function () {
 
 
 SettlObligTransType.Keys = {
-  CANCEL: 'C',
-  NEW: 'N',
-  REPLACE: 'R',
-  RESTATE: 'T',
+  'CANCEL': 'C',
+  'NEW': 'N',
+  'REPLACE': 'R',
+  'RESTATE': 'T',
 };
 
 SettlObligTransType.Tag = '1162';

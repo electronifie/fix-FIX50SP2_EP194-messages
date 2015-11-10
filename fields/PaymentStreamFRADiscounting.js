@@ -10,9 +10,9 @@ PaymentStreamFRADiscounting.prototype.value = function () {
 
 
 PaymentStreamFRADiscounting.Keys = {
-  NONE: '0',
-  INTERNATIONAL_SWAPS_AND_DERIVATIVES_ASSOCIATION: '1',
-  AUSTRALIAN_FINANCIAL_MARKETS_ASSOCIATION: '2',
+  'NONE': '0',
+  'INTERNATIONAL_SWAPS_AND_DERIVATIVES_ASSOCIATION': '1',
+  'AUSTRALIAN_FINANCIAL_MARKETS_ASSOCIATION': '2',
 };
 
 PaymentStreamFRADiscounting.Tag = '40816';

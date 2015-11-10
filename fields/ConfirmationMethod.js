@@ -10,9 +10,9 @@ ConfirmationMethod.prototype.value = function () {
 
 
 ConfirmationMethod.Keys = {
-  NON_ELECTRONIC: '0',
-  ELECTRONIC: '1',
-  UNCONFIRMED: '2',
+  'NON_ELECTRONIC': '0',
+  'ELECTRONIC': '1',
+  'UNCONFIRMED': '2',
 };
 
 ConfirmationMethod.Tag = '1927';

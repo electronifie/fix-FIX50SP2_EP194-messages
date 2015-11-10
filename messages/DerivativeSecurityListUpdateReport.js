@@ -16,6 +16,8 @@ function DerivativeSecurityListUpdateReport (derivativeSecurityListUpdateReport)
 }
 
 DerivativeSecurityListUpdateReport.prototype.applicationSequenceControl = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[DerivativeSecurityListUpdateReport.Tags.ApplicationSequenceControl] === undefined) return null;
   return this.message.groups[DerivativeSecurityListUpdateReport.Tags.ApplicationSequenceControl]
     .map(function (applicationSequenceControl) {
       return new ApplicationSequenceControl(applicationSequenceControl);
@@ -23,6 +25,8 @@ DerivativeSecurityListUpdateReport.prototype.applicationSequenceControl = functi
 };
 
 DerivativeSecurityListUpdateReport.prototype.underlyingInstrument = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[DerivativeSecurityListUpdateReport.Tags.UnderlyingInstrument] === undefined) return null;
   return this.message.groups[DerivativeSecurityListUpdateReport.Tags.UnderlyingInstrument]
     .map(function (underlyingInstrument) {
       return new UnderlyingInstrument(underlyingInstrument);
@@ -30,6 +34,8 @@ DerivativeSecurityListUpdateReport.prototype.underlyingInstrument = function () 
 };
 
 DerivativeSecurityListUpdateReport.prototype.derivativeSecurityDefinition = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[DerivativeSecurityListUpdateReport.Tags.DerivativeSecurityDefinition] === undefined) return null;
   return this.message.groups[DerivativeSecurityListUpdateReport.Tags.DerivativeSecurityDefinition]
     .map(function (derivativeSecurityDefinition) {
       return new DerivativeSecurityDefinition(derivativeSecurityDefinition);
@@ -37,6 +43,8 @@ DerivativeSecurityListUpdateReport.prototype.derivativeSecurityDefinition = func
 };
 
 DerivativeSecurityListUpdateReport.prototype.relSymDerivSecUpdGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[DerivativeSecurityListUpdateReport.Tags.RelSymDerivSecUpdGrp] === undefined) return null;
   return this.message.groups[DerivativeSecurityListUpdateReport.Tags.RelSymDerivSecUpdGrp]
     .map(function (relSymDerivSecUpdGrp) {
       return new RelSymDerivSecUpdGrp(relSymDerivSecUpdGrp);

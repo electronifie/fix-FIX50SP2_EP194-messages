@@ -10,8 +10,8 @@ ProvisionCashSettlPaymentDateType.prototype.value = function () {
 
 
 ProvisionCashSettlPaymentDateType.Keys = {
-  UNADJUSTED: '0',
-  ADJUSTED: '1',
+  'UNADJUSTED': '0',
+  'ADJUSTED': '1',
 };
 
 ProvisionCashSettlPaymentDateType.Tag = '40173';

@@ -10,9 +10,9 @@ PosReqStatus.prototype.value = function () {
 
 
 PosReqStatus.Keys = {
-  COMPLETED: '0',
-  COMPLETED_WITH_WARNINGS: '1',
-  REJECTED: '2',
+  'COMPLETED': '0',
+  'COMPLETED_WITH_WARNINGS': '1',
+  'REJECTED': '2',
 };
 
 PosReqStatus.Tag = '729';

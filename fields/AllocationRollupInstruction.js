@@ -10,8 +10,8 @@ AllocationRollupInstruction.prototype.value = function () {
 
 
 AllocationRollupInstruction.Keys = {
-  ROLL_UP: '0',
-  DO_NOT_ROLL_UP: '1',
+  'ROLL_UP': '0',
+  'DO_NOT_ROLL_UP': '1',
 };
 
 AllocationRollupInstruction.Tag = '1735';

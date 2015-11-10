@@ -14,6 +14,8 @@ function TradeMatchReportAck (tradeMatchReportAck) {
 }
 
 TradeMatchReportAck.prototype.applicationSequenceControl = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[TradeMatchReportAck.Tags.ApplicationSequenceControl] === undefined) return null;
   return this.message.groups[TradeMatchReportAck.Tags.ApplicationSequenceControl]
     .map(function (applicationSequenceControl) {
       return new ApplicationSequenceControl(applicationSequenceControl);

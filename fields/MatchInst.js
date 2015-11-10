@@ -10,8 +10,8 @@ MatchInst.prototype.value = function () {
 
 
 MatchInst.Keys = {
-  MATCH: '1',
-  DO_NOT_MATCH: '2',
+  'MATCH': '1',
+  'DO_NOT_MATCH': '2',
 };
 
 MatchInst.Tag = '1625';

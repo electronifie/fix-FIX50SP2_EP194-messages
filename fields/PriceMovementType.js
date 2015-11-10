@@ -10,8 +10,8 @@ PriceMovementType.prototype.value = function () {
 
 
 PriceMovementType.Keys = {
-  AMOUNT: '0',
-  PERCENTAGE: '1',
+  'AMOUNT': '0',
+  'PERCENTAGE': '1',
 };
 
 PriceMovementType.Tag = '1923';

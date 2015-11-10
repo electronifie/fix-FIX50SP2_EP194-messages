@@ -10,8 +10,8 @@ ResponseTransportType.prototype.value = function () {
 
 
 ResponseTransportType.Keys = {
-  INBAND_TRANSPORT_THE_REQUEST_WAS_SENT_OVER: '0',
-  OUT_OF_BAND_PRE_ARRANGED_OUT_OF_BAND_DELIVERY_MECHANIZM_: '1',
+  'INBAND_TRANSPORT_THE_REQUEST_WAS_SENT_OVER': '0',
+  'OUT_OF_BAND_PRE_ARRANGED_OUT_OF_BAND_DELIVERY_MECHANIZM_': '1',
 };
 
 ResponseTransportType.Tag = '725';

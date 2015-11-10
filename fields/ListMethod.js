@@ -10,8 +10,8 @@ ListMethod.prototype.value = function () {
 
 
 ListMethod.Keys = {
-  PRE_LISTED_ONLY: '0',
-  USER_REQUESTED: '1',
+  'PRE_LISTED_ONLY': '0',
+  'USER_REQUESTED': '1',
 };
 
 ListMethod.Tag = '1198';

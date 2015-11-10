@@ -7,6 +7,8 @@ function TradingSessionListUpdateReport (tradingSessionListUpdateReport) {
 }
 
 TradingSessionListUpdateReport.prototype.applicationSequenceControl = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[TradingSessionListUpdateReport.Tags.ApplicationSequenceControl] === undefined) return null;
   return this.message.groups[TradingSessionListUpdateReport.Tags.ApplicationSequenceControl]
     .map(function (applicationSequenceControl) {
       return new ApplicationSequenceControl(applicationSequenceControl);
@@ -14,6 +16,8 @@ TradingSessionListUpdateReport.prototype.applicationSequenceControl = function (
 };
 
 TradingSessionListUpdateReport.prototype.trdSessLstGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[TradingSessionListUpdateReport.Tags.TrdSessLstGrp] === undefined) return null;
   return this.message.groups[TradingSessionListUpdateReport.Tags.TrdSessLstGrp]
     .map(function (trdSessLstGrp) {
       return new TrdSessLstGrp(trdSessLstGrp);

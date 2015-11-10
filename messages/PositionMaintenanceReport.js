@@ -53,6 +53,8 @@ function PositionMaintenanceReport (positionMaintenanceReport) {
 }
 
 PositionMaintenanceReport.prototype.parties = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[PositionMaintenanceReport.Tags.Parties] === undefined) return null;
   return this.message.groups[PositionMaintenanceReport.Tags.Parties]
     .map(function (parties) {
       return new Parties(parties);
@@ -60,6 +62,8 @@ PositionMaintenanceReport.prototype.parties = function () {
 };
 
 PositionMaintenanceReport.prototype.instrument = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[PositionMaintenanceReport.Tags.Instrument] === undefined) return null;
   return this.message.groups[PositionMaintenanceReport.Tags.Instrument]
     .map(function (instrument) {
       return new Instrument(instrument);
@@ -67,6 +71,8 @@ PositionMaintenanceReport.prototype.instrument = function () {
 };
 
 PositionMaintenanceReport.prototype.instrmtLegGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[PositionMaintenanceReport.Tags.InstrmtLegGrp] === undefined) return null;
   return this.message.groups[PositionMaintenanceReport.Tags.InstrmtLegGrp]
     .map(function (instrmtLegGrp) {
       return new InstrmtLegGrp(instrmtLegGrp);
@@ -74,6 +80,8 @@ PositionMaintenanceReport.prototype.instrmtLegGrp = function () {
 };
 
 PositionMaintenanceReport.prototype.relatedInstrumentGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[PositionMaintenanceReport.Tags.RelatedInstrumentGrp] === undefined) return null;
   return this.message.groups[PositionMaintenanceReport.Tags.RelatedInstrumentGrp]
     .map(function (relatedInstrumentGrp) {
       return new RelatedInstrumentGrp(relatedInstrumentGrp);
@@ -81,6 +89,8 @@ PositionMaintenanceReport.prototype.relatedInstrumentGrp = function () {
 };
 
 PositionMaintenanceReport.prototype.undInstrmtGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[PositionMaintenanceReport.Tags.UndInstrmtGrp] === undefined) return null;
   return this.message.groups[PositionMaintenanceReport.Tags.UndInstrmtGrp]
     .map(function (undInstrmtGrp) {
       return new UndInstrmtGrp(undInstrmtGrp);
@@ -88,6 +98,8 @@ PositionMaintenanceReport.prototype.undInstrmtGrp = function () {
 };
 
 PositionMaintenanceReport.prototype.trdgSesGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[PositionMaintenanceReport.Tags.TrdgSesGrp] === undefined) return null;
   return this.message.groups[PositionMaintenanceReport.Tags.TrdgSesGrp]
     .map(function (trdgSesGrp) {
       return new TrdgSesGrp(trdgSesGrp);
@@ -95,6 +107,8 @@ PositionMaintenanceReport.prototype.trdgSesGrp = function () {
 };
 
 PositionMaintenanceReport.prototype.positionQty = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[PositionMaintenanceReport.Tags.PositionQty] === undefined) return null;
   return this.message.groups[PositionMaintenanceReport.Tags.PositionQty]
     .map(function (positionQty) {
       return new PositionQty(positionQty);
@@ -102,6 +116,8 @@ PositionMaintenanceReport.prototype.positionQty = function () {
 };
 
 PositionMaintenanceReport.prototype.positionAmountData = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[PositionMaintenanceReport.Tags.PositionAmountData] === undefined) return null;
   return this.message.groups[PositionMaintenanceReport.Tags.PositionAmountData]
     .map(function (positionAmountData) {
       return new PositionAmountData(positionAmountData);
@@ -109,6 +125,8 @@ PositionMaintenanceReport.prototype.positionAmountData = function () {
 };
 
 PositionMaintenanceReport.prototype.regulatoryTradeIdgrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[PositionMaintenanceReport.Tags.RegulatoryTradeIDGrp] === undefined) return null;
   return this.message.groups[PositionMaintenanceReport.Tags.RegulatoryTradeIDGrp]
     .map(function (regulatoryTradeIdgrp) {
       return new RegulatoryTradeIDGrp(regulatoryTradeIdgrp);
@@ -116,6 +134,8 @@ PositionMaintenanceReport.prototype.regulatoryTradeIdgrp = function () {
 };
 
 PositionMaintenanceReport.prototype.paymentGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[PositionMaintenanceReport.Tags.PaymentGrp] === undefined) return null;
   return this.message.groups[PositionMaintenanceReport.Tags.PaymentGrp]
     .map(function (paymentGrp) {
       return new PaymentGrp(paymentGrp);
@@ -123,6 +143,8 @@ PositionMaintenanceReport.prototype.paymentGrp = function () {
 };
 
 PositionMaintenanceReport.prototype.relatedTradeGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[PositionMaintenanceReport.Tags.RelatedTradeGrp] === undefined) return null;
   return this.message.groups[PositionMaintenanceReport.Tags.RelatedTradeGrp]
     .map(function (relatedTradeGrp) {
       return new RelatedTradeGrp(relatedTradeGrp);

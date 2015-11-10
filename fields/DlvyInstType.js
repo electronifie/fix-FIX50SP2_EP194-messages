@@ -10,8 +10,8 @@ DlvyInstType.prototype.value = function () {
 
 
 DlvyInstType.Keys = {
-  CASH: 'C',
-  SECURITIES: 'S',
+  'CASH': 'C',
+  'SECURITIES': 'S',
 };
 
 DlvyInstType.Tag = '787';

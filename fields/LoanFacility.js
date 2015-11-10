@@ -10,12 +10,12 @@ LoanFacility.prototype.value = function () {
 
 
 LoanFacility.Keys = {
-  BRIDGE_LOAN: '0',
-  LETTER_OF_CREDIT: '1',
-  REVOLVING_LOAN: '2',
-  SWINGLINE_FUNDING: '3',
-  TERM_LOAN: '4',
-  TRADE_CLAIM: '5',
+  'BRIDGE_LOAN': '0',
+  'LETTER_OF_CREDIT': '1',
+  'REVOLVING_LOAN': '2',
+  'SWINGLINE_FUNDING': '3',
+  'TERM_LOAN': '4',
+  'TRADE_CLAIM': '5',
 };
 
 LoanFacility.Tag = '1955';

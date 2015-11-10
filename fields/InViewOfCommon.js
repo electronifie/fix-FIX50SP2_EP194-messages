@@ -10,8 +10,8 @@ InViewOfCommon.prototype.value = function () {
 
 
 InViewOfCommon.Keys = {
-  HALT_WAS_NOT_RELATED_TO_A_HALT_OF_THE_COMMON_STOCK: 'N',
-  HALT_WAS_DUE_TO_COMMON_STOCK_BEING_HALTED: 'Y',
+  'HALT_WAS_NOT_RELATED_TO_A_HALT_OF_THE_COMMON_STOCK': 'N',
+  'HALT_WAS_DUE_TO_COMMON_STOCK_BEING_HALTED': 'Y',
 };
 
 InViewOfCommon.Tag = '328';

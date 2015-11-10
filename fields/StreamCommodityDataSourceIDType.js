@@ -10,10 +10,10 @@ StreamCommodityDataSourceIDType.prototype.value = function () {
 
 
 StreamCommodityDataSourceIDType.Keys = {
-  CITY: '0',
-  AIRPORT: '1',
-  WEATHER_STATION_WBAN: '2',
-  WEATHER_INDEX_WMO: '3',
+  'CITY': '0',
+  'AIRPORT': '1',
+  'WEATHER_STATION_WBAN': '2',
+  'WEATHER_INDEX_WMO': '3',
 };
 
 StreamCommodityDataSourceIDType.Tag = '41282';

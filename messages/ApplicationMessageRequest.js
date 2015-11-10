@@ -11,6 +11,8 @@ function ApplicationMessageRequest (applicationMessageRequest) {
 }
 
 ApplicationMessageRequest.prototype.applIdrequestGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[ApplicationMessageRequest.Tags.ApplIDRequestGrp] === undefined) return null;
   return this.message.groups[ApplicationMessageRequest.Tags.ApplIDRequestGrp]
     .map(function (applIdrequestGrp) {
       return new ApplIDRequestGrp(applIdrequestGrp);
@@ -18,6 +20,8 @@ ApplicationMessageRequest.prototype.applIdrequestGrp = function () {
 };
 
 ApplicationMessageRequest.prototype.parties = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[ApplicationMessageRequest.Tags.Parties] === undefined) return null;
   return this.message.groups[ApplicationMessageRequest.Tags.Parties]
     .map(function (parties) {
       return new Parties(parties);

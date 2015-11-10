@@ -10,12 +10,12 @@ PartyDetailRequestResult.prototype.value = function () {
 
 
 PartyDetailRequestResult.Keys = {
-  SUCCESSFUL: '0',
-  INVALID_PARTY: '1',
-  INVALID_RELATED_PARTY: '2',
-  INVALID_PARTY_STATUS: '3',
-  NOT_AUTHORIZED: '98',
-  OTHER: '99',
+  'SUCCESSFUL': '0',
+  'INVALID_PARTY': '1',
+  'INVALID_RELATED_PARTY': '2',
+  'INVALID_PARTY_STATUS': '3',
+  'NOT_AUTHORIZED': '98',
+  'OTHER': '99',
 };
 
 PartyDetailRequestResult.Tag = '1877';

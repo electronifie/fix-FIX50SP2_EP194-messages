@@ -10,15 +10,15 @@ VenueType.prototype.value = function () {
 
 
 VenueType.Keys = {
-  ELECTRONIC_EXCHANGE: 'E',
-  PIT: 'P',
-  EX_PIT: 'X',
-  CLEARINGHOUSE: 'C',
-  REGISTERED_MARKET: 'R',
-  OFF_MARKET: 'O',
-  CENTRAL_LIMIT_ORDER_BOOK: 'B',
-  QUOTE_DRIVEN_MARKET: 'Q',
-  DARK_ORDER_BOOK: 'D',
+  'ELECTRONIC_EXCHANGE': 'E',
+  'PIT': 'P',
+  'EX_PIT': 'X',
+  'CLEARINGHOUSE': 'C',
+  'REGISTERED_MARKET': 'R',
+  'OFF_MARKET': 'O',
+  'CENTRAL_LIMIT_ORDER_BOOK': 'B',
+  'QUOTE_DRIVEN_MARKET': 'Q',
+  'DARK_ORDER_BOOK': 'D',
 };
 
 VenueType.Tag = '1430';

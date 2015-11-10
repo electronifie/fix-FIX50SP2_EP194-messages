@@ -10,9 +10,9 @@ TriggerAction.prototype.value = function () {
 
 
 TriggerAction.Keys = {
-  ACTIVATE: '1',
-  MODIFY: '2',
-  CANCEL: '3',
+  'ACTIVATE': '1',
+  'MODIFY': '2',
+  'CANCEL': '3',
 };
 
 TriggerAction.Tag = '1101';

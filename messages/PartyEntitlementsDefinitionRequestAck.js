@@ -12,6 +12,8 @@ function PartyEntitlementsDefinitionRequestAck (partyEntitlementsDefinitionReque
 }
 
 PartyEntitlementsDefinitionRequestAck.prototype.requestingPartyGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[PartyEntitlementsDefinitionRequestAck.Tags.RequestingPartyGrp] === undefined) return null;
   return this.message.groups[PartyEntitlementsDefinitionRequestAck.Tags.RequestingPartyGrp]
     .map(function (requestingPartyGrp) {
       return new RequestingPartyGrp(requestingPartyGrp);
@@ -19,6 +21,8 @@ PartyEntitlementsDefinitionRequestAck.prototype.requestingPartyGrp = function ()
 };
 
 PartyEntitlementsDefinitionRequestAck.prototype.partyEntitlementAckGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[PartyEntitlementsDefinitionRequestAck.Tags.PartyEntitlementAckGrp] === undefined) return null;
   return this.message.groups[PartyEntitlementsDefinitionRequestAck.Tags.PartyEntitlementAckGrp]
     .map(function (partyEntitlementAckGrp) {
       return new PartyEntitlementAckGrp(partyEntitlementAckGrp);

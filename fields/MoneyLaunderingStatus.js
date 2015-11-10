@@ -10,11 +10,11 @@ MoneyLaunderingStatus.prototype.value = function () {
 
 
 MoneyLaunderingStatus.Keys = {
-  PASSED: 'Y',
-  NOT_CHECKED: 'N',
-  EXEMPT_BELOW_THE_LIMIT: '1',
-  EXEMPT_CLIENT_MONEY_TYPE_EXEMPTION: '2',
-  EXEMPT_AUTHORISED_CREDIT_OR_FINANCIAL_INSTITUTION: '3',
+  'PASSED': 'Y',
+  'NOT_CHECKED': 'N',
+  'EXEMPT_BELOW_THE_LIMIT': '1',
+  'EXEMPT_CLIENT_MONEY_TYPE_EXEMPTION': '2',
+  'EXEMPT_AUTHORISED_CREDIT_OR_FINANCIAL_INSTITUTION': '3',
 };
 
 MoneyLaunderingStatus.Tag = '481';

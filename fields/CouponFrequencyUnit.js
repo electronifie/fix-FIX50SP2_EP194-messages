@@ -10,14 +10,14 @@ CouponFrequencyUnit.prototype.value = function () {
 
 
 CouponFrequencyUnit.Keys = {
-  DAY: 'D',
-  WEEK: 'Wk',
-  MONTH: 'Mo',
-  YEAR: 'Yr',
-  HOUR: 'H',
-  MINUTE: 'Min',
-  SECOND: 'S',
-  TERM: 'T',
+  'DAY': 'D',
+  'WEEK': 'Wk',
+  'MONTH': 'Mo',
+  'YEAR': 'Yr',
+  'HOUR': 'H',
+  'MINUTE': 'Min',
+  'SECOND': 'S',
+  'TERM': 'T',
 };
 
 CouponFrequencyUnit.Tag = '1949';

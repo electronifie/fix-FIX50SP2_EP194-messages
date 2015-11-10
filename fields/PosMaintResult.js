@@ -10,9 +10,9 @@ PosMaintResult.prototype.value = function () {
 
 
 PosMaintResult.Keys = {
-  SUCCESSFUL_COMPLETION_NO_WARNINGS_OR_ERRORS: '0',
-  REJECTED: '1',
-  OTHER: '99',
+  'SUCCESSFUL_COMPLETION_NO_WARNINGS_OR_ERRORS': '0',
+  'REJECTED': '1',
+  'OTHER': '99',
 };
 
 PosMaintResult.Tag = '723';

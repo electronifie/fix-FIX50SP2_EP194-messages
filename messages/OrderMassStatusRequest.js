@@ -15,6 +15,8 @@ function OrderMassStatusRequest (orderMassStatusRequest) {
 }
 
 OrderMassStatusRequest.prototype.parties = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[OrderMassStatusRequest.Tags.Parties] === undefined) return null;
   return this.message.groups[OrderMassStatusRequest.Tags.Parties]
     .map(function (parties) {
       return new Parties(parties);
@@ -22,6 +24,8 @@ OrderMassStatusRequest.prototype.parties = function () {
 };
 
 OrderMassStatusRequest.prototype.targetParties = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[OrderMassStatusRequest.Tags.TargetParties] === undefined) return null;
   return this.message.groups[OrderMassStatusRequest.Tags.TargetParties]
     .map(function (targetParties) {
       return new TargetParties(targetParties);
@@ -29,6 +33,8 @@ OrderMassStatusRequest.prototype.targetParties = function () {
 };
 
 OrderMassStatusRequest.prototype.instrument = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[OrderMassStatusRequest.Tags.Instrument] === undefined) return null;
   return this.message.groups[OrderMassStatusRequest.Tags.Instrument]
     .map(function (instrument) {
       return new Instrument(instrument);
@@ -36,6 +42,8 @@ OrderMassStatusRequest.prototype.instrument = function () {
 };
 
 OrderMassStatusRequest.prototype.underlyingInstrument = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[OrderMassStatusRequest.Tags.UnderlyingInstrument] === undefined) return null;
   return this.message.groups[OrderMassStatusRequest.Tags.UnderlyingInstrument]
     .map(function (underlyingInstrument) {
       return new UnderlyingInstrument(underlyingInstrument);

@@ -10,10 +10,10 @@ PegOffsetType.prototype.value = function () {
 
 
 PegOffsetType.Keys = {
-  PRICE: '0',
-  BASIS_POINTS: '1',
-  TICKS: '2',
-  PRICE_TIER_LEVEL: '3',
+  'PRICE': '0',
+  'BASIS_POINTS': '1',
+  'TICKS': '2',
+  'PRICE_TIER_LEVEL': '3',
 };
 
 PegOffsetType.Tag = '836';

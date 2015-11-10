@@ -1,6 +1,6 @@
 {
   "name": "fix-FIX50SP2_EP194-messages",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "collection of generate message classes matching fix spec FIX50SP2_EP194",
   "main": "index.js",
   "scripts": {
@@ -12,6 +12,6 @@
     "invert-obj": "^1.0.0"
   },
   "devDependencies": {
-    "quickfix-codegen": "0.0.0"
+    "quickfix-codegen": "0.0.3"
   }
 }

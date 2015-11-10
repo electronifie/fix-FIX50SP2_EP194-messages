@@ -10,8 +10,8 @@ RiskLimitCheckRequestType.prototype.value = function () {
 
 
 RiskLimitCheckRequestType.Keys = {
-  ALL_OR_NONE_: '0',
-  PARTIAL: '1',
+  'ALL_OR_NONE_': '0',
+  'PARTIAL': '1',
 };
 
 RiskLimitCheckRequestType.Tag = '2323';

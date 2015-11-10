@@ -10,8 +10,8 @@ NetGrossInd.prototype.value = function () {
 
 
 NetGrossInd.Keys = {
-  NET: '1',
-  GROSS: '2',
+  'NET': '1',
+  'GROSS': '2',
 };
 
 NetGrossInd.Tag = '430';

@@ -10,9 +10,9 @@ MiscFeeBasis.prototype.value = function () {
 
 
 MiscFeeBasis.Keys = {
-  ABSOLUTE: '0',
-  PER_UNIT: '1',
-  PERCENTAGE: '2',
+  'ABSOLUTE': '0',
+  'PER_UNIT': '1',
+  'PERCENTAGE': '2',
 };
 
 MiscFeeBasis.Tag = '891';

@@ -10,8 +10,8 @@ AllocLinkType.prototype.value = function () {
 
 
 AllocLinkType.Keys = {
-  FX_NETTING: '0',
-  FX_SWAP: '1',
+  'FX_NETTING': '0',
+  'FX_SWAP': '1',
 };
 
 AllocLinkType.Tag = '197';

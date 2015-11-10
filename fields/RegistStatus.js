@@ -10,10 +10,10 @@ RegistStatus.prototype.value = function () {
 
 
 RegistStatus.Keys = {
-  ACCEPTED: 'A',
-  REJECTED: 'R',
-  HELD: 'H',
-  REMINDER_I_E_REGISTRATION_INSTRUCTIONS_ARE_STILL_OUTSTANDING: 'N',
+  'ACCEPTED': 'A',
+  'REJECTED': 'R',
+  'HELD': 'H',
+  'REMINDER_I_E_REGISTRATION_INSTRUCTIONS_ARE_STILL_OUTSTANDING': 'N',
 };
 
 RegistStatus.Tag = '506';

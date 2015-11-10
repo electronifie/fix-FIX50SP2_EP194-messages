@@ -10,9 +10,9 @@ MultiLegReportingType.prototype.value = function () {
 
 
 MultiLegReportingType.Keys = {
-  SINGLE_SECURITY: '1',
-  INDIVIDUAL_LEG_OF_A_MULTI_LEG_SECURITY: '2',
-  MULTI_LEG_SECURITY: '3',
+  'SINGLE_SECURITY': '1',
+  'INDIVIDUAL_LEG_OF_A_MULTI_LEG_SECURITY': '2',
+  'MULTI_LEG_SECURITY': '3',
 };
 
 MultiLegReportingType.Tag = '442';

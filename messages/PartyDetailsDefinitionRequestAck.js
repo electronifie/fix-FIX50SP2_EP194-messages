@@ -12,6 +12,8 @@ function PartyDetailsDefinitionRequestAck (partyDetailsDefinitionRequestAck) {
 }
 
 PartyDetailsDefinitionRequestAck.prototype.requestingPartyGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[PartyDetailsDefinitionRequestAck.Tags.RequestingPartyGrp] === undefined) return null;
   return this.message.groups[PartyDetailsDefinitionRequestAck.Tags.RequestingPartyGrp]
     .map(function (requestingPartyGrp) {
       return new RequestingPartyGrp(requestingPartyGrp);
@@ -19,6 +21,8 @@ PartyDetailsDefinitionRequestAck.prototype.requestingPartyGrp = function () {
 };
 
 PartyDetailsDefinitionRequestAck.prototype.partyDetailAckGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[PartyDetailsDefinitionRequestAck.Tags.PartyDetailAckGrp] === undefined) return null;
   return this.message.groups[PartyDetailsDefinitionRequestAck.Tags.PartyDetailAckGrp]
     .map(function (partyDetailAckGrp) {
       return new PartyDetailAckGrp(partyDetailAckGrp);

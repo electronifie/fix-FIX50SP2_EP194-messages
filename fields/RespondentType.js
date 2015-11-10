@@ -10,10 +10,10 @@ RespondentType.prototype.value = function () {
 
 
 RespondentType.Keys = {
-  ALL_MARKET_PARTICIPANTS: '1',
-  SPECIFIED_MARKET_PARTICIPANTS: '2',
-  ALL_MARKET_MAKERS: '3',
-  PRIMARY_MARKET_MAKER: '4',
+  'ALL_MARKET_PARTICIPANTS': '1',
+  'SPECIFIED_MARKET_PARTICIPANTS': '2',
+  'ALL_MARKET_MAKERS': '3',
+  'PRIMARY_MARKET_MAKER': '4',
 };
 
 RespondentType.Tag = '1172';

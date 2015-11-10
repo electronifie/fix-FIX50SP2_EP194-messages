@@ -10,6 +10,8 @@ function PartyRiskLimitsDefinitionRequest (partyRiskLimitsDefinitionRequest) {
 }
 
 PartyRiskLimitsDefinitionRequest.prototype.requestingPartyGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[PartyRiskLimitsDefinitionRequest.Tags.RequestingPartyGrp] === undefined) return null;
   return this.message.groups[PartyRiskLimitsDefinitionRequest.Tags.RequestingPartyGrp]
     .map(function (requestingPartyGrp) {
       return new RequestingPartyGrp(requestingPartyGrp);
@@ -17,6 +19,8 @@ PartyRiskLimitsDefinitionRequest.prototype.requestingPartyGrp = function () {
 };
 
 PartyRiskLimitsDefinitionRequest.prototype.partyRiskLimitsUpdateGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[PartyRiskLimitsDefinitionRequest.Tags.PartyRiskLimitsUpdateGrp] === undefined) return null;
   return this.message.groups[PartyRiskLimitsDefinitionRequest.Tags.PartyRiskLimitsUpdateGrp]
     .map(function (partyRiskLimitsUpdateGrp) {
       return new PartyRiskLimitsUpdateGrp(partyRiskLimitsUpdateGrp);

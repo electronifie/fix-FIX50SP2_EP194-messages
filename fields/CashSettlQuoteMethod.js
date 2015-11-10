@@ -10,9 +10,9 @@ CashSettlQuoteMethod.prototype.value = function () {
 
 
 CashSettlQuoteMethod.Keys = {
-  BID: '0',
-  MID: '1',
-  OFFER: '2',
+  'BID': '0',
+  'MID': '1',
+  'OFFER': '2',
 };
 
 CashSettlQuoteMethod.Tag = '40027';

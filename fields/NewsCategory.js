@@ -10,11 +10,11 @@ NewsCategory.prototype.value = function () {
 
 
 NewsCategory.Keys = {
-  COMPANY_NEWS: '0',
-  MARKETPLACE_NEWS: '1',
-  FINANCIAL_MARKET_NEWS: '2',
-  TECHNICAL_NEWS: '3',
-  OTHER_NEWS: '99',
+  'COMPANY_NEWS': '0',
+  'MARKETPLACE_NEWS': '1',
+  'FINANCIAL_MARKET_NEWS': '2',
+  'TECHNICAL_NEWS': '3',
+  'OTHER_NEWS': '99',
 };
 
 NewsCategory.Tag = '1473';

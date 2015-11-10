@@ -10,9 +10,9 @@ Scope.prototype.value = function () {
 
 
 Scope.Keys = {
-  LOCAL_MARKET: '1',
-  NATIONAL: '2',
-  GLOBAL: '3',
+  'LOCAL_MARKET': '1',
+  'NATIONAL': '2',
+  'GLOBAL': '3',
 };
 
 Scope.Tag = '546';

@@ -10,12 +10,12 @@ ProtectionTermEventDayType.prototype.value = function () {
 
 
 ProtectionTermEventDayType.Keys = {
-  BUSINESS: '0',
-  CALENDAR: '1',
-  COMMODITY_BUSINESS: '2',
-  CURRENCY_BUSINESS: '3',
-  EXCHANGE_BUSINESS: '4',
-  SCHEDULED_TRADING_DAY: '5',
+  'BUSINESS': '0',
+  'CALENDAR': '1',
+  'COMMODITY_BUSINESS': '2',
+  'CURRENCY_BUSINESS': '3',
+  'EXCHANGE_BUSINESS': '4',
+  'SCHEDULED_TRADING_DAY': '5',
 };
 
 ProtectionTermEventDayType.Tag = '40197';

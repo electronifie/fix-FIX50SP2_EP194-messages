@@ -10,8 +10,8 @@ ValueCheckType.prototype.value = function () {
 
 
 ValueCheckType.Keys = {
-  PRICE_CHECK: '1',
-  NOTIONAL_VALUE_CHECK: '2',
+  'PRICE_CHECK': '1',
+  'NOTIONAL_VALUE_CHECK': '2',
 };
 
 ValueCheckType.Tag = '1869';

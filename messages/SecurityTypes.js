@@ -19,6 +19,8 @@ function SecurityTypes (securityTypes) {
 }
 
 SecurityTypes.prototype.applicationSequenceControl = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[SecurityTypes.Tags.ApplicationSequenceControl] === undefined) return null;
   return this.message.groups[SecurityTypes.Tags.ApplicationSequenceControl]
     .map(function (applicationSequenceControl) {
       return new ApplicationSequenceControl(applicationSequenceControl);
@@ -26,6 +28,8 @@ SecurityTypes.prototype.applicationSequenceControl = function () {
 };
 
 SecurityTypes.prototype.secTypesGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[SecurityTypes.Tags.SecTypesGrp] === undefined) return null;
   return this.message.groups[SecurityTypes.Tags.SecTypesGrp]
     .map(function (secTypesGrp) {
       return new SecTypesGrp(secTypesGrp);

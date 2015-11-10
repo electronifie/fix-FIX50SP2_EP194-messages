@@ -10,9 +10,9 @@ EmailType.prototype.value = function () {
 
 
 EmailType.Keys = {
-  NEW: '0',
-  REPLY: '1',
-  ADMIN_REPLY: '2',
+  'NEW': '0',
+  'REPLY': '1',
+  'ADMIN_REPLY': '2',
 };
 
 EmailType.Tag = '94';

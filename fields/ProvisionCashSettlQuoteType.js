@@ -10,10 +10,10 @@ ProvisionCashSettlQuoteType.prototype.value = function () {
 
 
 ProvisionCashSettlQuoteType.Keys = {
-  BID: '0',
-  MID: '1',
-  OFFER: '2',
-  EXERCISING_PARTY_PAYS: '3',
+  'BID': '0',
+  'MID': '1',
+  'OFFER': '2',
+  'EXERCISING_PARTY_PAYS': '3',
 };
 
 ProvisionCashSettlQuoteType.Tag = '40111';

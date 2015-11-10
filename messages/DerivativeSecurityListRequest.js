@@ -18,6 +18,8 @@ function DerivativeSecurityListRequest (derivativeSecurityListRequest) {
 }
 
 DerivativeSecurityListRequest.prototype.underlyingInstrument = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[DerivativeSecurityListRequest.Tags.UnderlyingInstrument] === undefined) return null;
   return this.message.groups[DerivativeSecurityListRequest.Tags.UnderlyingInstrument]
     .map(function (underlyingInstrument) {
       return new UnderlyingInstrument(underlyingInstrument);
@@ -25,6 +27,8 @@ DerivativeSecurityListRequest.prototype.underlyingInstrument = function () {
 };
 
 DerivativeSecurityListRequest.prototype.derivativeInstrument = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[DerivativeSecurityListRequest.Tags.DerivativeInstrument] === undefined) return null;
   return this.message.groups[DerivativeSecurityListRequest.Tags.DerivativeInstrument]
     .map(function (derivativeInstrument) {
       return new DerivativeInstrument(derivativeInstrument);

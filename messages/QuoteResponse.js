@@ -75,6 +75,8 @@ function QuoteResponse (quoteResponse) {
 }
 
 QuoteResponse.prototype.quotQualGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[QuoteResponse.Tags.QuotQualGrp] === undefined) return null;
   return this.message.groups[QuoteResponse.Tags.QuotQualGrp]
     .map(function (quotQualGrp) {
       return new QuotQualGrp(quotQualGrp);
@@ -82,6 +84,8 @@ QuoteResponse.prototype.quotQualGrp = function () {
 };
 
 QuoteResponse.prototype.parties = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[QuoteResponse.Tags.Parties] === undefined) return null;
   return this.message.groups[QuoteResponse.Tags.Parties]
     .map(function (parties) {
       return new Parties(parties);
@@ -89,6 +93,8 @@ QuoteResponse.prototype.parties = function () {
 };
 
 QuoteResponse.prototype.instrument = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[QuoteResponse.Tags.Instrument] === undefined) return null;
   return this.message.groups[QuoteResponse.Tags.Instrument]
     .map(function (instrument) {
       return new Instrument(instrument);
@@ -96,6 +102,8 @@ QuoteResponse.prototype.instrument = function () {
 };
 
 QuoteResponse.prototype.financingDetails = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[QuoteResponse.Tags.FinancingDetails] === undefined) return null;
   return this.message.groups[QuoteResponse.Tags.FinancingDetails]
     .map(function (financingDetails) {
       return new FinancingDetails(financingDetails);
@@ -103,6 +111,8 @@ QuoteResponse.prototype.financingDetails = function () {
 };
 
 QuoteResponse.prototype.undInstrmtGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[QuoteResponse.Tags.UndInstrmtGrp] === undefined) return null;
   return this.message.groups[QuoteResponse.Tags.UndInstrmtGrp]
     .map(function (undInstrmtGrp) {
       return new UndInstrmtGrp(undInstrmtGrp);
@@ -110,6 +120,8 @@ QuoteResponse.prototype.undInstrmtGrp = function () {
 };
 
 QuoteResponse.prototype.orderQtyData = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[QuoteResponse.Tags.OrderQtyData] === undefined) return null;
   return this.message.groups[QuoteResponse.Tags.OrderQtyData]
     .map(function (orderQtyData) {
       return new OrderQtyData(orderQtyData);
@@ -117,6 +129,8 @@ QuoteResponse.prototype.orderQtyData = function () {
 };
 
 QuoteResponse.prototype.stipulations = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[QuoteResponse.Tags.Stipulations] === undefined) return null;
   return this.message.groups[QuoteResponse.Tags.Stipulations]
     .map(function (stipulations) {
       return new Stipulations(stipulations);
@@ -124,6 +138,8 @@ QuoteResponse.prototype.stipulations = function () {
 };
 
 QuoteResponse.prototype.legQuotGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[QuoteResponse.Tags.LegQuotGrp] === undefined) return null;
   return this.message.groups[QuoteResponse.Tags.LegQuotGrp]
     .map(function (legQuotGrp) {
       return new LegQuotGrp(legQuotGrp);
@@ -131,6 +147,8 @@ QuoteResponse.prototype.legQuotGrp = function () {
 };
 
 QuoteResponse.prototype.spreadOrBenchmarkCurveData = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[QuoteResponse.Tags.SpreadOrBenchmarkCurveData] === undefined) return null;
   return this.message.groups[QuoteResponse.Tags.SpreadOrBenchmarkCurveData]
     .map(function (spreadOrBenchmarkCurveData) {
       return new SpreadOrBenchmarkCurveData(spreadOrBenchmarkCurveData);
@@ -138,6 +156,8 @@ QuoteResponse.prototype.spreadOrBenchmarkCurveData = function () {
 };
 
 QuoteResponse.prototype.yieldData = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[QuoteResponse.Tags.YieldData] === undefined) return null;
   return this.message.groups[QuoteResponse.Tags.YieldData]
     .map(function (yieldData) {
       return new YieldData(yieldData);

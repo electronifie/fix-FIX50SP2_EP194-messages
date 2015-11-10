@@ -10,9 +10,9 @@ TrdAckStatus.prototype.value = function () {
 
 
 TrdAckStatus.Keys = {
-  ACCEPTED: '0',
-  REJECTED: '1',
-  RECEIVED: '2',
+  'ACCEPTED': '0',
+  'REJECTED': '1',
+  'RECEIVED': '2',
 };
 
 TrdAckStatus.Tag = '1523';

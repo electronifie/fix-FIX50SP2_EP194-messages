@@ -10,9 +10,9 @@ CollRptStatus.prototype.value = function () {
 
 
 CollRptStatus.Keys = {
-  ACCEPTED: '0',
-  RECEIVED: '1',
-  REJECTED: '2',
+  'ACCEPTED': '0',
+  'RECEIVED': '1',
+  'REJECTED': '2',
 };
 
 CollRptStatus.Tag = '2488';

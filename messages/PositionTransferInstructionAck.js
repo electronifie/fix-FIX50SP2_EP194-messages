@@ -20,6 +20,8 @@ function PositionTransferInstructionAck (positionTransferInstructionAck) {
 }
 
 PositionTransferInstructionAck.prototype.parties = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[PositionTransferInstructionAck.Tags.Parties] === undefined) return null;
   return this.message.groups[PositionTransferInstructionAck.Tags.Parties]
     .map(function (parties) {
       return new Parties(parties);
@@ -27,6 +29,8 @@ PositionTransferInstructionAck.prototype.parties = function () {
 };
 
 PositionTransferInstructionAck.prototype.targetParties = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[PositionTransferInstructionAck.Tags.TargetParties] === undefined) return null;
   return this.message.groups[PositionTransferInstructionAck.Tags.TargetParties]
     .map(function (targetParties) {
       return new TargetParties(targetParties);

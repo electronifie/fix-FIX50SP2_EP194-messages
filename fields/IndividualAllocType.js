@@ -10,8 +10,8 @@ IndividualAllocType.prototype.value = function () {
 
 
 IndividualAllocType.Keys = {
-  SUB_ALLOCATE: '1',
-  THIRD_PARTY_ALLOCATION: '2',
+  'SUB_ALLOCATE': '1',
+  'THIRD_PARTY_ALLOCATION': '2',
 };
 
 IndividualAllocType.Tag = '992';

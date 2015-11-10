@@ -10,10 +10,10 @@ SwapClass.prototype.value = function () {
 
 
 SwapClass.Keys = {
-  BASIS_SWAP: 'BS',
-  INDEX_SWAP: 'IX',
-  BROAD_BASED_SECURITY_SWAP: 'BB',
-  BASKET_SWAP: 'SK',
+  'BASIS_SWAP': 'BS',
+  'INDEX_SWAP': 'IX',
+  'BROAD_BASED_SECURITY_SWAP': 'BB',
+  'BASKET_SWAP': 'SK',
 };
 
 SwapClass.Tag = '1941';

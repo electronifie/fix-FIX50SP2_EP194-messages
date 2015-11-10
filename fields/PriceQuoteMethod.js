@@ -10,10 +10,10 @@ PriceQuoteMethod.prototype.value = function () {
 
 
 PriceQuoteMethod.Keys = {
-  STANDARD_MONEY_PER_UNIT_OF_A_PHYSICAL: 'STD',
-  INDEX: 'INX',
-  INTEREST_RATE_INDEX: 'INT',
-  PERCENT_OF_PAR: 'PCTPAR',
+  'STANDARD_MONEY_PER_UNIT_OF_A_PHYSICAL': 'STD',
+  'INDEX': 'INX',
+  'INTEREST_RATE_INDEX': 'INT',
+  'PERCENT_OF_PAR': 'PCTPAR',
 };
 
 PriceQuoteMethod.Tag = '1196';

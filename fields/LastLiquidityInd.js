@@ -10,10 +10,10 @@ LastLiquidityInd.prototype.value = function () {
 
 
 LastLiquidityInd.Keys = {
-  ADDED_LIQUIDITY: '1',
-  REMOVED_LIQUIDITY: '2',
-  LIQUIDITY_ROUTED_OUT: '3',
-  AUCTION: '4',
+  'ADDED_LIQUIDITY': '1',
+  'REMOVED_LIQUIDITY': '2',
+  'LIQUIDITY_ROUTED_OUT': '3',
+  'AUCTION': '4',
 };
 
 LastLiquidityInd.Tag = '851';

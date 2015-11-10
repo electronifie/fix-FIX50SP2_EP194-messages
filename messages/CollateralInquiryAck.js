@@ -36,6 +36,8 @@ function CollateralInquiryAck (collateralInquiryAck) {
 }
 
 CollateralInquiryAck.prototype.collInqQualGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[CollateralInquiryAck.Tags.CollInqQualGrp] === undefined) return null;
   return this.message.groups[CollateralInquiryAck.Tags.CollInqQualGrp]
     .map(function (collInqQualGrp) {
       return new CollInqQualGrp(collInqQualGrp);
@@ -43,6 +45,8 @@ CollateralInquiryAck.prototype.collInqQualGrp = function () {
 };
 
 CollateralInquiryAck.prototype.parties = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[CollateralInquiryAck.Tags.Parties] === undefined) return null;
   return this.message.groups[CollateralInquiryAck.Tags.Parties]
     .map(function (parties) {
       return new Parties(parties);
@@ -50,6 +54,8 @@ CollateralInquiryAck.prototype.parties = function () {
 };
 
 CollateralInquiryAck.prototype.execCollGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[CollateralInquiryAck.Tags.ExecCollGrp] === undefined) return null;
   return this.message.groups[CollateralInquiryAck.Tags.ExecCollGrp]
     .map(function (execCollGrp) {
       return new ExecCollGrp(execCollGrp);
@@ -57,6 +63,8 @@ CollateralInquiryAck.prototype.execCollGrp = function () {
 };
 
 CollateralInquiryAck.prototype.trdCollGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[CollateralInquiryAck.Tags.TrdCollGrp] === undefined) return null;
   return this.message.groups[CollateralInquiryAck.Tags.TrdCollGrp]
     .map(function (trdCollGrp) {
       return new TrdCollGrp(trdCollGrp);
@@ -64,6 +72,8 @@ CollateralInquiryAck.prototype.trdCollGrp = function () {
 };
 
 CollateralInquiryAck.prototype.instrument = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[CollateralInquiryAck.Tags.Instrument] === undefined) return null;
   return this.message.groups[CollateralInquiryAck.Tags.Instrument]
     .map(function (instrument) {
       return new Instrument(instrument);
@@ -71,6 +81,8 @@ CollateralInquiryAck.prototype.instrument = function () {
 };
 
 CollateralInquiryAck.prototype.financingDetails = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[CollateralInquiryAck.Tags.FinancingDetails] === undefined) return null;
   return this.message.groups[CollateralInquiryAck.Tags.FinancingDetails]
     .map(function (financingDetails) {
       return new FinancingDetails(financingDetails);
@@ -78,6 +90,8 @@ CollateralInquiryAck.prototype.financingDetails = function () {
 };
 
 CollateralInquiryAck.prototype.instrmtLegGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[CollateralInquiryAck.Tags.InstrmtLegGrp] === undefined) return null;
   return this.message.groups[CollateralInquiryAck.Tags.InstrmtLegGrp]
     .map(function (instrmtLegGrp) {
       return new InstrmtLegGrp(instrmtLegGrp);
@@ -85,6 +99,8 @@ CollateralInquiryAck.prototype.instrmtLegGrp = function () {
 };
 
 CollateralInquiryAck.prototype.undInstrmtGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[CollateralInquiryAck.Tags.UndInstrmtGrp] === undefined) return null;
   return this.message.groups[CollateralInquiryAck.Tags.UndInstrmtGrp]
     .map(function (undInstrmtGrp) {
       return new UndInstrmtGrp(undInstrmtGrp);

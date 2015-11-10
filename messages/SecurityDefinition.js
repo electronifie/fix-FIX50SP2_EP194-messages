@@ -31,6 +31,8 @@ function SecurityDefinition (securityDefinition) {
 }
 
 SecurityDefinition.prototype.applicationSequenceControl = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[SecurityDefinition.Tags.ApplicationSequenceControl] === undefined) return null;
   return this.message.groups[SecurityDefinition.Tags.ApplicationSequenceControl]
     .map(function (applicationSequenceControl) {
       return new ApplicationSequenceControl(applicationSequenceControl);
@@ -38,6 +40,8 @@ SecurityDefinition.prototype.applicationSequenceControl = function () {
 };
 
 SecurityDefinition.prototype.instrument = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[SecurityDefinition.Tags.Instrument] === undefined) return null;
   return this.message.groups[SecurityDefinition.Tags.Instrument]
     .map(function (instrument) {
       return new Instrument(instrument);
@@ -45,6 +49,8 @@ SecurityDefinition.prototype.instrument = function () {
 };
 
 SecurityDefinition.prototype.instrumentExtension = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[SecurityDefinition.Tags.InstrumentExtension] === undefined) return null;
   return this.message.groups[SecurityDefinition.Tags.InstrumentExtension]
     .map(function (instrumentExtension) {
       return new InstrumentExtension(instrumentExtension);
@@ -52,6 +58,8 @@ SecurityDefinition.prototype.instrumentExtension = function () {
 };
 
 SecurityDefinition.prototype.financingDetails = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[SecurityDefinition.Tags.FinancingDetails] === undefined) return null;
   return this.message.groups[SecurityDefinition.Tags.FinancingDetails]
     .map(function (financingDetails) {
       return new FinancingDetails(financingDetails);
@@ -59,6 +67,8 @@ SecurityDefinition.prototype.financingDetails = function () {
 };
 
 SecurityDefinition.prototype.undInstrmtGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[SecurityDefinition.Tags.UndInstrmtGrp] === undefined) return null;
   return this.message.groups[SecurityDefinition.Tags.UndInstrmtGrp]
     .map(function (undInstrmtGrp) {
       return new UndInstrmtGrp(undInstrmtGrp);
@@ -66,6 +76,8 @@ SecurityDefinition.prototype.undInstrmtGrp = function () {
 };
 
 SecurityDefinition.prototype.securityClassificationGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[SecurityDefinition.Tags.SecurityClassificationGrp] === undefined) return null;
   return this.message.groups[SecurityDefinition.Tags.SecurityClassificationGrp]
     .map(function (securityClassificationGrp) {
       return new SecurityClassificationGrp(securityClassificationGrp);
@@ -73,6 +85,8 @@ SecurityDefinition.prototype.securityClassificationGrp = function () {
 };
 
 SecurityDefinition.prototype.stipulations = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[SecurityDefinition.Tags.Stipulations] === undefined) return null;
   return this.message.groups[SecurityDefinition.Tags.Stipulations]
     .map(function (stipulations) {
       return new Stipulations(stipulations);
@@ -80,6 +94,8 @@ SecurityDefinition.prototype.stipulations = function () {
 };
 
 SecurityDefinition.prototype.instrmtLegGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[SecurityDefinition.Tags.InstrmtLegGrp] === undefined) return null;
   return this.message.groups[SecurityDefinition.Tags.InstrmtLegGrp]
     .map(function (instrmtLegGrp) {
       return new InstrmtLegGrp(instrmtLegGrp);
@@ -87,6 +103,8 @@ SecurityDefinition.prototype.instrmtLegGrp = function () {
 };
 
 SecurityDefinition.prototype.spreadOrBenchmarkCurveData = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[SecurityDefinition.Tags.SpreadOrBenchmarkCurveData] === undefined) return null;
   return this.message.groups[SecurityDefinition.Tags.SpreadOrBenchmarkCurveData]
     .map(function (spreadOrBenchmarkCurveData) {
       return new SpreadOrBenchmarkCurveData(spreadOrBenchmarkCurveData);
@@ -94,6 +112,8 @@ SecurityDefinition.prototype.spreadOrBenchmarkCurveData = function () {
 };
 
 SecurityDefinition.prototype.yieldData = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[SecurityDefinition.Tags.YieldData] === undefined) return null;
   return this.message.groups[SecurityDefinition.Tags.YieldData]
     .map(function (yieldData) {
       return new YieldData(yieldData);
@@ -101,6 +121,8 @@ SecurityDefinition.prototype.yieldData = function () {
 };
 
 SecurityDefinition.prototype.marketSegmentGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[SecurityDefinition.Tags.MarketSegmentGrp] === undefined) return null;
   return this.message.groups[SecurityDefinition.Tags.MarketSegmentGrp]
     .map(function (marketSegmentGrp) {
       return new MarketSegmentGrp(marketSegmentGrp);

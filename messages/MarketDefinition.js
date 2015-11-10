@@ -22,6 +22,8 @@ function MarketDefinition (marketDefinition) {
 }
 
 MarketDefinition.prototype.applicationSequenceControl = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[MarketDefinition.Tags.ApplicationSequenceControl] === undefined) return null;
   return this.message.groups[MarketDefinition.Tags.ApplicationSequenceControl]
     .map(function (applicationSequenceControl) {
       return new ApplicationSequenceControl(applicationSequenceControl);
@@ -29,6 +31,8 @@ MarketDefinition.prototype.applicationSequenceControl = function () {
 };
 
 MarketDefinition.prototype.baseTradingRules = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[MarketDefinition.Tags.BaseTradingRules] === undefined) return null;
   return this.message.groups[MarketDefinition.Tags.BaseTradingRules]
     .map(function (baseTradingRules) {
       return new BaseTradingRules(baseTradingRules);
@@ -36,6 +40,8 @@ MarketDefinition.prototype.baseTradingRules = function () {
 };
 
 MarketDefinition.prototype.ordTypeRules = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[MarketDefinition.Tags.OrdTypeRules] === undefined) return null;
   return this.message.groups[MarketDefinition.Tags.OrdTypeRules]
     .map(function (ordTypeRules) {
       return new OrdTypeRules(ordTypeRules);
@@ -43,6 +49,8 @@ MarketDefinition.prototype.ordTypeRules = function () {
 };
 
 MarketDefinition.prototype.timeInForceRules = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[MarketDefinition.Tags.TimeInForceRules] === undefined) return null;
   return this.message.groups[MarketDefinition.Tags.TimeInForceRules]
     .map(function (timeInForceRules) {
       return new TimeInForceRules(timeInForceRules);
@@ -50,6 +58,8 @@ MarketDefinition.prototype.timeInForceRules = function () {
 };
 
 MarketDefinition.prototype.execInstRules = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[MarketDefinition.Tags.ExecInstRules] === undefined) return null;
   return this.message.groups[MarketDefinition.Tags.ExecInstRules]
     .map(function (execInstRules) {
       return new ExecInstRules(execInstRules);

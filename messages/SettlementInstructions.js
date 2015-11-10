@@ -14,6 +14,8 @@ function SettlementInstructions (settlementInstructions) {
 }
 
 SettlementInstructions.prototype.settlInstGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[SettlementInstructions.Tags.SettlInstGrp] === undefined) return null;
   return this.message.groups[SettlementInstructions.Tags.SettlInstGrp]
     .map(function (settlInstGrp) {
       return new SettlInstGrp(settlInstGrp);

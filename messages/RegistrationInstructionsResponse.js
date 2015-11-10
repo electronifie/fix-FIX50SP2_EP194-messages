@@ -14,6 +14,8 @@ function RegistrationInstructionsResponse (registrationInstructionsResponse) {
 }
 
 RegistrationInstructionsResponse.prototype.parties = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[RegistrationInstructionsResponse.Tags.Parties] === undefined) return null;
   return this.message.groups[RegistrationInstructionsResponse.Tags.Parties]
     .map(function (parties) {
       return new Parties(parties);

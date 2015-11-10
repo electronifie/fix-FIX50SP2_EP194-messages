@@ -10,10 +10,10 @@ TerminationType.prototype.value = function () {
 
 
 TerminationType.Keys = {
-  OVERNIGHT: '1',
-  TERM: '2',
-  FLEXIBLE: '3',
-  OPEN: '4',
+  'OVERNIGHT': '1',
+  'TERM': '2',
+  'FLEXIBLE': '3',
+  'OPEN': '4',
 };
 
 TerminationType.Tag = '788';

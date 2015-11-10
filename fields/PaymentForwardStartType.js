@@ -10,10 +10,10 @@ PaymentForwardStartType.prototype.value = function () {
 
 
 PaymentForwardStartType.Keys = {
-  PREPAID: '0',
-  POST_PAID: '1',
-  VARIABLE: '2',
-  FIXED: '3',
+  'PREPAID': '0',
+  'POST_PAID': '1',
+  'VARIABLE': '2',
+  'FIXED': '3',
 };
 
 PaymentForwardStartType.Tag = '41160';

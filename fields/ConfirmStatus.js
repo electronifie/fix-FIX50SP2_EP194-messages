@@ -10,11 +10,11 @@ ConfirmStatus.prototype.value = function () {
 
 
 ConfirmStatus.Keys = {
-  RECEIVED: '1',
-  MISMATCHED_ACCOUNT: '2',
-  MISSING_SETTLEMENT_INSTRUCTIONS: '3',
-  CONFIRMED: '4',
-  REQUEST_REJECTED: '5',
+  'RECEIVED': '1',
+  'MISMATCHED_ACCOUNT': '2',
+  'MISSING_SETTLEMENT_INSTRUCTIONS': '3',
+  'CONFIRMED': '4',
+  'REQUEST_REJECTED': '5',
 };
 
 ConfirmStatus.Tag = '665';

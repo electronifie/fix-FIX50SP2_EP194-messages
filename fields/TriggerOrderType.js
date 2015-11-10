@@ -10,8 +10,8 @@ TriggerOrderType.prototype.value = function () {
 
 
 TriggerOrderType.Keys = {
-  MARKET: '1',
-  LIMIT: '2',
+  'MARKET': '1',
+  'LIMIT': '2',
 };
 
 TriggerOrderType.Tag = '1111';

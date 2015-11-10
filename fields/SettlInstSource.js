@@ -10,9 +10,9 @@ SettlInstSource.prototype.value = function () {
 
 
 SettlInstSource.Keys = {
-  BROKERS_INSTRUCTIONS: '1',
-  INSTITUTIONS_INSTRUCTIONS: '2',
-  INVESTOR: '3',
+  'BROKERS_INSTRUCTIONS': '1',
+  'INSTITUTIONS_INSTRUCTIONS': '2',
+  'INVESTOR': '3',
 };
 
 SettlInstSource.Tag = '165';

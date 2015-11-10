@@ -10,13 +10,13 @@ ProvisionCashSettlMethod.prototype.value = function () {
 
 
 ProvisionCashSettlMethod.Keys = {
-  CASH_PRICE: '0',
-  CASH_PRICE_ALTERNATE: '1',
-  PAR_YIELD_CURVE_ADJUSTED: '2',
-  ZERO_COUPON_YIELD_CURVE_ADJUSTED: '3',
-  PAR_YIELD_CURVE_UNADJUSTED: '4',
-  CROSS_CURRENCY: '5',
-  COLLATERALIZED_PRICE: '6',
+  'CASH_PRICE': '0',
+  'CASH_PRICE_ALTERNATE': '1',
+  'PAR_YIELD_CURVE_ADJUSTED': '2',
+  'ZERO_COUPON_YIELD_CURVE_ADJUSTED': '3',
+  'PAR_YIELD_CURVE_UNADJUSTED': '4',
+  'CROSS_CURRENCY': '5',
+  'COLLATERALIZED_PRICE': '6',
 };
 
 ProvisionCashSettlMethod.Tag = '40108';

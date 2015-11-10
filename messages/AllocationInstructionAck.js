@@ -26,6 +26,8 @@ function AllocationInstructionAck (allocationInstructionAck) {
 }
 
 AllocationInstructionAck.prototype.instrument = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[AllocationInstructionAck.Tags.Instrument] === undefined) return null;
   return this.message.groups[AllocationInstructionAck.Tags.Instrument]
     .map(function (instrument) {
       return new Instrument(instrument);
@@ -33,6 +35,8 @@ AllocationInstructionAck.prototype.instrument = function () {
 };
 
 AllocationInstructionAck.prototype.parties = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[AllocationInstructionAck.Tags.Parties] === undefined) return null;
   return this.message.groups[AllocationInstructionAck.Tags.Parties]
     .map(function (parties) {
       return new Parties(parties);
@@ -40,6 +44,8 @@ AllocationInstructionAck.prototype.parties = function () {
 };
 
 AllocationInstructionAck.prototype.regulatoryTradeIdgrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[AllocationInstructionAck.Tags.RegulatoryTradeIDGrp] === undefined) return null;
   return this.message.groups[AllocationInstructionAck.Tags.RegulatoryTradeIDGrp]
     .map(function (regulatoryTradeIdgrp) {
       return new RegulatoryTradeIDGrp(regulatoryTradeIdgrp);
@@ -47,6 +53,8 @@ AllocationInstructionAck.prototype.regulatoryTradeIdgrp = function () {
 };
 
 AllocationInstructionAck.prototype.allocAckGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[AllocationInstructionAck.Tags.AllocAckGrp] === undefined) return null;
   return this.message.groups[AllocationInstructionAck.Tags.AllocAckGrp]
     .map(function (allocAckGrp) {
       return new AllocAckGrp(allocAckGrp);

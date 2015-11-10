@@ -10,8 +10,8 @@ ThrottleStatus.prototype.value = function () {
 
 
 ThrottleStatus.Keys = {
-  THROTTLE_LIMIT_NOT_EXCEEDED_NOT_QUEUED: '0',
-  QUEUED_DUE_TO_THROTTLE_LIMIT_EXCEEDED: '1',
+  'THROTTLE_LIMIT_NOT_EXCEEDED_NOT_QUEUED': '0',
+  'QUEUED_DUE_TO_THROTTLE_LIMIT_EXCEEDED': '1',
 };
 
 ThrottleStatus.Tag = '1609';

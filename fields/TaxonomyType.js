@@ -10,8 +10,8 @@ TaxonomyType.prototype.value = function () {
 
 
 TaxonomyType.Keys = {
-  ISIN_OR_ALTERNATE_INSTRUMENT_IDENTIFIER_PLUS_CFI: 'I',
-  INTERIM_TAXONOMY: 'E',
+  'ISIN_OR_ALTERNATE_INSTRUMENT_IDENTIFIER_PLUS_CFI': 'I',
+  'INTERIM_TAXONOMY': 'E',
 };
 
 TaxonomyType.Tag = '2375';

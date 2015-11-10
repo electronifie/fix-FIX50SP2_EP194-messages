@@ -10,8 +10,8 @@ NonDeliverableFixingDateType.prototype.value = function () {
 
 
 NonDeliverableFixingDateType.Keys = {
-  UNADJUSTED: '0',
-  ADJUSTED: '1',
+  'UNADJUSTED': '0',
+  'ADJUSTED': '1',
 };
 
 NonDeliverableFixingDateType.Tag = '40827';

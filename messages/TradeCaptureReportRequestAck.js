@@ -25,6 +25,8 @@ function TradeCaptureReportRequestAck (tradeCaptureReportRequestAck) {
 }
 
 TradeCaptureReportRequestAck.prototype.instrument = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[TradeCaptureReportRequestAck.Tags.Instrument] === undefined) return null;
   return this.message.groups[TradeCaptureReportRequestAck.Tags.Instrument]
     .map(function (instrument) {
       return new Instrument(instrument);
@@ -32,6 +34,8 @@ TradeCaptureReportRequestAck.prototype.instrument = function () {
 };
 
 TradeCaptureReportRequestAck.prototype.instrumentExtension = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[TradeCaptureReportRequestAck.Tags.InstrumentExtension] === undefined) return null;
   return this.message.groups[TradeCaptureReportRequestAck.Tags.InstrumentExtension]
     .map(function (instrumentExtension) {
       return new InstrumentExtension(instrumentExtension);
@@ -39,6 +43,8 @@ TradeCaptureReportRequestAck.prototype.instrumentExtension = function () {
 };
 
 TradeCaptureReportRequestAck.prototype.undInstrmtGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[TradeCaptureReportRequestAck.Tags.UndInstrmtGrp] === undefined) return null;
   return this.message.groups[TradeCaptureReportRequestAck.Tags.UndInstrmtGrp]
     .map(function (undInstrmtGrp) {
       return new UndInstrmtGrp(undInstrmtGrp);
@@ -46,6 +52,8 @@ TradeCaptureReportRequestAck.prototype.undInstrmtGrp = function () {
 };
 
 TradeCaptureReportRequestAck.prototype.instrmtLegGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[TradeCaptureReportRequestAck.Tags.InstrmtLegGrp] === undefined) return null;
   return this.message.groups[TradeCaptureReportRequestAck.Tags.InstrmtLegGrp]
     .map(function (instrmtLegGrp) {
       return new InstrmtLegGrp(instrmtLegGrp);

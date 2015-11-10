@@ -65,6 +65,8 @@ function NewOrderCross (newOrderCross) {
 }
 
 NewOrderCross.prototype.rootParties = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[NewOrderCross.Tags.RootParties] === undefined) return null;
   return this.message.groups[NewOrderCross.Tags.RootParties]
     .map(function (rootParties) {
       return new RootParties(rootParties);
@@ -72,6 +74,8 @@ NewOrderCross.prototype.rootParties = function () {
 };
 
 NewOrderCross.prototype.sideCrossOrdModGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[NewOrderCross.Tags.SideCrossOrdModGrp] === undefined) return null;
   return this.message.groups[NewOrderCross.Tags.SideCrossOrdModGrp]
     .map(function (sideCrossOrdModGrp) {
       return new SideCrossOrdModGrp(sideCrossOrdModGrp);
@@ -79,6 +83,8 @@ NewOrderCross.prototype.sideCrossOrdModGrp = function () {
 };
 
 NewOrderCross.prototype.instrument = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[NewOrderCross.Tags.Instrument] === undefined) return null;
   return this.message.groups[NewOrderCross.Tags.Instrument]
     .map(function (instrument) {
       return new Instrument(instrument);
@@ -86,6 +92,8 @@ NewOrderCross.prototype.instrument = function () {
 };
 
 NewOrderCross.prototype.undInstrmtGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[NewOrderCross.Tags.UndInstrmtGrp] === undefined) return null;
   return this.message.groups[NewOrderCross.Tags.UndInstrmtGrp]
     .map(function (undInstrmtGrp) {
       return new UndInstrmtGrp(undInstrmtGrp);
@@ -93,6 +101,8 @@ NewOrderCross.prototype.undInstrmtGrp = function () {
 };
 
 NewOrderCross.prototype.instrmtLegGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[NewOrderCross.Tags.InstrmtLegGrp] === undefined) return null;
   return this.message.groups[NewOrderCross.Tags.InstrmtLegGrp]
     .map(function (instrmtLegGrp) {
       return new InstrmtLegGrp(instrmtLegGrp);
@@ -100,6 +110,8 @@ NewOrderCross.prototype.instrmtLegGrp = function () {
 };
 
 NewOrderCross.prototype.displayInstruction = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[NewOrderCross.Tags.DisplayInstruction] === undefined) return null;
   return this.message.groups[NewOrderCross.Tags.DisplayInstruction]
     .map(function (displayInstruction) {
       return new DisplayInstruction(displayInstruction);
@@ -107,6 +119,8 @@ NewOrderCross.prototype.displayInstruction = function () {
 };
 
 NewOrderCross.prototype.trdgSesGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[NewOrderCross.Tags.TrdgSesGrp] === undefined) return null;
   return this.message.groups[NewOrderCross.Tags.TrdgSesGrp]
     .map(function (trdgSesGrp) {
       return new TrdgSesGrp(trdgSesGrp);
@@ -114,6 +128,8 @@ NewOrderCross.prototype.trdgSesGrp = function () {
 };
 
 NewOrderCross.prototype.stipulations = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[NewOrderCross.Tags.Stipulations] === undefined) return null;
   return this.message.groups[NewOrderCross.Tags.Stipulations]
     .map(function (stipulations) {
       return new Stipulations(stipulations);
@@ -121,6 +137,8 @@ NewOrderCross.prototype.stipulations = function () {
 };
 
 NewOrderCross.prototype.triggeringInstruction = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[NewOrderCross.Tags.TriggeringInstruction] === undefined) return null;
   return this.message.groups[NewOrderCross.Tags.TriggeringInstruction]
     .map(function (triggeringInstruction) {
       return new TriggeringInstruction(triggeringInstruction);
@@ -128,6 +146,8 @@ NewOrderCross.prototype.triggeringInstruction = function () {
 };
 
 NewOrderCross.prototype.spreadOrBenchmarkCurveData = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[NewOrderCross.Tags.SpreadOrBenchmarkCurveData] === undefined) return null;
   return this.message.groups[NewOrderCross.Tags.SpreadOrBenchmarkCurveData]
     .map(function (spreadOrBenchmarkCurveData) {
       return new SpreadOrBenchmarkCurveData(spreadOrBenchmarkCurveData);
@@ -135,6 +155,8 @@ NewOrderCross.prototype.spreadOrBenchmarkCurveData = function () {
 };
 
 NewOrderCross.prototype.yieldData = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[NewOrderCross.Tags.YieldData] === undefined) return null;
   return this.message.groups[NewOrderCross.Tags.YieldData]
     .map(function (yieldData) {
       return new YieldData(yieldData);
@@ -142,6 +164,8 @@ NewOrderCross.prototype.yieldData = function () {
 };
 
 NewOrderCross.prototype.pegInstructions = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[NewOrderCross.Tags.PegInstructions] === undefined) return null;
   return this.message.groups[NewOrderCross.Tags.PegInstructions]
     .map(function (pegInstructions) {
       return new PegInstructions(pegInstructions);
@@ -149,6 +173,8 @@ NewOrderCross.prototype.pegInstructions = function () {
 };
 
 NewOrderCross.prototype.discretionInstructions = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[NewOrderCross.Tags.DiscretionInstructions] === undefined) return null;
   return this.message.groups[NewOrderCross.Tags.DiscretionInstructions]
     .map(function (discretionInstructions) {
       return new DiscretionInstructions(discretionInstructions);
@@ -156,6 +182,8 @@ NewOrderCross.prototype.discretionInstructions = function () {
 };
 
 NewOrderCross.prototype.strategyParametersGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[NewOrderCross.Tags.StrategyParametersGrp] === undefined) return null;
   return this.message.groups[NewOrderCross.Tags.StrategyParametersGrp]
     .map(function (strategyParametersGrp) {
       return new StrategyParametersGrp(strategyParametersGrp);

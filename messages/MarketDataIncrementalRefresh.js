@@ -16,6 +16,8 @@ function MarketDataIncrementalRefresh (marketDataIncrementalRefresh) {
 }
 
 MarketDataIncrementalRefresh.prototype.applicationSequenceControl = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[MarketDataIncrementalRefresh.Tags.ApplicationSequenceControl] === undefined) return null;
   return this.message.groups[MarketDataIncrementalRefresh.Tags.ApplicationSequenceControl]
     .map(function (applicationSequenceControl) {
       return new ApplicationSequenceControl(applicationSequenceControl);
@@ -23,6 +25,8 @@ MarketDataIncrementalRefresh.prototype.applicationSequenceControl = function () 
 };
 
 MarketDataIncrementalRefresh.prototype.mdincGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[MarketDataIncrementalRefresh.Tags.MDIncGrp] === undefined) return null;
   return this.message.groups[MarketDataIncrementalRefresh.Tags.MDIncGrp]
     .map(function (mdincGrp) {
       return new MDIncGrp(mdincGrp);
@@ -30,6 +34,8 @@ MarketDataIncrementalRefresh.prototype.mdincGrp = function () {
 };
 
 MarketDataIncrementalRefresh.prototype.routingGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[MarketDataIncrementalRefresh.Tags.RoutingGrp] === undefined) return null;
   return this.message.groups[MarketDataIncrementalRefresh.Tags.RoutingGrp]
     .map(function (routingGrp) {
       return new RoutingGrp(routingGrp);

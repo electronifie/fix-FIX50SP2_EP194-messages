@@ -10,8 +10,8 @@ InstrumentScopeOperator.prototype.value = function () {
 
 
 InstrumentScopeOperator.Keys = {
-  INCLUDE: '1',
-  EXCLUDE: '2',
+  'INCLUDE': '1',
+  'EXCLUDE': '2',
 };
 
 InstrumentScopeOperator.Tag = '1535';

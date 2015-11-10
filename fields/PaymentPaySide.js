@@ -10,8 +10,8 @@ PaymentPaySide.prototype.value = function () {
 
 
 PaymentPaySide.Keys = {
-  BUY: '1',
-  SELL: '2',
+  'BUY': '1',
+  'SELL': '2',
 };
 
 PaymentPaySide.Tag = '40214';

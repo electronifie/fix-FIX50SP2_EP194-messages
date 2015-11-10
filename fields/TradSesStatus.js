@@ -10,13 +10,13 @@ TradSesStatus.prototype.value = function () {
 
 
 TradSesStatus.Keys = {
-  UNKNOWN: '0',
-  HALTED: '1',
-  OPEN: '2',
-  CLOSED: '3',
-  PRE_OPEN: '4',
-  PRE_CLOSE: '5',
-  REQUEST_REJECTED: '6',
+  'UNKNOWN': '0',
+  'HALTED': '1',
+  'OPEN': '2',
+  'CLOSED': '3',
+  'PRE_OPEN': '4',
+  'PRE_CLOSE': '5',
+  'REQUEST_REJECTED': '6',
 };
 
 TradSesStatus.Tag = '340';

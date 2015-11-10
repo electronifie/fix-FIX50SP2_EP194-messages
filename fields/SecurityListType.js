@@ -10,10 +10,10 @@ SecurityListType.prototype.value = function () {
 
 
 SecurityListType.Keys = {
-  INDUSTRY_CLASSIFICATION: '1',
-  TRADING_LIST: '2',
-  MARKET_MARKET_SEGMENT_LIST: '3',
-  NEWSPAPER_LIST: '4',
+  'INDUSTRY_CLASSIFICATION': '1',
+  'TRADING_LIST': '2',
+  'MARKET_MARKET_SEGMENT_LIST': '3',
+  'NEWSPAPER_LIST': '4',
 };
 
 SecurityListType.Tag = '1470';

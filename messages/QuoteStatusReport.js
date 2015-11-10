@@ -88,6 +88,8 @@ function QuoteStatusReport (quoteStatusReport) {
 }
 
 QuoteStatusReport.prototype.parties = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[QuoteStatusReport.Tags.Parties] === undefined) return null;
   return this.message.groups[QuoteStatusReport.Tags.Parties]
     .map(function (parties) {
       return new Parties(parties);
@@ -95,6 +97,8 @@ QuoteStatusReport.prototype.parties = function () {
 };
 
 QuoteStatusReport.prototype.targetParties = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[QuoteStatusReport.Tags.TargetParties] === undefined) return null;
   return this.message.groups[QuoteStatusReport.Tags.TargetParties]
     .map(function (targetParties) {
       return new TargetParties(targetParties);
@@ -102,6 +106,8 @@ QuoteStatusReport.prototype.targetParties = function () {
 };
 
 QuoteStatusReport.prototype.instrument = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[QuoteStatusReport.Tags.Instrument] === undefined) return null;
   return this.message.groups[QuoteStatusReport.Tags.Instrument]
     .map(function (instrument) {
       return new Instrument(instrument);
@@ -109,6 +115,8 @@ QuoteStatusReport.prototype.instrument = function () {
 };
 
 QuoteStatusReport.prototype.financingDetails = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[QuoteStatusReport.Tags.FinancingDetails] === undefined) return null;
   return this.message.groups[QuoteStatusReport.Tags.FinancingDetails]
     .map(function (financingDetails) {
       return new FinancingDetails(financingDetails);
@@ -116,6 +124,8 @@ QuoteStatusReport.prototype.financingDetails = function () {
 };
 
 QuoteStatusReport.prototype.undInstrmtGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[QuoteStatusReport.Tags.UndInstrmtGrp] === undefined) return null;
   return this.message.groups[QuoteStatusReport.Tags.UndInstrmtGrp]
     .map(function (undInstrmtGrp) {
       return new UndInstrmtGrp(undInstrmtGrp);
@@ -123,6 +133,8 @@ QuoteStatusReport.prototype.undInstrmtGrp = function () {
 };
 
 QuoteStatusReport.prototype.orderQtyData = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[QuoteStatusReport.Tags.OrderQtyData] === undefined) return null;
   return this.message.groups[QuoteStatusReport.Tags.OrderQtyData]
     .map(function (orderQtyData) {
       return new OrderQtyData(orderQtyData);
@@ -130,6 +142,8 @@ QuoteStatusReport.prototype.orderQtyData = function () {
 };
 
 QuoteStatusReport.prototype.stipulations = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[QuoteStatusReport.Tags.Stipulations] === undefined) return null;
   return this.message.groups[QuoteStatusReport.Tags.Stipulations]
     .map(function (stipulations) {
       return new Stipulations(stipulations);
@@ -137,6 +151,8 @@ QuoteStatusReport.prototype.stipulations = function () {
 };
 
 QuoteStatusReport.prototype.legQuotStatGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[QuoteStatusReport.Tags.LegQuotStatGrp] === undefined) return null;
   return this.message.groups[QuoteStatusReport.Tags.LegQuotStatGrp]
     .map(function (legQuotStatGrp) {
       return new LegQuotStatGrp(legQuotStatGrp);
@@ -144,6 +160,8 @@ QuoteStatusReport.prototype.legQuotStatGrp = function () {
 };
 
 QuoteStatusReport.prototype.quotQualGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[QuoteStatusReport.Tags.QuotQualGrp] === undefined) return null;
   return this.message.groups[QuoteStatusReport.Tags.QuotQualGrp]
     .map(function (quotQualGrp) {
       return new QuotQualGrp(quotQualGrp);
@@ -151,6 +169,8 @@ QuoteStatusReport.prototype.quotQualGrp = function () {
 };
 
 QuoteStatusReport.prototype.spreadOrBenchmarkCurveData = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[QuoteStatusReport.Tags.SpreadOrBenchmarkCurveData] === undefined) return null;
   return this.message.groups[QuoteStatusReport.Tags.SpreadOrBenchmarkCurveData]
     .map(function (spreadOrBenchmarkCurveData) {
       return new SpreadOrBenchmarkCurveData(spreadOrBenchmarkCurveData);
@@ -158,6 +178,8 @@ QuoteStatusReport.prototype.spreadOrBenchmarkCurveData = function () {
 };
 
 QuoteStatusReport.prototype.yieldData = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[QuoteStatusReport.Tags.YieldData] === undefined) return null;
   return this.message.groups[QuoteStatusReport.Tags.YieldData]
     .map(function (yieldData) {
       return new YieldData(yieldData);
@@ -165,6 +187,8 @@ QuoteStatusReport.prototype.yieldData = function () {
 };
 
 QuoteStatusReport.prototype.throttleResponse = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[QuoteStatusReport.Tags.ThrottleResponse] === undefined) return null;
   return this.message.groups[QuoteStatusReport.Tags.ThrottleResponse]
     .map(function (throttleResponse) {
       return new ThrottleResponse(throttleResponse);

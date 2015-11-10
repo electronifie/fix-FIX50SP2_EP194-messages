@@ -10,9 +10,9 @@ BookingType.prototype.value = function () {
 
 
 BookingType.Keys = {
-  REGULAR_BOOKING: '0',
-  CFD: '1',
-  TOTAL_RETURN_SWAP: '2',
+  'REGULAR_BOOKING': '0',
+  'CFD': '1',
+  'TOTAL_RETURN_SWAP': '2',
 };
 
 BookingType.Tag = '775';

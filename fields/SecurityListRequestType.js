@@ -10,12 +10,12 @@ SecurityListRequestType.prototype.value = function () {
 
 
 SecurityListRequestType.Keys = {
-  SYMBOL: '0',
-  SECURITYTYPE_AND_OR_CFICODE: '1',
-  PRODUCT: '2',
-  TRADINGSESSIONID: '3',
-  ALL_SECURITIES: '4',
-  MARKETID_OR_MARKETID_MARKETSEGMENTID: '5',
+  'SYMBOL': '0',
+  'SECURITYTYPE_AND_OR_CFICODE': '1',
+  'PRODUCT': '2',
+  'TRADINGSESSIONID': '3',
+  'ALL_SECURITIES': '4',
+  'MARKETID_OR_MARKETID_MARKETSEGMENTID': '5',
 };
 
 SecurityListRequestType.Tag = '559';

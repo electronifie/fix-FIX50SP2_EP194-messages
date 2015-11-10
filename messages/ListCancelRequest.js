@@ -12,6 +12,8 @@ function ListCancelRequest (listCancelRequest) {
 }
 
 ListCancelRequest.prototype.parties = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[ListCancelRequest.Tags.Parties] === undefined) return null;
   return this.message.groups[ListCancelRequest.Tags.Parties]
     .map(function (parties) {
       return new Parties(parties);

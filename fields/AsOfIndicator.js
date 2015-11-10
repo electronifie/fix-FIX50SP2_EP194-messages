@@ -10,8 +10,8 @@ AsOfIndicator.prototype.value = function () {
 
 
 AsOfIndicator.Keys = {
-  FALSE_TRADE_IS_NOT_AN_ASOF_TRADE: '0',
-  TRUE_TRADE_IS_AN_ASOF_TRADE: '1',
+  'FALSE_TRADE_IS_NOT_AN_ASOF_TRADE': '0',
+  'TRUE_TRADE_IS_AN_ASOF_TRADE': '1',
 };
 
 AsOfIndicator.Tag = '1015';

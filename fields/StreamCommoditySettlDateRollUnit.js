@@ -10,7 +10,7 @@ StreamCommoditySettlDateRollUnit.prototype.value = function () {
 
 
 StreamCommoditySettlDateRollUnit.Keys = {
-  DAY: 'D',
+  'DAY': 'D',
 };
 
 StreamCommoditySettlDateRollUnit.Tag = '41273';

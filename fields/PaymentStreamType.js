@@ -10,9 +10,9 @@ PaymentStreamType.prototype.value = function () {
 
 
 PaymentStreamType.Keys = {
-  PERIODIC: '0',
-  INITIAL: '1',
-  SINGLE: '2',
+  'PERIODIC': '0',
+  'INITIAL': '1',
+  'SINGLE': '2',
 };
 
 PaymentStreamType.Tag = '40738';

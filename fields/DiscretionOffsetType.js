@@ -10,10 +10,10 @@ DiscretionOffsetType.prototype.value = function () {
 
 
 DiscretionOffsetType.Keys = {
-  PRICE: '0',
-  BASIS_POINTS: '1',
-  TICKS: '2',
-  PRICE_TIER_LEVEL: '3',
+  'PRICE': '0',
+  'BASIS_POINTS': '1',
+  'TICKS': '2',
+  'PRICE_TIER_LEVEL': '3',
 };
 
 DiscretionOffsetType.Tag = '842';

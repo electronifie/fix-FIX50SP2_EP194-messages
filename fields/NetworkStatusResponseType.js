@@ -10,8 +10,8 @@ NetworkStatusResponseType.prototype.value = function () {
 
 
 NetworkStatusResponseType.Keys = {
-  FULL: '1',
-  INCREMENTAL_UPDATE: '2',
+  'FULL': '1',
+  'INCREMENTAL_UPDATE': '2',
 };
 
 NetworkStatusResponseType.Tag = '937';

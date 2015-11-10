@@ -124,6 +124,8 @@ function NewOrderSingle (newOrderSingle) {
 }
 
 NewOrderSingle.prototype.parties = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[NewOrderSingle.Tags.Parties] === undefined) return null;
   return this.message.groups[NewOrderSingle.Tags.Parties]
     .map(function (parties) {
       return new Parties(parties);
@@ -131,6 +133,8 @@ NewOrderSingle.prototype.parties = function () {
 };
 
 NewOrderSingle.prototype.targetParties = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[NewOrderSingle.Tags.TargetParties] === undefined) return null;
   return this.message.groups[NewOrderSingle.Tags.TargetParties]
     .map(function (targetParties) {
       return new TargetParties(targetParties);
@@ -138,6 +142,8 @@ NewOrderSingle.prototype.targetParties = function () {
 };
 
 NewOrderSingle.prototype.preAllocGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[NewOrderSingle.Tags.PreAllocGrp] === undefined) return null;
   return this.message.groups[NewOrderSingle.Tags.PreAllocGrp]
     .map(function (preAllocGrp) {
       return new PreAllocGrp(preAllocGrp);
@@ -145,6 +151,8 @@ NewOrderSingle.prototype.preAllocGrp = function () {
 };
 
 NewOrderSingle.prototype.matchingInstructions = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[NewOrderSingle.Tags.MatchingInstructions] === undefined) return null;
   return this.message.groups[NewOrderSingle.Tags.MatchingInstructions]
     .map(function (matchingInstructions) {
       return new MatchingInstructions(matchingInstructions);
@@ -152,6 +160,8 @@ NewOrderSingle.prototype.matchingInstructions = function () {
 };
 
 NewOrderSingle.prototype.displayInstruction = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[NewOrderSingle.Tags.DisplayInstruction] === undefined) return null;
   return this.message.groups[NewOrderSingle.Tags.DisplayInstruction]
     .map(function (displayInstruction) {
       return new DisplayInstruction(displayInstruction);
@@ -159,6 +169,8 @@ NewOrderSingle.prototype.displayInstruction = function () {
 };
 
 NewOrderSingle.prototype.disclosureInstructionGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[NewOrderSingle.Tags.DisclosureInstructionGrp] === undefined) return null;
   return this.message.groups[NewOrderSingle.Tags.DisclosureInstructionGrp]
     .map(function (disclosureInstructionGrp) {
       return new DisclosureInstructionGrp(disclosureInstructionGrp);
@@ -166,6 +178,8 @@ NewOrderSingle.prototype.disclosureInstructionGrp = function () {
 };
 
 NewOrderSingle.prototype.trdgSesGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[NewOrderSingle.Tags.TrdgSesGrp] === undefined) return null;
   return this.message.groups[NewOrderSingle.Tags.TrdgSesGrp]
     .map(function (trdgSesGrp) {
       return new TrdgSesGrp(trdgSesGrp);
@@ -173,6 +187,8 @@ NewOrderSingle.prototype.trdgSesGrp = function () {
 };
 
 NewOrderSingle.prototype.instrument = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[NewOrderSingle.Tags.Instrument] === undefined) return null;
   return this.message.groups[NewOrderSingle.Tags.Instrument]
     .map(function (instrument) {
       return new Instrument(instrument);
@@ -180,6 +196,8 @@ NewOrderSingle.prototype.instrument = function () {
 };
 
 NewOrderSingle.prototype.financingDetails = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[NewOrderSingle.Tags.FinancingDetails] === undefined) return null;
   return this.message.groups[NewOrderSingle.Tags.FinancingDetails]
     .map(function (financingDetails) {
       return new FinancingDetails(financingDetails);
@@ -187,6 +205,8 @@ NewOrderSingle.prototype.financingDetails = function () {
 };
 
 NewOrderSingle.prototype.undInstrmtGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[NewOrderSingle.Tags.UndInstrmtGrp] === undefined) return null;
   return this.message.groups[NewOrderSingle.Tags.UndInstrmtGrp]
     .map(function (undInstrmtGrp) {
       return new UndInstrmtGrp(undInstrmtGrp);
@@ -194,6 +214,8 @@ NewOrderSingle.prototype.undInstrmtGrp = function () {
 };
 
 NewOrderSingle.prototype.stipulations = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[NewOrderSingle.Tags.Stipulations] === undefined) return null;
   return this.message.groups[NewOrderSingle.Tags.Stipulations]
     .map(function (stipulations) {
       return new Stipulations(stipulations);
@@ -201,6 +223,8 @@ NewOrderSingle.prototype.stipulations = function () {
 };
 
 NewOrderSingle.prototype.orderQtyData = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[NewOrderSingle.Tags.OrderQtyData] === undefined) return null;
   return this.message.groups[NewOrderSingle.Tags.OrderQtyData]
     .map(function (orderQtyData) {
       return new OrderQtyData(orderQtyData);
@@ -208,6 +232,8 @@ NewOrderSingle.prototype.orderQtyData = function () {
 };
 
 NewOrderSingle.prototype.triggeringInstruction = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[NewOrderSingle.Tags.TriggeringInstruction] === undefined) return null;
   return this.message.groups[NewOrderSingle.Tags.TriggeringInstruction]
     .map(function (triggeringInstruction) {
       return new TriggeringInstruction(triggeringInstruction);
@@ -215,6 +241,8 @@ NewOrderSingle.prototype.triggeringInstruction = function () {
 };
 
 NewOrderSingle.prototype.spreadOrBenchmarkCurveData = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[NewOrderSingle.Tags.SpreadOrBenchmarkCurveData] === undefined) return null;
   return this.message.groups[NewOrderSingle.Tags.SpreadOrBenchmarkCurveData]
     .map(function (spreadOrBenchmarkCurveData) {
       return new SpreadOrBenchmarkCurveData(spreadOrBenchmarkCurveData);
@@ -222,6 +250,8 @@ NewOrderSingle.prototype.spreadOrBenchmarkCurveData = function () {
 };
 
 NewOrderSingle.prototype.yieldData = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[NewOrderSingle.Tags.YieldData] === undefined) return null;
   return this.message.groups[NewOrderSingle.Tags.YieldData]
     .map(function (yieldData) {
       return new YieldData(yieldData);
@@ -229,6 +259,8 @@ NewOrderSingle.prototype.yieldData = function () {
 };
 
 NewOrderSingle.prototype.commissionData = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[NewOrderSingle.Tags.CommissionData] === undefined) return null;
   return this.message.groups[NewOrderSingle.Tags.CommissionData]
     .map(function (commissionData) {
       return new CommissionData(commissionData);
@@ -236,6 +268,8 @@ NewOrderSingle.prototype.commissionData = function () {
 };
 
 NewOrderSingle.prototype.pegInstructions = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[NewOrderSingle.Tags.PegInstructions] === undefined) return null;
   return this.message.groups[NewOrderSingle.Tags.PegInstructions]
     .map(function (pegInstructions) {
       return new PegInstructions(pegInstructions);
@@ -243,6 +277,8 @@ NewOrderSingle.prototype.pegInstructions = function () {
 };
 
 NewOrderSingle.prototype.discretionInstructions = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[NewOrderSingle.Tags.DiscretionInstructions] === undefined) return null;
   return this.message.groups[NewOrderSingle.Tags.DiscretionInstructions]
     .map(function (discretionInstructions) {
       return new DiscretionInstructions(discretionInstructions);
@@ -250,6 +286,8 @@ NewOrderSingle.prototype.discretionInstructions = function () {
 };
 
 NewOrderSingle.prototype.strategyParametersGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[NewOrderSingle.Tags.StrategyParametersGrp] === undefined) return null;
   return this.message.groups[NewOrderSingle.Tags.StrategyParametersGrp]
     .map(function (strategyParametersGrp) {
       return new StrategyParametersGrp(strategyParametersGrp);
@@ -257,6 +295,8 @@ NewOrderSingle.prototype.strategyParametersGrp = function () {
 };
 
 NewOrderSingle.prototype.trdRegTimestamps = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[NewOrderSingle.Tags.TrdRegTimestamps] === undefined) return null;
   return this.message.groups[NewOrderSingle.Tags.TrdRegTimestamps]
     .map(function (trdRegTimestamps) {
       return new TrdRegTimestamps(trdRegTimestamps);

@@ -10,8 +10,8 @@ ComplexEventCondition.prototype.value = function () {
 
 
 ComplexEventCondition.Keys = {
-  AND: '1',
-  OR: '2',
+  'AND': '1',
+  'OR': '2',
 };
 
 ComplexEventCondition.Tag = '1490';

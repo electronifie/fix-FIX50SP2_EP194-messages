@@ -10,9 +10,9 @@ FinancialStatus.prototype.value = function () {
 
 
 FinancialStatus.Keys = {
-  BANKRUPT: '1',
-  PENDING_DELISTING: '2',
-  RESTRICTED: '3',
+  'BANKRUPT': '1',
+  'PENDING_DELISTING': '2',
+  'RESTRICTED': '3',
 };
 
 FinancialStatus.Tag = '291';

@@ -10,8 +10,8 @@ TradSesControl.prototype.value = function () {
 
 
 TradSesControl.Keys = {
-  AUTOMATIC: '0',
-  MANUAL: '1',
+  'AUTOMATIC': '0',
+  'MANUAL': '1',
 };
 
 TradSesControl.Tag = '1785';

@@ -10,8 +10,8 @@ StreamAsgnReqType.prototype.value = function () {
 
 
 StreamAsgnReqType.Keys = {
-  STREAM_ASSIGNMENT_FOR_NEW_CUSTOMER: '1',
-  STREAM_ASSIGNMENT_FOR_EXISTING_CUSTOMER: '2',
+  'STREAM_ASSIGNMENT_FOR_NEW_CUSTOMER': '1',
+  'STREAM_ASSIGNMENT_FOR_EXISTING_CUSTOMER': '2',
 };
 
 StreamAsgnReqType.Tag = '1498';

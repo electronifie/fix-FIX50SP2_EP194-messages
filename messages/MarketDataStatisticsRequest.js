@@ -22,6 +22,8 @@ function MarketDataStatisticsRequest (marketDataStatisticsRequest) {
 }
 
 MarketDataStatisticsRequest.prototype.parties = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[MarketDataStatisticsRequest.Tags.Parties] === undefined) return null;
   return this.message.groups[MarketDataStatisticsRequest.Tags.Parties]
     .map(function (parties) {
       return new Parties(parties);
@@ -29,6 +31,8 @@ MarketDataStatisticsRequest.prototype.parties = function () {
 };
 
 MarketDataStatisticsRequest.prototype.instrument = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[MarketDataStatisticsRequest.Tags.Instrument] === undefined) return null;
   return this.message.groups[MarketDataStatisticsRequest.Tags.Instrument]
     .map(function (instrument) {
       return new Instrument(instrument);
@@ -36,6 +40,8 @@ MarketDataStatisticsRequest.prototype.instrument = function () {
 };
 
 MarketDataStatisticsRequest.prototype.undInstrmtGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[MarketDataStatisticsRequest.Tags.UndInstrmtGrp] === undefined) return null;
   return this.message.groups[MarketDataStatisticsRequest.Tags.UndInstrmtGrp]
     .map(function (undInstrmtGrp) {
       return new UndInstrmtGrp(undInstrmtGrp);
@@ -43,6 +49,8 @@ MarketDataStatisticsRequest.prototype.undInstrmtGrp = function () {
 };
 
 MarketDataStatisticsRequest.prototype.instrmtLegGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[MarketDataStatisticsRequest.Tags.InstrmtLegGrp] === undefined) return null;
   return this.message.groups[MarketDataStatisticsRequest.Tags.InstrmtLegGrp]
     .map(function (instrmtLegGrp) {
       return new InstrmtLegGrp(instrmtLegGrp);
@@ -50,6 +58,8 @@ MarketDataStatisticsRequest.prototype.instrmtLegGrp = function () {
 };
 
 MarketDataStatisticsRequest.prototype.mdstatisticReqGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[MarketDataStatisticsRequest.Tags.MDStatisticReqGrp] === undefined) return null;
   return this.message.groups[MarketDataStatisticsRequest.Tags.MDStatisticReqGrp]
     .map(function (mdstatisticReqGrp) {
       return new MDStatisticReqGrp(mdstatisticReqGrp);

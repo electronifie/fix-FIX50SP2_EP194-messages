@@ -10,10 +10,10 @@ PartyActionRejectReason.prototype.value = function () {
 
 
 PartyActionRejectReason.Keys = {
-  INVALID_PARTY_OR_PARTIES: '0',
-  UNKNOWN_REQUESTING_PARTY: '1',
-  NOT_AUTHORIZED: '98',
-  OTHER: '99',
+  'INVALID_PARTY_OR_PARTIES': '0',
+  'UNKNOWN_REQUESTING_PARTY': '1',
+  'NOT_AUTHORIZED': '98',
+  'OTHER': '99',
 };
 
 PartyActionRejectReason.Tag = '2333';

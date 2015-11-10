@@ -20,6 +20,8 @@ function OrderMassCancelRequest (orderMassCancelRequest) {
 }
 
 OrderMassCancelRequest.prototype.parties = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[OrderMassCancelRequest.Tags.Parties] === undefined) return null;
   return this.message.groups[OrderMassCancelRequest.Tags.Parties]
     .map(function (parties) {
       return new Parties(parties);
@@ -27,6 +29,8 @@ OrderMassCancelRequest.prototype.parties = function () {
 };
 
 OrderMassCancelRequest.prototype.targetParties = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[OrderMassCancelRequest.Tags.TargetParties] === undefined) return null;
   return this.message.groups[OrderMassCancelRequest.Tags.TargetParties]
     .map(function (targetParties) {
       return new TargetParties(targetParties);
@@ -34,6 +38,8 @@ OrderMassCancelRequest.prototype.targetParties = function () {
 };
 
 OrderMassCancelRequest.prototype.instrument = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[OrderMassCancelRequest.Tags.Instrument] === undefined) return null;
   return this.message.groups[OrderMassCancelRequest.Tags.Instrument]
     .map(function (instrument) {
       return new Instrument(instrument);
@@ -41,6 +47,8 @@ OrderMassCancelRequest.prototype.instrument = function () {
 };
 
 OrderMassCancelRequest.prototype.underlyingInstrument = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[OrderMassCancelRequest.Tags.UnderlyingInstrument] === undefined) return null;
   return this.message.groups[OrderMassCancelRequest.Tags.UnderlyingInstrument]
     .map(function (underlyingInstrument) {
       return new UnderlyingInstrument(underlyingInstrument);

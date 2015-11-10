@@ -10,9 +10,9 @@ CollAction.prototype.value = function () {
 
 
 CollAction.Keys = {
-  RETAIN: '0',
-  ADD: '1',
-  REMOVE: '2',
+  'RETAIN': '0',
+  'ADD': '1',
+  'REMOVE': '2',
 };
 
 CollAction.Tag = '944';

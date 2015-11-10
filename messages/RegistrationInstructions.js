@@ -17,6 +17,8 @@ function RegistrationInstructions (registrationInstructions) {
 }
 
 RegistrationInstructions.prototype.parties = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[RegistrationInstructions.Tags.Parties] === undefined) return null;
   return this.message.groups[RegistrationInstructions.Tags.Parties]
     .map(function (parties) {
       return new Parties(parties);
@@ -24,6 +26,8 @@ RegistrationInstructions.prototype.parties = function () {
 };
 
 RegistrationInstructions.prototype.rgstDtlsGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[RegistrationInstructions.Tags.RgstDtlsGrp] === undefined) return null;
   return this.message.groups[RegistrationInstructions.Tags.RgstDtlsGrp]
     .map(function (rgstDtlsGrp) {
       return new RgstDtlsGrp(rgstDtlsGrp);
@@ -31,6 +35,8 @@ RegistrationInstructions.prototype.rgstDtlsGrp = function () {
 };
 
 RegistrationInstructions.prototype.rgstDistInstGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[RegistrationInstructions.Tags.RgstDistInstGrp] === undefined) return null;
   return this.message.groups[RegistrationInstructions.Tags.RgstDistInstGrp]
     .map(function (rgstDistInstGrp) {
       return new RgstDistInstGrp(rgstDistInstGrp);

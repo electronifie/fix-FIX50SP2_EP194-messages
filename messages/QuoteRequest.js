@@ -22,6 +22,8 @@ function QuoteRequest (quoteRequest) {
 }
 
 QuoteRequest.prototype.rootParties = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[QuoteRequest.Tags.RootParties] === undefined) return null;
   return this.message.groups[QuoteRequest.Tags.RootParties]
     .map(function (rootParties) {
       return new RootParties(rootParties);
@@ -29,6 +31,8 @@ QuoteRequest.prototype.rootParties = function () {
 };
 
 QuoteRequest.prototype.quotReqGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[QuoteRequest.Tags.QuotReqGrp] === undefined) return null;
   return this.message.groups[QuoteRequest.Tags.QuotReqGrp]
     .map(function (quotReqGrp) {
       return new QuotReqGrp(quotReqGrp);

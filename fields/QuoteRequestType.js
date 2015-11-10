@@ -10,9 +10,9 @@ QuoteRequestType.prototype.value = function () {
 
 
 QuoteRequestType.Keys = {
-  MANUAL: '1',
-  AUTOMATIC: '2',
-  CONFIRM_QUOTE: '3',
+  'MANUAL': '1',
+  'AUTOMATIC': '2',
+  'CONFIRM_QUOTE': '3',
 };
 
 QuoteRequestType.Tag = '303';

@@ -163,6 +163,8 @@ function TradeCaptureReport (tradeCaptureReport) {
 }
 
 TradeCaptureReport.prototype.applicationSequenceControl = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[TradeCaptureReport.Tags.ApplicationSequenceControl] === undefined) return null;
   return this.message.groups[TradeCaptureReport.Tags.ApplicationSequenceControl]
     .map(function (applicationSequenceControl) {
       return new ApplicationSequenceControl(applicationSequenceControl);
@@ -170,6 +172,8 @@ TradeCaptureReport.prototype.applicationSequenceControl = function () {
 };
 
 TradeCaptureReport.prototype.tradePriceConditionGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[TradeCaptureReport.Tags.TradePriceConditionGrp] === undefined) return null;
   return this.message.groups[TradeCaptureReport.Tags.TradePriceConditionGrp]
     .map(function (tradePriceConditionGrp) {
       return new TradePriceConditionGrp(tradePriceConditionGrp);
@@ -177,6 +181,8 @@ TradeCaptureReport.prototype.tradePriceConditionGrp = function () {
 };
 
 TradeCaptureReport.prototype.regulatoryTradeIdgrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[TradeCaptureReport.Tags.RegulatoryTradeIDGrp] === undefined) return null;
   return this.message.groups[TradeCaptureReport.Tags.RegulatoryTradeIDGrp]
     .map(function (regulatoryTradeIdgrp) {
       return new RegulatoryTradeIDGrp(regulatoryTradeIdgrp);
@@ -184,6 +190,8 @@ TradeCaptureReport.prototype.regulatoryTradeIdgrp = function () {
 };
 
 TradeCaptureReport.prototype.rootParties = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[TradeCaptureReport.Tags.RootParties] === undefined) return null;
   return this.message.groups[TradeCaptureReport.Tags.RootParties]
     .map(function (rootParties) {
       return new RootParties(rootParties);
@@ -191,6 +199,8 @@ TradeCaptureReport.prototype.rootParties = function () {
 };
 
 TradeCaptureReport.prototype.instrument = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[TradeCaptureReport.Tags.Instrument] === undefined) return null;
   return this.message.groups[TradeCaptureReport.Tags.Instrument]
     .map(function (instrument) {
       return new Instrument(instrument);
@@ -198,6 +208,8 @@ TradeCaptureReport.prototype.instrument = function () {
 };
 
 TradeCaptureReport.prototype.instrumentExtension = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[TradeCaptureReport.Tags.InstrumentExtension] === undefined) return null;
   return this.message.groups[TradeCaptureReport.Tags.InstrumentExtension]
     .map(function (instrumentExtension) {
       return new InstrumentExtension(instrumentExtension);
@@ -205,6 +217,8 @@ TradeCaptureReport.prototype.instrumentExtension = function () {
 };
 
 TradeCaptureReport.prototype.financingDetails = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[TradeCaptureReport.Tags.FinancingDetails] === undefined) return null;
   return this.message.groups[TradeCaptureReport.Tags.FinancingDetails]
     .map(function (financingDetails) {
       return new FinancingDetails(financingDetails);
@@ -212,6 +226,8 @@ TradeCaptureReport.prototype.financingDetails = function () {
 };
 
 TradeCaptureReport.prototype.paymentGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[TradeCaptureReport.Tags.PaymentGrp] === undefined) return null;
   return this.message.groups[TradeCaptureReport.Tags.PaymentGrp]
     .map(function (paymentGrp) {
       return new PaymentGrp(paymentGrp);
@@ -219,6 +235,8 @@ TradeCaptureReport.prototype.paymentGrp = function () {
 };
 
 TradeCaptureReport.prototype.yieldData = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[TradeCaptureReport.Tags.YieldData] === undefined) return null;
   return this.message.groups[TradeCaptureReport.Tags.YieldData]
     .map(function (yieldData) {
       return new YieldData(yieldData);
@@ -226,6 +244,8 @@ TradeCaptureReport.prototype.yieldData = function () {
 };
 
 TradeCaptureReport.prototype.undInstrmtGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[TradeCaptureReport.Tags.UndInstrmtGrp] === undefined) return null;
   return this.message.groups[TradeCaptureReport.Tags.UndInstrmtGrp]
     .map(function (undInstrmtGrp) {
       return new UndInstrmtGrp(undInstrmtGrp);
@@ -233,6 +253,8 @@ TradeCaptureReport.prototype.undInstrmtGrp = function () {
 };
 
 TradeCaptureReport.prototype.relatedInstrumentGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[TradeCaptureReport.Tags.RelatedInstrumentGrp] === undefined) return null;
   return this.message.groups[TradeCaptureReport.Tags.RelatedInstrumentGrp]
     .map(function (relatedInstrumentGrp) {
       return new RelatedInstrumentGrp(relatedInstrumentGrp);
@@ -240,6 +262,8 @@ TradeCaptureReport.prototype.relatedInstrumentGrp = function () {
 };
 
 TradeCaptureReport.prototype.collateralAmountGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[TradeCaptureReport.Tags.CollateralAmountGrp] === undefined) return null;
   return this.message.groups[TradeCaptureReport.Tags.CollateralAmountGrp]
     .map(function (collateralAmountGrp) {
       return new CollateralAmountGrp(collateralAmountGrp);
@@ -247,6 +271,8 @@ TradeCaptureReport.prototype.collateralAmountGrp = function () {
 };
 
 TradeCaptureReport.prototype.rateSource = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[TradeCaptureReport.Tags.RateSource] === undefined) return null;
   return this.message.groups[TradeCaptureReport.Tags.RateSource]
     .map(function (rateSource) {
       return new RateSource(rateSource);
@@ -254,6 +280,8 @@ TradeCaptureReport.prototype.rateSource = function () {
 };
 
 TradeCaptureReport.prototype.spreadOrBenchmarkCurveData = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[TradeCaptureReport.Tags.SpreadOrBenchmarkCurveData] === undefined) return null;
   return this.message.groups[TradeCaptureReport.Tags.SpreadOrBenchmarkCurveData]
     .map(function (spreadOrBenchmarkCurveData) {
       return new SpreadOrBenchmarkCurveData(spreadOrBenchmarkCurveData);
@@ -261,6 +289,8 @@ TradeCaptureReport.prototype.spreadOrBenchmarkCurveData = function () {
 };
 
 TradeCaptureReport.prototype.positionAmountData = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[TradeCaptureReport.Tags.PositionAmountData] === undefined) return null;
   return this.message.groups[TradeCaptureReport.Tags.PositionAmountData]
     .map(function (positionAmountData) {
       return new PositionAmountData(positionAmountData);
@@ -268,6 +298,8 @@ TradeCaptureReport.prototype.positionAmountData = function () {
 };
 
 TradeCaptureReport.prototype.trdInstrmtLegGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[TradeCaptureReport.Tags.TrdInstrmtLegGrp] === undefined) return null;
   return this.message.groups[TradeCaptureReport.Tags.TrdInstrmtLegGrp]
     .map(function (trdInstrmtLegGrp) {
       return new TrdInstrmtLegGrp(trdInstrmtLegGrp);
@@ -275,6 +307,8 @@ TradeCaptureReport.prototype.trdInstrmtLegGrp = function () {
 };
 
 TradeCaptureReport.prototype.trdRegTimestamps = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[TradeCaptureReport.Tags.TrdRegTimestamps] === undefined) return null;
   return this.message.groups[TradeCaptureReport.Tags.TrdRegTimestamps]
     .map(function (trdRegTimestamps) {
       return new TrdRegTimestamps(trdRegTimestamps);
@@ -282,6 +316,8 @@ TradeCaptureReport.prototype.trdRegTimestamps = function () {
 };
 
 TradeCaptureReport.prototype.tradeQtyGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[TradeCaptureReport.Tags.TradeQtyGrp] === undefined) return null;
   return this.message.groups[TradeCaptureReport.Tags.TradeQtyGrp]
     .map(function (tradeQtyGrp) {
       return new TradeQtyGrp(tradeQtyGrp);
@@ -289,6 +325,8 @@ TradeCaptureReport.prototype.tradeQtyGrp = function () {
 };
 
 TradeCaptureReport.prototype.trdCapRptSideGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[TradeCaptureReport.Tags.TrdCapRptSideGrp] === undefined) return null;
   return this.message.groups[TradeCaptureReport.Tags.TrdCapRptSideGrp]
     .map(function (trdCapRptSideGrp) {
       return new TrdCapRptSideGrp(trdCapRptSideGrp);
@@ -296,6 +334,8 @@ TradeCaptureReport.prototype.trdCapRptSideGrp = function () {
 };
 
 TradeCaptureReport.prototype.trdRepIndicatorsGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[TradeCaptureReport.Tags.TrdRepIndicatorsGrp] === undefined) return null;
   return this.message.groups[TradeCaptureReport.Tags.TrdRepIndicatorsGrp]
     .map(function (trdRepIndicatorsGrp) {
       return new TrdRepIndicatorsGrp(trdRepIndicatorsGrp);
@@ -303,6 +343,8 @@ TradeCaptureReport.prototype.trdRepIndicatorsGrp = function () {
 };
 
 TradeCaptureReport.prototype.mandatoryClearingJurisdictionGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[TradeCaptureReport.Tags.MandatoryClearingJurisdictionGrp] === undefined) return null;
   return this.message.groups[TradeCaptureReport.Tags.MandatoryClearingJurisdictionGrp]
     .map(function (mandatoryClearingJurisdictionGrp) {
       return new MandatoryClearingJurisdictionGrp(mandatoryClearingJurisdictionGrp);
@@ -310,6 +352,8 @@ TradeCaptureReport.prototype.mandatoryClearingJurisdictionGrp = function () {
 };
 
 TradeCaptureReport.prototype.attachmentGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[TradeCaptureReport.Tags.AttachmentGrp] === undefined) return null;
   return this.message.groups[TradeCaptureReport.Tags.AttachmentGrp]
     .map(function (attachmentGrp) {
       return new AttachmentGrp(attachmentGrp);

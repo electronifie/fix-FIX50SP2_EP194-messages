@@ -10,8 +10,8 @@ ThrottleType.prototype.value = function () {
 
 
 ThrottleType.Keys = {
-  INBOUND_RATE: '0',
-  OUTSTANDING_REQUESTS: '1',
+  'INBOUND_RATE': '0',
+  'OUTSTANDING_REQUESTS': '1',
 };
 
 ThrottleType.Tag = '1612';

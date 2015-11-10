@@ -17,6 +17,8 @@ function ContraryIntentionReport (contraryIntentionReport) {
 }
 
 ContraryIntentionReport.prototype.applicationSequenceControl = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[ContraryIntentionReport.Tags.ApplicationSequenceControl] === undefined) return null;
   return this.message.groups[ContraryIntentionReport.Tags.ApplicationSequenceControl]
     .map(function (applicationSequenceControl) {
       return new ApplicationSequenceControl(applicationSequenceControl);
@@ -24,6 +26,8 @@ ContraryIntentionReport.prototype.applicationSequenceControl = function () {
 };
 
 ContraryIntentionReport.prototype.parties = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[ContraryIntentionReport.Tags.Parties] === undefined) return null;
   return this.message.groups[ContraryIntentionReport.Tags.Parties]
     .map(function (parties) {
       return new Parties(parties);
@@ -31,6 +35,8 @@ ContraryIntentionReport.prototype.parties = function () {
 };
 
 ContraryIntentionReport.prototype.expirationQty = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[ContraryIntentionReport.Tags.ExpirationQty] === undefined) return null;
   return this.message.groups[ContraryIntentionReport.Tags.ExpirationQty]
     .map(function (expirationQty) {
       return new ExpirationQty(expirationQty);
@@ -38,6 +44,8 @@ ContraryIntentionReport.prototype.expirationQty = function () {
 };
 
 ContraryIntentionReport.prototype.instrument = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[ContraryIntentionReport.Tags.Instrument] === undefined) return null;
   return this.message.groups[ContraryIntentionReport.Tags.Instrument]
     .map(function (instrument) {
       return new Instrument(instrument);
@@ -45,6 +53,8 @@ ContraryIntentionReport.prototype.instrument = function () {
 };
 
 ContraryIntentionReport.prototype.undInstrmtGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[ContraryIntentionReport.Tags.UndInstrmtGrp] === undefined) return null;
   return this.message.groups[ContraryIntentionReport.Tags.UndInstrmtGrp]
     .map(function (undInstrmtGrp) {
       return new UndInstrmtGrp(undInstrmtGrp);

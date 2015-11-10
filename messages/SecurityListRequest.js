@@ -23,6 +23,8 @@ function SecurityListRequest (securityListRequest) {
 }
 
 SecurityListRequest.prototype.instrument = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[SecurityListRequest.Tags.Instrument] === undefined) return null;
   return this.message.groups[SecurityListRequest.Tags.Instrument]
     .map(function (instrument) {
       return new Instrument(instrument);
@@ -30,6 +32,8 @@ SecurityListRequest.prototype.instrument = function () {
 };
 
 SecurityListRequest.prototype.instrumentExtension = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[SecurityListRequest.Tags.InstrumentExtension] === undefined) return null;
   return this.message.groups[SecurityListRequest.Tags.InstrumentExtension]
     .map(function (instrumentExtension) {
       return new InstrumentExtension(instrumentExtension);
@@ -37,6 +41,8 @@ SecurityListRequest.prototype.instrumentExtension = function () {
 };
 
 SecurityListRequest.prototype.financingDetails = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[SecurityListRequest.Tags.FinancingDetails] === undefined) return null;
   return this.message.groups[SecurityListRequest.Tags.FinancingDetails]
     .map(function (financingDetails) {
       return new FinancingDetails(financingDetails);
@@ -44,6 +50,8 @@ SecurityListRequest.prototype.financingDetails = function () {
 };
 
 SecurityListRequest.prototype.undInstrmtGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[SecurityListRequest.Tags.UndInstrmtGrp] === undefined) return null;
   return this.message.groups[SecurityListRequest.Tags.UndInstrmtGrp]
     .map(function (undInstrmtGrp) {
       return new UndInstrmtGrp(undInstrmtGrp);
@@ -51,6 +59,8 @@ SecurityListRequest.prototype.undInstrmtGrp = function () {
 };
 
 SecurityListRequest.prototype.instrmtLegGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[SecurityListRequest.Tags.InstrmtLegGrp] === undefined) return null;
   return this.message.groups[SecurityListRequest.Tags.InstrmtLegGrp]
     .map(function (instrmtLegGrp) {
       return new InstrmtLegGrp(instrmtLegGrp);

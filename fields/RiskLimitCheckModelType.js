@@ -10,10 +10,10 @@ RiskLimitCheckModelType.prototype.value = function () {
 
 
 RiskLimitCheckModelType.Keys = {
-  NONE: '0',
-  PLUSONE_MODEL: '1',
-  PING_MODEL: '2',
-  PUSH_MODEL: '3',
+  'NONE': '0',
+  'PLUSONE_MODEL': '1',
+  'PING_MODEL': '2',
+  'PUSH_MODEL': '3',
 };
 
 RiskLimitCheckModelType.Tag = '2339';

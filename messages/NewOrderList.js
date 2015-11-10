@@ -27,6 +27,8 @@ function NewOrderList (newOrderList) {
 }
 
 NewOrderList.prototype.rootParties = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[NewOrderList.Tags.RootParties] === undefined) return null;
   return this.message.groups[NewOrderList.Tags.RootParties]
     .map(function (rootParties) {
       return new RootParties(rootParties);
@@ -34,6 +36,8 @@ NewOrderList.prototype.rootParties = function () {
 };
 
 NewOrderList.prototype.listOrdGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[NewOrderList.Tags.ListOrdGrp] === undefined) return null;
   return this.message.groups[NewOrderList.Tags.ListOrdGrp]
     .map(function (listOrdGrp) {
       return new ListOrdGrp(listOrdGrp);

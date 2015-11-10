@@ -10,9 +10,9 @@ Seniority.prototype.value = function () {
 
 
 Seniority.Keys = {
-  SENIOR_SECURED: 'SD',
-  SENIOR: 'SR',
-  SUBORDINATED: 'SB',
+  'SENIOR_SECURED': 'SD',
+  'SENIOR': 'SR',
+  'SUBORDINATED': 'SB',
 };
 
 Seniority.Tag = '1450';

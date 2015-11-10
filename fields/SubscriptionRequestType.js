@@ -10,9 +10,9 @@ SubscriptionRequestType.prototype.value = function () {
 
 
 SubscriptionRequestType.Keys = {
-  SNAPSHOT: '0',
-  SNAPSHOT_UPDATES: '1',
-  DISABLE_PREVIOUS_SNAPSHOT_UPDATE_REQUEST: '2',
+  'SNAPSHOT': '0',
+  'SNAPSHOT_UPDATES': '1',
+  'DISABLE_PREVIOUS_SNAPSHOT_UPDATE_REQUEST': '2',
 };
 
 SubscriptionRequestType.Tag = '263';

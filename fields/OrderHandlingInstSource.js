@@ -10,8 +10,8 @@ OrderHandlingInstSource.prototype.value = function () {
 
 
 OrderHandlingInstSource.Keys = {
-  FINRA_OATS: '1',
-  FIA_EXECUTION_SOURCE_CODE: '2',
+  'FINRA_OATS': '1',
+  'FIA_EXECUTION_SOURCE_CODE': '2',
 };
 
 OrderHandlingInstSource.Tag = '1032';

@@ -10,10 +10,10 @@ PositionCapacity.prototype.value = function () {
 
 
 PositionCapacity.Keys = {
-  PRINCIPAL: '0',
-  AGENT: '1',
-  CUSTOMER: '2',
-  COUNTERPARTY: '3',
+  'PRINCIPAL': '0',
+  'AGENT': '1',
+  'CUSTOMER': '2',
+  'COUNTERPARTY': '3',
 };
 
 PositionCapacity.Tag = '1834';

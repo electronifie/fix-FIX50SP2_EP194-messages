@@ -10,11 +10,11 @@ RiskLimitCheckRequestStatus.prototype.value = function () {
 
 
 RiskLimitCheckRequestStatus.Keys = {
-  APPROVED: '0',
-  PARTIALLY_APPROVED: '1',
-  REJECTED: '2',
-  APPROVAL_PENDING: '3',
-  CANCELLED: '4',
+  'APPROVED': '0',
+  'PARTIALLY_APPROVED': '1',
+  'REJECTED': '2',
+  'APPROVAL_PENDING': '3',
+  'CANCELLED': '4',
 };
 
 RiskLimitCheckRequestStatus.Tag = '2325';

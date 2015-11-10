@@ -10,9 +10,9 @@ MassActionResponse.prototype.value = function () {
 
 
 MassActionResponse.Keys = {
-  REJECTED_SEE_MASSACTIONREJECTREASON: '0',
-  ACCEPTED: '1',
-  COMPLETED: '2',
+  'REJECTED_SEE_MASSACTIONREJECTREASON': '0',
+  'ACCEPTED': '1',
+  'COMPLETED': '2',
 };
 
 MassActionResponse.Tag = '1375';

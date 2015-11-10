@@ -10,8 +10,8 @@ DeliveryStreamDeliveryPointSource.prototype.value = function () {
 
 
 DeliveryStreamDeliveryPointSource.Keys = {
-  PROPRIETARY: '0',
-  ENERGY_IDENTIFICATION_CODE: '1',
+  'PROPRIETARY': '0',
+  'ENERGY_IDENTIFICATION_CODE': '1',
 };
 
 DeliveryStreamDeliveryPointSource.Tag = '42192';

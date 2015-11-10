@@ -10,12 +10,12 @@ EntitlementStatus.prototype.value = function () {
 
 
 EntitlementStatus.Keys = {
-  ACCEPTED: '0',
-  ACCEPTED_WITH_CHANGES: '1',
-  REJECTED: '2',
-  PENDING: '3',
-  REQUESTED: '4',
-  DEFERRED: '5',
+  'ACCEPTED': '0',
+  'ACCEPTED_WITH_CHANGES': '1',
+  'REJECTED': '2',
+  'PENDING': '3',
+  'REQUESTED': '4',
+  'DEFERRED': '5',
 };
 
 EntitlementStatus.Tag = '1883';

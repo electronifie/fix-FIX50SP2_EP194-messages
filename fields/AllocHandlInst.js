@@ -10,9 +10,9 @@ AllocHandlInst.prototype.value = function () {
 
 
 AllocHandlInst.Keys = {
-  MATCH: '1',
-  FORWARD: '2',
-  FORWARD_AND_MATCH: '3',
+  'MATCH': '1',
+  'FORWARD': '2',
+  'FORWARD_AND_MATCH': '3',
 };
 
 AllocHandlInst.Tag = '209';

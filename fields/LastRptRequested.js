@@ -10,8 +10,8 @@ LastRptRequested.prototype.value = function () {
 
 
 LastRptRequested.Keys = {
-  NOT_LAST_MESSAGE: 'N',
-  LAST_MESSAGE: 'Y',
+  'NOT_LAST_MESSAGE': 'N',
+  'LAST_MESSAGE': 'Y',
 };
 
 LastRptRequested.Tag = '912';

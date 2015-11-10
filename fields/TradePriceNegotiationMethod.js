@@ -10,13 +10,13 @@ TradePriceNegotiationMethod.prototype.value = function () {
 
 
 TradePriceNegotiationMethod.Keys = {
-  PERCENT_OF_PAR: '0',
-  DEAL_SPREAD: '1',
-  UPFRONT_POINTS: '2',
-  UPFRONT_AMOUNT: '3',
-  PERCENT_OF_PAR_AND_UPFRONT_AMOUNT: '4',
-  DEAL_SPREAD_AND_UPFRONT_AMOUNT: '5',
-  UPFRONT_POINTS_AND_UPFRONT_AMOUNT: '6',
+  'PERCENT_OF_PAR': '0',
+  'DEAL_SPREAD': '1',
+  'UPFRONT_POINTS': '2',
+  'UPFRONT_AMOUNT': '3',
+  'PERCENT_OF_PAR_AND_UPFRONT_AMOUNT': '4',
+  'DEAL_SPREAD_AND_UPFRONT_AMOUNT': '5',
+  'UPFRONT_POINTS_AND_UPFRONT_AMOUNT': '6',
 };
 
 TradePriceNegotiationMethod.Tag = '1740';

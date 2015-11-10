@@ -96,6 +96,8 @@ function AllocationReport (allocationReport) {
 }
 
 AllocationReport.prototype.ordAllocGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[AllocationReport.Tags.OrdAllocGrp] === undefined) return null;
   return this.message.groups[AllocationReport.Tags.OrdAllocGrp]
     .map(function (ordAllocGrp) {
       return new OrdAllocGrp(ordAllocGrp);
@@ -103,6 +105,8 @@ AllocationReport.prototype.ordAllocGrp = function () {
 };
 
 AllocationReport.prototype.execAllocGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[AllocationReport.Tags.ExecAllocGrp] === undefined) return null;
   return this.message.groups[AllocationReport.Tags.ExecAllocGrp]
     .map(function (execAllocGrp) {
       return new ExecAllocGrp(execAllocGrp);
@@ -110,6 +114,8 @@ AllocationReport.prototype.execAllocGrp = function () {
 };
 
 AllocationReport.prototype.instrument = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[AllocationReport.Tags.Instrument] === undefined) return null;
   return this.message.groups[AllocationReport.Tags.Instrument]
     .map(function (instrument) {
       return new Instrument(instrument);
@@ -117,6 +123,8 @@ AllocationReport.prototype.instrument = function () {
 };
 
 AllocationReport.prototype.instrumentExtension = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[AllocationReport.Tags.InstrumentExtension] === undefined) return null;
   return this.message.groups[AllocationReport.Tags.InstrumentExtension]
     .map(function (instrumentExtension) {
       return new InstrumentExtension(instrumentExtension);
@@ -124,6 +132,8 @@ AllocationReport.prototype.instrumentExtension = function () {
 };
 
 AllocationReport.prototype.financingDetails = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[AllocationReport.Tags.FinancingDetails] === undefined) return null;
   return this.message.groups[AllocationReport.Tags.FinancingDetails]
     .map(function (financingDetails) {
       return new FinancingDetails(financingDetails);
@@ -131,6 +141,8 @@ AllocationReport.prototype.financingDetails = function () {
 };
 
 AllocationReport.prototype.undInstrmtGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[AllocationReport.Tags.UndInstrmtGrp] === undefined) return null;
   return this.message.groups[AllocationReport.Tags.UndInstrmtGrp]
     .map(function (undInstrmtGrp) {
       return new UndInstrmtGrp(undInstrmtGrp);
@@ -138,6 +150,8 @@ AllocationReport.prototype.undInstrmtGrp = function () {
 };
 
 AllocationReport.prototype.instrmtLegGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[AllocationReport.Tags.InstrmtLegGrp] === undefined) return null;
   return this.message.groups[AllocationReport.Tags.InstrmtLegGrp]
     .map(function (instrmtLegGrp) {
       return new InstrmtLegGrp(instrmtLegGrp);
@@ -145,6 +159,8 @@ AllocationReport.prototype.instrmtLegGrp = function () {
 };
 
 AllocationReport.prototype.spreadOrBenchmarkCurveData = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[AllocationReport.Tags.SpreadOrBenchmarkCurveData] === undefined) return null;
   return this.message.groups[AllocationReport.Tags.SpreadOrBenchmarkCurveData]
     .map(function (spreadOrBenchmarkCurveData) {
       return new SpreadOrBenchmarkCurveData(spreadOrBenchmarkCurveData);
@@ -152,6 +168,8 @@ AllocationReport.prototype.spreadOrBenchmarkCurveData = function () {
 };
 
 AllocationReport.prototype.parties = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[AllocationReport.Tags.Parties] === undefined) return null;
   return this.message.groups[AllocationReport.Tags.Parties]
     .map(function (parties) {
       return new Parties(parties);
@@ -159,6 +177,8 @@ AllocationReport.prototype.parties = function () {
 };
 
 AllocationReport.prototype.stipulations = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[AllocationReport.Tags.Stipulations] === undefined) return null;
   return this.message.groups[AllocationReport.Tags.Stipulations]
     .map(function (stipulations) {
       return new Stipulations(stipulations);
@@ -166,6 +186,8 @@ AllocationReport.prototype.stipulations = function () {
 };
 
 AllocationReport.prototype.yieldData = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[AllocationReport.Tags.YieldData] === undefined) return null;
   return this.message.groups[AllocationReport.Tags.YieldData]
     .map(function (yieldData) {
       return new YieldData(yieldData);
@@ -173,6 +195,8 @@ AllocationReport.prototype.yieldData = function () {
 };
 
 AllocationReport.prototype.regulatoryTradeIdgrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[AllocationReport.Tags.RegulatoryTradeIDGrp] === undefined) return null;
   return this.message.groups[AllocationReport.Tags.RegulatoryTradeIDGrp]
     .map(function (regulatoryTradeIdgrp) {
       return new RegulatoryTradeIDGrp(regulatoryTradeIdgrp);
@@ -180,6 +204,8 @@ AllocationReport.prototype.regulatoryTradeIdgrp = function () {
 };
 
 AllocationReport.prototype.positionAmountData = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[AllocationReport.Tags.PositionAmountData] === undefined) return null;
   return this.message.groups[AllocationReport.Tags.PositionAmountData]
     .map(function (positionAmountData) {
       return new PositionAmountData(positionAmountData);
@@ -187,6 +213,8 @@ AllocationReport.prototype.positionAmountData = function () {
 };
 
 AllocationReport.prototype.allocGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[AllocationReport.Tags.AllocGrp] === undefined) return null;
   return this.message.groups[AllocationReport.Tags.AllocGrp]
     .map(function (allocGrp) {
       return new AllocGrp(allocGrp);
@@ -194,6 +222,8 @@ AllocationReport.prototype.allocGrp = function () {
 };
 
 AllocationReport.prototype.rateSource = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[AllocationReport.Tags.RateSource] === undefined) return null;
   return this.message.groups[AllocationReport.Tags.RateSource]
     .map(function (rateSource) {
       return new RateSource(rateSource);

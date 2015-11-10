@@ -10,10 +10,10 @@ PaymentStreamRateIndexCurveUnit.prototype.value = function () {
 
 
 PaymentStreamRateIndexCurveUnit.Keys = {
-  DAY: 'D',
-  WEEK: 'Wk',
-  MONTH: 'Mo',
-  YEAR: 'Yr',
+  'DAY': 'D',
+  'WEEK': 'Wk',
+  'MONTH': 'Mo',
+  'YEAR': 'Yr',
 };
 
 PaymentStreamRateIndexCurveUnit.Tag = '40791';

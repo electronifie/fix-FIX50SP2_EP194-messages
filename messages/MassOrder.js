@@ -27,6 +27,8 @@ function MassOrder (massOrder) {
 }
 
 MassOrder.prototype.parties = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[MassOrder.Tags.Parties] === undefined) return null;
   return this.message.groups[MassOrder.Tags.Parties]
     .map(function (parties) {
       return new Parties(parties);
@@ -34,6 +36,8 @@ MassOrder.prototype.parties = function () {
 };
 
 MassOrder.prototype.orderEntryGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[MassOrder.Tags.OrderEntryGrp] === undefined) return null;
   return this.message.groups[MassOrder.Tags.OrderEntryGrp]
     .map(function (orderEntryGrp) {
       return new OrderEntryGrp(orderEntryGrp);

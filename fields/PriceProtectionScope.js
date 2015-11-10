@@ -10,10 +10,10 @@ PriceProtectionScope.prototype.value = function () {
 
 
 PriceProtectionScope.Keys = {
-  NONE: '0',
-  LOCAL: '1',
-  NATIONAL: '2',
-  GLOBAL: '3',
+  'NONE': '0',
+  'LOCAL': '1',
+  'NATIONAL': '2',
+  'GLOBAL': '3',
 };
 
 PriceProtectionScope.Tag = '1092';

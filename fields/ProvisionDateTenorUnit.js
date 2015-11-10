@@ -10,10 +10,10 @@ ProvisionDateTenorUnit.prototype.value = function () {
 
 
 ProvisionDateTenorUnit.Keys = {
-  DAY: 'D',
-  WEEK: 'Wk',
-  MONTH: 'Mo',
-  YEAR: 'Yr',
+  'DAY': 'D',
+  'WEEK': 'Wk',
+  'MONTH': 'Mo',
+  'YEAR': 'Yr',
 };
 
 ProvisionDateTenorUnit.Tag = '40097';

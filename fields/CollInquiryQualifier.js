@@ -10,14 +10,14 @@ CollInquiryQualifier.prototype.value = function () {
 
 
 CollInquiryQualifier.Keys = {
-  TRADE_DATE: '0',
-  GC_INSTRUMENT: '1',
-  COLLATERAL_INSTRUMENT: '2',
-  SUBSTITUTION_ELIGIBLE: '3',
-  NOT_ASSIGNED: '4',
-  PARTIALLY_ASSIGNED: '5',
-  FULLY_ASSIGNED: '6',
-  OUTSTANDING_TRADES: '7',
+  'TRADE_DATE': '0',
+  'GC_INSTRUMENT': '1',
+  'COLLATERAL_INSTRUMENT': '2',
+  'SUBSTITUTION_ELIGIBLE': '3',
+  'NOT_ASSIGNED': '4',
+  'PARTIALLY_ASSIGNED': '5',
+  'FULLY_ASSIGNED': '6',
+  'OUTSTANDING_TRADES': '7',
 };
 
 CollInquiryQualifier.Tag = '896';

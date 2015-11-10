@@ -10,8 +10,8 @@ PaymentStubLength.prototype.value = function () {
 
 
 PaymentStubLength.Keys = {
-  SHORT: '0',
-  LONG: '1',
+  'SHORT': '0',
+  'LONG': '1',
 };
 
 PaymentStubLength.Tag = '40874';

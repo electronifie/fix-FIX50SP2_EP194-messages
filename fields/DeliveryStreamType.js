@@ -10,9 +10,9 @@ DeliveryStreamType.prototype.value = function () {
 
 
 DeliveryStreamType.Keys = {
-  PERIODIC: '0',
-  INITIAL: '1',
-  SINGLE: '2',
+  'PERIODIC': '0',
+  'INITIAL': '1',
+  'SINGLE': '2',
 };
 
 DeliveryStreamType.Tag = '41058';

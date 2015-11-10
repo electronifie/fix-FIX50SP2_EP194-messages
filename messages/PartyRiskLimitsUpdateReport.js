@@ -15,6 +15,8 @@ function PartyRiskLimitsUpdateReport (partyRiskLimitsUpdateReport) {
 }
 
 PartyRiskLimitsUpdateReport.prototype.applicationSequenceControl = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[PartyRiskLimitsUpdateReport.Tags.ApplicationSequenceControl] === undefined) return null;
   return this.message.groups[PartyRiskLimitsUpdateReport.Tags.ApplicationSequenceControl]
     .map(function (applicationSequenceControl) {
       return new ApplicationSequenceControl(applicationSequenceControl);
@@ -22,6 +24,8 @@ PartyRiskLimitsUpdateReport.prototype.applicationSequenceControl = function () {
 };
 
 PartyRiskLimitsUpdateReport.prototype.partyRiskLimitsUpdateGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[PartyRiskLimitsUpdateReport.Tags.PartyRiskLimitsUpdateGrp] === undefined) return null;
   return this.message.groups[PartyRiskLimitsUpdateReport.Tags.PartyRiskLimitsUpdateGrp]
     .map(function (partyRiskLimitsUpdateGrp) {
       return new PartyRiskLimitsUpdateGrp(partyRiskLimitsUpdateGrp);

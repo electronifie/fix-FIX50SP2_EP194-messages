@@ -10,8 +10,8 @@ OffsetInstruction.prototype.value = function () {
 
 
 OffsetInstruction.Keys = {
-  OFFSET: '0',
-  ONSET: '1',
+  'OFFSET': '0',
+  'ONSET': '1',
 };
 
 OffsetInstruction.Tag = '1849';

@@ -12,6 +12,8 @@ function SecurityMassStatusRequest (securityMassStatusRequest) {
 }
 
 SecurityMassStatusRequest.prototype.instrumentScope = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[SecurityMassStatusRequest.Tags.InstrumentScope] === undefined) return null;
   return this.message.groups[SecurityMassStatusRequest.Tags.InstrumentScope]
     .map(function (instrumentScope) {
       return new InstrumentScope(instrumentScope);

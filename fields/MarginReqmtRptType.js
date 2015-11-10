@@ -10,9 +10,9 @@ MarginReqmtRptType.prototype.value = function () {
 
 
 MarginReqmtRptType.Keys = {
-  SUMMARY: '0',
-  DETAIL: '1',
-  EXCESS_DEFICIT: '2',
+  'SUMMARY': '0',
+  'DETAIL': '1',
+  'EXCESS_DEFICIT': '2',
 };
 
 MarginReqmtRptType.Tag = '1638';

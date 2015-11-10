@@ -10,9 +10,9 @@ OptPayoutType.prototype.value = function () {
 
 
 OptPayoutType.Keys = {
-  VANILLA: '1',
-  CAPPED: '2',
-  BINARY: '3',
+  'VANILLA': '1',
+  'CAPPED': '2',
+  'BINARY': '3',
 };
 
 OptPayoutType.Tag = '1482';

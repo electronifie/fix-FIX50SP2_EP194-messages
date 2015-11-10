@@ -15,6 +15,8 @@ function CollateralReportAck (collateralReportAck) {
 }
 
 CollateralReportAck.prototype.parties = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[CollateralReportAck.Tags.Parties] === undefined) return null;
   return this.message.groups[CollateralReportAck.Tags.Parties]
     .map(function (parties) {
       return new Parties(parties);

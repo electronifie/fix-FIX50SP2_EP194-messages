@@ -10,10 +10,10 @@ BidTradeType.prototype.value = function () {
 
 
 BidTradeType.Keys = {
-  AGENCY: 'A',
-  VWAP_GUARANTEE: 'G',
-  GUARANTEED_CLOSE: 'J',
-  RISK_TRADE: 'R',
+  'AGENCY': 'A',
+  'VWAP_GUARANTEE': 'G',
+  'GUARANTEED_CLOSE': 'J',
+  'RISK_TRADE': 'R',
 };
 
 BidTradeType.Tag = '418';

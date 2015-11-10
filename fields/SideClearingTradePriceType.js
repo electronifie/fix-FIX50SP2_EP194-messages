@@ -10,8 +10,8 @@ SideClearingTradePriceType.prototype.value = function () {
 
 
 SideClearingTradePriceType.Keys = {
-  TRADE_CLEARING_AT_EXECUTION_PRICE: '0',
-  TRADE_CLEARING_AT_ALTERNATE_CLEARING_PRICE: '1',
+  'TRADE_CLEARING_AT_EXECUTION_PRICE': '0',
+  'TRADE_CLEARING_AT_ALTERNATE_CLEARING_PRICE': '1',
 };
 
 SideClearingTradePriceType.Tag = '1598';

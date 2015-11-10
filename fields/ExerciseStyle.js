@@ -10,10 +10,10 @@ ExerciseStyle.prototype.value = function () {
 
 
 ExerciseStyle.Keys = {
-  EUROPEAN: '0',
-  AMERICAN: '1',
-  BERMUDA: '2',
-  OTHER: '99',
+  'EUROPEAN': '0',
+  'AMERICAN': '1',
+  'BERMUDA': '2',
+  'OTHER': '99',
 };
 
 ExerciseStyle.Tag = '1194';

@@ -68,6 +68,8 @@ function CrossOrderCancelReplaceRequest (crossOrderCancelReplaceRequest) {
 }
 
 CrossOrderCancelReplaceRequest.prototype.rootParties = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[CrossOrderCancelReplaceRequest.Tags.RootParties] === undefined) return null;
   return this.message.groups[CrossOrderCancelReplaceRequest.Tags.RootParties]
     .map(function (rootParties) {
       return new RootParties(rootParties);
@@ -75,6 +77,8 @@ CrossOrderCancelReplaceRequest.prototype.rootParties = function () {
 };
 
 CrossOrderCancelReplaceRequest.prototype.sideCrossOrdModGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[CrossOrderCancelReplaceRequest.Tags.SideCrossOrdModGrp] === undefined) return null;
   return this.message.groups[CrossOrderCancelReplaceRequest.Tags.SideCrossOrdModGrp]
     .map(function (sideCrossOrdModGrp) {
       return new SideCrossOrdModGrp(sideCrossOrdModGrp);
@@ -82,6 +86,8 @@ CrossOrderCancelReplaceRequest.prototype.sideCrossOrdModGrp = function () {
 };
 
 CrossOrderCancelReplaceRequest.prototype.instrument = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[CrossOrderCancelReplaceRequest.Tags.Instrument] === undefined) return null;
   return this.message.groups[CrossOrderCancelReplaceRequest.Tags.Instrument]
     .map(function (instrument) {
       return new Instrument(instrument);
@@ -89,6 +95,8 @@ CrossOrderCancelReplaceRequest.prototype.instrument = function () {
 };
 
 CrossOrderCancelReplaceRequest.prototype.undInstrmtGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[CrossOrderCancelReplaceRequest.Tags.UndInstrmtGrp] === undefined) return null;
   return this.message.groups[CrossOrderCancelReplaceRequest.Tags.UndInstrmtGrp]
     .map(function (undInstrmtGrp) {
       return new UndInstrmtGrp(undInstrmtGrp);
@@ -96,6 +104,8 @@ CrossOrderCancelReplaceRequest.prototype.undInstrmtGrp = function () {
 };
 
 CrossOrderCancelReplaceRequest.prototype.instrmtLegGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[CrossOrderCancelReplaceRequest.Tags.InstrmtLegGrp] === undefined) return null;
   return this.message.groups[CrossOrderCancelReplaceRequest.Tags.InstrmtLegGrp]
     .map(function (instrmtLegGrp) {
       return new InstrmtLegGrp(instrmtLegGrp);
@@ -103,6 +113,8 @@ CrossOrderCancelReplaceRequest.prototype.instrmtLegGrp = function () {
 };
 
 CrossOrderCancelReplaceRequest.prototype.displayInstruction = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[CrossOrderCancelReplaceRequest.Tags.DisplayInstruction] === undefined) return null;
   return this.message.groups[CrossOrderCancelReplaceRequest.Tags.DisplayInstruction]
     .map(function (displayInstruction) {
       return new DisplayInstruction(displayInstruction);
@@ -110,6 +122,8 @@ CrossOrderCancelReplaceRequest.prototype.displayInstruction = function () {
 };
 
 CrossOrderCancelReplaceRequest.prototype.trdgSesGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[CrossOrderCancelReplaceRequest.Tags.TrdgSesGrp] === undefined) return null;
   return this.message.groups[CrossOrderCancelReplaceRequest.Tags.TrdgSesGrp]
     .map(function (trdgSesGrp) {
       return new TrdgSesGrp(trdgSesGrp);
@@ -117,6 +131,8 @@ CrossOrderCancelReplaceRequest.prototype.trdgSesGrp = function () {
 };
 
 CrossOrderCancelReplaceRequest.prototype.stipulations = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[CrossOrderCancelReplaceRequest.Tags.Stipulations] === undefined) return null;
   return this.message.groups[CrossOrderCancelReplaceRequest.Tags.Stipulations]
     .map(function (stipulations) {
       return new Stipulations(stipulations);
@@ -124,6 +140,8 @@ CrossOrderCancelReplaceRequest.prototype.stipulations = function () {
 };
 
 CrossOrderCancelReplaceRequest.prototype.triggeringInstruction = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[CrossOrderCancelReplaceRequest.Tags.TriggeringInstruction] === undefined) return null;
   return this.message.groups[CrossOrderCancelReplaceRequest.Tags.TriggeringInstruction]
     .map(function (triggeringInstruction) {
       return new TriggeringInstruction(triggeringInstruction);
@@ -131,6 +149,8 @@ CrossOrderCancelReplaceRequest.prototype.triggeringInstruction = function () {
 };
 
 CrossOrderCancelReplaceRequest.prototype.spreadOrBenchmarkCurveData = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[CrossOrderCancelReplaceRequest.Tags.SpreadOrBenchmarkCurveData] === undefined) return null;
   return this.message.groups[CrossOrderCancelReplaceRequest.Tags.SpreadOrBenchmarkCurveData]
     .map(function (spreadOrBenchmarkCurveData) {
       return new SpreadOrBenchmarkCurveData(spreadOrBenchmarkCurveData);
@@ -138,6 +158,8 @@ CrossOrderCancelReplaceRequest.prototype.spreadOrBenchmarkCurveData = function (
 };
 
 CrossOrderCancelReplaceRequest.prototype.yieldData = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[CrossOrderCancelReplaceRequest.Tags.YieldData] === undefined) return null;
   return this.message.groups[CrossOrderCancelReplaceRequest.Tags.YieldData]
     .map(function (yieldData) {
       return new YieldData(yieldData);
@@ -145,6 +167,8 @@ CrossOrderCancelReplaceRequest.prototype.yieldData = function () {
 };
 
 CrossOrderCancelReplaceRequest.prototype.pegInstructions = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[CrossOrderCancelReplaceRequest.Tags.PegInstructions] === undefined) return null;
   return this.message.groups[CrossOrderCancelReplaceRequest.Tags.PegInstructions]
     .map(function (pegInstructions) {
       return new PegInstructions(pegInstructions);
@@ -152,6 +176,8 @@ CrossOrderCancelReplaceRequest.prototype.pegInstructions = function () {
 };
 
 CrossOrderCancelReplaceRequest.prototype.discretionInstructions = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[CrossOrderCancelReplaceRequest.Tags.DiscretionInstructions] === undefined) return null;
   return this.message.groups[CrossOrderCancelReplaceRequest.Tags.DiscretionInstructions]
     .map(function (discretionInstructions) {
       return new DiscretionInstructions(discretionInstructions);
@@ -159,6 +185,8 @@ CrossOrderCancelReplaceRequest.prototype.discretionInstructions = function () {
 };
 
 CrossOrderCancelReplaceRequest.prototype.strategyParametersGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[CrossOrderCancelReplaceRequest.Tags.StrategyParametersGrp] === undefined) return null;
   return this.message.groups[CrossOrderCancelReplaceRequest.Tags.StrategyParametersGrp]
     .map(function (strategyParametersGrp) {
       return new StrategyParametersGrp(strategyParametersGrp);

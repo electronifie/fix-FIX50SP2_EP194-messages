@@ -10,10 +10,10 @@ TradeCollateralization.prototype.value = function () {
 
 
 TradeCollateralization.Keys = {
-  UNCOLLATERALIZED: '0',
-  PARTIALLY_COLLATERALIZED: '1',
-  ONE_WAY_COLLATERALLIZATION: '2',
-  FULLY_COLLATERALIZED: '3',
+  'UNCOLLATERALIZED': '0',
+  'PARTIALLY_COLLATERALIZED': '1',
+  'ONE_WAY_COLLATERALLIZATION': '2',
+  'FULLY_COLLATERALIZED': '3',
 };
 
 TradeCollateralization.Tag = '1936';

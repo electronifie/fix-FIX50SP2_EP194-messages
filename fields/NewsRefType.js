@@ -10,10 +10,10 @@ NewsRefType.prototype.value = function () {
 
 
 NewsRefType.Keys = {
-  REPLACEMENT: '0',
-  OTHER_LANGUAGE: '1',
-  COMPLIMENTARY: '2',
-  WITHDRAWAL: '3',
+  'REPLACEMENT': '0',
+  'OTHER_LANGUAGE': '1',
+  'COMPLIMENTARY': '2',
+  'WITHDRAWAL': '3',
 };
 
 NewsRefType.Tag = '1477';

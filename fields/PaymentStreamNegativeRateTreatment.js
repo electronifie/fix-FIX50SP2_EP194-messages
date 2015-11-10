@@ -10,8 +10,8 @@ PaymentStreamNegativeRateTreatment.prototype.value = function () {
 
 
 PaymentStreamNegativeRateTreatment.Keys = {
-  ZERO_INTEREST_RATE_METHOD: '0',
-  NEGATIVE_INTEREST_RATE_METHOD: '1',
+  'ZERO_INTEREST_RATE_METHOD': '0',
+  'NEGATIVE_INTEREST_RATE_METHOD': '1',
 };
 
 PaymentStreamNegativeRateTreatment.Tag = '40807';

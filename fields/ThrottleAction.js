@@ -10,11 +10,11 @@ ThrottleAction.prototype.value = function () {
 
 
 ThrottleAction.Keys = {
-  QUEUE_INBOUND: '0',
-  QUEUE_OUTBOUND: '1',
-  REJECT: '2',
-  DISCONNECT: '3',
-  WARNING: '4',
+  'QUEUE_INBOUND': '0',
+  'QUEUE_OUTBOUND': '1',
+  'REJECT': '2',
+  'DISCONNECT': '3',
+  'WARNING': '4',
 };
 
 ThrottleAction.Tag = '1611';

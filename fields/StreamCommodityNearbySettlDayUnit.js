@@ -10,8 +10,8 @@ StreamCommodityNearbySettlDayUnit.prototype.value = function () {
 
 
 StreamCommodityNearbySettlDayUnit.Keys = {
-  WEEK: 'Wk',
-  MONTH: 'Mo',
+  'WEEK': 'Wk',
+  'MONTH': 'Mo',
 };
 
 StreamCommodityNearbySettlDayUnit.Tag = '41267';

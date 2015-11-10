@@ -10,10 +10,10 @@ ExerciseConfirmationMethod.prototype.value = function () {
 
 
 ExerciseConfirmationMethod.Keys = {
-  NOT_REQUIRED: '0',
-  NON_ELECTRONIC: '1',
-  ELECTRONIC: '2',
-  UNKNOWN_AT_TIME_OF_REPORT: '3',
+  'NOT_REQUIRED': '0',
+  'NON_ELECTRONIC': '1',
+  'ELECTRONIC': '2',
+  'UNKNOWN_AT_TIME_OF_REPORT': '3',
 };
 
 ExerciseConfirmationMethod.Tag = '41111';

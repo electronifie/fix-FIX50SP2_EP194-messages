@@ -10,18 +10,18 @@ DistribPaymentMethod.prototype.value = function () {
 
 
 DistribPaymentMethod.Keys = {
-  CREST: '1',
-  NSCC: '2',
-  EUROCLEAR: '3',
-  CLEARSTREAM: '4',
-  CHEQUE: '5',
-  TELEGRAPHIC_TRANSFER: '6',
-  FED_WIRE: '7',
-  DIRECT_CREDIT: '8',
-  ACH_CREDIT: '9',
-  BPAY: '10',
-  HIGH_VALUE_CLEARING_SYSTEM_HVACS: '11',
-  REINVEST_IN_FUND: '12',
+  'CREST': '1',
+  'NSCC': '2',
+  'EUROCLEAR': '3',
+  'CLEARSTREAM': '4',
+  'CHEQUE': '5',
+  'TELEGRAPHIC_TRANSFER': '6',
+  'FED_WIRE': '7',
+  'DIRECT_CREDIT': '8',
+  'ACH_CREDIT': '9',
+  'BPAY': '10',
+  'HIGH_VALUE_CLEARING_SYSTEM_HVACS': '11',
+  'REINVEST_IN_FUND': '12',
 };
 
 DistribPaymentMethod.Tag = '477';

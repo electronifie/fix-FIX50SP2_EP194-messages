@@ -10,8 +10,8 @@ WorkingIndicator.prototype.value = function () {
 
 
 WorkingIndicator.Keys = {
-  ORDER_HAS_BEEN_ACCEPTED_BUT_NOT_YET_IN_A_WORKING_STATE: 'N',
-  ORDER_IS_CURRENTLY_BEING_WORKED: 'Y',
+  'ORDER_HAS_BEEN_ACCEPTED_BUT_NOT_YET_IN_A_WORKING_STATE': 'N',
+  'ORDER_IS_CURRENTLY_BEING_WORKED': 'Y',
 };
 
 WorkingIndicator.Tag = '636';

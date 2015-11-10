@@ -10,8 +10,8 @@ UnderlyingFXRateCalc.prototype.value = function () {
 
 
 UnderlyingFXRateCalc.Keys = {
-  DIVIDE: 'D',
-  MULTIPLY: 'M',
+  'DIVIDE': 'D',
+  'MULTIPLY': 'M',
 };
 
 UnderlyingFXRateCalc.Tag = '1046';

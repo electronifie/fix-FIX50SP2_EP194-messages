@@ -10,10 +10,10 @@ MarginReqmtInqQualifier.prototype.value = function () {
 
 
 MarginReqmtInqQualifier.Keys = {
-  SUMMARY: '0',
-  DETAIL: '1',
-  EXCESS_DEFICIT: '2',
-  NET_POSITION: '3',
+  'SUMMARY': '0',
+  'DETAIL': '1',
+  'EXCESS_DEFICIT': '2',
+  'NET_POSITION': '3',
 };
 
 MarginReqmtInqQualifier.Tag = '1637';

@@ -10,12 +10,12 @@ MultilegPriceMethod.prototype.value = function () {
 
 
 MultilegPriceMethod.Keys = {
-  NET_PRICE: '0',
-  REVERSED_NET_PRICE: '1',
-  YIELD_DIFFERENCE: '2',
-  INDIVIDUAL: '3',
-  CONTRACT_WEIGHTED_AVERAGE_PRICE: '4',
-  MULTIPLIED_PRICE: '5',
+  'NET_PRICE': '0',
+  'REVERSED_NET_PRICE': '1',
+  'YIELD_DIFFERENCE': '2',
+  'INDIVIDUAL': '3',
+  'CONTRACT_WEIGHTED_AVERAGE_PRICE': '4',
+  'MULTIPLIED_PRICE': '5',
 };
 
 MultilegPriceMethod.Tag = '1378';

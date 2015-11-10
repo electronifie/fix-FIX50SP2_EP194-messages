@@ -10,8 +10,8 @@ ClearingIntention.prototype.value = function () {
 
 
 ClearingIntention.Keys = {
-  DO_NOT_INTEND_TO_CLEAR: '0',
-  INTEND_TO_CLEAR: '1',
+  'DO_NOT_INTEND_TO_CLEAR': '0',
+  'INTEND_TO_CLEAR': '1',
 };
 
 ClearingIntention.Tag = '1924';

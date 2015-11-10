@@ -30,6 +30,8 @@ function PositionTransferReport (positionTransferReport) {
 }
 
 PositionTransferReport.prototype.parties = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[PositionTransferReport.Tags.Parties] === undefined) return null;
   return this.message.groups[PositionTransferReport.Tags.Parties]
     .map(function (parties) {
       return new Parties(parties);
@@ -37,6 +39,8 @@ PositionTransferReport.prototype.parties = function () {
 };
 
 PositionTransferReport.prototype.targetParties = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[PositionTransferReport.Tags.TargetParties] === undefined) return null;
   return this.message.groups[PositionTransferReport.Tags.TargetParties]
     .map(function (targetParties) {
       return new TargetParties(targetParties);
@@ -44,6 +48,8 @@ PositionTransferReport.prototype.targetParties = function () {
 };
 
 PositionTransferReport.prototype.instrument = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[PositionTransferReport.Tags.Instrument] === undefined) return null;
   return this.message.groups[PositionTransferReport.Tags.Instrument]
     .map(function (instrument) {
       return new Instrument(instrument);
@@ -51,6 +57,8 @@ PositionTransferReport.prototype.instrument = function () {
 };
 
 PositionTransferReport.prototype.undInstrmtGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[PositionTransferReport.Tags.UndInstrmtGrp] === undefined) return null;
   return this.message.groups[PositionTransferReport.Tags.UndInstrmtGrp]
     .map(function (undInstrmtGrp) {
       return new UndInstrmtGrp(undInstrmtGrp);
@@ -58,6 +66,8 @@ PositionTransferReport.prototype.undInstrmtGrp = function () {
 };
 
 PositionTransferReport.prototype.positionQty = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[PositionTransferReport.Tags.PositionQty] === undefined) return null;
   return this.message.groups[PositionTransferReport.Tags.PositionQty]
     .map(function (positionQty) {
       return new PositionQty(positionQty);
@@ -65,6 +75,8 @@ PositionTransferReport.prototype.positionQty = function () {
 };
 
 PositionTransferReport.prototype.positionAmountData = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[PositionTransferReport.Tags.PositionAmountData] === undefined) return null;
   return this.message.groups[PositionTransferReport.Tags.PositionAmountData]
     .map(function (positionAmountData) {
       return new PositionAmountData(positionAmountData);

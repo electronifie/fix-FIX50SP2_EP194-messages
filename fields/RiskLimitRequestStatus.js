@@ -10,10 +10,10 @@ RiskLimitRequestStatus.prototype.value = function () {
 
 
 RiskLimitRequestStatus.Keys = {
-  ACCEPTED: '0',
-  ACCEPTED_WITH_CHANGES: '1',
-  REJECTED: '2',
-  ACCEPTENCE_PENDING: '3',
+  'ACCEPTED': '0',
+  'ACCEPTED_WITH_CHANGES': '1',
+  'REJECTED': '2',
+  'ACCEPTENCE_PENDING': '3',
 };
 
 RiskLimitRequestStatus.Tag = '1762';

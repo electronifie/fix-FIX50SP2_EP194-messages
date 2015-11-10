@@ -14,6 +14,8 @@ function AdjustedPositionReport (adjustedPositionReport) {
 }
 
 AdjustedPositionReport.prototype.parties = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[AdjustedPositionReport.Tags.Parties] === undefined) return null;
   return this.message.groups[AdjustedPositionReport.Tags.Parties]
     .map(function (parties) {
       return new Parties(parties);
@@ -21,6 +23,8 @@ AdjustedPositionReport.prototype.parties = function () {
 };
 
 AdjustedPositionReport.prototype.positionQty = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[AdjustedPositionReport.Tags.PositionQty] === undefined) return null;
   return this.message.groups[AdjustedPositionReport.Tags.PositionQty]
     .map(function (positionQty) {
       return new PositionQty(positionQty);
@@ -28,6 +32,8 @@ AdjustedPositionReport.prototype.positionQty = function () {
 };
 
 AdjustedPositionReport.prototype.instrmtGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[AdjustedPositionReport.Tags.InstrmtGrp] === undefined) return null;
   return this.message.groups[AdjustedPositionReport.Tags.InstrmtGrp]
     .map(function (instrmtGrp) {
       return new InstrmtGrp(instrmtGrp);

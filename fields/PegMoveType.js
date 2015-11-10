@@ -10,8 +10,8 @@ PegMoveType.prototype.value = function () {
 
 
 PegMoveType.Keys = {
-  FLOATING: '0',
-  FIXED: '1',
+  'FLOATING': '0',
+  'FIXED': '1',
 };
 
 PegMoveType.Tag = '835';

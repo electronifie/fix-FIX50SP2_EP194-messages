@@ -10,8 +10,8 @@ VerificationMethod.prototype.value = function () {
 
 
 VerificationMethod.Keys = {
-  NON_ELECTRONIC: '0',
-  ELECTRONIC: '1',
+  'NON_ELECTRONIC': '0',
+  'ELECTRONIC': '1',
 };
 
 VerificationMethod.Tag = '1931';

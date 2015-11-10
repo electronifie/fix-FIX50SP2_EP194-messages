@@ -10,8 +10,8 @@ TradeVolType.prototype.value = function () {
 
 
 TradeVolType.Keys = {
-  NUMBER_OF_UNITS: '0',
-  NUMBER_OF_ROUND_LOTS: '1',
+  'NUMBER_OF_UNITS': '0',
+  'NUMBER_OF_ROUND_LOTS': '1',
 };
 
 TradeVolType.Tag = '1786';

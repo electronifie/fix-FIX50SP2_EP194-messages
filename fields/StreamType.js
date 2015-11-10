@@ -10,8 +10,8 @@ StreamType.prototype.value = function () {
 
 
 StreamType.Keys = {
-  PAYMENT_CASH_SETTLEMENT: '0',
-  PHYSICAL_DELIVERY: '1',
+  'PAYMENT_CASH_SETTLEMENT': '0',
+  'PHYSICAL_DELIVERY': '1',
 };
 
 StreamType.Tag = '40050';

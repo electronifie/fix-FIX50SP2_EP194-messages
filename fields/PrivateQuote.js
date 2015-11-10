@@ -10,8 +10,8 @@ PrivateQuote.prototype.value = function () {
 
 
 PrivateQuote.Keys = {
-  PRIVATE_QUOTE: 'Y',
-  PUBLIC_QUOTE: 'N',
+  'PRIVATE_QUOTE': 'Y',
+  'PUBLIC_QUOTE': 'N',
 };
 
 PrivateQuote.Tag = '1171';

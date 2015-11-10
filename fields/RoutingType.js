@@ -10,12 +10,12 @@ RoutingType.prototype.value = function () {
 
 
 RoutingType.Keys = {
-  TARGET_FIRM: '1',
-  TARGET_LIST: '2',
-  BLOCK_FIRM: '3',
-  BLOCK_LIST: '4',
-  TARGET_PERSON: '5',
-  BLOCK_PERSON: '6',
+  'TARGET_FIRM': '1',
+  'TARGET_LIST': '2',
+  'BLOCK_FIRM': '3',
+  'BLOCK_LIST': '4',
+  'TARGET_PERSON': '5',
+  'BLOCK_PERSON': '6',
 };
 
 RoutingType.Tag = '216';

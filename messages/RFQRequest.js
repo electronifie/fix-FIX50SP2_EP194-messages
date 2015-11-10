@@ -9,6 +9,8 @@ function RFQRequest (rfqrequest) {
 }
 
 RFQRequest.prototype.parties = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[RFQRequest.Tags.Parties] === undefined) return null;
   return this.message.groups[RFQRequest.Tags.Parties]
     .map(function (parties) {
       return new Parties(parties);
@@ -16,6 +18,8 @@ RFQRequest.prototype.parties = function () {
 };
 
 RFQRequest.prototype.rfqreqGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[RFQRequest.Tags.RFQReqGrp] === undefined) return null;
   return this.message.groups[RFQRequest.Tags.RFQReqGrp]
     .map(function (rfqreqGrp) {
       return new RFQReqGrp(rfqreqGrp);

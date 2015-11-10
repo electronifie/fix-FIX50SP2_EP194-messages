@@ -16,6 +16,8 @@ function PartyRiskLimitsReportAck (partyRiskLimitsReportAck) {
 }
 
 PartyRiskLimitsReportAck.prototype.partyRiskLimitsUpdateGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[PartyRiskLimitsReportAck.Tags.PartyRiskLimitsUpdateGrp] === undefined) return null;
   return this.message.groups[PartyRiskLimitsReportAck.Tags.PartyRiskLimitsUpdateGrp]
     .map(function (partyRiskLimitsUpdateGrp) {
       return new PartyRiskLimitsUpdateGrp(partyRiskLimitsUpdateGrp);

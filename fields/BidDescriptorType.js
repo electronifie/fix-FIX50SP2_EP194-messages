@@ -10,9 +10,9 @@ BidDescriptorType.prototype.value = function () {
 
 
 BidDescriptorType.Keys = {
-  SECTOR: '1',
-  COUNTRY: '2',
-  INDEX: '3',
+  'SECTOR': '1',
+  'COUNTRY': '2',
+  'INDEX': '3',
 };
 
 BidDescriptorType.Tag = '399';

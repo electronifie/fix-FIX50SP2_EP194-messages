@@ -10,8 +10,8 @@ QuoteModelType.prototype.value = function () {
 
 
 QuoteModelType.Keys = {
-  QUOTE_ENTRY: '1',
-  QUOTE_MODIFICATION: '2',
+  'QUOTE_ENTRY': '1',
+  'QUOTE_MODIFICATION': '2',
 };
 
 QuoteModelType.Tag = '2403';

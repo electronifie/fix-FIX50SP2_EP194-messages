@@ -10,11 +10,11 @@ ExDestinationIDSource.prototype.value = function () {
 
 
 ExDestinationIDSource.Keys = {
-  BIC: 'B',
-  GENERALLY_ACCEPTED_MARKET_PARTICIPANT_IDENTIFIER: 'C',
-  PROPRIETARY_CUSTOM_CODE: 'D',
-  ISO_COUNTRY_CODE: 'E',
-  MIC: 'G',
+  'BIC': 'B',
+  'GENERALLY_ACCEPTED_MARKET_PARTICIPANT_IDENTIFIER': 'C',
+  'PROPRIETARY_CUSTOM_CODE': 'D',
+  'ISO_COUNTRY_CODE': 'E',
+  'MIC': 'G',
 };
 
 ExDestinationIDSource.Tag = '1133';

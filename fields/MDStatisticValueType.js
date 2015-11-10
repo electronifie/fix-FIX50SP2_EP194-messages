@@ -10,8 +10,8 @@ MDStatisticValueType.prototype.value = function () {
 
 
 MDStatisticValueType.Keys = {
-  ABSOLUTE: '1',
-  PERCENTAGE: '2',
+  'ABSOLUTE': '1',
+  'PERCENTAGE': '2',
 };
 
 MDStatisticValueType.Tag = '2479';

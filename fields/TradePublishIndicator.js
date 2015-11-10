@@ -10,9 +10,9 @@ TradePublishIndicator.prototype.value = function () {
 
 
 TradePublishIndicator.Keys = {
-  DO_NOT_PUBLISH_TRADE: '0',
-  PUBLISH_TRADE: '1',
-  DEFERRED_PUBLICATION: '2',
+  'DO_NOT_PUBLISH_TRADE': '0',
+  'PUBLISH_TRADE': '1',
+  'DEFERRED_PUBLICATION': '2',
 };
 
 TradePublishIndicator.Tag = '1390';

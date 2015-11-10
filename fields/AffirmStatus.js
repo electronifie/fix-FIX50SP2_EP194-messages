@@ -10,9 +10,9 @@ AffirmStatus.prototype.value = function () {
 
 
 AffirmStatus.Keys = {
-  RECEIVED: '1',
-  CONFIRM_REJECTED_I_E_NOT_AFFIRMED: '2',
-  AFFIRMED: '3',
+  'RECEIVED': '1',
+  'CONFIRM_REJECTED_I_E_NOT_AFFIRMED': '2',
+  'AFFIRMED': '3',
 };
 
 AffirmStatus.Tag = '940';

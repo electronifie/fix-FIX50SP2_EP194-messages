@@ -10,8 +10,8 @@ RelatedPriceSource.prototype.value = function () {
 
 
 RelatedPriceSource.Keys = {
-  NBB: '1',
-  NBO: '2',
+  'NBB': '1',
+  'NBO': '2',
 };
 
 RelatedPriceSource.Tag = '1821';

@@ -10,13 +10,13 @@ TradingSessionID.prototype.value = function () {
 
 
 TradingSessionID.Keys = {
-  DAY: '1',
-  HALFDAY: '2',
-  MORNING: '3',
-  AFTERNOON: '4',
-  EVENING: '5',
-  AFTER_HOURS: '6',
-  HOLIDAY: '7',
+  'DAY': '1',
+  'HALFDAY': '2',
+  'MORNING': '3',
+  'AFTERNOON': '4',
+  'EVENING': '5',
+  'AFTER_HOURS': '6',
+  'HOLIDAY': '7',
 };
 
 TradingSessionID.Tag = '336';

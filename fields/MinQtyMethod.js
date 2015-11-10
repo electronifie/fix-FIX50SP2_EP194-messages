@@ -10,8 +10,8 @@ MinQtyMethod.prototype.value = function () {
 
 
 MinQtyMethod.Keys = {
-  ONCE: '1',
-  MULTIPLE: '2',
+  'ONCE': '1',
+  'MULTIPLE': '2',
 };
 
 MinQtyMethod.Tag = '1822';

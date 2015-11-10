@@ -10,9 +10,9 @@ BlockTrdAllocIndicator.prototype.value = function () {
 
 
 BlockTrdAllocIndicator.Keys = {
-  BLOCK_TO_BE_ALLOCATED: '0',
-  BLOCK_NOT_TO_BE_ALLOCATED: '1',
-  ALLOCATED_TRADE: '2',
+  'BLOCK_TO_BE_ALLOCATED': '0',
+  'BLOCK_NOT_TO_BE_ALLOCATED': '1',
+  'ALLOCATED_TRADE': '2',
 };
 
 BlockTrdAllocIndicator.Tag = '1980';

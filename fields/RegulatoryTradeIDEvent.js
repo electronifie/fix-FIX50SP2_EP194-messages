@@ -10,13 +10,13 @@ RegulatoryTradeIDEvent.prototype.value = function () {
 
 
 RegulatoryTradeIDEvent.Keys = {
-  INITIAL_BLOCK_TRADE: '0',
-  ALLOCATION: '1',
-  CLEARING: '2',
-  COMPRESSION: '3',
-  NOVATION: '4',
-  TERMINATION: '5',
-  POST_TRADE_VALUATION: '6',
+  'INITIAL_BLOCK_TRADE': '0',
+  'ALLOCATION': '1',
+  'CLEARING': '2',
+  'COMPRESSION': '3',
+  'NOVATION': '4',
+  'TERMINATION': '5',
+  'POST_TRADE_VALUATION': '6',
 };
 
 RegulatoryTradeIDEvent.Tag = '1904';

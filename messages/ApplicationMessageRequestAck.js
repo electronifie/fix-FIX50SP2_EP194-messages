@@ -14,6 +14,8 @@ function ApplicationMessageRequestAck (applicationMessageRequestAck) {
 }
 
 ApplicationMessageRequestAck.prototype.applIdrequestAckGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[ApplicationMessageRequestAck.Tags.ApplIDRequestAckGrp] === undefined) return null;
   return this.message.groups[ApplicationMessageRequestAck.Tags.ApplIDRequestAckGrp]
     .map(function (applIdrequestAckGrp) {
       return new ApplIDRequestAckGrp(applIdrequestAckGrp);
@@ -21,6 +23,8 @@ ApplicationMessageRequestAck.prototype.applIdrequestAckGrp = function () {
 };
 
 ApplicationMessageRequestAck.prototype.parties = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[ApplicationMessageRequestAck.Tags.Parties] === undefined) return null;
   return this.message.groups[ApplicationMessageRequestAck.Tags.Parties]
     .map(function (parties) {
       return new Parties(parties);

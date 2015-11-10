@@ -16,6 +16,8 @@ function PartyRiskLimitsRequest (partyRiskLimitsRequest) {
 }
 
 PartyRiskLimitsRequest.prototype.requestingPartyGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[PartyRiskLimitsRequest.Tags.RequestingPartyGrp] === undefined) return null;
   return this.message.groups[PartyRiskLimitsRequest.Tags.RequestingPartyGrp]
     .map(function (requestingPartyGrp) {
       return new RequestingPartyGrp(requestingPartyGrp);
@@ -23,6 +25,8 @@ PartyRiskLimitsRequest.prototype.requestingPartyGrp = function () {
 };
 
 PartyRiskLimitsRequest.prototype.parties = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[PartyRiskLimitsRequest.Tags.Parties] === undefined) return null;
   return this.message.groups[PartyRiskLimitsRequest.Tags.Parties]
     .map(function (parties) {
       return new Parties(parties);
@@ -30,6 +34,8 @@ PartyRiskLimitsRequest.prototype.parties = function () {
 };
 
 PartyRiskLimitsRequest.prototype.requestedPartyRoleGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[PartyRiskLimitsRequest.Tags.RequestedPartyRoleGrp] === undefined) return null;
   return this.message.groups[PartyRiskLimitsRequest.Tags.RequestedPartyRoleGrp]
     .map(function (requestedPartyRoleGrp) {
       return new RequestedPartyRoleGrp(requestedPartyRoleGrp);
@@ -37,6 +43,8 @@ PartyRiskLimitsRequest.prototype.requestedPartyRoleGrp = function () {
 };
 
 PartyRiskLimitsRequest.prototype.requestedRiskLimitTypesGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[PartyRiskLimitsRequest.Tags.RequestedRiskLimitTypesGrp] === undefined) return null;
   return this.message.groups[PartyRiskLimitsRequest.Tags.RequestedRiskLimitTypesGrp]
     .map(function (requestedRiskLimitTypesGrp) {
       return new RequestedRiskLimitTypesGrp(requestedRiskLimitTypesGrp);
@@ -44,6 +52,8 @@ PartyRiskLimitsRequest.prototype.requestedRiskLimitTypesGrp = function () {
 };
 
 PartyRiskLimitsRequest.prototype.riskInstrumentScopeGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[PartyRiskLimitsRequest.Tags.RiskInstrumentScopeGrp] === undefined) return null;
   return this.message.groups[PartyRiskLimitsRequest.Tags.RiskInstrumentScopeGrp]
     .map(function (riskInstrumentScopeGrp) {
       return new RiskInstrumentScopeGrp(riskInstrumentScopeGrp);

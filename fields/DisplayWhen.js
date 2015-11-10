@@ -10,8 +10,8 @@ DisplayWhen.prototype.value = function () {
 
 
 DisplayWhen.Keys = {
-  IMMEDIATE: '1',
-  EXHAUST: '2',
+  'IMMEDIATE': '1',
+  'EXHAUST': '2',
 };
 
 DisplayWhen.Tag = '1083';

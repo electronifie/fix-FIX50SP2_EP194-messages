@@ -31,6 +31,8 @@ function RequestForPositionsAck (requestForPositionsAck) {
 }
 
 RequestForPositionsAck.prototype.parties = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[RequestForPositionsAck.Tags.Parties] === undefined) return null;
   return this.message.groups[RequestForPositionsAck.Tags.Parties]
     .map(function (parties) {
       return new Parties(parties);
@@ -38,6 +40,8 @@ RequestForPositionsAck.prototype.parties = function () {
 };
 
 RequestForPositionsAck.prototype.instrument = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[RequestForPositionsAck.Tags.Instrument] === undefined) return null;
   return this.message.groups[RequestForPositionsAck.Tags.Instrument]
     .map(function (instrument) {
       return new Instrument(instrument);
@@ -45,6 +49,8 @@ RequestForPositionsAck.prototype.instrument = function () {
 };
 
 RequestForPositionsAck.prototype.instrmtLegGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[RequestForPositionsAck.Tags.InstrmtLegGrp] === undefined) return null;
   return this.message.groups[RequestForPositionsAck.Tags.InstrmtLegGrp]
     .map(function (instrmtLegGrp) {
       return new InstrmtLegGrp(instrmtLegGrp);
@@ -52,6 +58,8 @@ RequestForPositionsAck.prototype.instrmtLegGrp = function () {
 };
 
 RequestForPositionsAck.prototype.undInstrmtGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[RequestForPositionsAck.Tags.UndInstrmtGrp] === undefined) return null;
   return this.message.groups[RequestForPositionsAck.Tags.UndInstrmtGrp]
     .map(function (undInstrmtGrp) {
       return new UndInstrmtGrp(undInstrmtGrp);

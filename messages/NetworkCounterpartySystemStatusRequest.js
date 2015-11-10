@@ -7,6 +7,8 @@ function NetworkCounterpartySystemStatusRequest (networkCounterpartySystemStatus
 }
 
 NetworkCounterpartySystemStatusRequest.prototype.compIdreqGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[NetworkCounterpartySystemStatusRequest.Tags.CompIDReqGrp] === undefined) return null;
   return this.message.groups[NetworkCounterpartySystemStatusRequest.Tags.CompIDReqGrp]
     .map(function (compIdreqGrp) {
       return new CompIDReqGrp(compIdreqGrp);

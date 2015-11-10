@@ -10,9 +10,9 @@ RoundingDirection.prototype.value = function () {
 
 
 RoundingDirection.Keys = {
-  ROUND_TO_NEAREST: '0',
-  ROUND_DOWN: '1',
-  ROUND_UP: '2',
+  'ROUND_TO_NEAREST': '0',
+  'ROUND_DOWN': '1',
+  'ROUND_UP': '2',
 };
 
 RoundingDirection.Tag = '468';

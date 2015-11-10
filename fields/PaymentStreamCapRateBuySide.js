@@ -10,8 +10,8 @@ PaymentStreamCapRateBuySide.prototype.value = function () {
 
 
 PaymentStreamCapRateBuySide.Keys = {
-  BUYER_OF_THE_TRADE: '1',
-  SELLER_OF_THE_TRADE: '2',
+  'BUYER_OF_THE_TRADE': '1',
+  'SELLER_OF_THE_TRADE': '2',
 };
 
 PaymentStreamCapRateBuySide.Tag = '40798';

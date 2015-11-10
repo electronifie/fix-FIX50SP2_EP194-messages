@@ -10,10 +10,10 @@ SideRegulatoryTradeIDType.prototype.value = function () {
 
 
 SideRegulatoryTradeIDType.Keys = {
-  CURRENT: '0',
-  PREVIOUS: '1',
-  BLOCK: '2',
-  RELATED: '3',
+  'CURRENT': '0',
+  'PREVIOUS': '1',
+  'BLOCK': '2',
+  'RELATED': '3',
 };
 
 SideRegulatoryTradeIDType.Tag = '1975';

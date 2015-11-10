@@ -21,6 +21,8 @@ function MassQuote (massQuote) {
 }
 
 MassQuote.prototype.parties = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[MassQuote.Tags.Parties] === undefined) return null;
   return this.message.groups[MassQuote.Tags.Parties]
     .map(function (parties) {
       return new Parties(parties);
@@ -28,6 +30,8 @@ MassQuote.prototype.parties = function () {
 };
 
 MassQuote.prototype.quotSetGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[MassQuote.Tags.QuotSetGrp] === undefined) return null;
   return this.message.groups[MassQuote.Tags.QuotSetGrp]
     .map(function (quotSetGrp) {
       return new QuotSetGrp(quotSetGrp);

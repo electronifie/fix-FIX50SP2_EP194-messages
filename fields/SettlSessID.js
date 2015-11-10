@@ -10,10 +10,10 @@ SettlSessID.prototype.value = function () {
 
 
 SettlSessID.Keys = {
-  INTRADAY: 'ITD',
-  REGULAR_TRADING_HOURS: 'RTH',
-  ELECTRONIC_TRADING_HOURS: 'ETH',
-  END_OF_DAY: 'EOD',
+  'INTRADAY': 'ITD',
+  'REGULAR_TRADING_HOURS': 'RTH',
+  'ELECTRONIC_TRADING_HOURS': 'ETH',
+  'END_OF_DAY': 'EOD',
 };
 
 SettlSessID.Tag = '716';

@@ -10,10 +10,10 @@ MaturityMonthYearIncrementUnits.prototype.value = function () {
 
 
 MaturityMonthYearIncrementUnits.Keys = {
-  MONTHS: '0',
-  DAYS: '1',
-  WEEKS: '2',
-  YEARS: '3',
+  'MONTHS': '0',
+  'DAYS': '1',
+  'WEEKS': '2',
+  'YEARS': '3',
 };
 
 MaturityMonthYearIncrementUnits.Tag = '1302';

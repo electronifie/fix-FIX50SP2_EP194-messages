@@ -59,6 +59,8 @@ function CollateralAssignment (collateralAssignment) {
 }
 
 CollateralAssignment.prototype.parties = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[CollateralAssignment.Tags.Parties] === undefined) return null;
   return this.message.groups[CollateralAssignment.Tags.Parties]
     .map(function (parties) {
       return new Parties(parties);
@@ -66,6 +68,8 @@ CollateralAssignment.prototype.parties = function () {
 };
 
 CollateralAssignment.prototype.execCollGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[CollateralAssignment.Tags.ExecCollGrp] === undefined) return null;
   return this.message.groups[CollateralAssignment.Tags.ExecCollGrp]
     .map(function (execCollGrp) {
       return new ExecCollGrp(execCollGrp);
@@ -73,6 +77,8 @@ CollateralAssignment.prototype.execCollGrp = function () {
 };
 
 CollateralAssignment.prototype.trdCollGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[CollateralAssignment.Tags.TrdCollGrp] === undefined) return null;
   return this.message.groups[CollateralAssignment.Tags.TrdCollGrp]
     .map(function (trdCollGrp) {
       return new TrdCollGrp(trdCollGrp);
@@ -80,6 +86,8 @@ CollateralAssignment.prototype.trdCollGrp = function () {
 };
 
 CollateralAssignment.prototype.instrument = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[CollateralAssignment.Tags.Instrument] === undefined) return null;
   return this.message.groups[CollateralAssignment.Tags.Instrument]
     .map(function (instrument) {
       return new Instrument(instrument);
@@ -87,6 +95,8 @@ CollateralAssignment.prototype.instrument = function () {
 };
 
 CollateralAssignment.prototype.financingDetails = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[CollateralAssignment.Tags.FinancingDetails] === undefined) return null;
   return this.message.groups[CollateralAssignment.Tags.FinancingDetails]
     .map(function (financingDetails) {
       return new FinancingDetails(financingDetails);
@@ -94,6 +104,8 @@ CollateralAssignment.prototype.financingDetails = function () {
 };
 
 CollateralAssignment.prototype.instrmtLegGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[CollateralAssignment.Tags.InstrmtLegGrp] === undefined) return null;
   return this.message.groups[CollateralAssignment.Tags.InstrmtLegGrp]
     .map(function (instrmtLegGrp) {
       return new InstrmtLegGrp(instrmtLegGrp);
@@ -101,6 +113,8 @@ CollateralAssignment.prototype.instrmtLegGrp = function () {
 };
 
 CollateralAssignment.prototype.undInstrmtCollGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[CollateralAssignment.Tags.UndInstrmtCollGrp] === undefined) return null;
   return this.message.groups[CollateralAssignment.Tags.UndInstrmtCollGrp]
     .map(function (undInstrmtCollGrp) {
       return new UndInstrmtCollGrp(undInstrmtCollGrp);
@@ -108,6 +122,8 @@ CollateralAssignment.prototype.undInstrmtCollGrp = function () {
 };
 
 CollateralAssignment.prototype.trdRegTimestamps = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[CollateralAssignment.Tags.TrdRegTimestamps] === undefined) return null;
   return this.message.groups[CollateralAssignment.Tags.TrdRegTimestamps]
     .map(function (trdRegTimestamps) {
       return new TrdRegTimestamps(trdRegTimestamps);
@@ -115,6 +131,8 @@ CollateralAssignment.prototype.trdRegTimestamps = function () {
 };
 
 CollateralAssignment.prototype.miscFeesGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[CollateralAssignment.Tags.MiscFeesGrp] === undefined) return null;
   return this.message.groups[CollateralAssignment.Tags.MiscFeesGrp]
     .map(function (miscFeesGrp) {
       return new MiscFeesGrp(miscFeesGrp);
@@ -122,6 +140,8 @@ CollateralAssignment.prototype.miscFeesGrp = function () {
 };
 
 CollateralAssignment.prototype.spreadOrBenchmarkCurveData = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[CollateralAssignment.Tags.SpreadOrBenchmarkCurveData] === undefined) return null;
   return this.message.groups[CollateralAssignment.Tags.SpreadOrBenchmarkCurveData]
     .map(function (spreadOrBenchmarkCurveData) {
       return new SpreadOrBenchmarkCurveData(spreadOrBenchmarkCurveData);
@@ -129,6 +149,8 @@ CollateralAssignment.prototype.spreadOrBenchmarkCurveData = function () {
 };
 
 CollateralAssignment.prototype.stipulations = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[CollateralAssignment.Tags.Stipulations] === undefined) return null;
   return this.message.groups[CollateralAssignment.Tags.Stipulations]
     .map(function (stipulations) {
       return new Stipulations(stipulations);
@@ -136,6 +158,8 @@ CollateralAssignment.prototype.stipulations = function () {
 };
 
 CollateralAssignment.prototype.settlInstructionsData = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[CollateralAssignment.Tags.SettlInstructionsData] === undefined) return null;
   return this.message.groups[CollateralAssignment.Tags.SettlInstructionsData]
     .map(function (settlInstructionsData) {
       return new SettlInstructionsData(settlInstructionsData);

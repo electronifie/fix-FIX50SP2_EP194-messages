@@ -8,6 +8,8 @@ function ListStrikePrice (listStrikePrice) {
 }
 
 ListStrikePrice.prototype.instrmtStrkPxGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[ListStrikePrice.Tags.InstrmtStrkPxGrp] === undefined) return null;
   return this.message.groups[ListStrikePrice.Tags.InstrmtStrkPxGrp]
     .map(function (instrmtStrkPxGrp) {
       return new InstrmtStrkPxGrp(instrmtStrkPxGrp);

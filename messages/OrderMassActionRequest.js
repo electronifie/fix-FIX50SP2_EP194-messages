@@ -26,6 +26,8 @@ function OrderMassActionRequest (orderMassActionRequest) {
 }
 
 OrderMassActionRequest.prototype.targetMarketSegmentGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[OrderMassActionRequest.Tags.TargetMarketSegmentGrp] === undefined) return null;
   return this.message.groups[OrderMassActionRequest.Tags.TargetMarketSegmentGrp]
     .map(function (targetMarketSegmentGrp) {
       return new TargetMarketSegmentGrp(targetMarketSegmentGrp);
@@ -33,6 +35,8 @@ OrderMassActionRequest.prototype.targetMarketSegmentGrp = function () {
 };
 
 OrderMassActionRequest.prototype.parties = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[OrderMassActionRequest.Tags.Parties] === undefined) return null;
   return this.message.groups[OrderMassActionRequest.Tags.Parties]
     .map(function (parties) {
       return new Parties(parties);
@@ -40,6 +44,8 @@ OrderMassActionRequest.prototype.parties = function () {
 };
 
 OrderMassActionRequest.prototype.targetParties = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[OrderMassActionRequest.Tags.TargetParties] === undefined) return null;
   return this.message.groups[OrderMassActionRequest.Tags.TargetParties]
     .map(function (targetParties) {
       return new TargetParties(targetParties);
@@ -47,6 +53,8 @@ OrderMassActionRequest.prototype.targetParties = function () {
 };
 
 OrderMassActionRequest.prototype.instrument = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[OrderMassActionRequest.Tags.Instrument] === undefined) return null;
   return this.message.groups[OrderMassActionRequest.Tags.Instrument]
     .map(function (instrument) {
       return new Instrument(instrument);
@@ -54,6 +62,8 @@ OrderMassActionRequest.prototype.instrument = function () {
 };
 
 OrderMassActionRequest.prototype.underlyingInstrument = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[OrderMassActionRequest.Tags.UnderlyingInstrument] === undefined) return null;
   return this.message.groups[OrderMassActionRequest.Tags.UnderlyingInstrument]
     .map(function (underlyingInstrument) {
       return new UnderlyingInstrument(underlyingInstrument);

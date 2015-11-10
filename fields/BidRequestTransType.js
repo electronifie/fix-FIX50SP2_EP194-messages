@@ -10,8 +10,8 @@ BidRequestTransType.prototype.value = function () {
 
 
 BidRequestTransType.Keys = {
-  CANCEL: 'C',
-  NEW: 'N',
+  'CANCEL': 'C',
+  'NEW': 'N',
 };
 
 BidRequestTransType.Tag = '374';

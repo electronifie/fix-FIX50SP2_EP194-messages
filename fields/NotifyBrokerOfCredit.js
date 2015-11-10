@@ -10,8 +10,8 @@ NotifyBrokerOfCredit.prototype.value = function () {
 
 
 NotifyBrokerOfCredit.Keys = {
-  DETAILS_SHOULD_NOT_BE_COMMUNICATED: 'N',
-  DETAILS_SHOULD_BE_COMMUNICATED: 'Y',
+  'DETAILS_SHOULD_NOT_BE_COMMUNICATED': 'N',
+  'DETAILS_SHOULD_BE_COMMUNICATED': 'Y',
 };
 
 NotifyBrokerOfCredit.Tag = '208';

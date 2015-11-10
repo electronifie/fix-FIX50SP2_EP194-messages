@@ -35,6 +35,8 @@ function MassOrderAck (massOrderAck) {
 }
 
 MassOrderAck.prototype.applicationSequenceControl = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[MassOrderAck.Tags.ApplicationSequenceControl] === undefined) return null;
   return this.message.groups[MassOrderAck.Tags.ApplicationSequenceControl]
     .map(function (applicationSequenceControl) {
       return new ApplicationSequenceControl(applicationSequenceControl);
@@ -42,6 +44,8 @@ MassOrderAck.prototype.applicationSequenceControl = function () {
 };
 
 MassOrderAck.prototype.parties = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[MassOrderAck.Tags.Parties] === undefined) return null;
   return this.message.groups[MassOrderAck.Tags.Parties]
     .map(function (parties) {
       return new Parties(parties);
@@ -49,6 +53,8 @@ MassOrderAck.prototype.parties = function () {
 };
 
 MassOrderAck.prototype.throttleResponse = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[MassOrderAck.Tags.ThrottleResponse] === undefined) return null;
   return this.message.groups[MassOrderAck.Tags.ThrottleResponse]
     .map(function (throttleResponse) {
       return new ThrottleResponse(throttleResponse);
@@ -56,6 +62,8 @@ MassOrderAck.prototype.throttleResponse = function () {
 };
 
 MassOrderAck.prototype.orderEntryAckGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[MassOrderAck.Tags.OrderEntryAckGrp] === undefined) return null;
   return this.message.groups[MassOrderAck.Tags.OrderEntryAckGrp]
     .map(function (orderEntryAckGrp) {
       return new OrderEntryAckGrp(orderEntryAckGrp);

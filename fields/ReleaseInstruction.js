@@ -10,8 +10,8 @@ ReleaseInstruction.prototype.value = function () {
 
 
 ReleaseInstruction.Keys = {
-  INTERMARKET_SWEEP_ORDER: '1',
-  NO_AWAY_MARKET_BETTER_CHECK: '2',
+  'INTERMARKET_SWEEP_ORDER': '1',
+  'NO_AWAY_MARKET_BETTER_CHECK': '2',
 };
 
 ReleaseInstruction.Tag = '1810';

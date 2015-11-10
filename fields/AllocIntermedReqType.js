@@ -10,12 +10,12 @@ AllocIntermedReqType.prototype.value = function () {
 
 
 AllocIntermedReqType.Keys = {
-  PENDING_ACCEPT: '1',
-  PENDING_RELEASE: '2',
-  PENDING_REVERSAL: '3',
-  ACCEPT: '4',
-  BLOCK_LEVEL_REJECT: '5',
-  ACCOUNT_LEVEL_REJECT: '6',
+  'PENDING_ACCEPT': '1',
+  'PENDING_RELEASE': '2',
+  'PENDING_REVERSAL': '3',
+  'ACCEPT': '4',
+  'BLOCK_LEVEL_REJECT': '5',
+  'ACCOUNT_LEVEL_REJECT': '6',
 };
 
 AllocIntermedReqType.Tag = '808';

@@ -25,6 +25,8 @@ function MarketDataStatisticsReport (marketDataStatisticsReport) {
 }
 
 MarketDataStatisticsReport.prototype.applicationSequenceControl = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[MarketDataStatisticsReport.Tags.ApplicationSequenceControl] === undefined) return null;
   return this.message.groups[MarketDataStatisticsReport.Tags.ApplicationSequenceControl]
     .map(function (applicationSequenceControl) {
       return new ApplicationSequenceControl(applicationSequenceControl);
@@ -32,6 +34,8 @@ MarketDataStatisticsReport.prototype.applicationSequenceControl = function () {
 };
 
 MarketDataStatisticsReport.prototype.parties = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[MarketDataStatisticsReport.Tags.Parties] === undefined) return null;
   return this.message.groups[MarketDataStatisticsReport.Tags.Parties]
     .map(function (parties) {
       return new Parties(parties);
@@ -39,6 +43,8 @@ MarketDataStatisticsReport.prototype.parties = function () {
 };
 
 MarketDataStatisticsReport.prototype.instrument = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[MarketDataStatisticsReport.Tags.Instrument] === undefined) return null;
   return this.message.groups[MarketDataStatisticsReport.Tags.Instrument]
     .map(function (instrument) {
       return new Instrument(instrument);
@@ -46,6 +52,8 @@ MarketDataStatisticsReport.prototype.instrument = function () {
 };
 
 MarketDataStatisticsReport.prototype.undInstrmtGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[MarketDataStatisticsReport.Tags.UndInstrmtGrp] === undefined) return null;
   return this.message.groups[MarketDataStatisticsReport.Tags.UndInstrmtGrp]
     .map(function (undInstrmtGrp) {
       return new UndInstrmtGrp(undInstrmtGrp);
@@ -53,6 +61,8 @@ MarketDataStatisticsReport.prototype.undInstrmtGrp = function () {
 };
 
 MarketDataStatisticsReport.prototype.instrmtLegGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[MarketDataStatisticsReport.Tags.InstrmtLegGrp] === undefined) return null;
   return this.message.groups[MarketDataStatisticsReport.Tags.InstrmtLegGrp]
     .map(function (instrmtLegGrp) {
       return new InstrmtLegGrp(instrmtLegGrp);
@@ -60,6 +70,8 @@ MarketDataStatisticsReport.prototype.instrmtLegGrp = function () {
 };
 
 MarketDataStatisticsReport.prototype.mdstatisticRptGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[MarketDataStatisticsReport.Tags.MDStatisticRptGrp] === undefined) return null;
   return this.message.groups[MarketDataStatisticsReport.Tags.MDStatisticRptGrp]
     .map(function (mdstatisticRptGrp) {
       return new MDStatisticRptGrp(mdstatisticRptGrp);

@@ -10,9 +10,9 @@ RefOrdIDReason.prototype.value = function () {
 
 
 RefOrdIDReason.Keys = {
-  GTC_FROM_PREVIOUS_DAY: '0',
-  PARTIAL_FILL_REMAINING: '1',
-  ORDER_CHANGED: '2',
+  'GTC_FROM_PREVIOUS_DAY': '0',
+  'PARTIAL_FILL_REMAINING': '1',
+  'ORDER_CHANGED': '2',
 };
 
 RefOrdIDReason.Tag = '1431';

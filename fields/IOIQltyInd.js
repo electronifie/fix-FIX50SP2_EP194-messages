@@ -10,9 +10,9 @@ IOIQltyInd.prototype.value = function () {
 
 
 IOIQltyInd.Keys = {
-  HIGH: 'H',
-  LOW: 'L',
-  MEDIUM: 'M',
+  'HIGH': 'H',
+  'LOW': 'L',
+  'MEDIUM': 'M',
 };
 
 IOIQltyInd.Tag = '25';

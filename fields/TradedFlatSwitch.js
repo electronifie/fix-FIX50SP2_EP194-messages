@@ -10,8 +10,8 @@ TradedFlatSwitch.prototype.value = function () {
 
 
 TradedFlatSwitch.Keys = {
-  NOT_TRADED_FLAT: 'N',
-  TRADED_FLAT: 'Y',
+  'NOT_TRADED_FLAT': 'N',
+  'TRADED_FLAT': 'Y',
 };
 
 TradedFlatSwitch.Tag = '258';

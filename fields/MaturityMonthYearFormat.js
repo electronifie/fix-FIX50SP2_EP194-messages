@@ -10,9 +10,9 @@ MaturityMonthYearFormat.prototype.value = function () {
 
 
 MaturityMonthYearFormat.Keys = {
-  YEARMONTH_ONLY: '0',
-  YEARMONTHDAY: '1',
-  YEARMONTHWEEK: '2',
+  'YEARMONTH_ONLY': '0',
+  'YEARMONTHDAY': '1',
+  'YEARMONTHWEEK': '2',
 };
 
 MaturityMonthYearFormat.Tag = '1303';

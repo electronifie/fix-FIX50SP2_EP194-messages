@@ -10,9 +10,9 @@ ExecMethod.prototype.value = function () {
 
 
 ExecMethod.Keys = {
-  UNDEFINED_UNSPECIFIED_: '0',
-  MANUAL: '1',
-  AUTOMATED: '2',
+  'UNDEFINED_UNSPECIFIED_': '0',
+  'MANUAL': '1',
+  'AUTOMATED': '2',
 };
 
 ExecMethod.Tag = '2405';

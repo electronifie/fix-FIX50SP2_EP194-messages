@@ -10,8 +10,8 @@ CxlRejResponseTo.prototype.value = function () {
 
 
 CxlRejResponseTo.Keys = {
-  ORDER_CANCEL_REQUEST: '1',
-  ORDER_CANCEL_REPLACE_REQUEST: '2',
+  'ORDER_CANCEL_REQUEST': '1',
+  'ORDER_CANCEL_REPLACE_REQUEST': '2',
 };
 
 CxlRejResponseTo.Tag = '434';

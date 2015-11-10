@@ -10,10 +10,10 @@ TriggerPriceTypeScope.prototype.value = function () {
 
 
 TriggerPriceTypeScope.Keys = {
-  NONE: '0',
-  LOCAL: '1',
-  NATIONAL: '2',
-  GLOBAL: '3',
+  'NONE': '0',
+  'LOCAL': '1',
+  'NATIONAL': '2',
+  'GLOBAL': '3',
 };
 
 TriggerPriceTypeScope.Tag = '1108';

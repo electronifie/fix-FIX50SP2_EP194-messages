@@ -10,8 +10,8 @@ ProvisionOptionSinglePartyBuyerSide.prototype.value = function () {
 
 
 ProvisionOptionSinglePartyBuyerSide.Keys = {
-  BUY: '1',
-  SELL: '2',
+  'BUY': '1',
+  'SELL': '2',
 };
 
 ProvisionOptionSinglePartyBuyerSide.Tag = '40099';

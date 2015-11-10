@@ -10,8 +10,8 @@ ModelType.prototype.value = function () {
 
 
 ModelType.Keys = {
-  UTILITY_PROVIDED_STANDARD_MODEL: '0',
-  PROPRIETARY_MODEL: '1',
+  'UTILITY_PROVIDED_STANDARD_MODEL': '0',
+  'PROPRIETARY_MODEL': '1',
 };
 
 ModelType.Tag = '1434';

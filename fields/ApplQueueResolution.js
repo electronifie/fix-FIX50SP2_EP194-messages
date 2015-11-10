@@ -10,10 +10,10 @@ ApplQueueResolution.prototype.value = function () {
 
 
 ApplQueueResolution.Keys = {
-  NO_ACTION_TAKEN: '0',
-  QUEUE_FLUSHED: '1',
-  OVERLAY_LAST: '2',
-  END_SESSION: '3',
+  'NO_ACTION_TAKEN': '0',
+  'QUEUE_FLUSHED': '1',
+  'OVERLAY_LAST': '2',
+  'END_SESSION': '3',
 };
 
 ApplQueueResolution.Tag = '814';

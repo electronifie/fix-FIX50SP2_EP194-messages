@@ -10,10 +10,10 @@ UnderlyingPriceDeterminationMethod.prototype.value = function () {
 
 
 UnderlyingPriceDeterminationMethod.Keys = {
-  REGULAR: '1',
-  SPECIAL_REFERENCE: '2',
-  OPTIMAL_VALUE: '3',
-  AVERAGE_VALUE: '4',
+  'REGULAR': '1',
+  'SPECIAL_REFERENCE': '2',
+  'OPTIMAL_VALUE': '3',
+  'AVERAGE_VALUE': '4',
 };
 
 UnderlyingPriceDeterminationMethod.Tag = '1481';

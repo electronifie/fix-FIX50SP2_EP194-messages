@@ -9,6 +9,8 @@ function UserResponse (userResponse) {
 }
 
 UserResponse.prototype.throttleParamsGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[UserResponse.Tags.ThrottleParamsGrp] === undefined) return null;
   return this.message.groups[UserResponse.Tags.ThrottleParamsGrp]
     .map(function (throttleParamsGrp) {
       return new ThrottleParamsGrp(throttleParamsGrp);

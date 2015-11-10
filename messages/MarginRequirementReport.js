@@ -23,6 +23,8 @@ function MarginRequirementReport (marginRequirementReport) {
 }
 
 MarginRequirementReport.prototype.applicationSequenceControl = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[MarginRequirementReport.Tags.ApplicationSequenceControl] === undefined) return null;
   return this.message.groups[MarginRequirementReport.Tags.ApplicationSequenceControl]
     .map(function (applicationSequenceControl) {
       return new ApplicationSequenceControl(applicationSequenceControl);
@@ -30,6 +32,8 @@ MarginRequirementReport.prototype.applicationSequenceControl = function () {
 };
 
 MarginRequirementReport.prototype.parties = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[MarginRequirementReport.Tags.Parties] === undefined) return null;
   return this.message.groups[MarginRequirementReport.Tags.Parties]
     .map(function (parties) {
       return new Parties(parties);
@@ -37,6 +41,8 @@ MarginRequirementReport.prototype.parties = function () {
 };
 
 MarginRequirementReport.prototype.instrument = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[MarginRequirementReport.Tags.Instrument] === undefined) return null;
   return this.message.groups[MarginRequirementReport.Tags.Instrument]
     .map(function (instrument) {
       return new Instrument(instrument);
@@ -44,6 +50,8 @@ MarginRequirementReport.prototype.instrument = function () {
 };
 
 MarginRequirementReport.prototype.marginAmount = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[MarginRequirementReport.Tags.MarginAmount] === undefined) return null;
   return this.message.groups[MarginRequirementReport.Tags.MarginAmount]
     .map(function (marginAmount) {
       return new MarginAmount(marginAmount);

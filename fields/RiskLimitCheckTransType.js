@@ -10,9 +10,9 @@ RiskLimitCheckTransType.prototype.value = function () {
 
 
 RiskLimitCheckTransType.Keys = {
-  NEW: '0',
-  CANCEL: '1',
-  REPLACE: '2',
+  'NEW': '0',
+  'CANCEL': '1',
+  'REPLACE': '2',
 };
 
 RiskLimitCheckTransType.Tag = '2320';

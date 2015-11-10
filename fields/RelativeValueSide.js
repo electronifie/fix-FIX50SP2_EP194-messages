@@ -10,9 +10,9 @@ RelativeValueSide.prototype.value = function () {
 
 
 RelativeValueSide.Keys = {
-  BID: '1',
-  MID: '2',
-  OFFER: '3',
+  'BID': '1',
+  'MID': '2',
+  'OFFER': '3',
 };
 
 RelativeValueSide.Tag = '2532';

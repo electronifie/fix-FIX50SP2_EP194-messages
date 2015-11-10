@@ -10,8 +10,8 @@ PreallocMethod.prototype.value = function () {
 
 
 PreallocMethod.Keys = {
-  PRO_RATA: '0',
-  DO_NOT_PRO_RATA_DISCUSS_FIRST: '1',
+  'PRO_RATA': '0',
+  'DO_NOT_PRO_RATA_DISCUSS_FIRST': '1',
 };
 
 PreallocMethod.Tag = '591';

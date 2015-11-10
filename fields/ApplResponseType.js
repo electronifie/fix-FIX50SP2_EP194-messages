@@ -10,9 +10,9 @@ ApplResponseType.prototype.value = function () {
 
 
 ApplResponseType.Keys = {
-  REQUEST_SUCCESSFULLY_PROCESSED: '0',
-  APPLICATION_DOES_NOT_EXIST: '1',
-  MESSAGES_NOT_AVAILABLE: '2',
+  'REQUEST_SUCCESSFULLY_PROCESSED': '0',
+  'APPLICATION_DOES_NOT_EXIST': '1',
+  'MESSAGES_NOT_AVAILABLE': '2',
 };
 
 ApplResponseType.Tag = '1348';

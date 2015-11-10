@@ -10,9 +10,9 @@ MassOrderRequestStatus.prototype.value = function () {
 
 
 MassOrderRequestStatus.Keys = {
-  ACCEPTED: '1',
-  ACCEPTED_WITH_ADDITIONAL_EVENTS: '2',
-  REJECTED: '3',
+  'ACCEPTED': '1',
+  'ACCEPTED_WITH_ADDITIONAL_EVENTS': '2',
+  'REJECTED': '3',
 };
 
 MassOrderRequestStatus.Tag = '2425';

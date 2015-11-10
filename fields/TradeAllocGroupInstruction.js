@@ -10,8 +10,8 @@ TradeAllocGroupInstruction.prototype.value = function () {
 
 
 TradeAllocGroupInstruction.Keys = {
-  ADD_TO_AN_EXISTING_ALLOCATION_GROUP_IF_ONE_EXISTS_: '0',
-  DO_NOT_ADD_THE_TRADE_TO_AN_ALLOCATION_GROUP_: '1',
+  'ADD_TO_AN_EXISTING_ALLOCATION_GROUP_IF_ONE_EXISTS_': '0',
+  'DO_NOT_ADD_THE_TRADE_TO_AN_ALLOCATION_GROUP_': '1',
 };
 
 TradeAllocGroupInstruction.Tag = '1848';

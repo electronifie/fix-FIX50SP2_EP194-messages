@@ -10,8 +10,8 @@ IOINaturalFlag.prototype.value = function () {
 
 
 IOINaturalFlag.Keys = {
-  NOT_NATURAL: 'N',
-  NATURAL: 'Y',
+  'NOT_NATURAL': 'N',
+  'NATURAL': 'Y',
 };
 
 IOINaturalFlag.Tag = '130';

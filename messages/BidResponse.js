@@ -7,6 +7,8 @@ function BidResponse (bidResponse) {
 }
 
 BidResponse.prototype.bidCompRspGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[BidResponse.Tags.BidCompRspGrp] === undefined) return null;
   return this.message.groups[BidResponse.Tags.BidCompRspGrp]
     .map(function (bidCompRspGrp) {
       return new BidCompRspGrp(bidCompRspGrp);

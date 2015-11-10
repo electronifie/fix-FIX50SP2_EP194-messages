@@ -10,9 +10,9 @@ CashMargin.prototype.value = function () {
 
 
 CashMargin.Keys = {
-  CASH: '1',
-  MARGIN_OPEN: '2',
-  MARGIN_CLOSE: '3',
+  'CASH': '1',
+  'MARGIN_OPEN': '2',
+  'MARGIN_CLOSE': '3',
 };
 
 CashMargin.Tag = '544';

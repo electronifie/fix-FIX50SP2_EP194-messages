@@ -18,6 +18,8 @@ function ListStatus (listStatus) {
 }
 
 ListStatus.prototype.ordListStatGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[ListStatus.Tags.OrdListStatGrp] === undefined) return null;
   return this.message.groups[ListStatus.Tags.OrdListStatGrp]
     .map(function (ordListStatGrp) {
       return new OrdListStatGrp(ordListStatGrp);

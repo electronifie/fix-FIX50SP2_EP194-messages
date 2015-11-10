@@ -10,10 +10,10 @@ IOIQty.prototype.value = function () {
 
 
 IOIQty.Keys = {
-  SMALL: 'S',
-  MEDIUM: 'M',
-  LARGE: 'L',
-  UNDISCLOSED_QUANTITY: 'U',
+  'SMALL': 'S',
+  'MEDIUM': 'M',
+  'LARGE': 'L',
+  'UNDISCLOSED_QUANTITY': 'U',
 };
 
 IOIQty.Tag = '27';

@@ -10,8 +10,8 @@ TransferReportType.prototype.value = function () {
 
 
 TransferReportType.Keys = {
-  SUBMIT: '0',
-  ALLEGED: '1',
+  'SUBMIT': '0',
+  'ALLEGED': '1',
 };
 
 TransferReportType.Tag = '2444';

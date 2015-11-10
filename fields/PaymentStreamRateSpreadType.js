@@ -10,8 +10,8 @@ PaymentStreamRateSpreadType.prototype.value = function () {
 
 
 PaymentStreamRateSpreadType.Keys = {
-  ABSOLUTE: '0',
-  PERCENTAGE: '1',
+  'ABSOLUTE': '0',
+  'PERCENTAGE': '1',
 };
 
 PaymentStreamRateSpreadType.Tag = '41206';

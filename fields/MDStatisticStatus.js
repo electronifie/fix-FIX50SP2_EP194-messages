@@ -10,8 +10,8 @@ MDStatisticStatus.prototype.value = function () {
 
 
 MDStatisticStatus.Keys = {
-  ACTIVE: '1',
-  INACTIVE: '2',
+  'ACTIVE': '1',
+  'INACTIVE': '2',
 };
 
 MDStatisticStatus.Tag = '2477';

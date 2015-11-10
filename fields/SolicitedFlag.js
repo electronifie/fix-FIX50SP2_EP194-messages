@@ -10,8 +10,8 @@ SolicitedFlag.prototype.value = function () {
 
 
 SolicitedFlag.Keys = {
-  WAS_NOT_SOLICITED: 'N',
-  WAS_SOLICITED: 'Y',
+  'WAS_NOT_SOLICITED': 'N',
+  'WAS_SOLICITED': 'Y',
 };
 
 SolicitedFlag.Tag = '377';

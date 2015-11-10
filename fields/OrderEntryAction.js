@@ -10,11 +10,11 @@ OrderEntryAction.prototype.value = function () {
 
 
 OrderEntryAction.Keys = {
-  ADD: '1',
-  MODIFY: '2',
-  DELETE_CANCEL: '3',
-  SUSPEND: '4',
-  RELEASE: '5',
+  'ADD': '1',
+  'MODIFY': '2',
+  'DELETE_CANCEL': '3',
+  'SUSPEND': '4',
+  'RELEASE': '5',
 };
 
 OrderEntryAction.Tag = '2429';

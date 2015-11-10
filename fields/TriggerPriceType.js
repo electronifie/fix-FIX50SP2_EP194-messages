@@ -10,12 +10,12 @@ TriggerPriceType.prototype.value = function () {
 
 
 TriggerPriceType.Keys = {
-  BEST_OFFER: '1',
-  LAST_TRADE: '2',
-  BEST_BID: '3',
-  BEST_BID_OR_LAST_TRADE: '4',
-  BEST_OFFER_OR_LAST_TRADE: '5',
-  BEST_MID: '6',
+  'BEST_OFFER': '1',
+  'LAST_TRADE': '2',
+  'BEST_BID': '3',
+  'BEST_BID_OR_LAST_TRADE': '4',
+  'BEST_OFFER_OR_LAST_TRADE': '5',
+  'BEST_MID': '6',
 };
 
 TriggerPriceType.Tag = '1107';

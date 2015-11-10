@@ -10,9 +10,9 @@ BidType.prototype.value = function () {
 
 
 BidType.Keys = {
-  NON_DISCLOSED_STYLE: '1',
-  DISCLOSED_SYTLE: '2',
-  NO_BIDDING_PROCESS: '3',
+  'NON_DISCLOSED_STYLE': '1',
+  'DISCLOSED_SYTLE': '2',
+  'NO_BIDDING_PROCESS': '3',
 };
 
 BidType.Tag = '394';

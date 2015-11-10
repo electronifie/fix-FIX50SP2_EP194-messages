@@ -69,6 +69,8 @@ function Confirmation (confirmation) {
 }
 
 Confirmation.prototype.parties = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[Confirmation.Tags.Parties] === undefined) return null;
   return this.message.groups[Confirmation.Tags.Parties]
     .map(function (parties) {
       return new Parties(parties);
@@ -76,6 +78,8 @@ Confirmation.prototype.parties = function () {
 };
 
 Confirmation.prototype.ordAllocGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[Confirmation.Tags.OrdAllocGrp] === undefined) return null;
   return this.message.groups[Confirmation.Tags.OrdAllocGrp]
     .map(function (ordAllocGrp) {
       return new OrdAllocGrp(ordAllocGrp);
@@ -83,6 +87,8 @@ Confirmation.prototype.ordAllocGrp = function () {
 };
 
 Confirmation.prototype.trdRegTimestamps = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[Confirmation.Tags.TrdRegTimestamps] === undefined) return null;
   return this.message.groups[Confirmation.Tags.TrdRegTimestamps]
     .map(function (trdRegTimestamps) {
       return new TrdRegTimestamps(trdRegTimestamps);
@@ -90,6 +96,8 @@ Confirmation.prototype.trdRegTimestamps = function () {
 };
 
 Confirmation.prototype.instrument = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[Confirmation.Tags.Instrument] === undefined) return null;
   return this.message.groups[Confirmation.Tags.Instrument]
     .map(function (instrument) {
       return new Instrument(instrument);
@@ -97,6 +105,8 @@ Confirmation.prototype.instrument = function () {
 };
 
 Confirmation.prototype.instrumentExtension = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[Confirmation.Tags.InstrumentExtension] === undefined) return null;
   return this.message.groups[Confirmation.Tags.InstrumentExtension]
     .map(function (instrumentExtension) {
       return new InstrumentExtension(instrumentExtension);
@@ -104,6 +114,8 @@ Confirmation.prototype.instrumentExtension = function () {
 };
 
 Confirmation.prototype.financingDetails = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[Confirmation.Tags.FinancingDetails] === undefined) return null;
   return this.message.groups[Confirmation.Tags.FinancingDetails]
     .map(function (financingDetails) {
       return new FinancingDetails(financingDetails);
@@ -111,6 +123,8 @@ Confirmation.prototype.financingDetails = function () {
 };
 
 Confirmation.prototype.undInstrmtGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[Confirmation.Tags.UndInstrmtGrp] === undefined) return null;
   return this.message.groups[Confirmation.Tags.UndInstrmtGrp]
     .map(function (undInstrmtGrp) {
       return new UndInstrmtGrp(undInstrmtGrp);
@@ -118,6 +132,8 @@ Confirmation.prototype.undInstrmtGrp = function () {
 };
 
 Confirmation.prototype.instrmtLegGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[Confirmation.Tags.InstrmtLegGrp] === undefined) return null;
   return this.message.groups[Confirmation.Tags.InstrmtLegGrp]
     .map(function (instrmtLegGrp) {
       return new InstrmtLegGrp(instrmtLegGrp);
@@ -125,6 +141,8 @@ Confirmation.prototype.instrmtLegGrp = function () {
 };
 
 Confirmation.prototype.yieldData = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[Confirmation.Tags.YieldData] === undefined) return null;
   return this.message.groups[Confirmation.Tags.YieldData]
     .map(function (yieldData) {
       return new YieldData(yieldData);
@@ -132,6 +150,8 @@ Confirmation.prototype.yieldData = function () {
 };
 
 Confirmation.prototype.cpctyConfGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[Confirmation.Tags.CpctyConfGrp] === undefined) return null;
   return this.message.groups[Confirmation.Tags.CpctyConfGrp]
     .map(function (cpctyConfGrp) {
       return new CpctyConfGrp(cpctyConfGrp);
@@ -139,6 +159,8 @@ Confirmation.prototype.cpctyConfGrp = function () {
 };
 
 Confirmation.prototype.spreadOrBenchmarkCurveData = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[Confirmation.Tags.SpreadOrBenchmarkCurveData] === undefined) return null;
   return this.message.groups[Confirmation.Tags.SpreadOrBenchmarkCurveData]
     .map(function (spreadOrBenchmarkCurveData) {
       return new SpreadOrBenchmarkCurveData(spreadOrBenchmarkCurveData);
@@ -146,6 +168,8 @@ Confirmation.prototype.spreadOrBenchmarkCurveData = function () {
 };
 
 Confirmation.prototype.settlInstructionsData = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[Confirmation.Tags.SettlInstructionsData] === undefined) return null;
   return this.message.groups[Confirmation.Tags.SettlInstructionsData]
     .map(function (settlInstructionsData) {
       return new SettlInstructionsData(settlInstructionsData);
@@ -153,6 +177,8 @@ Confirmation.prototype.settlInstructionsData = function () {
 };
 
 Confirmation.prototype.commissionData = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[Confirmation.Tags.CommissionData] === undefined) return null;
   return this.message.groups[Confirmation.Tags.CommissionData]
     .map(function (commissionData) {
       return new CommissionData(commissionData);
@@ -160,6 +186,8 @@ Confirmation.prototype.commissionData = function () {
 };
 
 Confirmation.prototype.stipulations = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[Confirmation.Tags.Stipulations] === undefined) return null;
   return this.message.groups[Confirmation.Tags.Stipulations]
     .map(function (stipulations) {
       return new Stipulations(stipulations);
@@ -167,6 +195,8 @@ Confirmation.prototype.stipulations = function () {
 };
 
 Confirmation.prototype.miscFeesGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[Confirmation.Tags.MiscFeesGrp] === undefined) return null;
   return this.message.groups[Confirmation.Tags.MiscFeesGrp]
     .map(function (miscFeesGrp) {
       return new MiscFeesGrp(miscFeesGrp);

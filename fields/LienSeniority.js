@@ -10,10 +10,10 @@ LienSeniority.prototype.value = function () {
 
 
 LienSeniority.Keys = {
-  UNKNOWN: '0',
-  FIRST_LIEN: '1',
-  SECOND_LIEN: '2',
-  THIRD_LIEN: '3',
+  'UNKNOWN': '0',
+  'FIRST_LIEN': '1',
+  'SECOND_LIEN': '2',
+  'THIRD_LIEN': '3',
 };
 
 LienSeniority.Tag = '1954';

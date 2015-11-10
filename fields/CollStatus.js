@@ -10,11 +10,11 @@ CollStatus.prototype.value = function () {
 
 
 CollStatus.Keys = {
-  UNASSIGNED: '0',
-  PARTIALLY_ASSIGNED: '1',
-  ASSIGNMENT_PROPOSED: '2',
-  ASSIGNED: '3',
-  CHALLENGED: '4',
+  'UNASSIGNED': '0',
+  'PARTIALLY_ASSIGNED': '1',
+  'ASSIGNMENT_PROPOSED': '2',
+  'ASSIGNED': '3',
+  'CHALLENGED': '4',
 };
 
 CollStatus.Tag = '910';

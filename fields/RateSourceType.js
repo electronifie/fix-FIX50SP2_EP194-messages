@@ -10,8 +10,8 @@ RateSourceType.prototype.value = function () {
 
 
 RateSourceType.Keys = {
-  PRIMARY: '0',
-  SECONDARY: '1',
+  'PRIMARY': '0',
+  'SECONDARY': '1',
 };
 
 RateSourceType.Tag = '1447';

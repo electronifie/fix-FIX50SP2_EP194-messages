@@ -10,9 +10,9 @@ UnderlyingSettlementType.prototype.value = function () {
 
 
 UnderlyingSettlementType.Keys = {
-  T_1: '2',
-  T_3: '4',
-  T_4: '5',
+  'T_1': '2',
+  'T_3': '4',
+  'T_4': '5',
 };
 
 UnderlyingSettlementType.Tag = '975';

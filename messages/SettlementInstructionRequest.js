@@ -20,6 +20,8 @@ function SettlementInstructionRequest (settlementInstructionRequest) {
 }
 
 SettlementInstructionRequest.prototype.parties = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[SettlementInstructionRequest.Tags.Parties] === undefined) return null;
   return this.message.groups[SettlementInstructionRequest.Tags.Parties]
     .map(function (parties) {
       return new Parties(parties);

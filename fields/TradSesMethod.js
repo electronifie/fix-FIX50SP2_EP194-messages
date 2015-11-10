@@ -10,9 +10,9 @@ TradSesMethod.prototype.value = function () {
 
 
 TradSesMethod.Keys = {
-  ELECTRONIC: '1',
-  OPEN_OUTCRY: '2',
-  TWO_PARTY: '3',
+  'ELECTRONIC': '1',
+  'OPEN_OUTCRY': '2',
+  'TWO_PARTY': '3',
 };
 
 TradSesMethod.Tag = '338';

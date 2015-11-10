@@ -10,12 +10,12 @@ TransferRejectReason.prototype.value = function () {
 
 
 TransferRejectReason.Keys = {
-  SUCCESS: '0',
-  INVALID_PARTY: '1',
-  UNKNOWN_INSTRUMENT: '2',
-  NOT_AUTHORIZED_TO_SUBMIT_TRANSFERS: '3',
-  UNKNOWN_POSITION: '4',
-  OTHER: '99',
+  'SUCCESS': '0',
+  'INVALID_PARTY': '1',
+  'UNKNOWN_INSTRUMENT': '2',
+  'NOT_AUTHORIZED_TO_SUBMIT_TRANSFERS': '3',
+  'UNKNOWN_POSITION': '4',
+  'OTHER': '99',
 };
 
 TransferRejectReason.Tag = '2443';

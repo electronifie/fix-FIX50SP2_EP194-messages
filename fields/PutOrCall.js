@@ -10,8 +10,8 @@ PutOrCall.prototype.value = function () {
 
 
 PutOrCall.Keys = {
-  PUT: '0',
-  CALL: '1',
+  'PUT': '0',
+  'CALL': '1',
 };
 
 PutOrCall.Tag = '201';

@@ -10,8 +10,8 @@ UpfrontPriceType.prototype.value = function () {
 
 
 UpfrontPriceType.Keys = {
-  PERCENTAGE: '1',
-  FIXED_AMOUNT: '3',
+  'PERCENTAGE': '1',
+  'FIXED_AMOUNT': '3',
 };
 
 UpfrontPriceType.Tag = '1741';

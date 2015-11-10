@@ -238,6 +238,8 @@ function ExecutionReport (executionReport) {
 }
 
 ExecutionReport.prototype.applicationSequenceControl = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[ExecutionReport.Tags.ApplicationSequenceControl] === undefined) return null;
   return this.message.groups[ExecutionReport.Tags.ApplicationSequenceControl]
     .map(function (applicationSequenceControl) {
       return new ApplicationSequenceControl(applicationSequenceControl);
@@ -245,6 +247,8 @@ ExecutionReport.prototype.applicationSequenceControl = function () {
 };
 
 ExecutionReport.prototype.parties = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[ExecutionReport.Tags.Parties] === undefined) return null;
   return this.message.groups[ExecutionReport.Tags.Parties]
     .map(function (parties) {
       return new Parties(parties);
@@ -252,6 +256,8 @@ ExecutionReport.prototype.parties = function () {
 };
 
 ExecutionReport.prototype.targetParties = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[ExecutionReport.Tags.TargetParties] === undefined) return null;
   return this.message.groups[ExecutionReport.Tags.TargetParties]
     .map(function (targetParties) {
       return new TargetParties(targetParties);
@@ -259,6 +265,8 @@ ExecutionReport.prototype.targetParties = function () {
 };
 
 ExecutionReport.prototype.contraGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[ExecutionReport.Tags.ContraGrp] === undefined) return null;
   return this.message.groups[ExecutionReport.Tags.ContraGrp]
     .map(function (contraGrp) {
       return new ContraGrp(contraGrp);
@@ -266,6 +274,8 @@ ExecutionReport.prototype.contraGrp = function () {
 };
 
 ExecutionReport.prototype.regulatoryTradeIdgrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[ExecutionReport.Tags.RegulatoryTradeIDGrp] === undefined) return null;
   return this.message.groups[ExecutionReport.Tags.RegulatoryTradeIDGrp]
     .map(function (regulatoryTradeIdgrp) {
       return new RegulatoryTradeIDGrp(regulatoryTradeIdgrp);
@@ -273,6 +283,8 @@ ExecutionReport.prototype.regulatoryTradeIdgrp = function () {
 };
 
 ExecutionReport.prototype.preAllocGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[ExecutionReport.Tags.PreAllocGrp] === undefined) return null;
   return this.message.groups[ExecutionReport.Tags.PreAllocGrp]
     .map(function (preAllocGrp) {
       return new PreAllocGrp(preAllocGrp);
@@ -280,6 +292,8 @@ ExecutionReport.prototype.preAllocGrp = function () {
 };
 
 ExecutionReport.prototype.instrument = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[ExecutionReport.Tags.Instrument] === undefined) return null;
   return this.message.groups[ExecutionReport.Tags.Instrument]
     .map(function (instrument) {
       return new Instrument(instrument);
@@ -287,6 +301,8 @@ ExecutionReport.prototype.instrument = function () {
 };
 
 ExecutionReport.prototype.financingDetails = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[ExecutionReport.Tags.FinancingDetails] === undefined) return null;
   return this.message.groups[ExecutionReport.Tags.FinancingDetails]
     .map(function (financingDetails) {
       return new FinancingDetails(financingDetails);
@@ -294,6 +310,8 @@ ExecutionReport.prototype.financingDetails = function () {
 };
 
 ExecutionReport.prototype.undInstrmtGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[ExecutionReport.Tags.UndInstrmtGrp] === undefined) return null;
   return this.message.groups[ExecutionReport.Tags.UndInstrmtGrp]
     .map(function (undInstrmtGrp) {
       return new UndInstrmtGrp(undInstrmtGrp);
@@ -301,6 +319,8 @@ ExecutionReport.prototype.undInstrmtGrp = function () {
 };
 
 ExecutionReport.prototype.stipulations = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[ExecutionReport.Tags.Stipulations] === undefined) return null;
   return this.message.groups[ExecutionReport.Tags.Stipulations]
     .map(function (stipulations) {
       return new Stipulations(stipulations);
@@ -308,6 +328,8 @@ ExecutionReport.prototype.stipulations = function () {
 };
 
 ExecutionReport.prototype.orderQtyData = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[ExecutionReport.Tags.OrderQtyData] === undefined) return null;
   return this.message.groups[ExecutionReport.Tags.OrderQtyData]
     .map(function (orderQtyData) {
       return new OrderQtyData(orderQtyData);
@@ -315,6 +337,8 @@ ExecutionReport.prototype.orderQtyData = function () {
 };
 
 ExecutionReport.prototype.triggeringInstruction = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[ExecutionReport.Tags.TriggeringInstruction] === undefined) return null;
   return this.message.groups[ExecutionReport.Tags.TriggeringInstruction]
     .map(function (triggeringInstruction) {
       return new TriggeringInstruction(triggeringInstruction);
@@ -322,6 +346,8 @@ ExecutionReport.prototype.triggeringInstruction = function () {
 };
 
 ExecutionReport.prototype.pegInstructions = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[ExecutionReport.Tags.PegInstructions] === undefined) return null;
   return this.message.groups[ExecutionReport.Tags.PegInstructions]
     .map(function (pegInstructions) {
       return new PegInstructions(pegInstructions);
@@ -329,6 +355,8 @@ ExecutionReport.prototype.pegInstructions = function () {
 };
 
 ExecutionReport.prototype.discretionInstructions = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[ExecutionReport.Tags.DiscretionInstructions] === undefined) return null;
   return this.message.groups[ExecutionReport.Tags.DiscretionInstructions]
     .map(function (discretionInstructions) {
       return new DiscretionInstructions(discretionInstructions);
@@ -336,6 +364,8 @@ ExecutionReport.prototype.discretionInstructions = function () {
 };
 
 ExecutionReport.prototype.strategyParametersGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[ExecutionReport.Tags.StrategyParametersGrp] === undefined) return null;
   return this.message.groups[ExecutionReport.Tags.StrategyParametersGrp]
     .map(function (strategyParametersGrp) {
       return new StrategyParametersGrp(strategyParametersGrp);
@@ -343,6 +373,8 @@ ExecutionReport.prototype.strategyParametersGrp = function () {
 };
 
 ExecutionReport.prototype.limitAmts = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[ExecutionReport.Tags.LimitAmts] === undefined) return null;
   return this.message.groups[ExecutionReport.Tags.LimitAmts]
     .map(function (limitAmts) {
       return new LimitAmts(limitAmts);
@@ -350,6 +382,8 @@ ExecutionReport.prototype.limitAmts = function () {
 };
 
 ExecutionReport.prototype.fillsGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[ExecutionReport.Tags.FillsGrp] === undefined) return null;
   return this.message.groups[ExecutionReport.Tags.FillsGrp]
     .map(function (fillsGrp) {
       return new FillsGrp(fillsGrp);
@@ -357,6 +391,8 @@ ExecutionReport.prototype.fillsGrp = function () {
 };
 
 ExecutionReport.prototype.orderEventGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[ExecutionReport.Tags.OrderEventGrp] === undefined) return null;
   return this.message.groups[ExecutionReport.Tags.OrderEventGrp]
     .map(function (orderEventGrp) {
       return new OrderEventGrp(orderEventGrp);
@@ -364,6 +400,8 @@ ExecutionReport.prototype.orderEventGrp = function () {
 };
 
 ExecutionReport.prototype.commissionData = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[ExecutionReport.Tags.CommissionData] === undefined) return null;
   return this.message.groups[ExecutionReport.Tags.CommissionData]
     .map(function (commissionData) {
       return new CommissionData(commissionData);
@@ -371,6 +409,8 @@ ExecutionReport.prototype.commissionData = function () {
 };
 
 ExecutionReport.prototype.spreadOrBenchmarkCurveData = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[ExecutionReport.Tags.SpreadOrBenchmarkCurveData] === undefined) return null;
   return this.message.groups[ExecutionReport.Tags.SpreadOrBenchmarkCurveData]
     .map(function (spreadOrBenchmarkCurveData) {
       return new SpreadOrBenchmarkCurveData(spreadOrBenchmarkCurveData);
@@ -378,6 +418,8 @@ ExecutionReport.prototype.spreadOrBenchmarkCurveData = function () {
 };
 
 ExecutionReport.prototype.relativeValueGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[ExecutionReport.Tags.RelativeValueGrp] === undefined) return null;
   return this.message.groups[ExecutionReport.Tags.RelativeValueGrp]
     .map(function (relativeValueGrp) {
       return new RelativeValueGrp(relativeValueGrp);
@@ -385,6 +427,8 @@ ExecutionReport.prototype.relativeValueGrp = function () {
 };
 
 ExecutionReport.prototype.yieldData = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[ExecutionReport.Tags.YieldData] === undefined) return null;
   return this.message.groups[ExecutionReport.Tags.YieldData]
     .map(function (yieldData) {
       return new YieldData(yieldData);
@@ -392,6 +436,8 @@ ExecutionReport.prototype.yieldData = function () {
 };
 
 ExecutionReport.prototype.rateSource = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[ExecutionReport.Tags.RateSource] === undefined) return null;
   return this.message.groups[ExecutionReport.Tags.RateSource]
     .map(function (rateSource) {
       return new RateSource(rateSource);
@@ -399,6 +445,8 @@ ExecutionReport.prototype.rateSource = function () {
 };
 
 ExecutionReport.prototype.matchingInstructions = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[ExecutionReport.Tags.MatchingInstructions] === undefined) return null;
   return this.message.groups[ExecutionReport.Tags.MatchingInstructions]
     .map(function (matchingInstructions) {
       return new MatchingInstructions(matchingInstructions);
@@ -406,6 +454,8 @@ ExecutionReport.prototype.matchingInstructions = function () {
 };
 
 ExecutionReport.prototype.displayInstruction = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[ExecutionReport.Tags.DisplayInstruction] === undefined) return null;
   return this.message.groups[ExecutionReport.Tags.DisplayInstruction]
     .map(function (displayInstruction) {
       return new DisplayInstruction(displayInstruction);
@@ -413,6 +463,8 @@ ExecutionReport.prototype.displayInstruction = function () {
 };
 
 ExecutionReport.prototype.disclosureInstructionGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[ExecutionReport.Tags.DisclosureInstructionGrp] === undefined) return null;
   return this.message.groups[ExecutionReport.Tags.DisclosureInstructionGrp]
     .map(function (disclosureInstructionGrp) {
       return new DisclosureInstructionGrp(disclosureInstructionGrp);
@@ -420,6 +472,8 @@ ExecutionReport.prototype.disclosureInstructionGrp = function () {
 };
 
 ExecutionReport.prototype.contAmtGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[ExecutionReport.Tags.ContAmtGrp] === undefined) return null;
   return this.message.groups[ExecutionReport.Tags.ContAmtGrp]
     .map(function (contAmtGrp) {
       return new ContAmtGrp(contAmtGrp);
@@ -427,6 +481,8 @@ ExecutionReport.prototype.contAmtGrp = function () {
 };
 
 ExecutionReport.prototype.instrmtLegExecGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[ExecutionReport.Tags.InstrmtLegExecGrp] === undefined) return null;
   return this.message.groups[ExecutionReport.Tags.InstrmtLegExecGrp]
     .map(function (instrmtLegExecGrp) {
       return new InstrmtLegExecGrp(instrmtLegExecGrp);
@@ -434,6 +490,8 @@ ExecutionReport.prototype.instrmtLegExecGrp = function () {
 };
 
 ExecutionReport.prototype.miscFeesGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[ExecutionReport.Tags.MiscFeesGrp] === undefined) return null;
   return this.message.groups[ExecutionReport.Tags.MiscFeesGrp]
     .map(function (miscFeesGrp) {
       return new MiscFeesGrp(miscFeesGrp);
@@ -441,6 +499,8 @@ ExecutionReport.prototype.miscFeesGrp = function () {
 };
 
 ExecutionReport.prototype.trdRegTimestamps = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[ExecutionReport.Tags.TrdRegTimestamps] === undefined) return null;
   return this.message.groups[ExecutionReport.Tags.TrdRegTimestamps]
     .map(function (trdRegTimestamps) {
       return new TrdRegTimestamps(trdRegTimestamps);
@@ -448,6 +508,8 @@ ExecutionReport.prototype.trdRegTimestamps = function () {
 };
 
 ExecutionReport.prototype.throttleResponse = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[ExecutionReport.Tags.ThrottleResponse] === undefined) return null;
   return this.message.groups[ExecutionReport.Tags.ThrottleResponse]
     .map(function (throttleResponse) {
       return new ThrottleResponse(throttleResponse);

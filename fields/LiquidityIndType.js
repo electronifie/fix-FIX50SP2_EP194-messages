@@ -10,10 +10,10 @@ LiquidityIndType.prototype.value = function () {
 
 
 LiquidityIndType.Keys = {
-  _5_DAY_MOVING_AVERAGE: '1',
-  _20_DAY_MOVING_AVERAGE: '2',
-  NORMAL_MARKET_SIZE: '3',
-  OTHER: '4',
+  '_5_DAY_MOVING_AVERAGE': '1',
+  '_20_DAY_MOVING_AVERAGE': '2',
+  'NORMAL_MARKET_SIZE': '3',
+  'OTHER': '4',
 };
 
 LiquidityIndType.Tag = '409';

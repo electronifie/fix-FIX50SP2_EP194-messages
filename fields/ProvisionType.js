@@ -10,10 +10,10 @@ ProvisionType.prototype.value = function () {
 
 
 ProvisionType.Keys = {
-  MANDATORY_EARLY_TERMINATION: '0',
-  OPTIONAL_EARLY_TERMINATION: '1',
-  CANCELABLE: '2',
-  EXTENDIBLE: '3',
+  'MANDATORY_EARLY_TERMINATION': '0',
+  'OPTIONAL_EARLY_TERMINATION': '1',
+  'CANCELABLE': '2',
+  'EXTENDIBLE': '3',
 };
 
 ProvisionType.Tag = '40091';

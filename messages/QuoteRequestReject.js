@@ -15,6 +15,8 @@ function QuoteRequestReject (quoteRequestReject) {
 }
 
 QuoteRequestReject.prototype.rootParties = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[QuoteRequestReject.Tags.RootParties] === undefined) return null;
   return this.message.groups[QuoteRequestReject.Tags.RootParties]
     .map(function (rootParties) {
       return new RootParties(rootParties);
@@ -22,6 +24,8 @@ QuoteRequestReject.prototype.rootParties = function () {
 };
 
 QuoteRequestReject.prototype.quotReqRjctGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[QuoteRequestReject.Tags.QuotReqRjctGrp] === undefined) return null;
   return this.message.groups[QuoteRequestReject.Tags.QuotReqRjctGrp]
     .map(function (quotReqRjctGrp) {
       return new QuotReqRjctGrp(quotReqRjctGrp);

@@ -10,11 +10,11 @@ QuoteType.prototype.value = function () {
 
 
 QuoteType.Keys = {
-  INDICATIVE: '0',
-  TRADEABLE: '1',
-  RESTRICTED_TRADEABLE: '2',
-  COUNTER: '3',
-  INITIALLY_TRADEABLE: '4',
+  'INDICATIVE': '0',
+  'TRADEABLE': '1',
+  'RESTRICTED_TRADEABLE': '2',
+  'COUNTER': '3',
+  'INITIALLY_TRADEABLE': '4',
 };
 
 QuoteType.Tag = '537';

@@ -10,9 +10,9 @@ PriceLimitType.prototype.value = function () {
 
 
 PriceLimitType.Keys = {
-  PRICE: '0',
-  TICKS: '1',
-  PERCENTAGE: '2',
+  'PRICE': '0',
+  'TICKS': '1',
+  'PERCENTAGE': '2',
 };
 
 PriceLimitType.Tag = '1306';

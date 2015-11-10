@@ -10,8 +10,8 @@ MDUpdateType.prototype.value = function () {
 
 
 MDUpdateType.Keys = {
-  FULL_REFRESH: '0',
-  INCREMENTAL_REFRESH: '1',
+  'FULL_REFRESH': '0',
+  'INCREMENTAL_REFRESH': '1',
 };
 
 MDUpdateType.Tag = '265';

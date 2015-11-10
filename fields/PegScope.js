@@ -10,10 +10,10 @@ PegScope.prototype.value = function () {
 
 
 PegScope.Keys = {
-  LOCAL: '1',
-  NATIONAL: '2',
-  GLOBAL: '3',
-  NATIONAL_EXCLUDING_LOCAL: '4',
+  'LOCAL': '1',
+  'NATIONAL': '2',
+  'GLOBAL': '3',
+  'NATIONAL_EXCLUDING_LOCAL': '4',
 };
 
 PegScope.Tag = '840';

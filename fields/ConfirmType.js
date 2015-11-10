@@ -10,9 +10,9 @@ ConfirmType.prototype.value = function () {
 
 
 ConfirmType.Keys = {
-  STATUS: '1',
-  CONFIRMATION: '2',
-  CONFIRMATION_REQUEST_REJECTED: '3',
+  'STATUS': '1',
+  'CONFIRMATION': '2',
+  'CONFIRMATION_REQUEST_REJECTED': '3',
 };
 
 ConfirmType.Tag = '773';

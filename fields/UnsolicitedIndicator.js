@@ -10,8 +10,8 @@ UnsolicitedIndicator.prototype.value = function () {
 
 
 UnsolicitedIndicator.Keys = {
-  MESSAGE_IS_BEING_SENT_AS_A_RESULT_OF_A_PRIOR_REQUEST: 'N',
-  MESSAGE_IS_BEING_SENT_UNSOLICITED: 'Y',
+  'MESSAGE_IS_BEING_SENT_AS_A_RESULT_OF_A_PRIOR_REQUEST': 'N',
+  'MESSAGE_IS_BEING_SENT_UNSOLICITED': 'Y',
 };
 
 UnsolicitedIndicator.Tag = '325';

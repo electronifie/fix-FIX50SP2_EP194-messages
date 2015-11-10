@@ -10,11 +10,11 @@ AdjustmentType.prototype.value = function () {
 
 
 AdjustmentType.Keys = {
-  PROCESS_REQUEST_AS_MARGIN_DISPOSITION: '0',
-  DELTA_PLUS: '1',
-  DELTA_MINUS: '2',
-  FINAL: '3',
-  CUSTOMER_SPECIFIC_POSITION: '4',
+  'PROCESS_REQUEST_AS_MARGIN_DISPOSITION': '0',
+  'DELTA_PLUS': '1',
+  'DELTA_MINUS': '2',
+  'FINAL': '3',
+  'CUSTOMER_SPECIFIC_POSITION': '4',
 };
 
 AdjustmentType.Tag = '718';

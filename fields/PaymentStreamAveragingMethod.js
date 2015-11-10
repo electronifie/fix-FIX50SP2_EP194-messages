@@ -10,8 +10,8 @@ PaymentStreamAveragingMethod.prototype.value = function () {
 
 
 PaymentStreamAveragingMethod.Keys = {
-  UNWEIGHTED: '0',
-  WEIGHTED: '1',
+  'UNWEIGHTED': '0',
+  'WEIGHTED': '1',
 };
 
 PaymentStreamAveragingMethod.Tag = '40806';

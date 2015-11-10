@@ -25,6 +25,8 @@ function ExecutionAck (executionAck) {
 }
 
 ExecutionAck.prototype.instrument = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[ExecutionAck.Tags.Instrument] === undefined) return null;
   return this.message.groups[ExecutionAck.Tags.Instrument]
     .map(function (instrument) {
       return new Instrument(instrument);
@@ -32,6 +34,8 @@ ExecutionAck.prototype.instrument = function () {
 };
 
 ExecutionAck.prototype.undInstrmtGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[ExecutionAck.Tags.UndInstrmtGrp] === undefined) return null;
   return this.message.groups[ExecutionAck.Tags.UndInstrmtGrp]
     .map(function (undInstrmtGrp) {
       return new UndInstrmtGrp(undInstrmtGrp);
@@ -39,6 +43,8 @@ ExecutionAck.prototype.undInstrmtGrp = function () {
 };
 
 ExecutionAck.prototype.instrmtLegGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[ExecutionAck.Tags.InstrmtLegGrp] === undefined) return null;
   return this.message.groups[ExecutionAck.Tags.InstrmtLegGrp]
     .map(function (instrmtLegGrp) {
       return new InstrmtLegGrp(instrmtLegGrp);
@@ -46,6 +52,8 @@ ExecutionAck.prototype.instrmtLegGrp = function () {
 };
 
 ExecutionAck.prototype.orderQtyData = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[ExecutionAck.Tags.OrderQtyData] === undefined) return null;
   return this.message.groups[ExecutionAck.Tags.OrderQtyData]
     .map(function (orderQtyData) {
       return new OrderQtyData(orderQtyData);
@@ -53,6 +61,8 @@ ExecutionAck.prototype.orderQtyData = function () {
 };
 
 ExecutionAck.prototype.regulatoryTradeIdgrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[ExecutionAck.Tags.RegulatoryTradeIDGrp] === undefined) return null;
   return this.message.groups[ExecutionAck.Tags.RegulatoryTradeIDGrp]
     .map(function (regulatoryTradeIdgrp) {
       return new RegulatoryTradeIDGrp(regulatoryTradeIdgrp);

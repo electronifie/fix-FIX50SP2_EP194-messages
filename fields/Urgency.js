@@ -10,9 +10,9 @@ Urgency.prototype.value = function () {
 
 
 Urgency.Keys = {
-  NORMAL: '0',
-  FLASH: '1',
-  BACKGROUND: '2',
+  'NORMAL': '0',
+  'FLASH': '1',
+  'BACKGROUND': '2',
 };
 
 Urgency.Tag = '61';

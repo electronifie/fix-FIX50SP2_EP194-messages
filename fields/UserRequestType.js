@@ -10,11 +10,11 @@ UserRequestType.prototype.value = function () {
 
 
 UserRequestType.Keys = {
-  LOG_ON_USER: '1',
-  LOG_OFF_USER: '2',
-  CHANGE_PASSWORD_FOR_USER: '3',
-  REQUEST_INDIVIDUAL_USER_STATUS: '4',
-  REQUEST_THROTTLE_LIMIT: '5',
+  'LOG_ON_USER': '1',
+  'LOG_OFF_USER': '2',
+  'CHANGE_PASSWORD_FOR_USER': '3',
+  'REQUEST_INDIVIDUAL_USER_STATUS': '4',
+  'REQUEST_THROTTLE_LIMIT': '5',
 };
 
 UserRequestType.Tag = '924';

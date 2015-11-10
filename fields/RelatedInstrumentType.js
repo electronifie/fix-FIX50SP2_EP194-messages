@@ -10,10 +10,10 @@ RelatedInstrumentType.prototype.value = function () {
 
 
 RelatedInstrumentType.Keys = {
-  HEDGES_FOR_INSTRUMENT: '1',
-  UNDERLIER: '2',
-  EQUITY_EQUIVALENT: '3',
-  NEAREST_EXCHANGE_TRADED_CONTRACT: '4',
+  'HEDGES_FOR_INSTRUMENT': '1',
+  'UNDERLIER': '2',
+  'EQUITY_EQUIVALENT': '3',
+  'NEAREST_EXCHANGE_TRADED_CONTRACT': '4',
 };
 
 RelatedInstrumentType.Tag = '1648';

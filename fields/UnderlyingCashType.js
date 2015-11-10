@@ -10,8 +10,8 @@ UnderlyingCashType.prototype.value = function () {
 
 
 UnderlyingCashType.Keys = {
-  FIXED: 'FIXED',
-  DIFF: 'DIFF',
+  'FIXED': 'FIXED',
+  'DIFF': 'DIFF',
 };
 
 UnderlyingCashType.Tag = '974';

@@ -111,6 +111,8 @@ function MultilegOrderCancelReplace (multilegOrderCancelReplace) {
 }
 
 MultilegOrderCancelReplace.prototype.parties = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[MultilegOrderCancelReplace.Tags.Parties] === undefined) return null;
   return this.message.groups[MultilegOrderCancelReplace.Tags.Parties]
     .map(function (parties) {
       return new Parties(parties);
@@ -118,6 +120,8 @@ MultilegOrderCancelReplace.prototype.parties = function () {
 };
 
 MultilegOrderCancelReplace.prototype.targetParties = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[MultilegOrderCancelReplace.Tags.TargetParties] === undefined) return null;
   return this.message.groups[MultilegOrderCancelReplace.Tags.TargetParties]
     .map(function (targetParties) {
       return new TargetParties(targetParties);
@@ -125,6 +129,8 @@ MultilegOrderCancelReplace.prototype.targetParties = function () {
 };
 
 MultilegOrderCancelReplace.prototype.preAllocMlegGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[MultilegOrderCancelReplace.Tags.PreAllocMlegGrp] === undefined) return null;
   return this.message.groups[MultilegOrderCancelReplace.Tags.PreAllocMlegGrp]
     .map(function (preAllocMlegGrp) {
       return new PreAllocMlegGrp(preAllocMlegGrp);
@@ -132,6 +138,8 @@ MultilegOrderCancelReplace.prototype.preAllocMlegGrp = function () {
 };
 
 MultilegOrderCancelReplace.prototype.matchingInstructions = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[MultilegOrderCancelReplace.Tags.MatchingInstructions] === undefined) return null;
   return this.message.groups[MultilegOrderCancelReplace.Tags.MatchingInstructions]
     .map(function (matchingInstructions) {
       return new MatchingInstructions(matchingInstructions);
@@ -139,6 +147,8 @@ MultilegOrderCancelReplace.prototype.matchingInstructions = function () {
 };
 
 MultilegOrderCancelReplace.prototype.displayInstruction = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[MultilegOrderCancelReplace.Tags.DisplayInstruction] === undefined) return null;
   return this.message.groups[MultilegOrderCancelReplace.Tags.DisplayInstruction]
     .map(function (displayInstruction) {
       return new DisplayInstruction(displayInstruction);
@@ -146,6 +156,8 @@ MultilegOrderCancelReplace.prototype.displayInstruction = function () {
 };
 
 MultilegOrderCancelReplace.prototype.disclosureInstructionGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[MultilegOrderCancelReplace.Tags.DisclosureInstructionGrp] === undefined) return null;
   return this.message.groups[MultilegOrderCancelReplace.Tags.DisclosureInstructionGrp]
     .map(function (disclosureInstructionGrp) {
       return new DisclosureInstructionGrp(disclosureInstructionGrp);
@@ -153,6 +165,8 @@ MultilegOrderCancelReplace.prototype.disclosureInstructionGrp = function () {
 };
 
 MultilegOrderCancelReplace.prototype.trdgSesGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[MultilegOrderCancelReplace.Tags.TrdgSesGrp] === undefined) return null;
   return this.message.groups[MultilegOrderCancelReplace.Tags.TrdgSesGrp]
     .map(function (trdgSesGrp) {
       return new TrdgSesGrp(trdgSesGrp);
@@ -160,6 +174,8 @@ MultilegOrderCancelReplace.prototype.trdgSesGrp = function () {
 };
 
 MultilegOrderCancelReplace.prototype.instrument = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[MultilegOrderCancelReplace.Tags.Instrument] === undefined) return null;
   return this.message.groups[MultilegOrderCancelReplace.Tags.Instrument]
     .map(function (instrument) {
       return new Instrument(instrument);
@@ -167,6 +183,8 @@ MultilegOrderCancelReplace.prototype.instrument = function () {
 };
 
 MultilegOrderCancelReplace.prototype.undInstrmtGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[MultilegOrderCancelReplace.Tags.UndInstrmtGrp] === undefined) return null;
   return this.message.groups[MultilegOrderCancelReplace.Tags.UndInstrmtGrp]
     .map(function (undInstrmtGrp) {
       return new UndInstrmtGrp(undInstrmtGrp);
@@ -174,6 +192,8 @@ MultilegOrderCancelReplace.prototype.undInstrmtGrp = function () {
 };
 
 MultilegOrderCancelReplace.prototype.legOrdGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[MultilegOrderCancelReplace.Tags.LegOrdGrp] === undefined) return null;
   return this.message.groups[MultilegOrderCancelReplace.Tags.LegOrdGrp]
     .map(function (legOrdGrp) {
       return new LegOrdGrp(legOrdGrp);
@@ -181,6 +201,8 @@ MultilegOrderCancelReplace.prototype.legOrdGrp = function () {
 };
 
 MultilegOrderCancelReplace.prototype.orderQtyData = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[MultilegOrderCancelReplace.Tags.OrderQtyData] === undefined) return null;
   return this.message.groups[MultilegOrderCancelReplace.Tags.OrderQtyData]
     .map(function (orderQtyData) {
       return new OrderQtyData(orderQtyData);
@@ -188,6 +210,8 @@ MultilegOrderCancelReplace.prototype.orderQtyData = function () {
 };
 
 MultilegOrderCancelReplace.prototype.triggeringInstruction = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[MultilegOrderCancelReplace.Tags.TriggeringInstruction] === undefined) return null;
   return this.message.groups[MultilegOrderCancelReplace.Tags.TriggeringInstruction]
     .map(function (triggeringInstruction) {
       return new TriggeringInstruction(triggeringInstruction);
@@ -195,6 +219,8 @@ MultilegOrderCancelReplace.prototype.triggeringInstruction = function () {
 };
 
 MultilegOrderCancelReplace.prototype.commissionData = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[MultilegOrderCancelReplace.Tags.CommissionData] === undefined) return null;
   return this.message.groups[MultilegOrderCancelReplace.Tags.CommissionData]
     .map(function (commissionData) {
       return new CommissionData(commissionData);
@@ -202,6 +228,8 @@ MultilegOrderCancelReplace.prototype.commissionData = function () {
 };
 
 MultilegOrderCancelReplace.prototype.pegInstructions = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[MultilegOrderCancelReplace.Tags.PegInstructions] === undefined) return null;
   return this.message.groups[MultilegOrderCancelReplace.Tags.PegInstructions]
     .map(function (pegInstructions) {
       return new PegInstructions(pegInstructions);
@@ -209,6 +237,8 @@ MultilegOrderCancelReplace.prototype.pegInstructions = function () {
 };
 
 MultilegOrderCancelReplace.prototype.discretionInstructions = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[MultilegOrderCancelReplace.Tags.DiscretionInstructions] === undefined) return null;
   return this.message.groups[MultilegOrderCancelReplace.Tags.DiscretionInstructions]
     .map(function (discretionInstructions) {
       return new DiscretionInstructions(discretionInstructions);
@@ -216,6 +246,8 @@ MultilegOrderCancelReplace.prototype.discretionInstructions = function () {
 };
 
 MultilegOrderCancelReplace.prototype.strategyParametersGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[MultilegOrderCancelReplace.Tags.StrategyParametersGrp] === undefined) return null;
   return this.message.groups[MultilegOrderCancelReplace.Tags.StrategyParametersGrp]
     .map(function (strategyParametersGrp) {
       return new StrategyParametersGrp(strategyParametersGrp);

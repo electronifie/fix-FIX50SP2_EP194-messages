@@ -10,14 +10,14 @@ BusinessDayConvention.prototype.value = function () {
 
 
 BusinessDayConvention.Keys = {
-  NOT_APPLICABLE: '0',
-  NONE: '1',
-  FOLLOWING_DAY: '2',
-  FLOATING_RATE_NOTE: '3',
-  MODIFIED_FOLLOWING_DAY: '4',
-  PRECEDING_DAY: '5',
-  MODIFIED_PRECEDING_DAY: '6',
-  NEAREST_DAY: '7',
+  'NOT_APPLICABLE': '0',
+  'NONE': '1',
+  'FOLLOWING_DAY': '2',
+  'FLOATING_RATE_NOTE': '3',
+  'MODIFIED_FOLLOWING_DAY': '4',
+  'PRECEDING_DAY': '5',
+  'MODIFIED_PRECEDING_DAY': '6',
+  'NEAREST_DAY': '7',
 };
 
 BusinessDayConvention.Tag = '40921';

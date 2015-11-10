@@ -10,8 +10,8 @@ AuctionInstruction.prototype.value = function () {
 
 
 AuctionInstruction.Keys = {
-  AUTOMATIC_AUCTION_PERMITTED: '0',
-  AUTOMATIC_AUCTION_NOT_PERMITTED: '1',
+  'AUTOMATIC_AUCTION_PERMITTED': '0',
+  'AUTOMATIC_AUCTION_NOT_PERMITTED': '1',
 };
 
 AuctionInstruction.Tag = '1805';

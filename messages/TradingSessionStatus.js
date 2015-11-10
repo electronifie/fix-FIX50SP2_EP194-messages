@@ -30,6 +30,8 @@ function TradingSessionStatus (tradingSessionStatus) {
 }
 
 TradingSessionStatus.prototype.applicationSequenceControl = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[TradingSessionStatus.Tags.ApplicationSequenceControl] === undefined) return null;
   return this.message.groups[TradingSessionStatus.Tags.ApplicationSequenceControl]
     .map(function (applicationSequenceControl) {
       return new ApplicationSequenceControl(applicationSequenceControl);
@@ -37,6 +39,8 @@ TradingSessionStatus.prototype.applicationSequenceControl = function () {
 };
 
 TradingSessionStatus.prototype.instrument = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[TradingSessionStatus.Tags.Instrument] === undefined) return null;
   return this.message.groups[TradingSessionStatus.Tags.Instrument]
     .map(function (instrument) {
       return new Instrument(instrument);

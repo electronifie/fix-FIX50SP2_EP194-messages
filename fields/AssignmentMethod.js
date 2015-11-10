@@ -10,8 +10,8 @@ AssignmentMethod.prototype.value = function () {
 
 
 AssignmentMethod.Keys = {
-  PRO_RATA: 'P',
-  RANDOM: 'R',
+  'PRO_RATA': 'P',
+  'RANDOM': 'R',
 };
 
 AssignmentMethod.Tag = '744';

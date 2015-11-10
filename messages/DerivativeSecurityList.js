@@ -18,6 +18,8 @@ function DerivativeSecurityList (derivativeSecurityList) {
 }
 
 DerivativeSecurityList.prototype.applicationSequenceControl = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[DerivativeSecurityList.Tags.ApplicationSequenceControl] === undefined) return null;
   return this.message.groups[DerivativeSecurityList.Tags.ApplicationSequenceControl]
     .map(function (applicationSequenceControl) {
       return new ApplicationSequenceControl(applicationSequenceControl);
@@ -25,6 +27,8 @@ DerivativeSecurityList.prototype.applicationSequenceControl = function () {
 };
 
 DerivativeSecurityList.prototype.underlyingInstrument = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[DerivativeSecurityList.Tags.UnderlyingInstrument] === undefined) return null;
   return this.message.groups[DerivativeSecurityList.Tags.UnderlyingInstrument]
     .map(function (underlyingInstrument) {
       return new UnderlyingInstrument(underlyingInstrument);
@@ -32,6 +36,8 @@ DerivativeSecurityList.prototype.underlyingInstrument = function () {
 };
 
 DerivativeSecurityList.prototype.derivativeSecurityDefinition = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[DerivativeSecurityList.Tags.DerivativeSecurityDefinition] === undefined) return null;
   return this.message.groups[DerivativeSecurityList.Tags.DerivativeSecurityDefinition]
     .map(function (derivativeSecurityDefinition) {
       return new DerivativeSecurityDefinition(derivativeSecurityDefinition);
@@ -39,6 +45,8 @@ DerivativeSecurityList.prototype.derivativeSecurityDefinition = function () {
 };
 
 DerivativeSecurityList.prototype.relSymDerivSecGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[DerivativeSecurityList.Tags.RelSymDerivSecGrp] === undefined) return null;
   return this.message.groups[DerivativeSecurityList.Tags.RelSymDerivSecGrp]
     .map(function (relSymDerivSecGrp) {
       return new RelSymDerivSecGrp(relSymDerivSecGrp);

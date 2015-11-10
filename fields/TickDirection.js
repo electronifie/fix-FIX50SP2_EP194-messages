@@ -10,10 +10,10 @@ TickDirection.prototype.value = function () {
 
 
 TickDirection.Keys = {
-  PLUS_TICK: '0',
-  ZERO_PLUS_TICK: '1',
-  MINUS_TICK: '2',
-  ZERO_MINUS_TICK: '3',
+  'PLUS_TICK': '0',
+  'ZERO_PLUS_TICK': '1',
+  'MINUS_TICK': '2',
+  'ZERO_MINUS_TICK': '3',
 };
 
 TickDirection.Tag = '274';

@@ -12,6 +12,8 @@ function PartyRiskLimitsDefinitionRequestAck (partyRiskLimitsDefinitionRequestAc
 }
 
 PartyRiskLimitsDefinitionRequestAck.prototype.requestingPartyGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[PartyRiskLimitsDefinitionRequestAck.Tags.RequestingPartyGrp] === undefined) return null;
   return this.message.groups[PartyRiskLimitsDefinitionRequestAck.Tags.RequestingPartyGrp]
     .map(function (requestingPartyGrp) {
       return new RequestingPartyGrp(requestingPartyGrp);
@@ -19,6 +21,8 @@ PartyRiskLimitsDefinitionRequestAck.prototype.requestingPartyGrp = function () {
 };
 
 PartyRiskLimitsDefinitionRequestAck.prototype.partyRiskLimitsAckGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[PartyRiskLimitsDefinitionRequestAck.Tags.PartyRiskLimitsAckGrp] === undefined) return null;
   return this.message.groups[PartyRiskLimitsDefinitionRequestAck.Tags.PartyRiskLimitsAckGrp]
     .map(function (partyRiskLimitsAckGrp) {
       return new PartyRiskLimitsAckGrp(partyRiskLimitsAckGrp);

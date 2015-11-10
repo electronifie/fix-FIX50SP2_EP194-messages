@@ -10,10 +10,10 @@ ObligationType.prototype.value = function () {
 
 
 ObligationType.Keys = {
-  BOND: '0',
-  CONVERTIBLE_BOND: '1',
-  MORTGAGE: '2',
-  LOAN: '3',
+  'BOND': '0',
+  'CONVERTIBLE_BOND': '1',
+  'MORTGAGE': '2',
+  'LOAN': '3',
 };
 
 ObligationType.Tag = '1739';

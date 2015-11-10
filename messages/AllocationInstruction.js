@@ -86,6 +86,8 @@ function AllocationInstruction (allocationInstruction) {
 }
 
 AllocationInstruction.prototype.ordAllocGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[AllocationInstruction.Tags.OrdAllocGrp] === undefined) return null;
   return this.message.groups[AllocationInstruction.Tags.OrdAllocGrp]
     .map(function (ordAllocGrp) {
       return new OrdAllocGrp(ordAllocGrp);
@@ -93,6 +95,8 @@ AllocationInstruction.prototype.ordAllocGrp = function () {
 };
 
 AllocationInstruction.prototype.execAllocGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[AllocationInstruction.Tags.ExecAllocGrp] === undefined) return null;
   return this.message.groups[AllocationInstruction.Tags.ExecAllocGrp]
     .map(function (execAllocGrp) {
       return new ExecAllocGrp(execAllocGrp);
@@ -100,6 +104,8 @@ AllocationInstruction.prototype.execAllocGrp = function () {
 };
 
 AllocationInstruction.prototype.instrument = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[AllocationInstruction.Tags.Instrument] === undefined) return null;
   return this.message.groups[AllocationInstruction.Tags.Instrument]
     .map(function (instrument) {
       return new Instrument(instrument);
@@ -107,6 +113,8 @@ AllocationInstruction.prototype.instrument = function () {
 };
 
 AllocationInstruction.prototype.instrumentExtension = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[AllocationInstruction.Tags.InstrumentExtension] === undefined) return null;
   return this.message.groups[AllocationInstruction.Tags.InstrumentExtension]
     .map(function (instrumentExtension) {
       return new InstrumentExtension(instrumentExtension);
@@ -114,6 +122,8 @@ AllocationInstruction.prototype.instrumentExtension = function () {
 };
 
 AllocationInstruction.prototype.financingDetails = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[AllocationInstruction.Tags.FinancingDetails] === undefined) return null;
   return this.message.groups[AllocationInstruction.Tags.FinancingDetails]
     .map(function (financingDetails) {
       return new FinancingDetails(financingDetails);
@@ -121,6 +131,8 @@ AllocationInstruction.prototype.financingDetails = function () {
 };
 
 AllocationInstruction.prototype.undInstrmtGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[AllocationInstruction.Tags.UndInstrmtGrp] === undefined) return null;
   return this.message.groups[AllocationInstruction.Tags.UndInstrmtGrp]
     .map(function (undInstrmtGrp) {
       return new UndInstrmtGrp(undInstrmtGrp);
@@ -128,6 +140,8 @@ AllocationInstruction.prototype.undInstrmtGrp = function () {
 };
 
 AllocationInstruction.prototype.instrmtLegGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[AllocationInstruction.Tags.InstrmtLegGrp] === undefined) return null;
   return this.message.groups[AllocationInstruction.Tags.InstrmtLegGrp]
     .map(function (instrmtLegGrp) {
       return new InstrmtLegGrp(instrmtLegGrp);
@@ -135,6 +149,8 @@ AllocationInstruction.prototype.instrmtLegGrp = function () {
 };
 
 AllocationInstruction.prototype.spreadOrBenchmarkCurveData = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[AllocationInstruction.Tags.SpreadOrBenchmarkCurveData] === undefined) return null;
   return this.message.groups[AllocationInstruction.Tags.SpreadOrBenchmarkCurveData]
     .map(function (spreadOrBenchmarkCurveData) {
       return new SpreadOrBenchmarkCurveData(spreadOrBenchmarkCurveData);
@@ -142,6 +158,8 @@ AllocationInstruction.prototype.spreadOrBenchmarkCurveData = function () {
 };
 
 AllocationInstruction.prototype.parties = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[AllocationInstruction.Tags.Parties] === undefined) return null;
   return this.message.groups[AllocationInstruction.Tags.Parties]
     .map(function (parties) {
       return new Parties(parties);
@@ -149,6 +167,8 @@ AllocationInstruction.prototype.parties = function () {
 };
 
 AllocationInstruction.prototype.stipulations = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[AllocationInstruction.Tags.Stipulations] === undefined) return null;
   return this.message.groups[AllocationInstruction.Tags.Stipulations]
     .map(function (stipulations) {
       return new Stipulations(stipulations);
@@ -156,6 +176,8 @@ AllocationInstruction.prototype.stipulations = function () {
 };
 
 AllocationInstruction.prototype.yieldData = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[AllocationInstruction.Tags.YieldData] === undefined) return null;
   return this.message.groups[AllocationInstruction.Tags.YieldData]
     .map(function (yieldData) {
       return new YieldData(yieldData);
@@ -163,6 +185,8 @@ AllocationInstruction.prototype.yieldData = function () {
 };
 
 AllocationInstruction.prototype.regulatoryTradeIdgrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[AllocationInstruction.Tags.RegulatoryTradeIDGrp] === undefined) return null;
   return this.message.groups[AllocationInstruction.Tags.RegulatoryTradeIDGrp]
     .map(function (regulatoryTradeIdgrp) {
       return new RegulatoryTradeIDGrp(regulatoryTradeIdgrp);
@@ -170,6 +194,8 @@ AllocationInstruction.prototype.regulatoryTradeIdgrp = function () {
 };
 
 AllocationInstruction.prototype.positionAmountData = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[AllocationInstruction.Tags.PositionAmountData] === undefined) return null;
   return this.message.groups[AllocationInstruction.Tags.PositionAmountData]
     .map(function (positionAmountData) {
       return new PositionAmountData(positionAmountData);
@@ -177,6 +203,8 @@ AllocationInstruction.prototype.positionAmountData = function () {
 };
 
 AllocationInstruction.prototype.allocGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[AllocationInstruction.Tags.AllocGrp] === undefined) return null;
   return this.message.groups[AllocationInstruction.Tags.AllocGrp]
     .map(function (allocGrp) {
       return new AllocGrp(allocGrp);
@@ -184,6 +212,8 @@ AllocationInstruction.prototype.allocGrp = function () {
 };
 
 AllocationInstruction.prototype.rateSource = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[AllocationInstruction.Tags.RateSource] === undefined) return null;
   return this.message.groups[AllocationInstruction.Tags.RateSource]
     .map(function (rateSource) {
       return new RateSource(rateSource);

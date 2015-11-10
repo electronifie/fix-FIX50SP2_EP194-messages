@@ -10,8 +10,8 @@ RiskLimitCheckType.prototype.value = function () {
 
 
 RiskLimitCheckType.Keys = {
-  SUBMIT: '0',
-  LIMIT_CONSUMED: '1',
+  'SUBMIT': '0',
+  'LIMIT_CONSUMED': '1',
 };
 
 RiskLimitCheckType.Tag = '2321';

@@ -10,8 +10,8 @@ DeliveryStreamElectingPartySide.prototype.value = function () {
 
 
 DeliveryStreamElectingPartySide.Keys = {
-  BUYER: '0',
-  SELLER: '1',
+  'BUYER': '0',
+  'SELLER': '1',
 };
 
 DeliveryStreamElectingPartySide.Tag = '41080';

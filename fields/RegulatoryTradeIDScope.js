@@ -10,8 +10,8 @@ RegulatoryTradeIDScope.prototype.value = function () {
 
 
 RegulatoryTradeIDScope.Keys = {
-  CLEARING_MEMBER: '1',
-  CLIENT: '2',
+  'CLEARING_MEMBER': '1',
+  'CLIENT': '2',
 };
 
 RegulatoryTradeIDScope.Tag = '2397';

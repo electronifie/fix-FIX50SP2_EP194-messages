@@ -10,8 +10,8 @@ PaymentStreamInflationInterpolationMethod.prototype.value = function () {
 
 
 PaymentStreamInflationInterpolationMethod.Keys = {
-  NONE: '0',
-  LINEAR_ZERO_YIELD: '1',
+  'NONE': '0',
+  'LINEAR_ZERO_YIELD': '1',
 };
 
 PaymentStreamInflationInterpolationMethod.Tag = '40811';

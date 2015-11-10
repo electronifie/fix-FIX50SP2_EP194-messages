@@ -35,6 +35,8 @@ function AssignmentReport (assignmentReport) {
 }
 
 AssignmentReport.prototype.applicationSequenceControl = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[AssignmentReport.Tags.ApplicationSequenceControl] === undefined) return null;
   return this.message.groups[AssignmentReport.Tags.ApplicationSequenceControl]
     .map(function (applicationSequenceControl) {
       return new ApplicationSequenceControl(applicationSequenceControl);
@@ -42,6 +44,8 @@ AssignmentReport.prototype.applicationSequenceControl = function () {
 };
 
 AssignmentReport.prototype.parties = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[AssignmentReport.Tags.Parties] === undefined) return null;
   return this.message.groups[AssignmentReport.Tags.Parties]
     .map(function (parties) {
       return new Parties(parties);
@@ -49,6 +53,8 @@ AssignmentReport.prototype.parties = function () {
 };
 
 AssignmentReport.prototype.instrument = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[AssignmentReport.Tags.Instrument] === undefined) return null;
   return this.message.groups[AssignmentReport.Tags.Instrument]
     .map(function (instrument) {
       return new Instrument(instrument);
@@ -56,6 +62,8 @@ AssignmentReport.prototype.instrument = function () {
 };
 
 AssignmentReport.prototype.instrmtLegGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[AssignmentReport.Tags.InstrmtLegGrp] === undefined) return null;
   return this.message.groups[AssignmentReport.Tags.InstrmtLegGrp]
     .map(function (instrmtLegGrp) {
       return new InstrmtLegGrp(instrmtLegGrp);
@@ -63,6 +71,8 @@ AssignmentReport.prototype.instrmtLegGrp = function () {
 };
 
 AssignmentReport.prototype.undInstrmtGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[AssignmentReport.Tags.UndInstrmtGrp] === undefined) return null;
   return this.message.groups[AssignmentReport.Tags.UndInstrmtGrp]
     .map(function (undInstrmtGrp) {
       return new UndInstrmtGrp(undInstrmtGrp);
@@ -70,6 +80,8 @@ AssignmentReport.prototype.undInstrmtGrp = function () {
 };
 
 AssignmentReport.prototype.positionQty = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[AssignmentReport.Tags.PositionQty] === undefined) return null;
   return this.message.groups[AssignmentReport.Tags.PositionQty]
     .map(function (positionQty) {
       return new PositionQty(positionQty);
@@ -77,6 +89,8 @@ AssignmentReport.prototype.positionQty = function () {
 };
 
 AssignmentReport.prototype.positionAmountData = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[AssignmentReport.Tags.PositionAmountData] === undefined) return null;
   return this.message.groups[AssignmentReport.Tags.PositionAmountData]
     .map(function (positionAmountData) {
       return new PositionAmountData(positionAmountData);

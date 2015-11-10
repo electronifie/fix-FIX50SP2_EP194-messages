@@ -10,8 +10,8 @@ PublishTrdIndicator.prototype.value = function () {
 
 
 PublishTrdIndicator.Keys = {
-  DO_NOT_REPORT_TRADE: 'N',
-  REPORT_TRADE: 'Y',
+  'DO_NOT_REPORT_TRADE': 'N',
+  'REPORT_TRADE': 'Y',
 };
 
 PublishTrdIndicator.Tag = '852';

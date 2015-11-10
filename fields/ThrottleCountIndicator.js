@@ -10,8 +10,8 @@ ThrottleCountIndicator.prototype.value = function () {
 
 
 ThrottleCountIndicator.Keys = {
-  OUTSTANDING_REQUESTS_UNCHANGED: '0',
-  OUTSTANDING_REQUESTS_DECREASED: '1',
+  'OUTSTANDING_REQUESTS_UNCHANGED': '0',
+  'OUTSTANDING_REQUESTS_DECREASED': '1',
 };
 
 ThrottleCountIndicator.Tag = '1686';

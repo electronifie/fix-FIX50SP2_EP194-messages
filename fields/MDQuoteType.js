@@ -10,11 +10,11 @@ MDQuoteType.prototype.value = function () {
 
 
 MDQuoteType.Keys = {
-  INDICATIVE: '0',
-  TRADEABLE: '1',
-  RESTRICTED_TRADEABLE: '2',
-  COUNTER: '3',
-  INDICATIVE_AND_TRADEABLE: '4',
+  'INDICATIVE': '0',
+  'TRADEABLE': '1',
+  'RESTRICTED_TRADEABLE': '2',
+  'COUNTER': '3',
+  'INDICATIVE_AND_TRADEABLE': '4',
 };
 
 MDQuoteType.Tag = '1070';

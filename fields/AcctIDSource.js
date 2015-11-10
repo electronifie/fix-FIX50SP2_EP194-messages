@@ -10,12 +10,12 @@ AcctIDSource.prototype.value = function () {
 
 
 AcctIDSource.Keys = {
-  BIC: '1',
-  SID_CODE: '2',
-  TFM: '3',
-  OMGEO: '4',
-  DTCC_CODE: '5',
-  OTHER: '99',
+  'BIC': '1',
+  'SID_CODE': '2',
+  'TFM': '3',
+  'OMGEO': '4',
+  'DTCC_CODE': '5',
+  'OTHER': '99',
 };
 
 AcctIDSource.Tag = '660';

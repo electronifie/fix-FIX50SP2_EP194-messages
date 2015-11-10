@@ -10,9 +10,9 @@ ComplexEventPriceTimeType.prototype.value = function () {
 
 
 ComplexEventPriceTimeType.Keys = {
-  EXPIRATION: '1',
-  IMMEDIATE: '2',
-  SPECIFIED_DATE_TIME: '3',
+  'EXPIRATION': '1',
+  'IMMEDIATE': '2',
+  'SPECIFIED_DATE_TIME': '3',
 };
 
 ComplexEventPriceTimeType.Tag = '1489';

@@ -10,10 +10,10 @@ DeliveryType.prototype.value = function () {
 
 
 DeliveryType.Keys = {
-  VERSUS_PAYMENT_DELIVER_PAYMENT: '0',
-  FREE_DELIVER_FREE: '1',
-  TRI_PARTY: '2',
-  HOLD_IN_CUSTODY: '3',
+  'VERSUS_PAYMENT_DELIVER_PAYMENT': '0',
+  'FREE_DELIVER_FREE': '1',
+  'TRI_PARTY': '2',
+  'HOLD_IN_CUSTODY': '3',
 };
 
 DeliveryType.Tag = '919';

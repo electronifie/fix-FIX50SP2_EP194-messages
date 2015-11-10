@@ -10,9 +10,9 @@ MatchStatus.prototype.value = function () {
 
 
 MatchStatus.Keys = {
-  COMPARED_MATCHED_OR_AFFIRMED: '0',
-  UNCOMPARED_UNMATCHED_OR_UNAFFIRMED: '1',
-  ADVISORY_OR_ALERT: '2',
+  'COMPARED_MATCHED_OR_AFFIRMED': '0',
+  'UNCOMPARED_UNMATCHED_OR_UNAFFIRMED': '1',
+  'ADVISORY_OR_ALERT': '2',
 };
 
 MatchStatus.Tag = '573';

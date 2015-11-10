@@ -10,8 +10,8 @@ PossResend.prototype.value = function () {
 
 
 PossResend.Keys = {
-  ORIGINAL_TRANSMISSION: 'N',
-  POSSIBLE_RESEND: 'Y',
+  'ORIGINAL_TRANSMISSION': 'N',
+  'POSSIBLE_RESEND': 'Y',
 };
 
 PossResend.Tag = '97';

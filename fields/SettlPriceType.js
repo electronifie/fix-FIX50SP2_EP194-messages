@@ -10,8 +10,8 @@ SettlPriceType.prototype.value = function () {
 
 
 SettlPriceType.Keys = {
-  FINAL: '1',
-  THEORETICAL: '2',
+  'FINAL': '1',
+  'THEORETICAL': '2',
 };
 
 SettlPriceType.Tag = '731';

@@ -10,10 +10,10 @@ UnderlyingObligationType.prototype.value = function () {
 
 
 UnderlyingObligationType.Keys = {
-  BOND: '0',
-  CONVERTIBLE_BOND: '1',
-  MORTGAGE: '2',
-  LOAN: '3',
+  'BOND': '0',
+  'CONVERTIBLE_BOND': '1',
+  'MORTGAGE': '2',
+  'LOAN': '3',
 };
 
 UnderlyingObligationType.Tag = '2012';

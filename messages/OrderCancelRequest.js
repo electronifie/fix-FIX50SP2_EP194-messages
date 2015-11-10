@@ -32,6 +32,8 @@ function OrderCancelRequest (orderCancelRequest) {
 }
 
 OrderCancelRequest.prototype.parties = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[OrderCancelRequest.Tags.Parties] === undefined) return null;
   return this.message.groups[OrderCancelRequest.Tags.Parties]
     .map(function (parties) {
       return new Parties(parties);
@@ -39,6 +41,8 @@ OrderCancelRequest.prototype.parties = function () {
 };
 
 OrderCancelRequest.prototype.instrument = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[OrderCancelRequest.Tags.Instrument] === undefined) return null;
   return this.message.groups[OrderCancelRequest.Tags.Instrument]
     .map(function (instrument) {
       return new Instrument(instrument);
@@ -46,6 +50,8 @@ OrderCancelRequest.prototype.instrument = function () {
 };
 
 OrderCancelRequest.prototype.financingDetails = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[OrderCancelRequest.Tags.FinancingDetails] === undefined) return null;
   return this.message.groups[OrderCancelRequest.Tags.FinancingDetails]
     .map(function (financingDetails) {
       return new FinancingDetails(financingDetails);
@@ -53,6 +59,8 @@ OrderCancelRequest.prototype.financingDetails = function () {
 };
 
 OrderCancelRequest.prototype.undInstrmtGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[OrderCancelRequest.Tags.UndInstrmtGrp] === undefined) return null;
   return this.message.groups[OrderCancelRequest.Tags.UndInstrmtGrp]
     .map(function (undInstrmtGrp) {
       return new UndInstrmtGrp(undInstrmtGrp);
@@ -60,6 +68,8 @@ OrderCancelRequest.prototype.undInstrmtGrp = function () {
 };
 
 OrderCancelRequest.prototype.orderQtyData = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[OrderCancelRequest.Tags.OrderQtyData] === undefined) return null;
   return this.message.groups[OrderCancelRequest.Tags.OrderQtyData]
     .map(function (orderQtyData) {
       return new OrderQtyData(orderQtyData);

@@ -13,6 +13,8 @@ function PartyDetailsListRequest (partyDetailsListRequest) {
 }
 
 PartyDetailsListRequest.prototype.requestingPartyGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[PartyDetailsListRequest.Tags.RequestingPartyGrp] === undefined) return null;
   return this.message.groups[PartyDetailsListRequest.Tags.RequestingPartyGrp]
     .map(function (requestingPartyGrp) {
       return new RequestingPartyGrp(requestingPartyGrp);
@@ -20,6 +22,8 @@ PartyDetailsListRequest.prototype.requestingPartyGrp = function () {
 };
 
 PartyDetailsListRequest.prototype.parties = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[PartyDetailsListRequest.Tags.Parties] === undefined) return null;
   return this.message.groups[PartyDetailsListRequest.Tags.Parties]
     .map(function (parties) {
       return new Parties(parties);
@@ -27,6 +31,8 @@ PartyDetailsListRequest.prototype.parties = function () {
 };
 
 PartyDetailsListRequest.prototype.requestedPartyRoleGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[PartyDetailsListRequest.Tags.RequestedPartyRoleGrp] === undefined) return null;
   return this.message.groups[PartyDetailsListRequest.Tags.RequestedPartyRoleGrp]
     .map(function (requestedPartyRoleGrp) {
       return new RequestedPartyRoleGrp(requestedPartyRoleGrp);
@@ -34,6 +40,8 @@ PartyDetailsListRequest.prototype.requestedPartyRoleGrp = function () {
 };
 
 PartyDetailsListRequest.prototype.partyRelationshipGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[PartyDetailsListRequest.Tags.PartyRelationshipGrp] === undefined) return null;
   return this.message.groups[PartyDetailsListRequest.Tags.PartyRelationshipGrp]
     .map(function (partyRelationshipGrp) {
       return new PartyRelationshipGrp(partyRelationshipGrp);

@@ -10,10 +10,10 @@ RestructuringType.prototype.value = function () {
 
 
 RestructuringType.Keys = {
-  FULL_RESTRUCTURING: 'FR',
-  MODIFIED_RESTRUCTURING: 'MR',
-  MODIFIED_MOD_RESTRUCTURING: 'MM',
-  NO_RESTRUCTURING_SPECIFIED: 'XR',
+  'FULL_RESTRUCTURING': 'FR',
+  'MODIFIED_RESTRUCTURING': 'MR',
+  'MODIFIED_MOD_RESTRUCTURING': 'MM',
+  'NO_RESTRUCTURING_SPECIFIED': 'XR',
 };
 
 RestructuringType.Tag = '1449';

@@ -10,12 +10,12 @@ TradeReportTransType.prototype.value = function () {
 
 
 TradeReportTransType.Keys = {
-  NEW: '0',
-  CANCEL: '1',
-  REPLACE: '2',
-  RELEASE: '3',
-  REVERSE: '4',
-  CANCEL_DUE_TO_BACK_OUT_OF_TRADE: '5',
+  'NEW': '0',
+  'CANCEL': '1',
+  'REPLACE': '2',
+  'RELEASE': '3',
+  'REVERSE': '4',
+  'CANCEL_DUE_TO_BACK_OUT_OF_TRADE': '5',
 };
 
 TradeReportTransType.Tag = '487';

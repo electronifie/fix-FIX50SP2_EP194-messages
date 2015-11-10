@@ -10,11 +10,11 @@ CollInquiryStatus.prototype.value = function () {
 
 
 CollInquiryStatus.Keys = {
-  ACCEPTED: '0',
-  ACCEPTED_WITH_WARNINGS: '1',
-  COMPLETED: '2',
-  COMPLETED_WITH_WARNINGS: '3',
-  REJECTED: '4',
+  'ACCEPTED': '0',
+  'ACCEPTED_WITH_WARNINGS': '1',
+  'COMPLETED': '2',
+  'COMPLETED_WITH_WARNINGS': '3',
+  'REJECTED': '4',
 };
 
 CollInquiryStatus.Tag = '945';

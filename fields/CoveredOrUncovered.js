@@ -10,8 +10,8 @@ CoveredOrUncovered.prototype.value = function () {
 
 
 CoveredOrUncovered.Keys = {
-  COVERED: '0',
-  UNCOVERED: '1',
+  'COVERED': '0',
+  'UNCOVERED': '1',
 };
 
 CoveredOrUncovered.Tag = '203';

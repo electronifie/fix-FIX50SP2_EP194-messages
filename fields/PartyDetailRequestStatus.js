@@ -10,10 +10,10 @@ PartyDetailRequestStatus.prototype.value = function () {
 
 
 PartyDetailRequestStatus.Keys = {
-  ACCEPTED: '0',
-  ACCEPTED_WITH_CHANGES: '1',
-  REJECTED: '2',
-  ACCEPTANCE_PENDING: '3',
+  'ACCEPTED': '0',
+  'ACCEPTED_WITH_CHANGES': '1',
+  'REJECTED': '2',
+  'ACCEPTANCE_PENDING': '3',
 };
 
 PartyDetailRequestStatus.Tag = '1878';

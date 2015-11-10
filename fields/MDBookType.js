@@ -10,9 +10,9 @@ MDBookType.prototype.value = function () {
 
 
 MDBookType.Keys = {
-  TOP_OF_BOOK: '1',
-  PRICE_DEPTH: '2',
-  ORDER_DEPTH: '3',
+  'TOP_OF_BOOK': '1',
+  'PRICE_DEPTH': '2',
+  'ORDER_DEPTH': '3',
 };
 
 MDBookType.Tag = '1021';

@@ -9,6 +9,8 @@ function NetworkCounterpartySystemStatusResponse (networkCounterpartySystemStatu
 }
 
 NetworkCounterpartySystemStatusResponse.prototype.compIdstatGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[NetworkCounterpartySystemStatusResponse.Tags.CompIDStatGrp] === undefined) return null;
   return this.message.groups[NetworkCounterpartySystemStatusResponse.Tags.CompIDStatGrp]
     .map(function (compIdstatGrp) {
       return new CompIDStatGrp(compIdstatGrp);

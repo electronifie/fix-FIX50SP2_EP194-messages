@@ -10,10 +10,10 @@ PaymentStreamInflationLagUnit.prototype.value = function () {
 
 
 PaymentStreamInflationLagUnit.Keys = {
-  DAY: 'D',
-  WEEK: 'Wk',
-  MONTH: 'Mo',
-  YEAR: 'Yr',
+  'DAY': 'D',
+  'WEEK': 'Wk',
+  'MONTH': 'Mo',
+  'YEAR': 'Yr',
 };
 
 PaymentStreamInflationLagUnit.Tag = '40809';

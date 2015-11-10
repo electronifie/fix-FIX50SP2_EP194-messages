@@ -10,9 +10,9 @@ IOITransType.prototype.value = function () {
 
 
 IOITransType.Keys = {
-  NEW: 'N',
-  CANCEL: 'C',
-  REPLACE: 'R',
+  'NEW': 'N',
+  'CANCEL': 'C',
+  'REPLACE': 'R',
 };
 
 IOITransType.Tag = '28';

@@ -10,12 +10,12 @@ ListStatusType.prototype.value = function () {
 
 
 ListStatusType.Keys = {
-  ACK: '1',
-  RESPONSE: '2',
-  TIMED: '3',
-  EXEC_STARTED: '4',
-  ALL_DONE: '5',
-  ALERT: '6',
+  'ACK': '1',
+  'RESPONSE': '2',
+  'TIMED': '3',
+  'EXEC_STARTED': '4',
+  'ALL_DONE': '5',
+  'ALERT': '6',
 };
 
 ListStatusType.Tag = '429';

@@ -10,11 +10,11 @@ StandInstDbType.prototype.value = function () {
 
 
 StandInstDbType.Keys = {
-  OTHER: '0',
-  DTC_SID: '1',
-  THOMSON_ALERT: '2',
-  A_GLOBAL_CUSTODIAN: '3',
-  ACCOUNTNET: '4',
+  'OTHER': '0',
+  'DTC_SID': '1',
+  'THOMSON_ALERT': '2',
+  'A_GLOBAL_CUSTODIAN': '3',
+  'ACCOUNTNET': '4',
 };
 
 StandInstDbType.Tag = '169';

@@ -10,8 +10,8 @@ DeliveryStreamToleranceOptionSide.prototype.value = function () {
 
 
 DeliveryStreamToleranceOptionSide.Keys = {
-  BUYER: '1',
-  SELLER: '2',
+  'BUYER': '1',
+  'SELLER': '2',
 };
 
 DeliveryStreamToleranceOptionSide.Tag = '41075';

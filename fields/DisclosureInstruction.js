@@ -10,9 +10,9 @@ DisclosureInstruction.prototype.value = function () {
 
 
 DisclosureInstruction.Keys = {
-  NO: '0',
-  YES: '1',
-  USE_DEFAULT_SETTING: '2',
+  'NO': '0',
+  'YES': '1',
+  'USE_DEFAULT_SETTING': '2',
 };
 
 DisclosureInstruction.Tag = '1814';

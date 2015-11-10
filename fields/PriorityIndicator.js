@@ -10,8 +10,8 @@ PriorityIndicator.prototype.value = function () {
 
 
 PriorityIndicator.Keys = {
-  PRIORITY_UNCHANGED: '0',
-  LOST_PRIORITY_AS_RESULT_OF_ORDER_CHANGE: '1',
+  'PRIORITY_UNCHANGED': '0',
+  'LOST_PRIORITY_AS_RESULT_OF_ORDER_CHANGE': '1',
 };
 
 PriorityIndicator.Tag = '638';

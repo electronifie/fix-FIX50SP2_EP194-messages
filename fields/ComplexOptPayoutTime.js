@@ -10,13 +10,13 @@ ComplexOptPayoutTime.prototype.value = function () {
 
 
 ComplexOptPayoutTime.Keys = {
-  CLOSE: '0',
-  OPEN: '1',
-  OFFICIAL_SETTLEMENT: '2',
-  VALUATION_TIME: '3',
-  EXCHANGE_SETTLEMENT_TIME: '4',
-  DERIVATIVES_CLOSE: '5',
-  AS_SPECIFIED_IN_MASTER_CONFIRMATION: '6',
+  'CLOSE': '0',
+  'OPEN': '1',
+  'OFFICIAL_SETTLEMENT': '2',
+  'VALUATION_TIME': '3',
+  'EXCHANGE_SETTLEMENT_TIME': '4',
+  'DERIVATIVES_CLOSE': '5',
+  'AS_SPECIFIED_IN_MASTER_CONFIRMATION': '6',
 };
 
 ComplexOptPayoutTime.Tag = '2121';

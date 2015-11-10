@@ -10,8 +10,8 @@ RiskLimitReportStatus.prototype.value = function () {
 
 
 RiskLimitReportStatus.Keys = {
-  ACCEPTED: '0',
-  REJECTED: '1',
+  'ACCEPTED': '0',
+  'REJECTED': '1',
 };
 
 RiskLimitReportStatus.Tag = '2316';

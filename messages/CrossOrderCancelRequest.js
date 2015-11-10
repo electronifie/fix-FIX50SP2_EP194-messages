@@ -18,6 +18,8 @@ function CrossOrderCancelRequest (crossOrderCancelRequest) {
 }
 
 CrossOrderCancelRequest.prototype.rootParties = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[CrossOrderCancelRequest.Tags.RootParties] === undefined) return null;
   return this.message.groups[CrossOrderCancelRequest.Tags.RootParties]
     .map(function (rootParties) {
       return new RootParties(rootParties);
@@ -25,6 +27,8 @@ CrossOrderCancelRequest.prototype.rootParties = function () {
 };
 
 CrossOrderCancelRequest.prototype.sideCrossOrdCxlGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[CrossOrderCancelRequest.Tags.SideCrossOrdCxlGrp] === undefined) return null;
   return this.message.groups[CrossOrderCancelRequest.Tags.SideCrossOrdCxlGrp]
     .map(function (sideCrossOrdCxlGrp) {
       return new SideCrossOrdCxlGrp(sideCrossOrdCxlGrp);
@@ -32,6 +36,8 @@ CrossOrderCancelRequest.prototype.sideCrossOrdCxlGrp = function () {
 };
 
 CrossOrderCancelRequest.prototype.instrument = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[CrossOrderCancelRequest.Tags.Instrument] === undefined) return null;
   return this.message.groups[CrossOrderCancelRequest.Tags.Instrument]
     .map(function (instrument) {
       return new Instrument(instrument);
@@ -39,6 +45,8 @@ CrossOrderCancelRequest.prototype.instrument = function () {
 };
 
 CrossOrderCancelRequest.prototype.undInstrmtGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[CrossOrderCancelRequest.Tags.UndInstrmtGrp] === undefined) return null;
   return this.message.groups[CrossOrderCancelRequest.Tags.UndInstrmtGrp]
     .map(function (undInstrmtGrp) {
       return new UndInstrmtGrp(undInstrmtGrp);
@@ -46,6 +54,8 @@ CrossOrderCancelRequest.prototype.undInstrmtGrp = function () {
 };
 
 CrossOrderCancelRequest.prototype.instrmtLegGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[CrossOrderCancelRequest.Tags.InstrmtLegGrp] === undefined) return null;
   return this.message.groups[CrossOrderCancelRequest.Tags.InstrmtLegGrp]
     .map(function (instrmtLegGrp) {
       return new InstrmtLegGrp(instrmtLegGrp);

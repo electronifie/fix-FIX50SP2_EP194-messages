@@ -10,9 +10,9 @@ Adjustment.prototype.value = function () {
 
 
 Adjustment.Keys = {
-  CANCEL: '1',
-  ERROR: '2',
-  CORRECTION: '3',
+  'CANCEL': '1',
+  'ERROR': '2',
+  'CORRECTION': '3',
 };
 
 Adjustment.Tag = '334';

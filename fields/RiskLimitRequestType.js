@@ -10,9 +10,9 @@ RiskLimitRequestType.prototype.value = function () {
 
 
 RiskLimitRequestType.Keys = {
-  DEFINITIONS: '1',
-  UTILIZATION: '2',
-  DEFINITIONS_AND_UTILIZATION: '3',
+  'DEFINITIONS': '1',
+  'UTILIZATION': '2',
+  'DEFINITIONS_AND_UTILIZATION': '3',
 };
 
 RiskLimitRequestType.Tag = '1760';

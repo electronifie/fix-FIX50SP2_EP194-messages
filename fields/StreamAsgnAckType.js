@@ -10,8 +10,8 @@ StreamAsgnAckType.prototype.value = function () {
 
 
 StreamAsgnAckType.Keys = {
-  ASSIGNMENT_ACCEPTED: '0',
-  ASSIGNMENT_REJECTED: '1',
+  'ASSIGNMENT_ACCEPTED': '0',
+  'ASSIGNMENT_REJECTED': '1',
 };
 
 StreamAsgnAckType.Tag = '1503';

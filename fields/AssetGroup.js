@@ -10,9 +10,9 @@ AssetGroup.prototype.value = function () {
 
 
 AssetGroup.Keys = {
-  FINANCIALS: '1',
-  COMMODITIES: '2',
-  ALTERNATIVE_INVESTMENTS: '3',
+  'FINANCIALS': '1',
+  'COMMODITIES': '2',
+  'ALTERNATIVE_INVESTMENTS': '3',
 };
 
 AssetGroup.Tag = '2210';

@@ -10,9 +10,9 @@ QuoteAckStatus.prototype.value = function () {
 
 
 QuoteAckStatus.Keys = {
-  RECEIVED_NOT_YET_PROCESSED: '0',
-  ACCEPTED: '1',
-  REJECTED: '2',
+  'RECEIVED_NOT_YET_PROCESSED': '0',
+  'ACCEPTED': '1',
+  'REJECTED': '2',
 };
 
 QuoteAckStatus.Tag = '1865';

@@ -10,9 +10,9 @@ TransferTransType.prototype.value = function () {
 
 
 TransferTransType.Keys = {
-  NEW: '0',
-  REPLACE: '1',
-  CANCEL: '2',
+  'NEW': '0',
+  'REPLACE': '1',
+  'CANCEL': '2',
 };
 
 TransferTransType.Tag = '2439';

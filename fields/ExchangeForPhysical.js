@@ -10,8 +10,8 @@ ExchangeForPhysical.prototype.value = function () {
 
 
 ExchangeForPhysical.Keys = {
-  FALSE: 'N',
-  TRUE: 'Y',
+  'FALSE': 'N',
+  'TRUE': 'Y',
 };
 
 ExchangeForPhysical.Tag = '411';

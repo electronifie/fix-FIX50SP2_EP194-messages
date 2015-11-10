@@ -10,9 +10,9 @@ ComplexEventCreditEventNotifyingParty.prototype.value = function () {
 
 
 ComplexEventCreditEventNotifyingParty.Keys = {
-  SELLER_NOTIFIES: '0',
-  BUYER_NOTIFIES: '1',
-  SELLER_OR_BUYER_NOTIFIES: '2',
+  'SELLER_NOTIFIES': '0',
+  'BUYER_NOTIFIES': '1',
+  'SELLER_OR_BUYER_NOTIFIES': '2',
 };
 
 ComplexEventCreditEventNotifyingParty.Tag = '2134';

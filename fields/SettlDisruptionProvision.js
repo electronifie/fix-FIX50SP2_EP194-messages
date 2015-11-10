@@ -10,8 +10,8 @@ SettlDisruptionProvision.prototype.value = function () {
 
 
 SettlDisruptionProvision.Keys = {
-  NEGOTIATION: '1',
-  CANCELLATION_AND_PAYMENT: '2',
+  'NEGOTIATION': '1',
+  'CANCELLATION_AND_PAYMENT': '2',
 };
 
 SettlDisruptionProvision.Tag = '2143';

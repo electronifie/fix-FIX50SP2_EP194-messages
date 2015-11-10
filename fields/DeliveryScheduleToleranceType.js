@@ -10,8 +10,8 @@ DeliveryScheduleToleranceType.prototype.value = function () {
 
 
 DeliveryScheduleToleranceType.Keys = {
-  ABSOLUTE: '0',
-  PERCENTAGE: '1',
+  'ABSOLUTE': '0',
+  'PERCENTAGE': '1',
 };
 
 DeliveryScheduleToleranceType.Tag = '41046';

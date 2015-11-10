@@ -10,12 +10,12 @@ MDStatisticSubScope.prototype.value = function () {
 
 
 MDStatisticSubScope.Keys = {
-  VISIBLE: '1',
-  HIDDEN: '2',
-  INDICATIVE: '3',
-  TRADEABLE: '4',
-  PASSIVE: '5',
-  MARKET_CONSENSUS: '6',
+  'VISIBLE': '1',
+  'HIDDEN': '2',
+  'INDICATIVE': '3',
+  'TRADEABLE': '4',
+  'PASSIVE': '5',
+  'MARKET_CONSENSUS': '6',
 };
 
 MDStatisticSubScope.Tag = '2458';

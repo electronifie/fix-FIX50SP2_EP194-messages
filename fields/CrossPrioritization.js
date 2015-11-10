@@ -10,9 +10,9 @@ CrossPrioritization.prototype.value = function () {
 
 
 CrossPrioritization.Keys = {
-  NONE: '0',
-  BUY_SIDE_IS_PRIORITIZED: '1',
-  SELL_SIDE_IS_PRIORITIZED: '2',
+  'NONE': '0',
+  'BUY_SIDE_IS_PRIORITIZED': '1',
+  'SELL_SIDE_IS_PRIORITIZED': '2',
 };
 
 CrossPrioritization.Tag = '550';

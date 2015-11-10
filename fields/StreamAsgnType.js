@@ -10,9 +10,9 @@ StreamAsgnType.prototype.value = function () {
 
 
 StreamAsgnType.Keys = {
-  ASSIGNMENT: '1',
-  REJECTED: '2',
-  TERMINATE_UNASSIGN: '3',
+  'ASSIGNMENT': '1',
+  'REJECTED': '2',
+  'TERMINATE_UNASSIGN': '3',
 };
 
 StreamAsgnType.Tag = '1617';

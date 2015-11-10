@@ -10,10 +10,10 @@ AllocMethod.prototype.value = function () {
 
 
 AllocMethod.Keys = {
-  AUTOMATIC: '1',
-  GUARANTOR: '2',
-  MANUAL: '3',
-  BROKER_ASSIGNED: '4',
+  'AUTOMATIC': '1',
+  'GUARANTOR': '2',
+  'MANUAL': '3',
+  'BROKER_ASSIGNED': '4',
 };
 
 AllocMethod.Tag = '1002';

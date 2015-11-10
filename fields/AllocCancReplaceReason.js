@@ -10,10 +10,10 @@ AllocCancReplaceReason.prototype.value = function () {
 
 
 AllocCancReplaceReason.Keys = {
-  ORIGINAL_DETAILS_INCOMPLETE_INCORRECT: '1',
-  CHANGE_IN_UNDERLYING_ORDER_DETAILS: '2',
-  CANCELLED_BY_GIVE_UP_FIRM: '3',
-  OTHER: '99',
+  'ORIGINAL_DETAILS_INCOMPLETE_INCORRECT': '1',
+  'CHANGE_IN_UNDERLYING_ORDER_DETAILS': '2',
+  'CANCELLED_BY_GIVE_UP_FIRM': '3',
+  'OTHER': '99',
 };
 
 AllocCancReplaceReason.Tag = '796';

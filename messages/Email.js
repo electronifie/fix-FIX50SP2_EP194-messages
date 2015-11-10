@@ -20,6 +20,8 @@ function Email (email) {
 }
 
 Email.prototype.routingGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[Email.Tags.RoutingGrp] === undefined) return null;
   return this.message.groups[Email.Tags.RoutingGrp]
     .map(function (routingGrp) {
       return new RoutingGrp(routingGrp);
@@ -27,6 +29,8 @@ Email.prototype.routingGrp = function () {
 };
 
 Email.prototype.instrmtGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[Email.Tags.InstrmtGrp] === undefined) return null;
   return this.message.groups[Email.Tags.InstrmtGrp]
     .map(function (instrmtGrp) {
       return new InstrmtGrp(instrmtGrp);
@@ -34,6 +38,8 @@ Email.prototype.instrmtGrp = function () {
 };
 
 Email.prototype.undInstrmtGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[Email.Tags.UndInstrmtGrp] === undefined) return null;
   return this.message.groups[Email.Tags.UndInstrmtGrp]
     .map(function (undInstrmtGrp) {
       return new UndInstrmtGrp(undInstrmtGrp);
@@ -41,6 +47,8 @@ Email.prototype.undInstrmtGrp = function () {
 };
 
 Email.prototype.instrmtLegGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[Email.Tags.InstrmtLegGrp] === undefined) return null;
   return this.message.groups[Email.Tags.InstrmtLegGrp]
     .map(function (instrmtLegGrp) {
       return new InstrmtLegGrp(instrmtLegGrp);
@@ -48,6 +56,8 @@ Email.prototype.instrmtLegGrp = function () {
 };
 
 Email.prototype.linesOfTextGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[Email.Tags.LinesOfTextGrp] === undefined) return null;
   return this.message.groups[Email.Tags.LinesOfTextGrp]
     .map(function (linesOfTextGrp) {
       return new LinesOfTextGrp(linesOfTextGrp);
@@ -55,6 +65,8 @@ Email.prototype.linesOfTextGrp = function () {
 };
 
 Email.prototype.attachmentGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[Email.Tags.AttachmentGrp] === undefined) return null;
   return this.message.groups[Email.Tags.AttachmentGrp]
     .map(function (attachmentGrp) {
       return new AttachmentGrp(attachmentGrp);

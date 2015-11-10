@@ -10,10 +10,10 @@ StatsType.prototype.value = function () {
 
 
 StatsType.Keys = {
-  EXCHANGE_LAST: '1',
-  HIGH_LOW_PRICE: '2',
-  AVERAGE_PRICE: '3',
-  TURNOVER: '4',
+  'EXCHANGE_LAST': '1',
+  'HIGH_LOW_PRICE': '2',
+  'AVERAGE_PRICE': '3',
+  'TURNOVER': '4',
 };
 
 StatsType.Tag = '1176';

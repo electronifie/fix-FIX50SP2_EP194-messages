@@ -10,8 +10,8 @@ PaymentStreamRateTreatment.prototype.value = function () {
 
 
 PaymentStreamRateTreatment.Keys = {
-  BOND_EQUIVALENT_YIELD: '0',
-  MONEY_MARKET_YIELD: '1',
+  'BOND_EQUIVALENT_YIELD': '0',
+  'MONEY_MARKET_YIELD': '1',
 };
 
 PaymentStreamRateTreatment.Tag = '40796';

@@ -10,13 +10,13 @@ DisclosureType.prototype.value = function () {
 
 
 DisclosureType.Keys = {
-  VOLUME: '1',
-  PRICE: '2',
-  SIDE: '3',
-  AON: '4',
-  GENERAL: '5',
-  CLEARING_ACCOUNT: '6',
-  CMTA_ACCOUNT: '7',
+  'VOLUME': '1',
+  'PRICE': '2',
+  'SIDE': '3',
+  'AON': '4',
+  'GENERAL': '5',
+  'CLEARING_ACCOUNT': '6',
+  'CMTA_ACCOUNT': '7',
 };
 
 DisclosureType.Tag = '1813';

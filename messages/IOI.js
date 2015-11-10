@@ -34,6 +34,8 @@ function IOI (ioi) {
 }
 
 IOI.prototype.applicationSequenceControl = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[IOI.Tags.ApplicationSequenceControl] === undefined) return null;
   return this.message.groups[IOI.Tags.ApplicationSequenceControl]
     .map(function (applicationSequenceControl) {
       return new ApplicationSequenceControl(applicationSequenceControl);
@@ -41,6 +43,8 @@ IOI.prototype.applicationSequenceControl = function () {
 };
 
 IOI.prototype.instrument = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[IOI.Tags.Instrument] === undefined) return null;
   return this.message.groups[IOI.Tags.Instrument]
     .map(function (instrument) {
       return new Instrument(instrument);
@@ -48,6 +52,8 @@ IOI.prototype.instrument = function () {
 };
 
 IOI.prototype.parties = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[IOI.Tags.Parties] === undefined) return null;
   return this.message.groups[IOI.Tags.Parties]
     .map(function (parties) {
       return new Parties(parties);
@@ -55,6 +61,8 @@ IOI.prototype.parties = function () {
 };
 
 IOI.prototype.financingDetails = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[IOI.Tags.FinancingDetails] === undefined) return null;
   return this.message.groups[IOI.Tags.FinancingDetails]
     .map(function (financingDetails) {
       return new FinancingDetails(financingDetails);
@@ -62,6 +70,8 @@ IOI.prototype.financingDetails = function () {
 };
 
 IOI.prototype.undInstrmtGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[IOI.Tags.UndInstrmtGrp] === undefined) return null;
   return this.message.groups[IOI.Tags.UndInstrmtGrp]
     .map(function (undInstrmtGrp) {
       return new UndInstrmtGrp(undInstrmtGrp);
@@ -69,6 +79,8 @@ IOI.prototype.undInstrmtGrp = function () {
 };
 
 IOI.prototype.orderQtyData = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[IOI.Tags.OrderQtyData] === undefined) return null;
   return this.message.groups[IOI.Tags.OrderQtyData]
     .map(function (orderQtyData) {
       return new OrderQtyData(orderQtyData);
@@ -76,6 +88,8 @@ IOI.prototype.orderQtyData = function () {
 };
 
 IOI.prototype.stipulations = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[IOI.Tags.Stipulations] === undefined) return null;
   return this.message.groups[IOI.Tags.Stipulations]
     .map(function (stipulations) {
       return new Stipulations(stipulations);
@@ -83,6 +97,8 @@ IOI.prototype.stipulations = function () {
 };
 
 IOI.prototype.instrmtLegIoigrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[IOI.Tags.InstrmtLegIOIGrp] === undefined) return null;
   return this.message.groups[IOI.Tags.InstrmtLegIOIGrp]
     .map(function (instrmtLegIoigrp) {
       return new InstrmtLegIOIGrp(instrmtLegIoigrp);
@@ -90,6 +106,8 @@ IOI.prototype.instrmtLegIoigrp = function () {
 };
 
 IOI.prototype.ioiqualGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[IOI.Tags.IOIQualGrp] === undefined) return null;
   return this.message.groups[IOI.Tags.IOIQualGrp]
     .map(function (ioiqualGrp) {
       return new IOIQualGrp(ioiqualGrp);
@@ -97,6 +115,8 @@ IOI.prototype.ioiqualGrp = function () {
 };
 
 IOI.prototype.routingGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[IOI.Tags.RoutingGrp] === undefined) return null;
   return this.message.groups[IOI.Tags.RoutingGrp]
     .map(function (routingGrp) {
       return new RoutingGrp(routingGrp);
@@ -104,6 +124,8 @@ IOI.prototype.routingGrp = function () {
 };
 
 IOI.prototype.spreadOrBenchmarkCurveData = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[IOI.Tags.SpreadOrBenchmarkCurveData] === undefined) return null;
   return this.message.groups[IOI.Tags.SpreadOrBenchmarkCurveData]
     .map(function (spreadOrBenchmarkCurveData) {
       return new SpreadOrBenchmarkCurveData(spreadOrBenchmarkCurveData);
@@ -111,6 +133,8 @@ IOI.prototype.spreadOrBenchmarkCurveData = function () {
 };
 
 IOI.prototype.relativeValueGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[IOI.Tags.RelativeValueGrp] === undefined) return null;
   return this.message.groups[IOI.Tags.RelativeValueGrp]
     .map(function (relativeValueGrp) {
       return new RelativeValueGrp(relativeValueGrp);
@@ -118,6 +142,8 @@ IOI.prototype.relativeValueGrp = function () {
 };
 
 IOI.prototype.yieldData = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[IOI.Tags.YieldData] === undefined) return null;
   return this.message.groups[IOI.Tags.YieldData]
     .map(function (yieldData) {
       return new YieldData(yieldData);

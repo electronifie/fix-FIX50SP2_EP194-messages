@@ -10,9 +10,9 @@ TradSesMode.prototype.value = function () {
 
 
 TradSesMode.Keys = {
-  TESTING: '1',
-  SIMULATED: '2',
-  PRODUCTION: '3',
+  'TESTING': '1',
+  'SIMULATED': '2',
+  'PRODUCTION': '3',
 };
 
 TradSesMode.Tag = '339';

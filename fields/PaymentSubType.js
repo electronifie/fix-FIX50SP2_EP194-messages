@@ -10,15 +10,15 @@ PaymentSubType.prototype.value = function () {
 
 
 PaymentSubType.Keys = {
-  INITIAL: '0',
-  INTERMEDIATE: '1',
-  FINAL: '2',
-  PREPAID: '3',
-  POSTPAID: '4',
-  VARIABLE: '5',
-  FIXED: '6',
-  SWAP: '7',
-  CONDITIONAL: '8',
+  'INITIAL': '0',
+  'INTERMEDIATE': '1',
+  'FINAL': '2',
+  'PREPAID': '3',
+  'POSTPAID': '4',
+  'VARIABLE': '5',
+  'FIXED': '6',
+  'SWAP': '7',
+  'CONDITIONAL': '8',
 };
 
 PaymentSubType.Tag = '40993';

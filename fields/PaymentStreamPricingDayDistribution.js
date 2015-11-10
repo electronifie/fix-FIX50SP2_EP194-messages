@@ -10,10 +10,10 @@ PaymentStreamPricingDayDistribution.prototype.value = function () {
 
 
 PaymentStreamPricingDayDistribution.Keys = {
-  ALL: '0',
-  FIRST: '1',
-  LAST: '2',
-  PENULTIMATE: '3',
+  'ALL': '0',
+  'FIRST': '1',
+  'LAST': '2',
+  'PENULTIMATE': '3',
 };
 
 PaymentStreamPricingDayDistribution.Tag = '41214';

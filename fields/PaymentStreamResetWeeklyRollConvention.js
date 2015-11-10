@@ -10,13 +10,13 @@ PaymentStreamResetWeeklyRollConvention.prototype.value = function () {
 
 
 PaymentStreamResetWeeklyRollConvention.Keys = {
-  MONDAY: 'MON',
-  TUESDAY: 'TUE',
-  WEDNESDAY: 'WED',
-  THURSDAY: 'THU',
-  FRIDAY: 'FRI',
-  SATURDAY: 'SAT',
-  SUNDAY: 'SUN',
+  'MONDAY': 'MON',
+  'TUESDAY': 'TUE',
+  'WEDNESDAY': 'WED',
+  'THURSDAY': 'THU',
+  'FRIDAY': 'FRI',
+  'SATURDAY': 'SAT',
+  'SUNDAY': 'SUN',
 };
 
 PaymentStreamResetWeeklyRollConvention.Tag = '40766';

@@ -10,13 +10,13 @@ ListRejectReason.prototype.value = function () {
 
 
 ListRejectReason.Keys = {
-  BROKER_EXCHANGE_OPTION: '0',
-  EXCHANGE_CLOSED: '2',
-  TOO_LATE_TO_ENTER: '4',
-  UNKNOWN_ORDER: '5',
-  DUPLICATE_ORDER: '6',
-  UNSUPPORTED_ORDER_CHARACTERISTIC: '11',
-  OTHER: '99',
+  'BROKER_EXCHANGE_OPTION': '0',
+  'EXCHANGE_CLOSED': '2',
+  'TOO_LATE_TO_ENTER': '4',
+  'UNKNOWN_ORDER': '5',
+  'DUPLICATE_ORDER': '6',
+  'UNSUPPORTED_ORDER_CHARACTERISTIC': '11',
+  'OTHER': '99',
 };
 
 ListRejectReason.Tag = '1386';

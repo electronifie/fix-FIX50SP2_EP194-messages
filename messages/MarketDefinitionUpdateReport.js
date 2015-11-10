@@ -23,6 +23,8 @@ function MarketDefinitionUpdateReport (marketDefinitionUpdateReport) {
 }
 
 MarketDefinitionUpdateReport.prototype.applicationSequenceControl = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[MarketDefinitionUpdateReport.Tags.ApplicationSequenceControl] === undefined) return null;
   return this.message.groups[MarketDefinitionUpdateReport.Tags.ApplicationSequenceControl]
     .map(function (applicationSequenceControl) {
       return new ApplicationSequenceControl(applicationSequenceControl);
@@ -30,6 +32,8 @@ MarketDefinitionUpdateReport.prototype.applicationSequenceControl = function () 
 };
 
 MarketDefinitionUpdateReport.prototype.baseTradingRules = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[MarketDefinitionUpdateReport.Tags.BaseTradingRules] === undefined) return null;
   return this.message.groups[MarketDefinitionUpdateReport.Tags.BaseTradingRules]
     .map(function (baseTradingRules) {
       return new BaseTradingRules(baseTradingRules);
@@ -37,6 +41,8 @@ MarketDefinitionUpdateReport.prototype.baseTradingRules = function () {
 };
 
 MarketDefinitionUpdateReport.prototype.ordTypeRules = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[MarketDefinitionUpdateReport.Tags.OrdTypeRules] === undefined) return null;
   return this.message.groups[MarketDefinitionUpdateReport.Tags.OrdTypeRules]
     .map(function (ordTypeRules) {
       return new OrdTypeRules(ordTypeRules);
@@ -44,6 +50,8 @@ MarketDefinitionUpdateReport.prototype.ordTypeRules = function () {
 };
 
 MarketDefinitionUpdateReport.prototype.timeInForceRules = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[MarketDefinitionUpdateReport.Tags.TimeInForceRules] === undefined) return null;
   return this.message.groups[MarketDefinitionUpdateReport.Tags.TimeInForceRules]
     .map(function (timeInForceRules) {
       return new TimeInForceRules(timeInForceRules);
@@ -51,6 +59,8 @@ MarketDefinitionUpdateReport.prototype.timeInForceRules = function () {
 };
 
 MarketDefinitionUpdateReport.prototype.execInstRules = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[MarketDefinitionUpdateReport.Tags.ExecInstRules] === undefined) return null;
   return this.message.groups[MarketDefinitionUpdateReport.Tags.ExecInstRules]
     .map(function (execInstRules) {
       return new ExecInstRules(execInstRules);

@@ -10,8 +10,8 @@ AllocNoOrdersType.prototype.value = function () {
 
 
 AllocNoOrdersType.Keys = {
-  NOT_SPECIFIED: '0',
-  EXPLICIT_LIST_PROVIDED: '1',
+  'NOT_SPECIFIED': '0',
+  'EXPLICIT_LIST_PROVIDED': '1',
 };
 
 AllocNoOrdersType.Tag = '857';

@@ -11,6 +11,8 @@ function ApplicationMessageReport (applicationMessageReport) {
 }
 
 ApplicationMessageReport.prototype.applIdreportGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[ApplicationMessageReport.Tags.ApplIDReportGrp] === undefined) return null;
   return this.message.groups[ApplicationMessageReport.Tags.ApplIDReportGrp]
     .map(function (applIdreportGrp) {
       return new ApplIDReportGrp(applIdreportGrp);

@@ -10,9 +10,9 @@ RegistTransType.prototype.value = function () {
 
 
 RegistTransType.Keys = {
-  NEW: '0',
-  CANCEL: '2',
-  REPLACE: '1',
+  'NEW': '0',
+  'CANCEL': '2',
+  'REPLACE': '1',
 };
 
 RegistTransType.Tag = '514';

@@ -10,11 +10,11 @@ MDOriginType.prototype.value = function () {
 
 
 MDOriginType.Keys = {
-  BOOK: '0',
-  OFF_BOOK: '1',
-  CROSS: '2',
-  QUOTE_DRIVEN_MARKET: '3',
-  DARK_ORDER_BOOK: '4',
+  'BOOK': '0',
+  'OFF_BOOK': '1',
+  'CROSS': '2',
+  'QUOTE_DRIVEN_MARKET': '3',
+  'DARK_ORDER_BOOK': '4',
 };
 
 MDOriginType.Tag = '1024';

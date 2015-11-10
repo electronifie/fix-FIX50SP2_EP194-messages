@@ -10,8 +10,8 @@ ClearedIndicator.prototype.value = function () {
 
 
 ClearedIndicator.Keys = {
-  NOT_CLEARED: '0',
-  CLEARED: '1',
+  'NOT_CLEARED': '0',
+  'CLEARED': '1',
 };
 
 ClearedIndicator.Tag = '1832';

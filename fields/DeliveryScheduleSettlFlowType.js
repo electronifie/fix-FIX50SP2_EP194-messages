@@ -10,12 +10,12 @@ DeliveryScheduleSettlFlowType.prototype.value = function () {
 
 
 DeliveryScheduleSettlFlowType.Keys = {
-  ALL_TIMES: '0',
-  ON_PEAK: '1',
-  OFF_PEAK: '2',
-  BASE: '3',
-  BLOCK_HOURS: '4',
-  OTHER: '5',
+  'ALL_TIMES': '0',
+  'ON_PEAK': '1',
+  'OFF_PEAK': '2',
+  'BASE': '3',
+  'BLOCK_HOURS': '4',
+  'OTHER': '5',
 };
 
 DeliveryScheduleSettlFlowType.Tag = '41049';

@@ -10,8 +10,8 @@ AggressorIndicator.prototype.value = function () {
 
 
 AggressorIndicator.Keys = {
-  ORDER_INITIATOR_IS_AGGRESSOR: 'Y',
-  ORDER_INITIATOR_IS_PASSIVE: 'N',
+  'ORDER_INITIATOR_IS_AGGRESSOR': 'Y',
+  'ORDER_INITIATOR_IS_PASSIVE': 'N',
 };
 
 AggressorIndicator.Tag = '1057';

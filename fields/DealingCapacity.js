@@ -10,9 +10,9 @@ DealingCapacity.prototype.value = function () {
 
 
 DealingCapacity.Keys = {
-  AGENT: 'A',
-  PRINCIPAL: 'P',
-  RISKLESS_PRINCIPAL: 'R',
+  'AGENT': 'A',
+  'PRINCIPAL': 'P',
+  'RISKLESS_PRINCIPAL': 'R',
 };
 
 DealingCapacity.Tag = '1048';

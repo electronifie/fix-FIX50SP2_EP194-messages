@@ -10,10 +10,10 @@ StatusValue.prototype.value = function () {
 
 
 StatusValue.Keys = {
-  CONNECTED: '1',
-  NOT_CONNECTED_DOWN_EXPECTED_UP: '2',
-  NOT_CONNECTED_DOWN_EXPECTED_DOWN: '3',
-  IN_PROCESS: '4',
+  'CONNECTED': '1',
+  'NOT_CONNECTED_DOWN_EXPECTED_UP': '2',
+  'NOT_CONNECTED_DOWN_EXPECTED_DOWN': '3',
+  'IN_PROCESS': '4',
 };
 
 StatusValue.Tag = '928';

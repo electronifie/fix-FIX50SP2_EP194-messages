@@ -27,6 +27,8 @@ function SecurityDefinitionUpdateReport (securityDefinitionUpdateReport) {
 }
 
 SecurityDefinitionUpdateReport.prototype.applicationSequenceControl = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[SecurityDefinitionUpdateReport.Tags.ApplicationSequenceControl] === undefined) return null;
   return this.message.groups[SecurityDefinitionUpdateReport.Tags.ApplicationSequenceControl]
     .map(function (applicationSequenceControl) {
       return new ApplicationSequenceControl(applicationSequenceControl);
@@ -34,6 +36,8 @@ SecurityDefinitionUpdateReport.prototype.applicationSequenceControl = function (
 };
 
 SecurityDefinitionUpdateReport.prototype.instrument = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[SecurityDefinitionUpdateReport.Tags.Instrument] === undefined) return null;
   return this.message.groups[SecurityDefinitionUpdateReport.Tags.Instrument]
     .map(function (instrument) {
       return new Instrument(instrument);
@@ -41,6 +45,8 @@ SecurityDefinitionUpdateReport.prototype.instrument = function () {
 };
 
 SecurityDefinitionUpdateReport.prototype.instrumentExtension = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[SecurityDefinitionUpdateReport.Tags.InstrumentExtension] === undefined) return null;
   return this.message.groups[SecurityDefinitionUpdateReport.Tags.InstrumentExtension]
     .map(function (instrumentExtension) {
       return new InstrumentExtension(instrumentExtension);
@@ -48,6 +54,8 @@ SecurityDefinitionUpdateReport.prototype.instrumentExtension = function () {
 };
 
 SecurityDefinitionUpdateReport.prototype.undInstrmtGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[SecurityDefinitionUpdateReport.Tags.UndInstrmtGrp] === undefined) return null;
   return this.message.groups[SecurityDefinitionUpdateReport.Tags.UndInstrmtGrp]
     .map(function (undInstrmtGrp) {
       return new UndInstrmtGrp(undInstrmtGrp);
@@ -55,6 +63,8 @@ SecurityDefinitionUpdateReport.prototype.undInstrmtGrp = function () {
 };
 
 SecurityDefinitionUpdateReport.prototype.stipulations = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[SecurityDefinitionUpdateReport.Tags.Stipulations] === undefined) return null;
   return this.message.groups[SecurityDefinitionUpdateReport.Tags.Stipulations]
     .map(function (stipulations) {
       return new Stipulations(stipulations);
@@ -62,6 +72,8 @@ SecurityDefinitionUpdateReport.prototype.stipulations = function () {
 };
 
 SecurityDefinitionUpdateReport.prototype.instrmtLegGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[SecurityDefinitionUpdateReport.Tags.InstrmtLegGrp] === undefined) return null;
   return this.message.groups[SecurityDefinitionUpdateReport.Tags.InstrmtLegGrp]
     .map(function (instrmtLegGrp) {
       return new InstrmtLegGrp(instrmtLegGrp);
@@ -69,6 +81,8 @@ SecurityDefinitionUpdateReport.prototype.instrmtLegGrp = function () {
 };
 
 SecurityDefinitionUpdateReport.prototype.spreadOrBenchmarkCurveData = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[SecurityDefinitionUpdateReport.Tags.SpreadOrBenchmarkCurveData] === undefined) return null;
   return this.message.groups[SecurityDefinitionUpdateReport.Tags.SpreadOrBenchmarkCurveData]
     .map(function (spreadOrBenchmarkCurveData) {
       return new SpreadOrBenchmarkCurveData(spreadOrBenchmarkCurveData);
@@ -76,6 +90,8 @@ SecurityDefinitionUpdateReport.prototype.spreadOrBenchmarkCurveData = function (
 };
 
 SecurityDefinitionUpdateReport.prototype.yieldData = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[SecurityDefinitionUpdateReport.Tags.YieldData] === undefined) return null;
   return this.message.groups[SecurityDefinitionUpdateReport.Tags.YieldData]
     .map(function (yieldData) {
       return new YieldData(yieldData);
@@ -83,6 +99,8 @@ SecurityDefinitionUpdateReport.prototype.yieldData = function () {
 };
 
 SecurityDefinitionUpdateReport.prototype.marketSegmentGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[SecurityDefinitionUpdateReport.Tags.MarketSegmentGrp] === undefined) return null;
   return this.message.groups[SecurityDefinitionUpdateReport.Tags.MarketSegmentGrp]
     .map(function (marketSegmentGrp) {
       return new MarketSegmentGrp(marketSegmentGrp);

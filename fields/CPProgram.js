@@ -10,9 +10,9 @@ CPProgram.prototype.value = function () {
 
 
 CPProgram.Keys = {
-  _3: '1',
-  _4: '2',
-  OTHER: '99',
+  '_3': '1',
+  '_4': '2',
+  'OTHER': '99',
 };
 
 CPProgram.Tag = '875';

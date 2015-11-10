@@ -22,6 +22,8 @@ function MarginRequirementInquiryAck (marginRequirementInquiryAck) {
 }
 
 MarginRequirementInquiryAck.prototype.marginReqmtInqQualGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[MarginRequirementInquiryAck.Tags.MarginReqmtInqQualGrp] === undefined) return null;
   return this.message.groups[MarginRequirementInquiryAck.Tags.MarginReqmtInqQualGrp]
     .map(function (marginReqmtInqQualGrp) {
       return new MarginReqmtInqQualGrp(marginReqmtInqQualGrp);
@@ -29,6 +31,8 @@ MarginRequirementInquiryAck.prototype.marginReqmtInqQualGrp = function () {
 };
 
 MarginRequirementInquiryAck.prototype.parties = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[MarginRequirementInquiryAck.Tags.Parties] === undefined) return null;
   return this.message.groups[MarginRequirementInquiryAck.Tags.Parties]
     .map(function (parties) {
       return new Parties(parties);
@@ -36,6 +40,8 @@ MarginRequirementInquiryAck.prototype.parties = function () {
 };
 
 MarginRequirementInquiryAck.prototype.instrument = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[MarginRequirementInquiryAck.Tags.Instrument] === undefined) return null;
   return this.message.groups[MarginRequirementInquiryAck.Tags.Instrument]
     .map(function (instrument) {
       return new Instrument(instrument);

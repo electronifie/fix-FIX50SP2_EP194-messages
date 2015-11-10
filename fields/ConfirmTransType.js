@@ -10,9 +10,9 @@ ConfirmTransType.prototype.value = function () {
 
 
 ConfirmTransType.Keys = {
-  NEW: '0',
-  REPLACE: '1',
-  CANCEL: '2',
+  'NEW': '0',
+  'REPLACE': '1',
+  'CANCEL': '2',
 };
 
 ConfirmTransType.Tag = '666';

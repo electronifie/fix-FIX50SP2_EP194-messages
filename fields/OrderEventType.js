@@ -10,17 +10,17 @@ OrderEventType.prototype.value = function () {
 
 
 OrderEventType.Keys = {
-  ADDED: '1',
-  MODIFIED: '2',
-  DELETED: '3',
-  PARTIALLY_FILLED: '4',
-  FILLED: '5',
-  SUSPENDED: '6',
-  RELEASED: '7',
-  RESTATED: '8',
-  LOCKED: '9',
-  TRIGGERED: '10',
-  ACTIVATED: '11',
+  'ADDED': '1',
+  'MODIFIED': '2',
+  'DELETED': '3',
+  'PARTIALLY_FILLED': '4',
+  'FILLED': '5',
+  'SUSPENDED': '6',
+  'RELEASED': '7',
+  'RESTATED': '8',
+  'LOCKED': '9',
+  'TRIGGERED': '10',
+  'ACTIVATED': '11',
 };
 
 OrderEventType.Tag = '1796';

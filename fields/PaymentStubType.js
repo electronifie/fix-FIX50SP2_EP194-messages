@@ -10,8 +10,8 @@ PaymentStubType.prototype.value = function () {
 
 
 PaymentStubType.Keys = {
-  INITIAL: '0',
-  FINAL: '1',
+  'INITIAL': '0',
+  'FINAL': '1',
 };
 
 PaymentStubType.Tag = '40873';

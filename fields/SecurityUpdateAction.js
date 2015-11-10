@@ -10,9 +10,9 @@ SecurityUpdateAction.prototype.value = function () {
 
 
 SecurityUpdateAction.Keys = {
-  ADD: 'A',
-  DELETE: 'D',
-  MODIFY: 'M',
+  'ADD': 'A',
+  'DELETE': 'D',
+  'MODIFY': 'M',
 };
 
 SecurityUpdateAction.Tag = '980';

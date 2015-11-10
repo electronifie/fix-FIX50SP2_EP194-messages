@@ -10,11 +10,11 @@ MDStatisticScopeType.prototype.value = function () {
 
 
 MDStatisticScopeType.Keys = {
-  ENTRY_RATE: '1',
-  MODIFICATION_RATE: '2',
-  CANCEL_RATE: '3',
-  DOWNWARD_MOVE: '4',
-  UPWARD_MOVE: '5',
+  'ENTRY_RATE': '1',
+  'MODIFICATION_RATE': '2',
+  'CANCEL_RATE': '3',
+  'DOWNWARD_MOVE': '4',
+  'UPWARD_MOVE': '5',
 };
 
 MDStatisticScopeType.Tag = '2459';

@@ -10,10 +10,10 @@ SettlInstReqRejCode.prototype.value = function () {
 
 
 SettlInstReqRejCode.Keys = {
-  UNABLE_TO_PROCESS_REQUEST: '0',
-  UNKNOWN_ACCOUNT: '1',
-  NO_MATCHING_SETTLEMENT_INSTRUCTIONS_FOUND: '2',
-  OTHER: '99',
+  'UNABLE_TO_PROCESS_REQUEST': '0',
+  'UNKNOWN_ACCOUNT': '1',
+  'NO_MATCHING_SETTLEMENT_INSTRUCTIONS_FOUND': '2',
+  'OTHER': '99',
 };
 
 SettlInstReqRejCode.Tag = '792';

@@ -10,8 +10,8 @@ DeliveryScheduleSettlHolidaysProcessingInstruction.prototype.value = function ()
 
 
 DeliveryScheduleSettlHolidaysProcessingInstruction.Keys = {
-  DO_NOT_INCLUDE_HOLIDAYS: '0',
-  INCLUDE_HOLIDAYS: '1',
+  'DO_NOT_INCLUDE_HOLIDAYS': '0',
+  'INCLUDE_HOLIDAYS': '1',
 };
 
 DeliveryScheduleSettlHolidaysProcessingInstruction.Tag = '41050';

@@ -10,8 +10,8 @@ SecurityStatus.prototype.value = function () {
 
 
 SecurityStatus.Keys = {
-  ACTIVE: '1',
-  INACTIVE: '2',
+  'ACTIVE': '1',
+  'INACTIVE': '2',
 };
 
 SecurityStatus.Tag = '965';

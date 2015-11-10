@@ -10,9 +10,9 @@ AdvTransType.prototype.value = function () {
 
 
 AdvTransType.Keys = {
-  NEW: 'N',
-  CANCEL: 'C',
-  REPLACE: 'R',
+  'NEW': 'N',
+  'CANCEL': 'C',
+  'REPLACE': 'R',
 };
 
 AdvTransType.Tag = '5';

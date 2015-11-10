@@ -10,8 +10,8 @@ PossDupFlag.prototype.value = function () {
 
 
 PossDupFlag.Keys = {
-  ORIGINAL_TRANSMISSION: 'N',
-  POSSIBLE_DUPLICATE: 'Y',
+  'ORIGINAL_TRANSMISSION': 'N',
+  'POSSIBLE_DUPLICATE': 'Y',
 };
 
 PossDupFlag.Tag = '43';

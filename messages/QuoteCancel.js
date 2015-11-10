@@ -19,6 +19,8 @@ function QuoteCancel (quoteCancel) {
 }
 
 QuoteCancel.prototype.parties = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[QuoteCancel.Tags.Parties] === undefined) return null;
   return this.message.groups[QuoteCancel.Tags.Parties]
     .map(function (parties) {
       return new Parties(parties);
@@ -26,6 +28,8 @@ QuoteCancel.prototype.parties = function () {
 };
 
 QuoteCancel.prototype.targetParties = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[QuoteCancel.Tags.TargetParties] === undefined) return null;
   return this.message.groups[QuoteCancel.Tags.TargetParties]
     .map(function (targetParties) {
       return new TargetParties(targetParties);
@@ -33,6 +37,8 @@ QuoteCancel.prototype.targetParties = function () {
 };
 
 QuoteCancel.prototype.quotCxlEntriesGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[QuoteCancel.Tags.QuotCxlEntriesGrp] === undefined) return null;
   return this.message.groups[QuoteCancel.Tags.QuotCxlEntriesGrp]
     .map(function (quotCxlEntriesGrp) {
       return new QuotCxlEntriesGrp(quotCxlEntriesGrp);

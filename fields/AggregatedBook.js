@@ -10,8 +10,8 @@ AggregatedBook.prototype.value = function () {
 
 
 AggregatedBook.Keys = {
-  BOOK_ENTRIES_TO_BE_AGGREGATED: 'Y',
-  BOOK_ENTRIES_SHOULD_NOT_BE_AGGREGATED: 'N',
+  'BOOK_ENTRIES_TO_BE_AGGREGATED': 'Y',
+  'BOOK_ENTRIES_SHOULD_NOT_BE_AGGREGATED': 'N',
 };
 
 AggregatedBook.Tag = '266';

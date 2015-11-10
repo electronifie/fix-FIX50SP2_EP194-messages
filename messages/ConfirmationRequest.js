@@ -17,6 +17,8 @@ function ConfirmationRequest (confirmationRequest) {
 }
 
 ConfirmationRequest.prototype.ordAllocGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[ConfirmationRequest.Tags.OrdAllocGrp] === undefined) return null;
   return this.message.groups[ConfirmationRequest.Tags.OrdAllocGrp]
     .map(function (ordAllocGrp) {
       return new OrdAllocGrp(ordAllocGrp);

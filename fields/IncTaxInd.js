@@ -10,8 +10,8 @@ IncTaxInd.prototype.value = function () {
 
 
 IncTaxInd.Keys = {
-  NET: '1',
-  GROSS: '2',
+  'NET': '1',
+  'GROSS': '2',
 };
 
 IncTaxInd.Tag = '416';

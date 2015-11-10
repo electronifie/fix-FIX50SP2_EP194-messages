@@ -10,8 +10,8 @@ ForexReq.prototype.value = function () {
 
 
 ForexReq.Keys = {
-  DO_NOT_EXECUTE_FOREX_AFTER_SECURITY_TRADE: 'N',
-  EXECUTE_FOREX_AFTER_SECURITY_TRADE: 'Y',
+  'DO_NOT_EXECUTE_FOREX_AFTER_SECURITY_TRADE': 'N',
+  'EXECUTE_FOREX_AFTER_SECURITY_TRADE': 'Y',
 };
 
 ForexReq.Tag = '121';

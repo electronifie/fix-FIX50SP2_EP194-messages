@@ -10,9 +10,9 @@ MDSecSizeType.prototype.value = function () {
 
 
 MDSecSizeType.Keys = {
-  CUSTOMER: '1',
-  CUSTOMER_PROFESSIONAL: '2',
-  DO_NOT_TRADE_THROUGH: '3',
+  'CUSTOMER': '1',
+  'CUSTOMER_PROFESSIONAL': '2',
+  'DO_NOT_TRADE_THROUGH': '3',
 };
 
 MDSecSizeType.Tag = '1178';

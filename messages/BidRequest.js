@@ -33,6 +33,8 @@ function BidRequest (bidRequest) {
 }
 
 BidRequest.prototype.bidDescReqGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[BidRequest.Tags.BidDescReqGrp] === undefined) return null;
   return this.message.groups[BidRequest.Tags.BidDescReqGrp]
     .map(function (bidDescReqGrp) {
       return new BidDescReqGrp(bidDescReqGrp);
@@ -40,6 +42,8 @@ BidRequest.prototype.bidDescReqGrp = function () {
 };
 
 BidRequest.prototype.bidCompReqGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[BidRequest.Tags.BidCompReqGrp] === undefined) return null;
   return this.message.groups[BidRequest.Tags.BidCompReqGrp]
     .map(function (bidCompReqGrp) {
       return new BidCompReqGrp(bidCompReqGrp);

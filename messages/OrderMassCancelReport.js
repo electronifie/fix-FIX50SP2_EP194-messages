@@ -28,6 +28,8 @@ function OrderMassCancelReport (orderMassCancelReport) {
 }
 
 OrderMassCancelReport.prototype.affectedOrdGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[OrderMassCancelReport.Tags.AffectedOrdGrp] === undefined) return null;
   return this.message.groups[OrderMassCancelReport.Tags.AffectedOrdGrp]
     .map(function (affectedOrdGrp) {
       return new AffectedOrdGrp(affectedOrdGrp);
@@ -35,6 +37,8 @@ OrderMassCancelReport.prototype.affectedOrdGrp = function () {
 };
 
 OrderMassCancelReport.prototype.notAffectedOrdGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[OrderMassCancelReport.Tags.NotAffectedOrdGrp] === undefined) return null;
   return this.message.groups[OrderMassCancelReport.Tags.NotAffectedOrdGrp]
     .map(function (notAffectedOrdGrp) {
       return new NotAffectedOrdGrp(notAffectedOrdGrp);
@@ -42,6 +46,8 @@ OrderMassCancelReport.prototype.notAffectedOrdGrp = function () {
 };
 
 OrderMassCancelReport.prototype.parties = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[OrderMassCancelReport.Tags.Parties] === undefined) return null;
   return this.message.groups[OrderMassCancelReport.Tags.Parties]
     .map(function (parties) {
       return new Parties(parties);
@@ -49,6 +55,8 @@ OrderMassCancelReport.prototype.parties = function () {
 };
 
 OrderMassCancelReport.prototype.targetParties = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[OrderMassCancelReport.Tags.TargetParties] === undefined) return null;
   return this.message.groups[OrderMassCancelReport.Tags.TargetParties]
     .map(function (targetParties) {
       return new TargetParties(targetParties);
@@ -56,6 +64,8 @@ OrderMassCancelReport.prototype.targetParties = function () {
 };
 
 OrderMassCancelReport.prototype.instrument = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[OrderMassCancelReport.Tags.Instrument] === undefined) return null;
   return this.message.groups[OrderMassCancelReport.Tags.Instrument]
     .map(function (instrument) {
       return new Instrument(instrument);
@@ -63,6 +73,8 @@ OrderMassCancelReport.prototype.instrument = function () {
 };
 
 OrderMassCancelReport.prototype.underlyingInstrument = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[OrderMassCancelReport.Tags.UnderlyingInstrument] === undefined) return null;
   return this.message.groups[OrderMassCancelReport.Tags.UnderlyingInstrument]
     .map(function (underlyingInstrument) {
       return new UnderlyingInstrument(underlyingInstrument);

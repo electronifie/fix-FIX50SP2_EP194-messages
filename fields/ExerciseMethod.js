@@ -10,8 +10,8 @@ ExerciseMethod.prototype.value = function () {
 
 
 ExerciseMethod.Keys = {
-  AUTOMATIC: 'A',
-  MANUAL: 'M',
+  'AUTOMATIC': 'A',
+  'MANUAL': 'M',
 };
 
 ExerciseMethod.Tag = '747';

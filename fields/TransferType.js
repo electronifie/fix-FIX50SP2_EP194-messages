@@ -10,9 +10,9 @@ TransferType.prototype.value = function () {
 
 
 TransferType.Keys = {
-  REQUEST_TRANSFER: '0',
-  ACCEPT_TRANSFER: '1',
-  DECLINE_TRANSFER: '2',
+  'REQUEST_TRANSFER': '0',
+  'ACCEPT_TRANSFER': '1',
+  'DECLINE_TRANSFER': '2',
 };
 
 TransferType.Tag = '2440';

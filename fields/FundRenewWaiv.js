@@ -10,8 +10,8 @@ FundRenewWaiv.prototype.value = function () {
 
 
 FundRenewWaiv.Keys = {
-  NO: 'N',
-  YES: 'Y',
+  'NO': 'N',
+  'YES': 'Y',
 };
 
 FundRenewWaiv.Tag = '497';

@@ -10,7 +10,7 @@ NoStreamAssetAttributes.prototype.value = function () {
 
 
 NoStreamAssetAttributes.Keys = {
-  DAY: 'D',
+  'DAY': 'D',
 };
 
 NoStreamAssetAttributes.Tag = '41237';

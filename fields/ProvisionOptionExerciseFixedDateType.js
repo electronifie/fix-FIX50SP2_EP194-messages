@@ -10,8 +10,8 @@ ProvisionOptionExerciseFixedDateType.prototype.value = function () {
 
 
 ProvisionOptionExerciseFixedDateType.Keys = {
-  UNADJUSTED: '0',
-  ADJUSTED: '1',
+  'UNADJUSTED': '0',
+  'ADJUSTED': '1',
 };
 
 ProvisionOptionExerciseFixedDateType.Tag = '40144';

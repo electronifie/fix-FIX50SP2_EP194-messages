@@ -17,6 +17,8 @@ function PartyActionRequest (partyActionRequest) {
 }
 
 PartyActionRequest.prototype.instrumentScope = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[PartyActionRequest.Tags.InstrumentScope] === undefined) return null;
   return this.message.groups[PartyActionRequest.Tags.InstrumentScope]
     .map(function (instrumentScope) {
       return new InstrumentScope(instrumentScope);
@@ -24,6 +26,8 @@ PartyActionRequest.prototype.instrumentScope = function () {
 };
 
 PartyActionRequest.prototype.requestingPartyGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[PartyActionRequest.Tags.RequestingPartyGrp] === undefined) return null;
   return this.message.groups[PartyActionRequest.Tags.RequestingPartyGrp]
     .map(function (requestingPartyGrp) {
       return new RequestingPartyGrp(requestingPartyGrp);
@@ -31,6 +35,8 @@ PartyActionRequest.prototype.requestingPartyGrp = function () {
 };
 
 PartyActionRequest.prototype.parties = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[PartyActionRequest.Tags.Parties] === undefined) return null;
   return this.message.groups[PartyActionRequest.Tags.Parties]
     .map(function (parties) {
       return new Parties(parties);
@@ -38,6 +44,8 @@ PartyActionRequest.prototype.parties = function () {
 };
 
 PartyActionRequest.prototype.relatedPartyDetailGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[PartyActionRequest.Tags.RelatedPartyDetailGrp] === undefined) return null;
   return this.message.groups[PartyActionRequest.Tags.RelatedPartyDetailGrp]
     .map(function (relatedPartyDetailGrp) {
       return new RelatedPartyDetailGrp(relatedPartyDetailGrp);

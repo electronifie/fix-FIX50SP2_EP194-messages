@@ -10,8 +10,8 @@ ComplexEventQuoteBasis.prototype.value = function () {
 
 
 ComplexEventQuoteBasis.Keys = {
-  CURRENCY_1_PER_CURRENCY_2: '0',
-  CURRENCY_2_PER_CURRENCY_1: '1',
+  'CURRENCY_1_PER_CURRENCY_2': '0',
+  'CURRENCY_2_PER_CURRENCY_1': '1',
 };
 
 ComplexEventQuoteBasis.Tag = '2126';

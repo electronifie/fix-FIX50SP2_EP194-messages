@@ -10,10 +10,10 @@ MarketMakerActivity.prototype.value = function () {
 
 
 MarketMakerActivity.Keys = {
-  NO_PARTICIPATION: '0',
-  BUY_PARTICIPATION: '1',
-  SELL_PARTICIPATION: '2',
-  BOTH_BUY_AND_SELL_PARTICIPATION: '3',
+  'NO_PARTICIPATION': '0',
+  'BUY_PARTICIPATION': '1',
+  'SELL_PARTICIPATION': '2',
+  'BOTH_BUY_AND_SELL_PARTICIPATION': '3',
 };
 
 MarketMakerActivity.Tag = '1655';

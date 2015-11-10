@@ -10,8 +10,8 @@ SettlObligMode.prototype.value = function () {
 
 
 SettlObligMode.Keys = {
-  PRELIMINARY: '1',
-  FINAL: '2',
+  'PRELIMINARY': '1',
+  'FINAL': '2',
 };
 
 SettlObligMode.Tag = '1159';

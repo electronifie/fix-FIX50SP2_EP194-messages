@@ -10,10 +10,10 @@ PaymentStreamRateIndexSource.prototype.value = function () {
 
 
 PaymentStreamRateIndexSource.Keys = {
-  BLOOMBERG: '0',
-  REUTERS: '1',
-  TELERATE: '2',
-  OTHER: '99',
+  'BLOOMBERG': '0',
+  'REUTERS': '1',
+  'TELERATE': '2',
+  'OTHER': '99',
 };
 
 PaymentStreamRateIndexSource.Tag = '40790';

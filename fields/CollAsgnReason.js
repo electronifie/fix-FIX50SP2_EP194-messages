@@ -10,16 +10,16 @@ CollAsgnReason.prototype.value = function () {
 
 
 CollAsgnReason.Keys = {
-  INITIAL: '0',
-  SCHEDULED: '1',
-  TIME_WARNING: '2',
-  MARGIN_DEFICIENCY: '3',
-  MARGIN_EXCESS: '4',
-  FORWARD_COLLATERAL_DEMAND: '5',
-  EVENT_OF_DEFAULT: '6',
-  ADVERSE_TAX_EVENT: '7',
-  TRANSFER_DEPOSIT: '8',
-  TRANSFER_WITHDRAWAL: '9',
+  'INITIAL': '0',
+  'SCHEDULED': '1',
+  'TIME_WARNING': '2',
+  'MARGIN_DEFICIENCY': '3',
+  'MARGIN_EXCESS': '4',
+  'FORWARD_COLLATERAL_DEMAND': '5',
+  'EVENT_OF_DEFAULT': '6',
+  'ADVERSE_TAX_EVENT': '7',
+  'TRANSFER_DEPOSIT': '8',
+  'TRANSFER_WITHDRAWAL': '9',
 };
 
 CollAsgnReason.Tag = '895';

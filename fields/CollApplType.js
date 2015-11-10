@@ -10,8 +10,8 @@ CollApplType.prototype.value = function () {
 
 
 CollApplType.Keys = {
-  SPECIFIC_DEPOSIT: '0',
-  GENERAL: '1',
+  'SPECIFIC_DEPOSIT': '0',
+  'GENERAL': '1',
 };
 
 CollApplType.Tag = '1043';

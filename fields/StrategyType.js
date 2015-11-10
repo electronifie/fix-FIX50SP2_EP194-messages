@@ -10,12 +10,12 @@ StrategyType.prototype.value = function () {
 
 
 StrategyType.Keys = {
-  STRADDLE: 'STD',
-  STRANGLE: 'STG',
-  BUTTERFLY: 'BF',
-  CONDOR: 'CNDR',
-  CALLABLE_INVERSIBLE_SNOWBALL: 'CISN',
-  OTHER: 'OTHER',
+  'STRADDLE': 'STD',
+  'STRANGLE': 'STG',
+  'BUTTERFLY': 'BF',
+  'CONDOR': 'CNDR',
+  'CALLABLE_INVERSIBLE_SNOWBALL': 'CISN',
+  'OTHER': 'OTHER',
 };
 
 StrategyType.Tag = '2141';

@@ -10,10 +10,10 @@ MarketDisruptionProvision.prototype.value = function () {
 
 
 MarketDisruptionProvision.Keys = {
-  NOT_APPLICABLE: '0',
-  APPLICABLE: '1',
-  AS_SPECIFIED_IN_MASTER_AGREEMENT: '2',
-  AS_SPECIFIED_IN_CONFIRMATION: '3',
+  'NOT_APPLICABLE': '0',
+  'APPLICABLE': '1',
+  'AS_SPECIFIED_IN_MASTER_AGREEMENT': '2',
+  'AS_SPECIFIED_IN_CONFIRMATION': '3',
 };
 
 MarketDisruptionProvision.Tag = '41087';

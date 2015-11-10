@@ -10,8 +10,8 @@ DeleteReason.prototype.value = function () {
 
 
 DeleteReason.Keys = {
-  CANCELLATION_TRADE_BUST: '0',
-  ERROR: '1',
+  'CANCELLATION_TRADE_BUST': '0',
+  'ERROR': '1',
 };
 
 DeleteReason.Tag = '285';

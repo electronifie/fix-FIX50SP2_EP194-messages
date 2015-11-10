@@ -10,12 +10,12 @@ TickRuleType.prototype.value = function () {
 
 
 TickRuleType.Keys = {
-  REGULAR_TRADING: '0',
-  VARIABLE_CABINET: '1',
-  FIXED_CABINET: '2',
-  TRADED_AS_A_SPREAD_LEG: '3',
-  SETTLED_AS_A_SPREAD_LEG: '4',
-  TRADED_AS_SPREAD: '5',
+  'REGULAR_TRADING': '0',
+  'VARIABLE_CABINET': '1',
+  'FIXED_CABINET': '2',
+  'TRADED_AS_A_SPREAD_LEG': '3',
+  'SETTLED_AS_A_SPREAD_LEG': '4',
+  'TRADED_AS_SPREAD': '5',
 };
 
 TickRuleType.Tag = '1209';

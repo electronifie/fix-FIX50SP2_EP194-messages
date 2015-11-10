@@ -25,6 +25,8 @@ function MassQuoteAck (massQuoteAck) {
 }
 
 MassQuoteAck.prototype.parties = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[MassQuoteAck.Tags.Parties] === undefined) return null;
   return this.message.groups[MassQuoteAck.Tags.Parties]
     .map(function (parties) {
       return new Parties(parties);
@@ -32,6 +34,8 @@ MassQuoteAck.prototype.parties = function () {
 };
 
 MassQuoteAck.prototype.targetParties = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[MassQuoteAck.Tags.TargetParties] === undefined) return null;
   return this.message.groups[MassQuoteAck.Tags.TargetParties]
     .map(function (targetParties) {
       return new TargetParties(targetParties);
@@ -39,6 +43,8 @@ MassQuoteAck.prototype.targetParties = function () {
 };
 
 MassQuoteAck.prototype.quotSetAckGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[MassQuoteAck.Tags.QuotSetAckGrp] === undefined) return null;
   return this.message.groups[MassQuoteAck.Tags.QuotSetAckGrp]
     .map(function (quotSetAckGrp) {
       return new QuotSetAckGrp(quotSetAckGrp);
@@ -46,6 +52,8 @@ MassQuoteAck.prototype.quotSetAckGrp = function () {
 };
 
 MassQuoteAck.prototype.throttleResponse = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[MassQuoteAck.Tags.ThrottleResponse] === undefined) return null;
   return this.message.groups[MassQuoteAck.Tags.ThrottleResponse]
     .map(function (throttleResponse) {
       return new ThrottleResponse(throttleResponse);

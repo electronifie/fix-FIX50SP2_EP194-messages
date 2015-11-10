@@ -10,8 +10,8 @@ PaymentScheduleStepRelativeTo.prototype.value = function () {
 
 
 PaymentScheduleStepRelativeTo.Keys = {
-  INITIAL: '0',
-  PREVIOUS: '1',
+  'INITIAL': '0',
+  'PREVIOUS': '1',
 };
 
 PaymentScheduleStepRelativeTo.Tag = '40849';

@@ -14,6 +14,8 @@ function PartyEntitlementsUpdateReport (partyEntitlementsUpdateReport) {
 }
 
 PartyEntitlementsUpdateReport.prototype.applicationSequenceControl = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[PartyEntitlementsUpdateReport.Tags.ApplicationSequenceControl] === undefined) return null;
   return this.message.groups[PartyEntitlementsUpdateReport.Tags.ApplicationSequenceControl]
     .map(function (applicationSequenceControl) {
       return new ApplicationSequenceControl(applicationSequenceControl);
@@ -21,6 +23,8 @@ PartyEntitlementsUpdateReport.prototype.applicationSequenceControl = function ()
 };
 
 PartyEntitlementsUpdateReport.prototype.partyEntitlementUpdateGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[PartyEntitlementsUpdateReport.Tags.PartyEntitlementUpdateGrp] === undefined) return null;
   return this.message.groups[PartyEntitlementsUpdateReport.Tags.PartyEntitlementUpdateGrp]
     .map(function (partyEntitlementUpdateGrp) {
       return new PartyEntitlementUpdateGrp(partyEntitlementUpdateGrp);

@@ -10,9 +10,9 @@ MassActionType.prototype.value = function () {
 
 
 MassActionType.Keys = {
-  SUSPEND_ORDERS: '1',
-  RELEASE_ORDERS_FROM_SUSPENSION: '2',
-  CANCEL_ORDERS: '3',
+  'SUSPEND_ORDERS': '1',
+  'RELEASE_ORDERS_FROM_SUSPENSION': '2',
+  'CANCEL_ORDERS': '3',
 };
 
 MassActionType.Tag = '1373';

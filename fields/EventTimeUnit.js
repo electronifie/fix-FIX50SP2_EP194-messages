@@ -10,13 +10,13 @@ EventTimeUnit.prototype.value = function () {
 
 
 EventTimeUnit.Keys = {
-  HOUR: 'H',
-  MINUTE: 'Min',
-  SECOND: 'S',
-  DAY: 'D',
-  WEEK: 'Wk',
-  MONTH: 'Mo',
-  YEAR: 'Yr',
+  'HOUR': 'H',
+  'MINUTE': 'Min',
+  'SECOND': 'S',
+  'DAY': 'D',
+  'WEEK': 'Wk',
+  'MONTH': 'Mo',
+  'YEAR': 'Yr',
 };
 
 EventTimeUnit.Tag = '1827';

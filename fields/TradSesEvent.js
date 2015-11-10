@@ -10,10 +10,10 @@ TradSesEvent.prototype.value = function () {
 
 
 TradSesEvent.Keys = {
-  TRADING_RESUMES: '0',
-  CHANGE_OF_TRADING_SESSION: '1',
-  CHANGE_OF_TRADING_SUBSESSION: '2',
-  CHANGE_OF_TRADING_STATUS: '3',
+  'TRADING_RESUMES': '0',
+  'CHANGE_OF_TRADING_SESSION': '1',
+  'CHANGE_OF_TRADING_SUBSESSION': '2',
+  'CHANGE_OF_TRADING_STATUS': '3',
 };
 
 TradSesEvent.Tag = '1368';

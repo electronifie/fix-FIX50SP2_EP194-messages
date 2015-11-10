@@ -10,14 +10,14 @@ TimeUnit.prototype.value = function () {
 
 
 TimeUnit.Keys = {
-  HOUR: 'H',
-  MINUTE: 'Min',
-  SECOND: 'S',
-  DAY: 'D',
-  WEEK: 'Wk',
-  MONTH: 'Mo',
-  YEAR: 'Yr',
-  QUARTER: 'Q',
+  'HOUR': 'H',
+  'MINUTE': 'Min',
+  'SECOND': 'S',
+  'DAY': 'D',
+  'WEEK': 'Wk',
+  'MONTH': 'Mo',
+  'YEAR': 'Yr',
+  'QUARTER': 'Q',
 };
 
 TimeUnit.Tag = '997';

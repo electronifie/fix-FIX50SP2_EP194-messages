@@ -10,8 +10,8 @@ PaymentStreamDiscountType.prototype.value = function () {
 
 
 PaymentStreamDiscountType.Keys = {
-  STANDARD: '0',
-  FORWARD_RATE_AGREEMENT: '1',
+  'STANDARD': '0',
+  'FORWARD_RATE_AGREEMENT': '1',
 };
 
 PaymentStreamDiscountType.Tag = '40744';

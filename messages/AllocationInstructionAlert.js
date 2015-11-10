@@ -85,6 +85,8 @@ function AllocationInstructionAlert (allocationInstructionAlert) {
 }
 
 AllocationInstructionAlert.prototype.ordAllocGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[AllocationInstructionAlert.Tags.OrdAllocGrp] === undefined) return null;
   return this.message.groups[AllocationInstructionAlert.Tags.OrdAllocGrp]
     .map(function (ordAllocGrp) {
       return new OrdAllocGrp(ordAllocGrp);
@@ -92,6 +94,8 @@ AllocationInstructionAlert.prototype.ordAllocGrp = function () {
 };
 
 AllocationInstructionAlert.prototype.execAllocGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[AllocationInstructionAlert.Tags.ExecAllocGrp] === undefined) return null;
   return this.message.groups[AllocationInstructionAlert.Tags.ExecAllocGrp]
     .map(function (execAllocGrp) {
       return new ExecAllocGrp(execAllocGrp);
@@ -99,6 +103,8 @@ AllocationInstructionAlert.prototype.execAllocGrp = function () {
 };
 
 AllocationInstructionAlert.prototype.instrument = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[AllocationInstructionAlert.Tags.Instrument] === undefined) return null;
   return this.message.groups[AllocationInstructionAlert.Tags.Instrument]
     .map(function (instrument) {
       return new Instrument(instrument);
@@ -106,6 +112,8 @@ AllocationInstructionAlert.prototype.instrument = function () {
 };
 
 AllocationInstructionAlert.prototype.instrumentExtension = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[AllocationInstructionAlert.Tags.InstrumentExtension] === undefined) return null;
   return this.message.groups[AllocationInstructionAlert.Tags.InstrumentExtension]
     .map(function (instrumentExtension) {
       return new InstrumentExtension(instrumentExtension);
@@ -113,6 +121,8 @@ AllocationInstructionAlert.prototype.instrumentExtension = function () {
 };
 
 AllocationInstructionAlert.prototype.financingDetails = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[AllocationInstructionAlert.Tags.FinancingDetails] === undefined) return null;
   return this.message.groups[AllocationInstructionAlert.Tags.FinancingDetails]
     .map(function (financingDetails) {
       return new FinancingDetails(financingDetails);
@@ -120,6 +130,8 @@ AllocationInstructionAlert.prototype.financingDetails = function () {
 };
 
 AllocationInstructionAlert.prototype.undInstrmtGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[AllocationInstructionAlert.Tags.UndInstrmtGrp] === undefined) return null;
   return this.message.groups[AllocationInstructionAlert.Tags.UndInstrmtGrp]
     .map(function (undInstrmtGrp) {
       return new UndInstrmtGrp(undInstrmtGrp);
@@ -127,6 +139,8 @@ AllocationInstructionAlert.prototype.undInstrmtGrp = function () {
 };
 
 AllocationInstructionAlert.prototype.instrmtLegGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[AllocationInstructionAlert.Tags.InstrmtLegGrp] === undefined) return null;
   return this.message.groups[AllocationInstructionAlert.Tags.InstrmtLegGrp]
     .map(function (instrmtLegGrp) {
       return new InstrmtLegGrp(instrmtLegGrp);
@@ -134,6 +148,8 @@ AllocationInstructionAlert.prototype.instrmtLegGrp = function () {
 };
 
 AllocationInstructionAlert.prototype.spreadOrBenchmarkCurveData = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[AllocationInstructionAlert.Tags.SpreadOrBenchmarkCurveData] === undefined) return null;
   return this.message.groups[AllocationInstructionAlert.Tags.SpreadOrBenchmarkCurveData]
     .map(function (spreadOrBenchmarkCurveData) {
       return new SpreadOrBenchmarkCurveData(spreadOrBenchmarkCurveData);
@@ -141,6 +157,8 @@ AllocationInstructionAlert.prototype.spreadOrBenchmarkCurveData = function () {
 };
 
 AllocationInstructionAlert.prototype.parties = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[AllocationInstructionAlert.Tags.Parties] === undefined) return null;
   return this.message.groups[AllocationInstructionAlert.Tags.Parties]
     .map(function (parties) {
       return new Parties(parties);
@@ -148,6 +166,8 @@ AllocationInstructionAlert.prototype.parties = function () {
 };
 
 AllocationInstructionAlert.prototype.stipulations = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[AllocationInstructionAlert.Tags.Stipulations] === undefined) return null;
   return this.message.groups[AllocationInstructionAlert.Tags.Stipulations]
     .map(function (stipulations) {
       return new Stipulations(stipulations);
@@ -155,6 +175,8 @@ AllocationInstructionAlert.prototype.stipulations = function () {
 };
 
 AllocationInstructionAlert.prototype.yieldData = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[AllocationInstructionAlert.Tags.YieldData] === undefined) return null;
   return this.message.groups[AllocationInstructionAlert.Tags.YieldData]
     .map(function (yieldData) {
       return new YieldData(yieldData);
@@ -162,6 +184,8 @@ AllocationInstructionAlert.prototype.yieldData = function () {
 };
 
 AllocationInstructionAlert.prototype.positionAmountData = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[AllocationInstructionAlert.Tags.PositionAmountData] === undefined) return null;
   return this.message.groups[AllocationInstructionAlert.Tags.PositionAmountData]
     .map(function (positionAmountData) {
       return new PositionAmountData(positionAmountData);
@@ -169,6 +193,8 @@ AllocationInstructionAlert.prototype.positionAmountData = function () {
 };
 
 AllocationInstructionAlert.prototype.allocGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[AllocationInstructionAlert.Tags.AllocGrp] === undefined) return null;
   return this.message.groups[AllocationInstructionAlert.Tags.AllocGrp]
     .map(function (allocGrp) {
       return new AllocGrp(allocGrp);

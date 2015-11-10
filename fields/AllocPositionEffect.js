@@ -10,10 +10,10 @@ AllocPositionEffect.prototype.value = function () {
 
 
 AllocPositionEffect.Keys = {
-  OPEN: 'O',
-  CLOSE: 'C',
-  ROLLED: 'R',
-  FIFO: 'F',
+  'OPEN': 'O',
+  'CLOSE': 'C',
+  'ROLLED': 'R',
+  'FIFO': 'F',
 };
 
 AllocPositionEffect.Tag = '1047';

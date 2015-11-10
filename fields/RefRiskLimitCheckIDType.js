@@ -10,9 +10,9 @@ RefRiskLimitCheckIDType.prototype.value = function () {
 
 
 RefRiskLimitCheckIDType.Keys = {
-  RISKLIMITREQUESTID: '0',
-  RISKLIMITCHECKID: '1',
-  OUT_OF_BAND_IDENTIFIER: '3',
+  'RISKLIMITREQUESTID': '0',
+  'RISKLIMITCHECKID': '1',
+  'OUT_OF_BAND_IDENTIFIER': '3',
 };
 
 RefRiskLimitCheckIDType.Tag = '2335';

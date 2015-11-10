@@ -42,6 +42,8 @@ function SecurityStatus (securityStatus) {
 }
 
 SecurityStatus.prototype.applicationSequenceControl = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[SecurityStatus.Tags.ApplicationSequenceControl] === undefined) return null;
   return this.message.groups[SecurityStatus.Tags.ApplicationSequenceControl]
     .map(function (applicationSequenceControl) {
       return new ApplicationSequenceControl(applicationSequenceControl);
@@ -49,6 +51,8 @@ SecurityStatus.prototype.applicationSequenceControl = function () {
 };
 
 SecurityStatus.prototype.instrument = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[SecurityStatus.Tags.Instrument] === undefined) return null;
   return this.message.groups[SecurityStatus.Tags.Instrument]
     .map(function (instrument) {
       return new Instrument(instrument);
@@ -56,6 +60,8 @@ SecurityStatus.prototype.instrument = function () {
 };
 
 SecurityStatus.prototype.instrumentExtension = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[SecurityStatus.Tags.InstrumentExtension] === undefined) return null;
   return this.message.groups[SecurityStatus.Tags.InstrumentExtension]
     .map(function (instrumentExtension) {
       return new InstrumentExtension(instrumentExtension);
@@ -63,6 +69,8 @@ SecurityStatus.prototype.instrumentExtension = function () {
 };
 
 SecurityStatus.prototype.undInstrmtGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[SecurityStatus.Tags.UndInstrmtGrp] === undefined) return null;
   return this.message.groups[SecurityStatus.Tags.UndInstrmtGrp]
     .map(function (undInstrmtGrp) {
       return new UndInstrmtGrp(undInstrmtGrp);
@@ -70,6 +78,8 @@ SecurityStatus.prototype.undInstrmtGrp = function () {
 };
 
 SecurityStatus.prototype.instrmtLegGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[SecurityStatus.Tags.InstrmtLegGrp] === undefined) return null;
   return this.message.groups[SecurityStatus.Tags.InstrmtLegGrp]
     .map(function (instrmtLegGrp) {
       return new InstrmtLegGrp(instrmtLegGrp);

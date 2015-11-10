@@ -10,10 +10,10 @@ LegSwapType.prototype.value = function () {
 
 
 LegSwapType.Keys = {
-  PAR_FOR_PAR: '1',
-  MODIFIED_DURATION: '2',
-  RISK: '4',
-  PROCEEDS: '5',
+  'PAR_FOR_PAR': '1',
+  'MODIFIED_DURATION': '2',
+  'RISK': '4',
+  'PROCEEDS': '5',
 };
 
 LegSwapType.Tag = '690';

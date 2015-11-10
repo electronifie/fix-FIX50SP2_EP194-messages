@@ -18,6 +18,8 @@ function PartyDetailsListReport (partyDetailsListReport) {
 }
 
 PartyDetailsListReport.prototype.applicationSequenceControl = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[PartyDetailsListReport.Tags.ApplicationSequenceControl] === undefined) return null;
   return this.message.groups[PartyDetailsListReport.Tags.ApplicationSequenceControl]
     .map(function (applicationSequenceControl) {
       return new ApplicationSequenceControl(applicationSequenceControl);
@@ -25,6 +27,8 @@ PartyDetailsListReport.prototype.applicationSequenceControl = function () {
 };
 
 PartyDetailsListReport.prototype.partyDetailGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[PartyDetailsListReport.Tags.PartyDetailGrp] === undefined) return null;
   return this.message.groups[PartyDetailsListReport.Tags.PartyDetailGrp]
     .map(function (partyDetailGrp) {
       return new PartyDetailGrp(partyDetailGrp);

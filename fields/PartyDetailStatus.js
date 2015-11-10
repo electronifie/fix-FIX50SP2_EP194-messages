@@ -10,9 +10,9 @@ PartyDetailStatus.prototype.value = function () {
 
 
 PartyDetailStatus.Keys = {
-  ACTIVE: '0',
-  SUSPENDED: '1',
-  HALTED: '2',
+  'ACTIVE': '0',
+  'SUSPENDED': '1',
+  'HALTED': '2',
 };
 
 PartyDetailStatus.Tag = '1672';

@@ -24,6 +24,8 @@ function SecurityList (securityList) {
 }
 
 SecurityList.prototype.applicationSequenceControl = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[SecurityList.Tags.ApplicationSequenceControl] === undefined) return null;
   return this.message.groups[SecurityList.Tags.ApplicationSequenceControl]
     .map(function (applicationSequenceControl) {
       return new ApplicationSequenceControl(applicationSequenceControl);
@@ -31,6 +33,8 @@ SecurityList.prototype.applicationSequenceControl = function () {
 };
 
 SecurityList.prototype.secListGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[SecurityList.Tags.SecListGrp] === undefined) return null;
   return this.message.groups[SecurityList.Tags.SecListGrp]
     .map(function (secListGrp) {
       return new SecListGrp(secListGrp);

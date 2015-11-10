@@ -10,10 +10,10 @@ PaymentStreamCompoundingMethod.prototype.value = function () {
 
 
 PaymentStreamCompoundingMethod.Keys = {
-  NONE: '0',
-  FLAT: '1',
-  STRAIGHT: '2',
-  SPREAD_EXCLUSIVE: '3',
+  'NONE': '0',
+  'FLAT': '1',
+  'STRAIGHT': '2',
+  'SPREAD_EXCLUSIVE': '3',
 };
 
 PaymentStreamCompoundingMethod.Tag = '40747';

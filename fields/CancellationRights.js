@@ -10,10 +10,10 @@ CancellationRights.prototype.value = function () {
 
 
 CancellationRights.Keys = {
-  YES: 'Y',
-  NO_EXECUTION_ONLY: 'N',
-  NO_WAIVER_AGREEMENT: 'M',
-  NO_INSTITUTIONAL: 'O',
+  'YES': 'Y',
+  'NO_EXECUTION_ONLY': 'N',
+  'NO_WAIVER_AGREEMENT': 'M',
+  'NO_INSTITUTIONAL': 'O',
 };
 
 CancellationRights.Tag = '480';

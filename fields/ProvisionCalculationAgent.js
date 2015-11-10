@@ -10,10 +10,10 @@ ProvisionCalculationAgent.prototype.value = function () {
 
 
 ProvisionCalculationAgent.Keys = {
-  EXERCISING_PARTY: '0',
-  NON_EXERCISING_PARTY: '1',
-  AS_SPECIFIED_IN_THE_MASTER_AGREEMENT: '2',
-  AS_SPECIFIED_IN_THE_STANDARD_TERMS_SUPPLEMENT: '3',
+  'EXERCISING_PARTY': '0',
+  'NON_EXERCISING_PARTY': '1',
+  'AS_SPECIFIED_IN_THE_MASTER_AGREEMENT': '2',
+  'AS_SPECIFIED_IN_THE_STANDARD_TERMS_SUPPLEMENT': '3',
 };
 
 ProvisionCalculationAgent.Tag = '40098';

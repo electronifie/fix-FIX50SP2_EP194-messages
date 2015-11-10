@@ -10,9 +10,9 @@ ExecAckStatus.prototype.value = function () {
 
 
 ExecAckStatus.Keys = {
-  RECEIVED_NOT_YET_PROCESSED: '0',
-  ACCEPTED: '1',
-  DONT_KNOW_REJECTED: '2',
+  'RECEIVED_NOT_YET_PROCESSED': '0',
+  'ACCEPTED': '1',
+  'DONT_KNOW_REJECTED': '2',
 };
 
 ExecAckStatus.Tag = '1036';

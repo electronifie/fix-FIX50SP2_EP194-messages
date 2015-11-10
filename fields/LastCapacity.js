@@ -10,10 +10,10 @@ LastCapacity.prototype.value = function () {
 
 
 LastCapacity.Keys = {
-  AGENT: '1',
-  CROSS_AS_AGENT: '2',
-  CROSS_AS_PRINCIPAL: '3',
-  PRINCIPAL: '4',
+  'AGENT': '1',
+  'CROSS_AS_AGENT': '2',
+  'CROSS_AS_PRINCIPAL': '3',
+  'PRINCIPAL': '4',
 };
 
 LastCapacity.Tag = '29';

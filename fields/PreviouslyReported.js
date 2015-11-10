@@ -10,8 +10,8 @@ PreviouslyReported.prototype.value = function () {
 
 
 PreviouslyReported.Keys = {
-  NOT_REPORTED_TO_COUNTERPARTY: 'N',
-  PERVIOUSLY_REPORTED_TO_COUNTERPARTY: 'Y',
+  'NOT_REPORTED_TO_COUNTERPARTY': 'N',
+  'PERVIOUSLY_REPORTED_TO_COUNTERPARTY': 'Y',
 };
 
 PreviouslyReported.Tag = '570';

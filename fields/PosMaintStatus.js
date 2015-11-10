@@ -10,11 +10,11 @@ PosMaintStatus.prototype.value = function () {
 
 
 PosMaintStatus.Keys = {
-  ACCEPTED: '0',
-  ACCEPTED_WITH_WARNINGS: '1',
-  REJECTED: '2',
-  COMPLETED: '3',
-  COMPLETED_WITH_WARNINGS: '4',
+  'ACCEPTED': '0',
+  'ACCEPTED_WITH_WARNINGS': '1',
+  'REJECTED': '2',
+  'COMPLETED': '3',
+  'COMPLETED_WITH_WARNINGS': '4',
 };
 
 PosMaintStatus.Tag = '722';

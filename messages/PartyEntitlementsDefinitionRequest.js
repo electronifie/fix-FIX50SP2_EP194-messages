@@ -10,6 +10,8 @@ function PartyEntitlementsDefinitionRequest (partyEntitlementsDefinitionRequest)
 }
 
 PartyEntitlementsDefinitionRequest.prototype.requestingPartyGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[PartyEntitlementsDefinitionRequest.Tags.RequestingPartyGrp] === undefined) return null;
   return this.message.groups[PartyEntitlementsDefinitionRequest.Tags.RequestingPartyGrp]
     .map(function (requestingPartyGrp) {
       return new RequestingPartyGrp(requestingPartyGrp);
@@ -17,6 +19,8 @@ PartyEntitlementsDefinitionRequest.prototype.requestingPartyGrp = function () {
 };
 
 PartyEntitlementsDefinitionRequest.prototype.partyEntitlementUpdateGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[PartyEntitlementsDefinitionRequest.Tags.PartyEntitlementUpdateGrp] === undefined) return null;
   return this.message.groups[PartyEntitlementsDefinitionRequest.Tags.PartyEntitlementUpdateGrp]
     .map(function (partyEntitlementUpdateGrp) {
       return new PartyEntitlementUpdateGrp(partyEntitlementUpdateGrp);

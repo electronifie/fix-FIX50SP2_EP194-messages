@@ -10,8 +10,8 @@ TradSesStatusRejReason.prototype.value = function () {
 
 
 TradSesStatusRejReason.Keys = {
-  UNKNOWN_OR_INVALID_TRADINGSESSIONID: '1',
-  OTHER: '99',
+  'UNKNOWN_OR_INVALID_TRADINGSESSIONID': '1',
+  'OTHER': '99',
 };
 
 TradSesStatusRejReason.Tag = '567';

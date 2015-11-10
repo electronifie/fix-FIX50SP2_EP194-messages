@@ -10,10 +10,10 @@ ProvisionOptionExerciseEarliestDateUnit.prototype.value = function () {
 
 
 ProvisionOptionExerciseEarliestDateUnit.Keys = {
-  DAY: 'D',
-  WEEK: 'Wk',
-  MONTH: 'Mo',
-  YEAR: 'Yr',
+  'DAY': 'D',
+  'WEEK': 'Wk',
+  'MONTH': 'Mo',
+  'YEAR': 'Yr',
 };
 
 ProvisionOptionExerciseEarliestDateUnit.Tag = '40126';

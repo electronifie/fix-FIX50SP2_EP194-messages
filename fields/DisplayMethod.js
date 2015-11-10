@@ -10,10 +10,10 @@ DisplayMethod.prototype.value = function () {
 
 
 DisplayMethod.Keys = {
-  INITIAL: '1',
-  NEW: '2',
-  RANDOM: '3',
-  UNDISCLOSED: '4',
+  'INITIAL': '1',
+  'NEW': '2',
+  'RANDOM': '3',
+  'UNDISCLOSED': '4',
 };
 
 DisplayMethod.Tag = '1084';

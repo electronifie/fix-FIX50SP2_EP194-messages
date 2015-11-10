@@ -23,6 +23,8 @@ function SecurityMassStatus (securityMassStatus) {
 }
 
 SecurityMassStatus.prototype.applicationSequenceControl = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[SecurityMassStatus.Tags.ApplicationSequenceControl] === undefined) return null;
   return this.message.groups[SecurityMassStatus.Tags.ApplicationSequenceControl]
     .map(function (applicationSequenceControl) {
       return new ApplicationSequenceControl(applicationSequenceControl);
@@ -30,6 +32,8 @@ SecurityMassStatus.prototype.applicationSequenceControl = function () {
 };
 
 SecurityMassStatus.prototype.instrumentScope = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[SecurityMassStatus.Tags.InstrumentScope] === undefined) return null;
   return this.message.groups[SecurityMassStatus.Tags.InstrumentScope]
     .map(function (instrumentScope) {
       return new InstrumentScope(instrumentScope);
@@ -37,6 +41,8 @@ SecurityMassStatus.prototype.instrumentScope = function () {
 };
 
 SecurityMassStatus.prototype.secMassStatGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[SecurityMassStatus.Tags.SecMassStatGrp] === undefined) return null;
   return this.message.groups[SecurityMassStatus.Tags.SecMassStatGrp]
     .map(function (secMassStatGrp) {
       return new SecMassStatGrp(secMassStatGrp);

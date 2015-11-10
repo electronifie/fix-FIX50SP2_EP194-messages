@@ -10,9 +10,9 @@ PosQtyStatus.prototype.value = function () {
 
 
 PosQtyStatus.Keys = {
-  SUBMITTED: '0',
-  ACCEPTED: '1',
-  REJECTED: '2',
+  'SUBMITTED': '0',
+  'ACCEPTED': '1',
+  'REJECTED': '2',
 };
 
 PosQtyStatus.Tag = '706';

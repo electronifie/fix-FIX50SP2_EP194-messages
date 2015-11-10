@@ -10,14 +10,14 @@ SecurityClassificationReason.prototype.value = function () {
 
 
 SecurityClassificationReason.Keys = {
-  FEE: '0',
-  CREDIT_CONTROLS: '1',
-  MARGIN: '2',
-  ENTITLEMENT_ELIGIBILITY: '3',
-  MARKET_DATA: '4',
-  ACCOUNT_SELECTION: '5',
-  DELIVERY_PROCESS: '6',
-  SECTOR: '7',
+  'FEE': '0',
+  'CREDIT_CONTROLS': '1',
+  'MARGIN': '2',
+  'ENTITLEMENT_ELIGIBILITY': '3',
+  'MARKET_DATA': '4',
+  'ACCOUNT_SELECTION': '5',
+  'DELIVERY_PROCESS': '6',
+  'SECTOR': '7',
 };
 
 SecurityClassificationReason.Tag = '1583';

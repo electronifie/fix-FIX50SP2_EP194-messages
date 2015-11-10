@@ -10,9 +10,9 @@ RegulatoryTransactionType.prototype.value = function () {
 
 
 RegulatoryTransactionType.Keys = {
-  NONE: '0',
-  SWAP_EXECUTION_FACILITY_REQUIRED_TRANSACTION: '1',
-  SWAP_EXECUTION_FACILITY_PERMITTED_TRANSACTION: '2',
+  'NONE': '0',
+  'SWAP_EXECUTION_FACILITY_REQUIRED_TRANSACTION': '1',
+  'SWAP_EXECUTION_FACILITY_PERMITTED_TRANSACTION': '2',
 };
 
 RegulatoryTransactionType.Tag = '2347';

@@ -10,8 +10,8 @@ LastFragment.prototype.value = function () {
 
 
 LastFragment.Keys = {
-  NOT_LAST_MESSAGE: 'N',
-  LAST_MESSAGE: 'Y',
+  'NOT_LAST_MESSAGE': 'N',
+  'LAST_MESSAGE': 'Y',
 };
 
 LastFragment.Tag = '893';

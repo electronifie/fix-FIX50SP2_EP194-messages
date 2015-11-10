@@ -10,8 +10,8 @@ OptionExerciseDateType.prototype.value = function () {
 
 
 OptionExerciseDateType.Keys = {
-  UNADJUSTED: '0',
-  ADJUSTED: '1',
+  'UNADJUSTED': '0',
+  'ADJUSTED': '1',
 };
 
 OptionExerciseDateType.Tag = '41139';

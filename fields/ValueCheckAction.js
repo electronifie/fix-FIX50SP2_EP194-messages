@@ -10,9 +10,9 @@ ValueCheckAction.prototype.value = function () {
 
 
 ValueCheckAction.Keys = {
-  DO_NOT_CHECK: '0',
-  CHECK: '1',
-  BEST_EFFORT: '2',
+  'DO_NOT_CHECK': '0',
+  'CHECK': '1',
+  'BEST_EFFORT': '2',
 };
 
 ValueCheckAction.Tag = '1870';

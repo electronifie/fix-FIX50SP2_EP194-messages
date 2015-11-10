@@ -10,10 +10,10 @@ AdvSide.prototype.value = function () {
 
 
 AdvSide.Keys = {
-  BUY: 'B',
-  SELL: 'S',
-  TRADE: 'T',
-  CROSS: 'X',
+  'BUY': 'B',
+  'SELL': 'S',
+  'TRADE': 'T',
+  'CROSS': 'X',
 };
 
 AdvSide.Tag = '4';

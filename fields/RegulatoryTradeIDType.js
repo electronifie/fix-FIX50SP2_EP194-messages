@@ -10,11 +10,11 @@ RegulatoryTradeIDType.prototype.value = function () {
 
 
 RegulatoryTradeIDType.Keys = {
-  CURRENT: '0',
-  PREVIOUS: '1',
-  BLOCK: '2',
-  RELATED: '3',
-  CLEARED_BLOCK_TRADE: '4',
+  'CURRENT': '0',
+  'PREVIOUS': '1',
+  'BLOCK': '2',
+  'RELATED': '3',
+  'CLEARED_BLOCK_TRADE': '4',
 };
 
 RegulatoryTradeIDType.Tag = '1906';

@@ -10,10 +10,10 @@ TradeAllocStatus.prototype.value = function () {
 
 
 TradeAllocStatus.Keys = {
-  PENDING_CLEAR: '0',
-  CLAIMED: '1',
-  CLEARED: '2',
-  REJECTED: '3',
+  'PENDING_CLEAR': '0',
+  'CLAIMED': '1',
+  'CLEARED': '2',
+  'REJECTED': '3',
 };
 
 TradeAllocStatus.Tag = '1840';

@@ -19,6 +19,8 @@ function QuoteAck (quoteAck) {
 }
 
 QuoteAck.prototype.parties = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[QuoteAck.Tags.Parties] === undefined) return null;
   return this.message.groups[QuoteAck.Tags.Parties]
     .map(function (parties) {
       return new Parties(parties);

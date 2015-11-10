@@ -10,8 +10,8 @@ SideValueInd.prototype.value = function () {
 
 
 SideValueInd.Keys = {
-  SIDE_VALUE_1: '1',
-  SIDE_VALUE_2: '2',
+  'SIDE_VALUE_1': '1',
+  'SIDE_VALUE_2': '2',
 };
 
 SideValueInd.Tag = '401';

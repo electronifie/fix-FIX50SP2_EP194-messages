@@ -10,14 +10,14 @@ EntitlementSubType.prototype.value = function () {
 
 
 EntitlementSubType.Keys = {
-  ORDER_ENTRY: '1',
-  HIT_LIFT: '2',
-  VIEW_INDICATIVE_PRICES: '3',
-  VIEW_EXECUTABLE_PRICES: '4',
-  SINGLE_QUOTE: '5',
-  STREAMING_QUOTES: '6',
-  SINGLE_BROKER: '7',
-  MULTI_BROKERS: '8',
+  'ORDER_ENTRY': '1',
+  'HIT_LIFT': '2',
+  'VIEW_INDICATIVE_PRICES': '3',
+  'VIEW_EXECUTABLE_PRICES': '4',
+  'SINGLE_QUOTE': '5',
+  'STREAMING_QUOTES': '6',
+  'SINGLE_BROKER': '7',
+  'MULTI_BROKERS': '8',
 };
 
 EntitlementSubType.Tag = '2402';

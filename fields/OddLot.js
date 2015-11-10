@@ -10,8 +10,8 @@ OddLot.prototype.value = function () {
 
 
 OddLot.Keys = {
-  TREAT_AS_ROUND_LOT: 'N',
-  TREAT_AS_ODD_LOT: 'Y',
+  'TREAT_AS_ROUND_LOT': 'N',
+  'TREAT_AS_ODD_LOT': 'Y',
 };
 
 OddLot.Tag = '575';

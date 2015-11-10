@@ -21,6 +21,8 @@ function MarketDataRequest (marketDataRequest) {
 }
 
 MarketDataRequest.prototype.parties = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[MarketDataRequest.Tags.Parties] === undefined) return null;
   return this.message.groups[MarketDataRequest.Tags.Parties]
     .map(function (parties) {
       return new Parties(parties);
@@ -28,6 +30,8 @@ MarketDataRequest.prototype.parties = function () {
 };
 
 MarketDataRequest.prototype.mdreqGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[MarketDataRequest.Tags.MDReqGrp] === undefined) return null;
   return this.message.groups[MarketDataRequest.Tags.MDReqGrp]
     .map(function (mdreqGrp) {
       return new MDReqGrp(mdreqGrp);
@@ -35,6 +39,8 @@ MarketDataRequest.prototype.mdreqGrp = function () {
 };
 
 MarketDataRequest.prototype.marketSegmentScopeGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[MarketDataRequest.Tags.MarketSegmentScopeGrp] === undefined) return null;
   return this.message.groups[MarketDataRequest.Tags.MarketSegmentScopeGrp]
     .map(function (marketSegmentScopeGrp) {
       return new MarketSegmentScopeGrp(marketSegmentScopeGrp);
@@ -42,6 +48,8 @@ MarketDataRequest.prototype.marketSegmentScopeGrp = function () {
 };
 
 MarketDataRequest.prototype.instrmtMdreqGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[MarketDataRequest.Tags.InstrmtMDReqGrp] === undefined) return null;
   return this.message.groups[MarketDataRequest.Tags.InstrmtMDReqGrp]
     .map(function (instrmtMdreqGrp) {
       return new InstrmtMDReqGrp(instrmtMdreqGrp);
@@ -49,6 +57,8 @@ MarketDataRequest.prototype.instrmtMdreqGrp = function () {
 };
 
 MarketDataRequest.prototype.trdgSesGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[MarketDataRequest.Tags.TrdgSesGrp] === undefined) return null;
   return this.message.groups[MarketDataRequest.Tags.TrdgSesGrp]
     .map(function (trdgSesGrp) {
       return new TrdgSesGrp(trdgSesGrp);

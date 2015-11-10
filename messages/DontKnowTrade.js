@@ -18,6 +18,8 @@ function DontKnowTrade (dontKnowTrade) {
 }
 
 DontKnowTrade.prototype.instrument = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[DontKnowTrade.Tags.Instrument] === undefined) return null;
   return this.message.groups[DontKnowTrade.Tags.Instrument]
     .map(function (instrument) {
       return new Instrument(instrument);
@@ -25,6 +27,8 @@ DontKnowTrade.prototype.instrument = function () {
 };
 
 DontKnowTrade.prototype.undInstrmtGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[DontKnowTrade.Tags.UndInstrmtGrp] === undefined) return null;
   return this.message.groups[DontKnowTrade.Tags.UndInstrmtGrp]
     .map(function (undInstrmtGrp) {
       return new UndInstrmtGrp(undInstrmtGrp);
@@ -32,6 +36,8 @@ DontKnowTrade.prototype.undInstrmtGrp = function () {
 };
 
 DontKnowTrade.prototype.instrmtLegGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[DontKnowTrade.Tags.InstrmtLegGrp] === undefined) return null;
   return this.message.groups[DontKnowTrade.Tags.InstrmtLegGrp]
     .map(function (instrmtLegGrp) {
       return new InstrmtLegGrp(instrmtLegGrp);
@@ -39,6 +45,8 @@ DontKnowTrade.prototype.instrmtLegGrp = function () {
 };
 
 DontKnowTrade.prototype.orderQtyData = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[DontKnowTrade.Tags.OrderQtyData] === undefined) return null;
   return this.message.groups[DontKnowTrade.Tags.OrderQtyData]
     .map(function (orderQtyData) {
       return new OrderQtyData(orderQtyData);

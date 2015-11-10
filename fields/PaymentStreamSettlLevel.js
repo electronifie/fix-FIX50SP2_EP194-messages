@@ -10,10 +10,10 @@ PaymentStreamSettlLevel.prototype.value = function () {
 
 
 PaymentStreamSettlLevel.Keys = {
-  AVERAGE: '0',
-  MAXIMUM: '1',
-  MINIMUM: '2',
-  CUMULATIVE: '3',
+  'AVERAGE': '0',
+  'MAXIMUM': '1',
+  'MINIMUM': '2',
+  'CUMULATIVE': '3',
 };
 
 PaymentStreamSettlLevel.Tag = '41199';

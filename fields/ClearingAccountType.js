@@ -10,9 +10,9 @@ ClearingAccountType.prototype.value = function () {
 
 
 ClearingAccountType.Keys = {
-  CUSTOMER: '1',
-  FIRM: '2',
-  MARKET_MAKER: '3',
+  'CUSTOMER': '1',
+  'FIRM': '2',
+  'MARKET_MAKER': '3',
 };
 
 ClearingAccountType.Tag = '1816';

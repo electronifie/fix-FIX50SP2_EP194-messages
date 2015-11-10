@@ -10,9 +10,9 @@ TransferScope.prototype.value = function () {
 
 
 TransferScope.Keys = {
-  INTER_FIRM_TRANSFER: '0',
-  INTRA_FIRM_TRANSFER: '1',
-  CLEARING_MEMBER_TRADE_ASSIGNMENT: '2',
+  'INTER_FIRM_TRANSFER': '0',
+  'INTRA_FIRM_TRANSFER': '1',
+  'CLEARING_MEMBER_TRADE_ASSIGNMENT': '2',
 };
 
 TransferScope.Tag = '2441';

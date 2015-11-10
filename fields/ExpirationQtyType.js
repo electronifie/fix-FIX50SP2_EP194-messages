@@ -10,11 +10,11 @@ ExpirationQtyType.prototype.value = function () {
 
 
 ExpirationQtyType.Keys = {
-  AUTO_EXERCISE: '1',
-  NON_AUTO_EXERCISE: '2',
-  FINAL_WILL_BE_EXERCISED: '3',
-  CONTRARY_INTENTION: '4',
-  DIFFERENCE: '5',
+  'AUTO_EXERCISE': '1',
+  'NON_AUTO_EXERCISE': '2',
+  'FINAL_WILL_BE_EXERCISED': '3',
+  'CONTRARY_INTENTION': '4',
+  'DIFFERENCE': '5',
 };
 
 ExpirationQtyType.Tag = '982';

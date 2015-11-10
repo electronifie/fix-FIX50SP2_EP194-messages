@@ -114,6 +114,8 @@ function NewOrderMultileg (newOrderMultileg) {
 }
 
 NewOrderMultileg.prototype.parties = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[NewOrderMultileg.Tags.Parties] === undefined) return null;
   return this.message.groups[NewOrderMultileg.Tags.Parties]
     .map(function (parties) {
       return new Parties(parties);
@@ -121,6 +123,8 @@ NewOrderMultileg.prototype.parties = function () {
 };
 
 NewOrderMultileg.prototype.targetParties = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[NewOrderMultileg.Tags.TargetParties] === undefined) return null;
   return this.message.groups[NewOrderMultileg.Tags.TargetParties]
     .map(function (targetParties) {
       return new TargetParties(targetParties);
@@ -128,6 +132,8 @@ NewOrderMultileg.prototype.targetParties = function () {
 };
 
 NewOrderMultileg.prototype.preAllocMlegGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[NewOrderMultileg.Tags.PreAllocMlegGrp] === undefined) return null;
   return this.message.groups[NewOrderMultileg.Tags.PreAllocMlegGrp]
     .map(function (preAllocMlegGrp) {
       return new PreAllocMlegGrp(preAllocMlegGrp);
@@ -135,6 +141,8 @@ NewOrderMultileg.prototype.preAllocMlegGrp = function () {
 };
 
 NewOrderMultileg.prototype.matchingInstructions = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[NewOrderMultileg.Tags.MatchingInstructions] === undefined) return null;
   return this.message.groups[NewOrderMultileg.Tags.MatchingInstructions]
     .map(function (matchingInstructions) {
       return new MatchingInstructions(matchingInstructions);
@@ -142,6 +150,8 @@ NewOrderMultileg.prototype.matchingInstructions = function () {
 };
 
 NewOrderMultileg.prototype.displayInstruction = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[NewOrderMultileg.Tags.DisplayInstruction] === undefined) return null;
   return this.message.groups[NewOrderMultileg.Tags.DisplayInstruction]
     .map(function (displayInstruction) {
       return new DisplayInstruction(displayInstruction);
@@ -149,6 +159,8 @@ NewOrderMultileg.prototype.displayInstruction = function () {
 };
 
 NewOrderMultileg.prototype.disclosureInstructionGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[NewOrderMultileg.Tags.DisclosureInstructionGrp] === undefined) return null;
   return this.message.groups[NewOrderMultileg.Tags.DisclosureInstructionGrp]
     .map(function (disclosureInstructionGrp) {
       return new DisclosureInstructionGrp(disclosureInstructionGrp);
@@ -156,6 +168,8 @@ NewOrderMultileg.prototype.disclosureInstructionGrp = function () {
 };
 
 NewOrderMultileg.prototype.trdgSesGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[NewOrderMultileg.Tags.TrdgSesGrp] === undefined) return null;
   return this.message.groups[NewOrderMultileg.Tags.TrdgSesGrp]
     .map(function (trdgSesGrp) {
       return new TrdgSesGrp(trdgSesGrp);
@@ -163,6 +177,8 @@ NewOrderMultileg.prototype.trdgSesGrp = function () {
 };
 
 NewOrderMultileg.prototype.instrument = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[NewOrderMultileg.Tags.Instrument] === undefined) return null;
   return this.message.groups[NewOrderMultileg.Tags.Instrument]
     .map(function (instrument) {
       return new Instrument(instrument);
@@ -170,6 +186,8 @@ NewOrderMultileg.prototype.instrument = function () {
 };
 
 NewOrderMultileg.prototype.undInstrmtGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[NewOrderMultileg.Tags.UndInstrmtGrp] === undefined) return null;
   return this.message.groups[NewOrderMultileg.Tags.UndInstrmtGrp]
     .map(function (undInstrmtGrp) {
       return new UndInstrmtGrp(undInstrmtGrp);
@@ -177,6 +195,8 @@ NewOrderMultileg.prototype.undInstrmtGrp = function () {
 };
 
 NewOrderMultileg.prototype.legOrdGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[NewOrderMultileg.Tags.LegOrdGrp] === undefined) return null;
   return this.message.groups[NewOrderMultileg.Tags.LegOrdGrp]
     .map(function (legOrdGrp) {
       return new LegOrdGrp(legOrdGrp);
@@ -184,6 +204,8 @@ NewOrderMultileg.prototype.legOrdGrp = function () {
 };
 
 NewOrderMultileg.prototype.orderQtyData = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[NewOrderMultileg.Tags.OrderQtyData] === undefined) return null;
   return this.message.groups[NewOrderMultileg.Tags.OrderQtyData]
     .map(function (orderQtyData) {
       return new OrderQtyData(orderQtyData);
@@ -191,6 +213,8 @@ NewOrderMultileg.prototype.orderQtyData = function () {
 };
 
 NewOrderMultileg.prototype.triggeringInstruction = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[NewOrderMultileg.Tags.TriggeringInstruction] === undefined) return null;
   return this.message.groups[NewOrderMultileg.Tags.TriggeringInstruction]
     .map(function (triggeringInstruction) {
       return new TriggeringInstruction(triggeringInstruction);
@@ -198,6 +222,8 @@ NewOrderMultileg.prototype.triggeringInstruction = function () {
 };
 
 NewOrderMultileg.prototype.commissionData = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[NewOrderMultileg.Tags.CommissionData] === undefined) return null;
   return this.message.groups[NewOrderMultileg.Tags.CommissionData]
     .map(function (commissionData) {
       return new CommissionData(commissionData);
@@ -205,6 +231,8 @@ NewOrderMultileg.prototype.commissionData = function () {
 };
 
 NewOrderMultileg.prototype.pegInstructions = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[NewOrderMultileg.Tags.PegInstructions] === undefined) return null;
   return this.message.groups[NewOrderMultileg.Tags.PegInstructions]
     .map(function (pegInstructions) {
       return new PegInstructions(pegInstructions);
@@ -212,6 +240,8 @@ NewOrderMultileg.prototype.pegInstructions = function () {
 };
 
 NewOrderMultileg.prototype.discretionInstructions = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[NewOrderMultileg.Tags.DiscretionInstructions] === undefined) return null;
   return this.message.groups[NewOrderMultileg.Tags.DiscretionInstructions]
     .map(function (discretionInstructions) {
       return new DiscretionInstructions(discretionInstructions);
@@ -219,6 +249,8 @@ NewOrderMultileg.prototype.discretionInstructions = function () {
 };
 
 NewOrderMultileg.prototype.strategyParametersGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[NewOrderMultileg.Tags.StrategyParametersGrp] === undefined) return null;
   return this.message.groups[NewOrderMultileg.Tags.StrategyParametersGrp]
     .map(function (strategyParametersGrp) {
       return new StrategyParametersGrp(strategyParametersGrp);

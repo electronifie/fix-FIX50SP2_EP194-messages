@@ -10,10 +10,10 @@ NetworkRequestType.prototype.value = function () {
 
 
 NetworkRequestType.Keys = {
-  SNAPSHOT: '1',
-  SUBSCRIBE: '2',
-  STOP_SUBSCRIBING: '4',
-  LEVEL_OF_DETAIL_THEN_NOCOMPIDS_BECOMES_REQUIRED: '8',
+  'SNAPSHOT': '1',
+  'SUBSCRIBE': '2',
+  'STOP_SUBSCRIBING': '4',
+  'LEVEL_OF_DETAIL_THEN_NOCOMPIDS_BECOMES_REQUIRED': '8',
 };
 
 NetworkRequestType.Tag = '935';

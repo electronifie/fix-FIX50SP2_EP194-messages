@@ -58,6 +58,8 @@ function CollateralReport (collateralReport) {
 }
 
 CollateralReport.prototype.parties = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[CollateralReport.Tags.Parties] === undefined) return null;
   return this.message.groups[CollateralReport.Tags.Parties]
     .map(function (parties) {
       return new Parties(parties);
@@ -65,6 +67,8 @@ CollateralReport.prototype.parties = function () {
 };
 
 CollateralReport.prototype.execCollGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[CollateralReport.Tags.ExecCollGrp] === undefined) return null;
   return this.message.groups[CollateralReport.Tags.ExecCollGrp]
     .map(function (execCollGrp) {
       return new ExecCollGrp(execCollGrp);
@@ -72,6 +76,8 @@ CollateralReport.prototype.execCollGrp = function () {
 };
 
 CollateralReport.prototype.trdCollGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[CollateralReport.Tags.TrdCollGrp] === undefined) return null;
   return this.message.groups[CollateralReport.Tags.TrdCollGrp]
     .map(function (trdCollGrp) {
       return new TrdCollGrp(trdCollGrp);
@@ -79,6 +85,8 @@ CollateralReport.prototype.trdCollGrp = function () {
 };
 
 CollateralReport.prototype.instrument = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[CollateralReport.Tags.Instrument] === undefined) return null;
   return this.message.groups[CollateralReport.Tags.Instrument]
     .map(function (instrument) {
       return new Instrument(instrument);
@@ -86,6 +94,8 @@ CollateralReport.prototype.instrument = function () {
 };
 
 CollateralReport.prototype.financingDetails = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[CollateralReport.Tags.FinancingDetails] === undefined) return null;
   return this.message.groups[CollateralReport.Tags.FinancingDetails]
     .map(function (financingDetails) {
       return new FinancingDetails(financingDetails);
@@ -93,6 +103,8 @@ CollateralReport.prototype.financingDetails = function () {
 };
 
 CollateralReport.prototype.instrmtLegGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[CollateralReport.Tags.InstrmtLegGrp] === undefined) return null;
   return this.message.groups[CollateralReport.Tags.InstrmtLegGrp]
     .map(function (instrmtLegGrp) {
       return new InstrmtLegGrp(instrmtLegGrp);
@@ -100,6 +112,8 @@ CollateralReport.prototype.instrmtLegGrp = function () {
 };
 
 CollateralReport.prototype.undInstrmtGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[CollateralReport.Tags.UndInstrmtGrp] === undefined) return null;
   return this.message.groups[CollateralReport.Tags.UndInstrmtGrp]
     .map(function (undInstrmtGrp) {
       return new UndInstrmtGrp(undInstrmtGrp);
@@ -107,6 +121,8 @@ CollateralReport.prototype.undInstrmtGrp = function () {
 };
 
 CollateralReport.prototype.collateralAmountGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[CollateralReport.Tags.CollateralAmountGrp] === undefined) return null;
   return this.message.groups[CollateralReport.Tags.CollateralAmountGrp]
     .map(function (collateralAmountGrp) {
       return new CollateralAmountGrp(collateralAmountGrp);
@@ -114,6 +130,8 @@ CollateralReport.prototype.collateralAmountGrp = function () {
 };
 
 CollateralReport.prototype.regulatoryTradeIdgrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[CollateralReport.Tags.RegulatoryTradeIDGrp] === undefined) return null;
   return this.message.groups[CollateralReport.Tags.RegulatoryTradeIDGrp]
     .map(function (regulatoryTradeIdgrp) {
       return new RegulatoryTradeIDGrp(regulatoryTradeIdgrp);
@@ -121,6 +139,8 @@ CollateralReport.prototype.regulatoryTradeIdgrp = function () {
 };
 
 CollateralReport.prototype.trdRegTimestamps = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[CollateralReport.Tags.TrdRegTimestamps] === undefined) return null;
   return this.message.groups[CollateralReport.Tags.TrdRegTimestamps]
     .map(function (trdRegTimestamps) {
       return new TrdRegTimestamps(trdRegTimestamps);
@@ -128,6 +148,8 @@ CollateralReport.prototype.trdRegTimestamps = function () {
 };
 
 CollateralReport.prototype.miscFeesGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[CollateralReport.Tags.MiscFeesGrp] === undefined) return null;
   return this.message.groups[CollateralReport.Tags.MiscFeesGrp]
     .map(function (miscFeesGrp) {
       return new MiscFeesGrp(miscFeesGrp);
@@ -135,6 +157,8 @@ CollateralReport.prototype.miscFeesGrp = function () {
 };
 
 CollateralReport.prototype.spreadOrBenchmarkCurveData = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[CollateralReport.Tags.SpreadOrBenchmarkCurveData] === undefined) return null;
   return this.message.groups[CollateralReport.Tags.SpreadOrBenchmarkCurveData]
     .map(function (spreadOrBenchmarkCurveData) {
       return new SpreadOrBenchmarkCurveData(spreadOrBenchmarkCurveData);
@@ -142,6 +166,8 @@ CollateralReport.prototype.spreadOrBenchmarkCurveData = function () {
 };
 
 CollateralReport.prototype.stipulations = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[CollateralReport.Tags.Stipulations] === undefined) return null;
   return this.message.groups[CollateralReport.Tags.Stipulations]
     .map(function (stipulations) {
       return new Stipulations(stipulations);
@@ -149,6 +175,8 @@ CollateralReport.prototype.stipulations = function () {
 };
 
 CollateralReport.prototype.settlInstructionsData = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[CollateralReport.Tags.SettlInstructionsData] === undefined) return null;
   return this.message.groups[CollateralReport.Tags.SettlInstructionsData]
     .map(function (settlInstructionsData) {
       return new SettlInstructionsData(settlInstructionsData);

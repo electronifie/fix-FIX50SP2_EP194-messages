@@ -24,6 +24,8 @@ function Advertisement (advertisement) {
 }
 
 Advertisement.prototype.instrument = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[Advertisement.Tags.Instrument] === undefined) return null;
   return this.message.groups[Advertisement.Tags.Instrument]
     .map(function (instrument) {
       return new Instrument(instrument);
@@ -31,6 +33,8 @@ Advertisement.prototype.instrument = function () {
 };
 
 Advertisement.prototype.instrmtLegGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[Advertisement.Tags.InstrmtLegGrp] === undefined) return null;
   return this.message.groups[Advertisement.Tags.InstrmtLegGrp]
     .map(function (instrmtLegGrp) {
       return new InstrmtLegGrp(instrmtLegGrp);
@@ -38,6 +42,8 @@ Advertisement.prototype.instrmtLegGrp = function () {
 };
 
 Advertisement.prototype.undInstrmtGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[Advertisement.Tags.UndInstrmtGrp] === undefined) return null;
   return this.message.groups[Advertisement.Tags.UndInstrmtGrp]
     .map(function (undInstrmtGrp) {
       return new UndInstrmtGrp(undInstrmtGrp);

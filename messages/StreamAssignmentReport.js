@@ -8,6 +8,8 @@ function StreamAssignmentReport (streamAssignmentReport) {
 }
 
 StreamAssignmentReport.prototype.strmAsgnRptGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[StreamAssignmentReport.Tags.StrmAsgnRptGrp] === undefined) return null;
   return this.message.groups[StreamAssignmentReport.Tags.StrmAsgnRptGrp]
     .map(function (strmAsgnRptGrp) {
       return new StrmAsgnRptGrp(strmAsgnRptGrp);

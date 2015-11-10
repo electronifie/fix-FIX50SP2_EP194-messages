@@ -18,6 +18,8 @@ function QuoteStatusRequest (quoteStatusRequest) {
 }
 
 QuoteStatusRequest.prototype.instrument = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[QuoteStatusRequest.Tags.Instrument] === undefined) return null;
   return this.message.groups[QuoteStatusRequest.Tags.Instrument]
     .map(function (instrument) {
       return new Instrument(instrument);
@@ -25,6 +27,8 @@ QuoteStatusRequest.prototype.instrument = function () {
 };
 
 QuoteStatusRequest.prototype.financingDetails = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[QuoteStatusRequest.Tags.FinancingDetails] === undefined) return null;
   return this.message.groups[QuoteStatusRequest.Tags.FinancingDetails]
     .map(function (financingDetails) {
       return new FinancingDetails(financingDetails);
@@ -32,6 +36,8 @@ QuoteStatusRequest.prototype.financingDetails = function () {
 };
 
 QuoteStatusRequest.prototype.undInstrmtGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[QuoteStatusRequest.Tags.UndInstrmtGrp] === undefined) return null;
   return this.message.groups[QuoteStatusRequest.Tags.UndInstrmtGrp]
     .map(function (undInstrmtGrp) {
       return new UndInstrmtGrp(undInstrmtGrp);
@@ -39,6 +45,8 @@ QuoteStatusRequest.prototype.undInstrmtGrp = function () {
 };
 
 QuoteStatusRequest.prototype.instrmtLegGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[QuoteStatusRequest.Tags.InstrmtLegGrp] === undefined) return null;
   return this.message.groups[QuoteStatusRequest.Tags.InstrmtLegGrp]
     .map(function (instrmtLegGrp) {
       return new InstrmtLegGrp(instrmtLegGrp);
@@ -46,6 +54,8 @@ QuoteStatusRequest.prototype.instrmtLegGrp = function () {
 };
 
 QuoteStatusRequest.prototype.parties = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[QuoteStatusRequest.Tags.Parties] === undefined) return null;
   return this.message.groups[QuoteStatusRequest.Tags.Parties]
     .map(function (parties) {
       return new Parties(parties);
@@ -53,6 +63,8 @@ QuoteStatusRequest.prototype.parties = function () {
 };
 
 QuoteStatusRequest.prototype.targetParties = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[QuoteStatusRequest.Tags.TargetParties] === undefined) return null;
   return this.message.groups[QuoteStatusRequest.Tags.TargetParties]
     .map(function (targetParties) {
       return new TargetParties(targetParties);

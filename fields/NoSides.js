@@ -10,8 +10,8 @@ NoSides.prototype.value = function () {
 
 
 NoSides.Keys = {
-  ONE_SIDE: '1',
-  BOTH_SIDES: '2',
+  'ONE_SIDE': '1',
+  'BOTH_SIDES': '2',
 };
 
 NoSides.Tag = '552';

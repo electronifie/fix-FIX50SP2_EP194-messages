@@ -10,10 +10,10 @@ ProtectionTermEventUnit.prototype.value = function () {
 
 
 ProtectionTermEventUnit.Keys = {
-  DAY: 'D',
-  WEEK: 'Wk',
-  MONTH: 'Mo',
-  YEAR: 'Yr',
+  'DAY': 'D',
+  'WEEK': 'Wk',
+  'MONTH': 'Mo',
+  'YEAR': 'Yr',
 };
 
 ProtectionTermEventUnit.Tag = '40196';

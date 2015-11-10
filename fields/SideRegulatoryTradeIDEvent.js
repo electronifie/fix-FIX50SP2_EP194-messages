@@ -10,12 +10,12 @@ SideRegulatoryTradeIDEvent.prototype.value = function () {
 
 
 SideRegulatoryTradeIDEvent.Keys = {
-  INITIAL_BLOCK_TRADE: '0',
-  ALLOCATION: '1',
-  CLEARING: '2',
-  COMPRESSION: '3',
-  NOVATION: '4',
-  TERMINATION: '5',
+  'INITIAL_BLOCK_TRADE': '0',
+  'ALLOCATION': '1',
+  'CLEARING': '2',
+  'COMPRESSION': '3',
+  'NOVATION': '4',
+  'TERMINATION': '5',
 };
 
 SideRegulatoryTradeIDEvent.Tag = '1974';

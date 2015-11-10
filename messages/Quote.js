@@ -92,6 +92,8 @@ function Quote (quote) {
 }
 
 Quote.prototype.quotQualGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[Quote.Tags.QuotQualGrp] === undefined) return null;
   return this.message.groups[Quote.Tags.QuotQualGrp]
     .map(function (quotQualGrp) {
       return new QuotQualGrp(quotQualGrp);
@@ -99,6 +101,8 @@ Quote.prototype.quotQualGrp = function () {
 };
 
 Quote.prototype.valueChecksGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[Quote.Tags.ValueChecksGrp] === undefined) return null;
   return this.message.groups[Quote.Tags.ValueChecksGrp]
     .map(function (valueChecksGrp) {
       return new ValueChecksGrp(valueChecksGrp);
@@ -106,6 +110,8 @@ Quote.prototype.valueChecksGrp = function () {
 };
 
 Quote.prototype.parties = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[Quote.Tags.Parties] === undefined) return null;
   return this.message.groups[Quote.Tags.Parties]
     .map(function (parties) {
       return new Parties(parties);
@@ -113,6 +119,8 @@ Quote.prototype.parties = function () {
 };
 
 Quote.prototype.instrument = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[Quote.Tags.Instrument] === undefined) return null;
   return this.message.groups[Quote.Tags.Instrument]
     .map(function (instrument) {
       return new Instrument(instrument);
@@ -120,6 +128,8 @@ Quote.prototype.instrument = function () {
 };
 
 Quote.prototype.financingDetails = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[Quote.Tags.FinancingDetails] === undefined) return null;
   return this.message.groups[Quote.Tags.FinancingDetails]
     .map(function (financingDetails) {
       return new FinancingDetails(financingDetails);
@@ -127,6 +137,8 @@ Quote.prototype.financingDetails = function () {
 };
 
 Quote.prototype.undInstrmtGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[Quote.Tags.UndInstrmtGrp] === undefined) return null;
   return this.message.groups[Quote.Tags.UndInstrmtGrp]
     .map(function (undInstrmtGrp) {
       return new UndInstrmtGrp(undInstrmtGrp);
@@ -134,6 +146,8 @@ Quote.prototype.undInstrmtGrp = function () {
 };
 
 Quote.prototype.orderQtyData = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[Quote.Tags.OrderQtyData] === undefined) return null;
   return this.message.groups[Quote.Tags.OrderQtyData]
     .map(function (orderQtyData) {
       return new OrderQtyData(orderQtyData);
@@ -141,6 +155,8 @@ Quote.prototype.orderQtyData = function () {
 };
 
 Quote.prototype.rateSource = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[Quote.Tags.RateSource] === undefined) return null;
   return this.message.groups[Quote.Tags.RateSource]
     .map(function (rateSource) {
       return new RateSource(rateSource);
@@ -148,6 +164,8 @@ Quote.prototype.rateSource = function () {
 };
 
 Quote.prototype.stipulations = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[Quote.Tags.Stipulations] === undefined) return null;
   return this.message.groups[Quote.Tags.Stipulations]
     .map(function (stipulations) {
       return new Stipulations(stipulations);
@@ -155,6 +173,8 @@ Quote.prototype.stipulations = function () {
 };
 
 Quote.prototype.legQuotGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[Quote.Tags.LegQuotGrp] === undefined) return null;
   return this.message.groups[Quote.Tags.LegQuotGrp]
     .map(function (legQuotGrp) {
       return new LegQuotGrp(legQuotGrp);
@@ -162,6 +182,8 @@ Quote.prototype.legQuotGrp = function () {
 };
 
 Quote.prototype.spreadOrBenchmarkCurveData = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[Quote.Tags.SpreadOrBenchmarkCurveData] === undefined) return null;
   return this.message.groups[Quote.Tags.SpreadOrBenchmarkCurveData]
     .map(function (spreadOrBenchmarkCurveData) {
       return new SpreadOrBenchmarkCurveData(spreadOrBenchmarkCurveData);
@@ -169,6 +191,8 @@ Quote.prototype.spreadOrBenchmarkCurveData = function () {
 };
 
 Quote.prototype.relativeValueGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[Quote.Tags.RelativeValueGrp] === undefined) return null;
   return this.message.groups[Quote.Tags.RelativeValueGrp]
     .map(function (relativeValueGrp) {
       return new RelativeValueGrp(relativeValueGrp);
@@ -176,6 +200,8 @@ Quote.prototype.relativeValueGrp = function () {
 };
 
 Quote.prototype.yieldData = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[Quote.Tags.YieldData] === undefined) return null;
   return this.message.groups[Quote.Tags.YieldData]
     .map(function (yieldData) {
       return new YieldData(yieldData);
@@ -183,6 +209,8 @@ Quote.prototype.yieldData = function () {
 };
 
 Quote.prototype.routingGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[Quote.Tags.RoutingGrp] === undefined) return null;
   return this.message.groups[Quote.Tags.RoutingGrp]
     .map(function (routingGrp) {
       return new RoutingGrp(routingGrp);

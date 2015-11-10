@@ -34,6 +34,8 @@ function OrderMassActionReport (orderMassActionReport) {
 }
 
 OrderMassActionReport.prototype.affectedOrdGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[OrderMassActionReport.Tags.AffectedOrdGrp] === undefined) return null;
   return this.message.groups[OrderMassActionReport.Tags.AffectedOrdGrp]
     .map(function (affectedOrdGrp) {
       return new AffectedOrdGrp(affectedOrdGrp);
@@ -41,6 +43,8 @@ OrderMassActionReport.prototype.affectedOrdGrp = function () {
 };
 
 OrderMassActionReport.prototype.notAffectedOrdGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[OrderMassActionReport.Tags.NotAffectedOrdGrp] === undefined) return null;
   return this.message.groups[OrderMassActionReport.Tags.NotAffectedOrdGrp]
     .map(function (notAffectedOrdGrp) {
       return new NotAffectedOrdGrp(notAffectedOrdGrp);
@@ -48,6 +52,8 @@ OrderMassActionReport.prototype.notAffectedOrdGrp = function () {
 };
 
 OrderMassActionReport.prototype.affectedMarketSegmentGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[OrderMassActionReport.Tags.AffectedMarketSegmentGrp] === undefined) return null;
   return this.message.groups[OrderMassActionReport.Tags.AffectedMarketSegmentGrp]
     .map(function (affectedMarketSegmentGrp) {
       return new AffectedMarketSegmentGrp(affectedMarketSegmentGrp);
@@ -55,6 +61,8 @@ OrderMassActionReport.prototype.affectedMarketSegmentGrp = function () {
 };
 
 OrderMassActionReport.prototype.notAffectedMarketSegmentGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[OrderMassActionReport.Tags.NotAffectedMarketSegmentGrp] === undefined) return null;
   return this.message.groups[OrderMassActionReport.Tags.NotAffectedMarketSegmentGrp]
     .map(function (notAffectedMarketSegmentGrp) {
       return new NotAffectedMarketSegmentGrp(notAffectedMarketSegmentGrp);
@@ -62,6 +70,8 @@ OrderMassActionReport.prototype.notAffectedMarketSegmentGrp = function () {
 };
 
 OrderMassActionReport.prototype.targetMarketSegmentGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[OrderMassActionReport.Tags.TargetMarketSegmentGrp] === undefined) return null;
   return this.message.groups[OrderMassActionReport.Tags.TargetMarketSegmentGrp]
     .map(function (targetMarketSegmentGrp) {
       return new TargetMarketSegmentGrp(targetMarketSegmentGrp);
@@ -69,6 +79,8 @@ OrderMassActionReport.prototype.targetMarketSegmentGrp = function () {
 };
 
 OrderMassActionReport.prototype.parties = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[OrderMassActionReport.Tags.Parties] === undefined) return null;
   return this.message.groups[OrderMassActionReport.Tags.Parties]
     .map(function (parties) {
       return new Parties(parties);
@@ -76,6 +88,8 @@ OrderMassActionReport.prototype.parties = function () {
 };
 
 OrderMassActionReport.prototype.targetParties = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[OrderMassActionReport.Tags.TargetParties] === undefined) return null;
   return this.message.groups[OrderMassActionReport.Tags.TargetParties]
     .map(function (targetParties) {
       return new TargetParties(targetParties);
@@ -83,6 +97,8 @@ OrderMassActionReport.prototype.targetParties = function () {
 };
 
 OrderMassActionReport.prototype.instrument = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[OrderMassActionReport.Tags.Instrument] === undefined) return null;
   return this.message.groups[OrderMassActionReport.Tags.Instrument]
     .map(function (instrument) {
       return new Instrument(instrument);
@@ -90,6 +106,8 @@ OrderMassActionReport.prototype.instrument = function () {
 };
 
 OrderMassActionReport.prototype.underlyingInstrument = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[OrderMassActionReport.Tags.UnderlyingInstrument] === undefined) return null;
   return this.message.groups[OrderMassActionReport.Tags.UnderlyingInstrument]
     .map(function (underlyingInstrument) {
       return new UnderlyingInstrument(underlyingInstrument);

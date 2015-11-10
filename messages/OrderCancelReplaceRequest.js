@@ -119,6 +119,8 @@ function OrderCancelReplaceRequest (orderCancelReplaceRequest) {
 }
 
 OrderCancelReplaceRequest.prototype.parties = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[OrderCancelReplaceRequest.Tags.Parties] === undefined) return null;
   return this.message.groups[OrderCancelReplaceRequest.Tags.Parties]
     .map(function (parties) {
       return new Parties(parties);
@@ -126,6 +128,8 @@ OrderCancelReplaceRequest.prototype.parties = function () {
 };
 
 OrderCancelReplaceRequest.prototype.targetParties = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[OrderCancelReplaceRequest.Tags.TargetParties] === undefined) return null;
   return this.message.groups[OrderCancelReplaceRequest.Tags.TargetParties]
     .map(function (targetParties) {
       return new TargetParties(targetParties);
@@ -133,6 +137,8 @@ OrderCancelReplaceRequest.prototype.targetParties = function () {
 };
 
 OrderCancelReplaceRequest.prototype.preAllocGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[OrderCancelReplaceRequest.Tags.PreAllocGrp] === undefined) return null;
   return this.message.groups[OrderCancelReplaceRequest.Tags.PreAllocGrp]
     .map(function (preAllocGrp) {
       return new PreAllocGrp(preAllocGrp);
@@ -140,6 +146,8 @@ OrderCancelReplaceRequest.prototype.preAllocGrp = function () {
 };
 
 OrderCancelReplaceRequest.prototype.matchingInstructions = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[OrderCancelReplaceRequest.Tags.MatchingInstructions] === undefined) return null;
   return this.message.groups[OrderCancelReplaceRequest.Tags.MatchingInstructions]
     .map(function (matchingInstructions) {
       return new MatchingInstructions(matchingInstructions);
@@ -147,6 +155,8 @@ OrderCancelReplaceRequest.prototype.matchingInstructions = function () {
 };
 
 OrderCancelReplaceRequest.prototype.displayInstruction = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[OrderCancelReplaceRequest.Tags.DisplayInstruction] === undefined) return null;
   return this.message.groups[OrderCancelReplaceRequest.Tags.DisplayInstruction]
     .map(function (displayInstruction) {
       return new DisplayInstruction(displayInstruction);
@@ -154,6 +164,8 @@ OrderCancelReplaceRequest.prototype.displayInstruction = function () {
 };
 
 OrderCancelReplaceRequest.prototype.disclosureInstructionGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[OrderCancelReplaceRequest.Tags.DisclosureInstructionGrp] === undefined) return null;
   return this.message.groups[OrderCancelReplaceRequest.Tags.DisclosureInstructionGrp]
     .map(function (disclosureInstructionGrp) {
       return new DisclosureInstructionGrp(disclosureInstructionGrp);
@@ -161,6 +173,8 @@ OrderCancelReplaceRequest.prototype.disclosureInstructionGrp = function () {
 };
 
 OrderCancelReplaceRequest.prototype.trdgSesGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[OrderCancelReplaceRequest.Tags.TrdgSesGrp] === undefined) return null;
   return this.message.groups[OrderCancelReplaceRequest.Tags.TrdgSesGrp]
     .map(function (trdgSesGrp) {
       return new TrdgSesGrp(trdgSesGrp);
@@ -168,6 +182,8 @@ OrderCancelReplaceRequest.prototype.trdgSesGrp = function () {
 };
 
 OrderCancelReplaceRequest.prototype.instrument = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[OrderCancelReplaceRequest.Tags.Instrument] === undefined) return null;
   return this.message.groups[OrderCancelReplaceRequest.Tags.Instrument]
     .map(function (instrument) {
       return new Instrument(instrument);
@@ -175,6 +191,8 @@ OrderCancelReplaceRequest.prototype.instrument = function () {
 };
 
 OrderCancelReplaceRequest.prototype.financingDetails = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[OrderCancelReplaceRequest.Tags.FinancingDetails] === undefined) return null;
   return this.message.groups[OrderCancelReplaceRequest.Tags.FinancingDetails]
     .map(function (financingDetails) {
       return new FinancingDetails(financingDetails);
@@ -182,6 +200,8 @@ OrderCancelReplaceRequest.prototype.financingDetails = function () {
 };
 
 OrderCancelReplaceRequest.prototype.undInstrmtGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[OrderCancelReplaceRequest.Tags.UndInstrmtGrp] === undefined) return null;
   return this.message.groups[OrderCancelReplaceRequest.Tags.UndInstrmtGrp]
     .map(function (undInstrmtGrp) {
       return new UndInstrmtGrp(undInstrmtGrp);
@@ -189,6 +209,8 @@ OrderCancelReplaceRequest.prototype.undInstrmtGrp = function () {
 };
 
 OrderCancelReplaceRequest.prototype.orderQtyData = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[OrderCancelReplaceRequest.Tags.OrderQtyData] === undefined) return null;
   return this.message.groups[OrderCancelReplaceRequest.Tags.OrderQtyData]
     .map(function (orderQtyData) {
       return new OrderQtyData(orderQtyData);
@@ -196,6 +218,8 @@ OrderCancelReplaceRequest.prototype.orderQtyData = function () {
 };
 
 OrderCancelReplaceRequest.prototype.triggeringInstruction = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[OrderCancelReplaceRequest.Tags.TriggeringInstruction] === undefined) return null;
   return this.message.groups[OrderCancelReplaceRequest.Tags.TriggeringInstruction]
     .map(function (triggeringInstruction) {
       return new TriggeringInstruction(triggeringInstruction);
@@ -203,6 +227,8 @@ OrderCancelReplaceRequest.prototype.triggeringInstruction = function () {
 };
 
 OrderCancelReplaceRequest.prototype.spreadOrBenchmarkCurveData = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[OrderCancelReplaceRequest.Tags.SpreadOrBenchmarkCurveData] === undefined) return null;
   return this.message.groups[OrderCancelReplaceRequest.Tags.SpreadOrBenchmarkCurveData]
     .map(function (spreadOrBenchmarkCurveData) {
       return new SpreadOrBenchmarkCurveData(spreadOrBenchmarkCurveData);
@@ -210,6 +236,8 @@ OrderCancelReplaceRequest.prototype.spreadOrBenchmarkCurveData = function () {
 };
 
 OrderCancelReplaceRequest.prototype.yieldData = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[OrderCancelReplaceRequest.Tags.YieldData] === undefined) return null;
   return this.message.groups[OrderCancelReplaceRequest.Tags.YieldData]
     .map(function (yieldData) {
       return new YieldData(yieldData);
@@ -217,6 +245,8 @@ OrderCancelReplaceRequest.prototype.yieldData = function () {
 };
 
 OrderCancelReplaceRequest.prototype.pegInstructions = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[OrderCancelReplaceRequest.Tags.PegInstructions] === undefined) return null;
   return this.message.groups[OrderCancelReplaceRequest.Tags.PegInstructions]
     .map(function (pegInstructions) {
       return new PegInstructions(pegInstructions);
@@ -224,6 +254,8 @@ OrderCancelReplaceRequest.prototype.pegInstructions = function () {
 };
 
 OrderCancelReplaceRequest.prototype.discretionInstructions = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[OrderCancelReplaceRequest.Tags.DiscretionInstructions] === undefined) return null;
   return this.message.groups[OrderCancelReplaceRequest.Tags.DiscretionInstructions]
     .map(function (discretionInstructions) {
       return new DiscretionInstructions(discretionInstructions);
@@ -231,6 +263,8 @@ OrderCancelReplaceRequest.prototype.discretionInstructions = function () {
 };
 
 OrderCancelReplaceRequest.prototype.strategyParametersGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[OrderCancelReplaceRequest.Tags.StrategyParametersGrp] === undefined) return null;
   return this.message.groups[OrderCancelReplaceRequest.Tags.StrategyParametersGrp]
     .map(function (strategyParametersGrp) {
       return new StrategyParametersGrp(strategyParametersGrp);
@@ -238,6 +272,8 @@ OrderCancelReplaceRequest.prototype.strategyParametersGrp = function () {
 };
 
 OrderCancelReplaceRequest.prototype.commissionData = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[OrderCancelReplaceRequest.Tags.CommissionData] === undefined) return null;
   return this.message.groups[OrderCancelReplaceRequest.Tags.CommissionData]
     .map(function (commissionData) {
       return new CommissionData(commissionData);
@@ -245,6 +281,8 @@ OrderCancelReplaceRequest.prototype.commissionData = function () {
 };
 
 OrderCancelReplaceRequest.prototype.trdRegTimestamps = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[OrderCancelReplaceRequest.Tags.TrdRegTimestamps] === undefined) return null;
   return this.message.groups[OrderCancelReplaceRequest.Tags.TrdRegTimestamps]
     .map(function (trdRegTimestamps) {
       return new TrdRegTimestamps(trdRegTimestamps);

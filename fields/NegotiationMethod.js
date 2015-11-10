@@ -10,9 +10,9 @@ NegotiationMethod.prototype.value = function () {
 
 
 NegotiationMethod.Keys = {
-  AUTO_SPOT: '0',
-  NEGOTIATED_SPOT: '1',
-  PHONE_SPOT: '2',
+  'AUTO_SPOT': '0',
+  'NEGOTIATED_SPOT': '1',
+  'PHONE_SPOT': '2',
 };
 
 NegotiationMethod.Tag = '2115';

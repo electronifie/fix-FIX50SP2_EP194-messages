@@ -10,13 +10,13 @@ TradingCapacity.prototype.value = function () {
 
 
 TradingCapacity.Keys = {
-  CUSTOMER: '1',
-  CUSTOMER_PROFESSIONAL: '2',
-  BROKER_DEALER: '3',
-  CUSTOMER_BROKER_DEALER: '4',
-  PRINCIPAL: '5',
-  MARKET_MAKER: '6',
-  AWAY_MARKET_MAKER: '7',
+  'CUSTOMER': '1',
+  'CUSTOMER_PROFESSIONAL': '2',
+  'BROKER_DEALER': '3',
+  'CUSTOMER_BROKER_DEALER': '4',
+  'PRINCIPAL': '5',
+  'MARKET_MAKER': '6',
+  'AWAY_MARKET_MAKER': '7',
 };
 
 TradingCapacity.Tag = '1815';

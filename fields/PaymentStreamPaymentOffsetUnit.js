@@ -10,10 +10,10 @@ PaymentStreamPaymentOffsetUnit.prototype.value = function () {
 
 
 PaymentStreamPaymentOffsetUnit.Keys = {
-  DAY: 'D',
-  WEEK: 'Wk',
-  MONTH: 'Mo',
-  YEAR: 'Yr',
+  'DAY': 'D',
+  'WEEK': 'Wk',
+  'MONTH': 'Mo',
+  'YEAR': 'Yr',
 };
 
 PaymentStreamPaymentOffsetUnit.Tag = '40760';

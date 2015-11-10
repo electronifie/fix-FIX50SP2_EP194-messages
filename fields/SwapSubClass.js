@@ -10,8 +10,8 @@ SwapSubClass.prototype.value = function () {
 
 
 SwapSubClass.Keys = {
-  AMORTIZING: 'AMTZ',
-  COMPOUNDING: 'COMP',
+  'AMORTIZING': 'AMTZ',
+  'COMPOUNDING': 'COMP',
 };
 
 SwapSubClass.Tag = '1575';

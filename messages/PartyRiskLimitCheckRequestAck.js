@@ -32,6 +32,8 @@ function PartyRiskLimitCheckRequestAck (partyRiskLimitCheckRequestAck) {
 }
 
 PartyRiskLimitCheckRequestAck.prototype.requestingPartyGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[PartyRiskLimitCheckRequestAck.Tags.RequestingPartyGrp] === undefined) return null;
   return this.message.groups[PartyRiskLimitCheckRequestAck.Tags.RequestingPartyGrp]
     .map(function (requestingPartyGrp) {
       return new RequestingPartyGrp(requestingPartyGrp);
@@ -39,6 +41,8 @@ PartyRiskLimitCheckRequestAck.prototype.requestingPartyGrp = function () {
 };
 
 PartyRiskLimitCheckRequestAck.prototype.parties = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[PartyRiskLimitCheckRequestAck.Tags.Parties] === undefined) return null;
   return this.message.groups[PartyRiskLimitCheckRequestAck.Tags.Parties]
     .map(function (parties) {
       return new Parties(parties);
@@ -46,6 +50,8 @@ PartyRiskLimitCheckRequestAck.prototype.parties = function () {
 };
 
 PartyRiskLimitCheckRequestAck.prototype.relatedPartyDetailGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[PartyRiskLimitCheckRequestAck.Tags.RelatedPartyDetailGrp] === undefined) return null;
   return this.message.groups[PartyRiskLimitCheckRequestAck.Tags.RelatedPartyDetailGrp]
     .map(function (relatedPartyDetailGrp) {
       return new RelatedPartyDetailGrp(relatedPartyDetailGrp);
@@ -53,6 +59,8 @@ PartyRiskLimitCheckRequestAck.prototype.relatedPartyDetailGrp = function () {
 };
 
 PartyRiskLimitCheckRequestAck.prototype.instrument = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[PartyRiskLimitCheckRequestAck.Tags.Instrument] === undefined) return null;
   return this.message.groups[PartyRiskLimitCheckRequestAck.Tags.Instrument]
     .map(function (instrument) {
       return new Instrument(instrument);
@@ -60,6 +68,8 @@ PartyRiskLimitCheckRequestAck.prototype.instrument = function () {
 };
 
 PartyRiskLimitCheckRequestAck.prototype.legOrdGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[PartyRiskLimitCheckRequestAck.Tags.LegOrdGrp] === undefined) return null;
   return this.message.groups[PartyRiskLimitCheckRequestAck.Tags.LegOrdGrp]
     .map(function (legOrdGrp) {
       return new LegOrdGrp(legOrdGrp);
@@ -67,6 +77,8 @@ PartyRiskLimitCheckRequestAck.prototype.legOrdGrp = function () {
 };
 
 PartyRiskLimitCheckRequestAck.prototype.undInstrmtGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[PartyRiskLimitCheckRequestAck.Tags.UndInstrmtGrp] === undefined) return null;
   return this.message.groups[PartyRiskLimitCheckRequestAck.Tags.UndInstrmtGrp]
     .map(function (undInstrmtGrp) {
       return new UndInstrmtGrp(undInstrmtGrp);

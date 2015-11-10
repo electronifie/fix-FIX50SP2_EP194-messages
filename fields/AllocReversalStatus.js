@@ -10,9 +10,9 @@ AllocReversalStatus.prototype.value = function () {
 
 
 AllocReversalStatus.Keys = {
-  COMPLETED: '0',
-  REFUSED: '1',
-  CANCELLED: '2',
+  'COMPLETED': '0',
+  'REFUSED': '1',
+  'CANCELLED': '2',
 };
 
 AllocReversalStatus.Tag = '1738';

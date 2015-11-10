@@ -10,8 +10,8 @@ DiscretionMoveType.prototype.value = function () {
 
 
 DiscretionMoveType.Keys = {
-  FLOATING: '0',
-  FIXED: '1',
+  'FLOATING': '0',
+  'FIXED': '1',
 };
 
 DiscretionMoveType.Tag = '841';

@@ -10,8 +10,8 @@ AttachmentEncodingType.prototype.value = function () {
 
 
 AttachmentEncodingType.Keys = {
-  BASE64_ENCODING: '0',
-  UNENCODED_BINARY_CONTENT: '1',
+  'BASE64_ENCODING': '0',
+  'UNENCODED_BINARY_CONTENT': '1',
 };
 
 AttachmentEncodingType.Tag = '2109';

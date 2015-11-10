@@ -14,6 +14,8 @@ function SettlementObligationReport (settlementObligationReport) {
 }
 
 SettlementObligationReport.prototype.applicationSequenceControl = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[SettlementObligationReport.Tags.ApplicationSequenceControl] === undefined) return null;
   return this.message.groups[SettlementObligationReport.Tags.ApplicationSequenceControl]
     .map(function (applicationSequenceControl) {
       return new ApplicationSequenceControl(applicationSequenceControl);
@@ -21,6 +23,8 @@ SettlementObligationReport.prototype.applicationSequenceControl = function () {
 };
 
 SettlementObligationReport.prototype.settlObligationInstructions = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[SettlementObligationReport.Tags.SettlObligationInstructions] === undefined) return null;
   return this.message.groups[SettlementObligationReport.Tags.SettlObligationInstructions]
     .map(function (settlObligationInstructions) {
       return new SettlObligationInstructions(settlObligationInstructions);

@@ -10,8 +10,8 @@ DeliveryForm.prototype.value = function () {
 
 
 DeliveryForm.Keys = {
-  BOOK_ENTRY: '1',
-  BEARER: '2',
+  'BOOK_ENTRY': '1',
+  'BEARER': '2',
 };
 
 DeliveryForm.Tag = '668';

@@ -10,9 +10,9 @@ TargetStrategy.prototype.value = function () {
 
 
 TargetStrategy.Keys = {
-  VWAP: '1',
-  PARTICIPATE: '2',
-  MININIZE_MARKET_IMPACT: '3',
+  'VWAP': '1',
+  'PARTICIPATE': '2',
+  'MININIZE_MARKET_IMPACT': '3',
 };
 
 TargetStrategy.Tag = '847';

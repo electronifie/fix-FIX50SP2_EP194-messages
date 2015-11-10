@@ -10,11 +10,11 @@ RateSource.prototype.value = function () {
 
 
 RateSource.Keys = {
-  BLOOMBERG: '0',
-  REUTERS: '1',
-  TELERATE: '2',
-  ISDA_SETTLEMENT_RATE_OPTION: '3',
-  OTHER: '99',
+  'BLOOMBERG': '0',
+  'REUTERS': '1',
+  'TELERATE': '2',
+  'ISDA_SETTLEMENT_RATE_OPTION': '3',
+  'OTHER': '99',
 };
 
 RateSource.Tag = '1446';

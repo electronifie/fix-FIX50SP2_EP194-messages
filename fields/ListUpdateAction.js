@@ -10,10 +10,10 @@ ListUpdateAction.prototype.value = function () {
 
 
 ListUpdateAction.Keys = {
-  ADD: 'A',
-  DELETE: 'D',
-  MODIFY: 'M',
-  SNAPSHOT: 'S',
+  'ADD': 'A',
+  'DELETE': 'D',
+  'MODIFY': 'M',
+  'SNAPSHOT': 'S',
 };
 
 ListUpdateAction.Tag = '1324';

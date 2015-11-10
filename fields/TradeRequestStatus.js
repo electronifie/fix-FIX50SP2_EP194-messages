@@ -10,9 +10,9 @@ TradeRequestStatus.prototype.value = function () {
 
 
 TradeRequestStatus.Keys = {
-  ACCEPTED: '0',
-  COMPLETED: '1',
-  REJECTED: '2',
+  'ACCEPTED': '0',
+  'COMPLETED': '1',
+  'REJECTED': '2',
 };
 
 TradeRequestStatus.Tag = '750';

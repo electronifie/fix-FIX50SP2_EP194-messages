@@ -10,8 +10,8 @@ PaymentStreamFloorRateBuySide.prototype.value = function () {
 
 
 PaymentStreamFloorRateBuySide.Keys = {
-  BUYER_OF_THE_TRADE: '1',
-  SELLER_OF_THE_TRADE: '2',
+  'BUYER_OF_THE_TRADE': '1',
+  'SELLER_OF_THE_TRADE': '2',
 };
 
 PaymentStreamFloorRateBuySide.Tag = '40801';

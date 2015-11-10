@@ -10,9 +10,9 @@ QtyType.prototype.value = function () {
 
 
 QtyType.Keys = {
-  UNITS: '0',
-  CONTRACTS: '1',
-  UNIT_OF_MEASURE_PER_TIME_UNIT: '2',
+  'UNITS': '0',
+  'CONTRACTS': '1',
+  'UNIT_OF_MEASURE_PER_TIME_UNIT': '2',
 };
 
 QtyType.Tag = '854';

@@ -10,12 +10,12 @@ PaymentStreamInflationLagDayType.prototype.value = function () {
 
 
 PaymentStreamInflationLagDayType.Keys = {
-  BUSINESS: '0',
-  CALENDAR: '1',
-  COMMODITY_BUSINESS: '2',
-  CURRENCY_BUSINESS: '3',
-  EXCHANGE_BUSINESS: '4',
-  SCHEDULED_TRADING_DAY: '5',
+  'BUSINESS': '0',
+  'CALENDAR': '1',
+  'COMMODITY_BUSINESS': '2',
+  'CURRENCY_BUSINESS': '3',
+  'EXCHANGE_BUSINESS': '4',
+  'SCHEDULED_TRADING_DAY': '5',
 };
 
 PaymentStreamInflationLagDayType.Tag = '40810';

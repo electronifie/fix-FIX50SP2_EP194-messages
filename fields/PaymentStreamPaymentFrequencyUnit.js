@@ -10,11 +10,11 @@ PaymentStreamPaymentFrequencyUnit.prototype.value = function () {
 
 
 PaymentStreamPaymentFrequencyUnit.Keys = {
-  DAY: 'D',
-  WEEK: 'Wk',
-  MONTH: 'Mo',
-  YEAR: 'Yr',
-  TERM: 'T',
+  'DAY': 'D',
+  'WEEK': 'Wk',
+  'MONTH': 'Mo',
+  'YEAR': 'Yr',
+  'TERM': 'T',
 };
 
 PaymentStreamPaymentFrequencyUnit.Tag = '40754';

@@ -32,6 +32,8 @@ function OrderCancelReject (orderCancelReject) {
 }
 
 OrderCancelReject.prototype.parties = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[OrderCancelReject.Tags.Parties] === undefined) return null;
   return this.message.groups[OrderCancelReject.Tags.Parties]
     .map(function (parties) {
       return new Parties(parties);

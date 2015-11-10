@@ -10,9 +10,9 @@ OwnershipType.prototype.value = function () {
 
 
 OwnershipType.Keys = {
-  JOINT_INVESTORS: 'J',
-  TENANTS_IN_COMMON: 'T',
-  JOINT_TRUSTEES: '2',
+  'JOINT_INVESTORS': 'J',
+  'TENANTS_IN_COMMON': 'T',
+  'JOINT_TRUSTEES': '2',
 };
 
 OwnershipType.Tag = '517';

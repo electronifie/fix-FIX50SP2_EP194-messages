@@ -10,8 +10,8 @@ ThrottleInst.prototype.value = function () {
 
 
 ThrottleInst.Keys = {
-  REJECT_IF_THROTTLE_LIMIT_EXCEEDED: '0',
-  QUEUE_IF_THROTTLE_LIMIT_EXCEEDED: '1',
+  'REJECT_IF_THROTTLE_LIMIT_EXCEEDED': '0',
+  'QUEUE_IF_THROTTLE_LIMIT_EXCEEDED': '1',
 };
 
 ThrottleInst.Tag = '1685';

@@ -10,10 +10,10 @@ OrderResponseLevel.prototype.value = function () {
 
 
 OrderResponseLevel.Keys = {
-  NO_ACKNOWLEDGEMENT: '0',
-  MINIMUM_ACKNOWLEDGEMENT: '1',
-  ACKNOWLEDGE_EACH_ORDER: '2',
-  SUMMARY_ACKNOWLEDGEMENT: '3',
+  'NO_ACKNOWLEDGEMENT': '0',
+  'MINIMUM_ACKNOWLEDGEMENT': '1',
+  'ACKNOWLEDGE_EACH_ORDER': '2',
+  'SUMMARY_ACKNOWLEDGEMENT': '3',
 };
 
 OrderResponseLevel.Tag = '2427';

@@ -10,8 +10,8 @@ MarketDisruptionFallbackProvision.prototype.value = function () {
 
 
 MarketDisruptionFallbackProvision.Keys = {
-  AS_SPECIFIED_IN_MASTER_AGREEMENT: '0',
-  AS_SPECIFIED_IN_CONFIRMATION: '1',
+  'AS_SPECIFIED_IN_MASTER_AGREEMENT': '0',
+  'AS_SPECIFIED_IN_CONFIRMATION': '1',
 };
 
 MarketDisruptionFallbackProvision.Tag = '41088';

@@ -10,9 +10,9 @@ SettlMethod.prototype.value = function () {
 
 
 SettlMethod.Keys = {
-  CASH_SETTLEMENT_REQUIRED: 'C',
-  PHYSICAL_SETTLEMENT_REQUIRED: 'P',
-  ELECTION_AT_EXERCISE: 'E',
+  'CASH_SETTLEMENT_REQUIRED': 'C',
+  'PHYSICAL_SETTLEMENT_REQUIRED': 'P',
+  'ELECTION_AT_EXERCISE': 'E',
 };
 
 SettlMethod.Tag = '1193';

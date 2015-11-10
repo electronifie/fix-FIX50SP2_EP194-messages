@@ -10,13 +10,13 @@ StreamNotionalCommodityFrequency.prototype.value = function () {
 
 
 StreamNotionalCommodityFrequency.Keys = {
-  TERM: '0',
-  PER_BUSINESS_DAY: '1',
-  PER_CALCULATION_PERIOD: '2',
-  PER_SETTLEMENT_PERIOD: '3',
-  PER_CALENDAR_DAY: '4',
-  PER_HOUR: '5',
-  PER_MONTH: '6',
+  'TERM': '0',
+  'PER_BUSINESS_DAY': '1',
+  'PER_CALCULATION_PERIOD': '2',
+  'PER_SETTLEMENT_PERIOD': '3',
+  'PER_CALENDAR_DAY': '4',
+  'PER_HOUR': '5',
+  'PER_MONTH': '6',
 };
 
 StreamNotionalCommodityFrequency.Tag = '41308';

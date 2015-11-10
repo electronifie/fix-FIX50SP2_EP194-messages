@@ -7,6 +7,8 @@ function StreamAssignmentRequest (streamAssignmentRequest) {
 }
 
 StreamAssignmentRequest.prototype.strmAsgnReqGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[StreamAssignmentRequest.Tags.StrmAsgnReqGrp] === undefined) return null;
   return this.message.groups[StreamAssignmentRequest.Tags.StrmAsgnReqGrp]
     .map(function (strmAsgnReqGrp) {
       return new StrmAsgnReqGrp(strmAsgnReqGrp);

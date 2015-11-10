@@ -10,8 +10,8 @@ DeliveryScheduleSettlTimeType.prototype.value = function () {
 
 
 DeliveryScheduleSettlTimeType.Keys = {
-  HOUR_OF_THE_DAY: '0',
-  HH_MM_TIME_FORMAT: '1',
+  'HOUR_OF_THE_DAY': '0',
+  'HH_MM_TIME_FORMAT': '1',
 };
 
 DeliveryScheduleSettlTimeType.Tag = '41057';

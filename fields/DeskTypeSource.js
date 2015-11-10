@@ -10,7 +10,7 @@ DeskTypeSource.prototype.value = function () {
 
 
 DeskTypeSource.Keys = {
-  FINRA_OATS: '1',
+  'FINRA_OATS': '1',
 };
 
 DeskTypeSource.Tag = '1034';

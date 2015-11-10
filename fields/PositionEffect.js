@@ -10,12 +10,12 @@ PositionEffect.prototype.value = function () {
 
 
 PositionEffect.Keys = {
-  CLOSE: 'C',
-  FIFO: 'F',
-  OPEN: 'O',
-  ROLLED: 'R',
-  CLOSE_BUT_NOTIFY_ON_OPEN: 'N',
-  DEFAULT: 'D',
+  'CLOSE': 'C',
+  'FIFO': 'F',
+  'OPEN': 'O',
+  'ROLLED': 'R',
+  'CLOSE_BUT_NOTIFY_ON_OPEN': 'N',
+  'DEFAULT': 'D',
 };
 
 PositionEffect.Tag = '77';

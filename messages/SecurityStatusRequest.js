@@ -15,6 +15,8 @@ function SecurityStatusRequest (securityStatusRequest) {
 }
 
 SecurityStatusRequest.prototype.instrument = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[SecurityStatusRequest.Tags.Instrument] === undefined) return null;
   return this.message.groups[SecurityStatusRequest.Tags.Instrument]
     .map(function (instrument) {
       return new Instrument(instrument);
@@ -22,6 +24,8 @@ SecurityStatusRequest.prototype.instrument = function () {
 };
 
 SecurityStatusRequest.prototype.instrumentExtension = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[SecurityStatusRequest.Tags.InstrumentExtension] === undefined) return null;
   return this.message.groups[SecurityStatusRequest.Tags.InstrumentExtension]
     .map(function (instrumentExtension) {
       return new InstrumentExtension(instrumentExtension);
@@ -29,6 +33,8 @@ SecurityStatusRequest.prototype.instrumentExtension = function () {
 };
 
 SecurityStatusRequest.prototype.undInstrmtGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[SecurityStatusRequest.Tags.UndInstrmtGrp] === undefined) return null;
   return this.message.groups[SecurityStatusRequest.Tags.UndInstrmtGrp]
     .map(function (undInstrmtGrp) {
       return new UndInstrmtGrp(undInstrmtGrp);
@@ -36,6 +42,8 @@ SecurityStatusRequest.prototype.undInstrmtGrp = function () {
 };
 
 SecurityStatusRequest.prototype.instrmtLegGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[SecurityStatusRequest.Tags.InstrmtLegGrp] === undefined) return null;
   return this.message.groups[SecurityStatusRequest.Tags.InstrmtLegGrp]
     .map(function (instrmtLegGrp) {
       return new InstrmtLegGrp(instrmtLegGrp);

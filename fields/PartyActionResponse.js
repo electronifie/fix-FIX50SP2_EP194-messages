@@ -10,9 +10,9 @@ PartyActionResponse.prototype.value = function () {
 
 
 PartyActionResponse.Keys = {
-  ACCEPTED: '0',
-  COMPLETED: '1',
-  REJECTED: '2',
+  'ACCEPTED': '0',
+  'COMPLETED': '1',
+  'REJECTED': '2',
 };
 
 PartyActionResponse.Tag = '2332';

@@ -10,8 +10,8 @@ LegalConfirm.prototype.value = function () {
 
 
 LegalConfirm.Keys = {
-  DOES_NOT_CONSITUTE_A_LEGAL_CONFIRM: 'N',
-  LEGAL_CONFIRM: 'Y',
+  'DOES_NOT_CONSITUTE_A_LEGAL_CONFIRM': 'N',
+  'LEGAL_CONFIRM': 'Y',
 };
 
 LegalConfirm.Tag = '650';

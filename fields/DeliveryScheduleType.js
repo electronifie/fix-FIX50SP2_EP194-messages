@@ -10,9 +10,9 @@ DeliveryScheduleType.prototype.value = function () {
 
 
 DeliveryScheduleType.Keys = {
-  NOTIONAL: '0',
-  DELIVERY: '1',
-  PHYSICAL_SETTLEMENT_PERIOD: '2',
+  'NOTIONAL': '0',
+  'DELIVERY': '1',
+  'PHYSICAL_SETTLEMENT_PERIOD': '2',
 };
 
 DeliveryScheduleType.Tag = '41038';

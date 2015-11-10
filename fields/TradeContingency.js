@@ -10,9 +10,9 @@ TradeContingency.prototype.value = function () {
 
 
 TradeContingency.Keys = {
-  DOES_NOT_APPLY: '0',
-  CONTINGENT_TRADE: '1',
-  NON_CONTINGENT_TRADE: '2',
+  'DOES_NOT_APPLY': '0',
+  'CONTINGENT_TRADE': '1',
+  'NON_CONTINGENT_TRADE': '2',
 };
 
 TradeContingency.Tag = '2387';

@@ -10,9 +10,9 @@ PartyActionType.prototype.value = function () {
 
 
 PartyActionType.Keys = {
-  SUSPEND: '0',
-  HALT_TRADING: '1',
-  REINSTATE: '2',
+  'SUSPEND': '0',
+  'HALT_TRADING': '1',
+  'REINSTATE': '2',
 };
 
 PartyActionType.Tag = '2329';

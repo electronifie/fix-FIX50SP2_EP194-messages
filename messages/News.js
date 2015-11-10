@@ -24,6 +24,8 @@ function News (news) {
 }
 
 News.prototype.applicationSequenceControl = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[News.Tags.ApplicationSequenceControl] === undefined) return null;
   return this.message.groups[News.Tags.ApplicationSequenceControl]
     .map(function (applicationSequenceControl) {
       return new ApplicationSequenceControl(applicationSequenceControl);
@@ -31,6 +33,8 @@ News.prototype.applicationSequenceControl = function () {
 };
 
 News.prototype.newsRefGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[News.Tags.NewsRefGrp] === undefined) return null;
   return this.message.groups[News.Tags.NewsRefGrp]
     .map(function (newsRefGrp) {
       return new NewsRefGrp(newsRefGrp);
@@ -38,6 +42,8 @@ News.prototype.newsRefGrp = function () {
 };
 
 News.prototype.routingGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[News.Tags.RoutingGrp] === undefined) return null;
   return this.message.groups[News.Tags.RoutingGrp]
     .map(function (routingGrp) {
       return new RoutingGrp(routingGrp);
@@ -45,6 +51,8 @@ News.prototype.routingGrp = function () {
 };
 
 News.prototype.instrmtGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[News.Tags.InstrmtGrp] === undefined) return null;
   return this.message.groups[News.Tags.InstrmtGrp]
     .map(function (instrmtGrp) {
       return new InstrmtGrp(instrmtGrp);
@@ -52,6 +60,8 @@ News.prototype.instrmtGrp = function () {
 };
 
 News.prototype.instrmtLegGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[News.Tags.InstrmtLegGrp] === undefined) return null;
   return this.message.groups[News.Tags.InstrmtLegGrp]
     .map(function (instrmtLegGrp) {
       return new InstrmtLegGrp(instrmtLegGrp);
@@ -59,6 +69,8 @@ News.prototype.instrmtLegGrp = function () {
 };
 
 News.prototype.undInstrmtGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[News.Tags.UndInstrmtGrp] === undefined) return null;
   return this.message.groups[News.Tags.UndInstrmtGrp]
     .map(function (undInstrmtGrp) {
       return new UndInstrmtGrp(undInstrmtGrp);
@@ -66,6 +78,8 @@ News.prototype.undInstrmtGrp = function () {
 };
 
 News.prototype.linesOfTextGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[News.Tags.LinesOfTextGrp] === undefined) return null;
   return this.message.groups[News.Tags.LinesOfTextGrp]
     .map(function (linesOfTextGrp) {
       return new LinesOfTextGrp(linesOfTextGrp);

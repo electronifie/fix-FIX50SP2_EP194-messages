@@ -10,18 +10,18 @@ TimeInForce.prototype.value = function () {
 
 
 TimeInForce.Keys = {
-  DAY: '0',
-  GOOD_TILL_CANCEL: '1',
-  AT_THE_OPENING: '2',
-  IMMEDIATE_OR_CANCEL: '3',
-  FILL_OR_KILL: '4',
-  GOOD_TILL_CROSSING: '5',
-  GOOD_TILL_DATE: '6',
-  AT_THE_CLOSE: '7',
-  GOOD_THROUGH_CROSSING: '8',
-  AT_CROSSING: '9',
-  GOOD_FOR_TIME: 'A',
-  GOOD_FOR_AUCTION: 'B',
+  'DAY': '0',
+  'GOOD_TILL_CANCEL': '1',
+  'AT_THE_OPENING': '2',
+  'IMMEDIATE_OR_CANCEL': '3',
+  'FILL_OR_KILL': '4',
+  'GOOD_TILL_CROSSING': '5',
+  'GOOD_TILL_DATE': '6',
+  'AT_THE_CLOSE': '7',
+  'GOOD_THROUGH_CROSSING': '8',
+  'AT_CROSSING': '9',
+  'GOOD_FOR_TIME': 'A',
+  'GOOD_FOR_AUCTION': 'B',
 };
 
 TimeInForce.Tag = '59';

@@ -10,8 +10,8 @@ SettlCurrFxRateCalc.prototype.value = function () {
 
 
 SettlCurrFxRateCalc.Keys = {
-  MULTIPLY: 'M',
-  DIVIDE: 'D',
+  'MULTIPLY': 'M',
+  'DIVIDE': 'D',
 };
 
 SettlCurrFxRateCalc.Tag = '156';

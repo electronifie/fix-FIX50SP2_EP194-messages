@@ -26,6 +26,8 @@ function PartyRiskLimitCheckRequest (partyRiskLimitCheckRequest) {
 }
 
 PartyRiskLimitCheckRequest.prototype.requestingPartyGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[PartyRiskLimitCheckRequest.Tags.RequestingPartyGrp] === undefined) return null;
   return this.message.groups[PartyRiskLimitCheckRequest.Tags.RequestingPartyGrp]
     .map(function (requestingPartyGrp) {
       return new RequestingPartyGrp(requestingPartyGrp);
@@ -33,6 +35,8 @@ PartyRiskLimitCheckRequest.prototype.requestingPartyGrp = function () {
 };
 
 PartyRiskLimitCheckRequest.prototype.parties = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[PartyRiskLimitCheckRequest.Tags.Parties] === undefined) return null;
   return this.message.groups[PartyRiskLimitCheckRequest.Tags.Parties]
     .map(function (parties) {
       return new Parties(parties);
@@ -40,6 +44,8 @@ PartyRiskLimitCheckRequest.prototype.parties = function () {
 };
 
 PartyRiskLimitCheckRequest.prototype.relatedPartyDetailGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[PartyRiskLimitCheckRequest.Tags.RelatedPartyDetailGrp] === undefined) return null;
   return this.message.groups[PartyRiskLimitCheckRequest.Tags.RelatedPartyDetailGrp]
     .map(function (relatedPartyDetailGrp) {
       return new RelatedPartyDetailGrp(relatedPartyDetailGrp);
@@ -47,6 +53,8 @@ PartyRiskLimitCheckRequest.prototype.relatedPartyDetailGrp = function () {
 };
 
 PartyRiskLimitCheckRequest.prototype.instrument = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[PartyRiskLimitCheckRequest.Tags.Instrument] === undefined) return null;
   return this.message.groups[PartyRiskLimitCheckRequest.Tags.Instrument]
     .map(function (instrument) {
       return new Instrument(instrument);
@@ -54,6 +62,8 @@ PartyRiskLimitCheckRequest.prototype.instrument = function () {
 };
 
 PartyRiskLimitCheckRequest.prototype.legOrdGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[PartyRiskLimitCheckRequest.Tags.LegOrdGrp] === undefined) return null;
   return this.message.groups[PartyRiskLimitCheckRequest.Tags.LegOrdGrp]
     .map(function (legOrdGrp) {
       return new LegOrdGrp(legOrdGrp);
@@ -61,6 +71,8 @@ PartyRiskLimitCheckRequest.prototype.legOrdGrp = function () {
 };
 
 PartyRiskLimitCheckRequest.prototype.undInstrmtGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[PartyRiskLimitCheckRequest.Tags.UndInstrmtGrp] === undefined) return null;
   return this.message.groups[PartyRiskLimitCheckRequest.Tags.UndInstrmtGrp]
     .map(function (undInstrmtGrp) {
       return new UndInstrmtGrp(undInstrmtGrp);

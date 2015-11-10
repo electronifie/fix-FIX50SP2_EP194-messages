@@ -10,13 +10,13 @@ AllocTransType.prototype.value = function () {
 
 
 AllocTransType.Keys = {
-  NEW: '0',
-  REPLACE: '1',
-  CANCEL: '2',
-  PRELIMINARY: '3',
-  CALCULATED: '4',
-  CALCULATED_WITHOUT_PRELIMINARY: '5',
-  REVERSAL: '6',
+  'NEW': '0',
+  'REPLACE': '1',
+  'CANCEL': '2',
+  'PRELIMINARY': '3',
+  'CALCULATED': '4',
+  'CALCULATED_WITHOUT_PRELIMINARY': '5',
+  'REVERSAL': '6',
 };
 
 AllocTransType.Tag = '71';

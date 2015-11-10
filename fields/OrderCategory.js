@@ -10,16 +10,16 @@ OrderCategory.prototype.value = function () {
 
 
 OrderCategory.Keys = {
-  ORDER: '1',
-  QUOTE: '2',
-  PRIVATELY_NEGOTIATED_TRADE: '3',
-  MULTILEG_ORDER: '4',
-  LINKED_ORDER: '5',
-  QUOTE_REQUEST: '6',
-  IMPLIED_ORDER: '7',
-  CROSS_ORDER: '8',
-  STREAMING_PRICE: '9',
-  INTERNAL_CROSS_ORDER: 'A',
+  'ORDER': '1',
+  'QUOTE': '2',
+  'PRIVATELY_NEGOTIATED_TRADE': '3',
+  'MULTILEG_ORDER': '4',
+  'LINKED_ORDER': '5',
+  'QUOTE_REQUEST': '6',
+  'IMPLIED_ORDER': '7',
+  'CROSS_ORDER': '8',
+  'STREAMING_PRICE': '9',
+  'INTERNAL_CROSS_ORDER': 'A',
 };
 
 OrderCategory.Tag = '1115';

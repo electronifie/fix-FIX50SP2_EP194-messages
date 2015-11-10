@@ -28,6 +28,8 @@ function RequestForPositions (requestForPositions) {
 }
 
 RequestForPositions.prototype.parties = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[RequestForPositions.Tags.Parties] === undefined) return null;
   return this.message.groups[RequestForPositions.Tags.Parties]
     .map(function (parties) {
       return new Parties(parties);
@@ -35,6 +37,8 @@ RequestForPositions.prototype.parties = function () {
 };
 
 RequestForPositions.prototype.instrument = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[RequestForPositions.Tags.Instrument] === undefined) return null;
   return this.message.groups[RequestForPositions.Tags.Instrument]
     .map(function (instrument) {
       return new Instrument(instrument);
@@ -42,6 +46,8 @@ RequestForPositions.prototype.instrument = function () {
 };
 
 RequestForPositions.prototype.instrmtLegGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[RequestForPositions.Tags.InstrmtLegGrp] === undefined) return null;
   return this.message.groups[RequestForPositions.Tags.InstrmtLegGrp]
     .map(function (instrmtLegGrp) {
       return new InstrmtLegGrp(instrmtLegGrp);
@@ -49,6 +55,8 @@ RequestForPositions.prototype.instrmtLegGrp = function () {
 };
 
 RequestForPositions.prototype.undInstrmtGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[RequestForPositions.Tags.UndInstrmtGrp] === undefined) return null;
   return this.message.groups[RequestForPositions.Tags.UndInstrmtGrp]
     .map(function (undInstrmtGrp) {
       return new UndInstrmtGrp(undInstrmtGrp);
@@ -56,6 +64,8 @@ RequestForPositions.prototype.undInstrmtGrp = function () {
 };
 
 RequestForPositions.prototype.trdgSesGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[RequestForPositions.Tags.TrdgSesGrp] === undefined) return null;
   return this.message.groups[RequestForPositions.Tags.TrdgSesGrp]
     .map(function (trdgSesGrp) {
       return new TrdgSesGrp(trdgSesGrp);

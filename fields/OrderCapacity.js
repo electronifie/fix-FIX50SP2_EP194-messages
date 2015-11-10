@@ -10,13 +10,13 @@ OrderCapacity.prototype.value = function () {
 
 
 OrderCapacity.Keys = {
-  AGENCY: 'A',
-  PROPRIETARY: 'G',
-  INDIVIDUAL: 'I',
-  PRINCIPAL: 'P',
-  RISKLESS_PRINCIPAL: 'R',
-  AGENT_FOR_OTHER_MEMBER: 'W',
-  MIXED_CAPACITY: 'M',
+  'AGENCY': 'A',
+  'PROPRIETARY': 'G',
+  'INDIVIDUAL': 'I',
+  'PRINCIPAL': 'P',
+  'RISKLESS_PRINCIPAL': 'R',
+  'AGENT_FOR_OTHER_MEMBER': 'W',
+  'MIXED_CAPACITY': 'M',
 };
 
 OrderCapacity.Tag = '528';

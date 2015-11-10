@@ -10,12 +10,12 @@ MDUpdateAction.prototype.value = function () {
 
 
 MDUpdateAction.Keys = {
-  NEW: '0',
-  CHANGE: '1',
-  DELETE: '2',
-  DELETE_THRU: '3',
-  DELETE_FROM: '4',
-  OVERLAY: '5',
+  'NEW': '0',
+  'CHANGE': '1',
+  'DELETE': '2',
+  'DELETE_THRU': '3',
+  'DELETE_FROM': '4',
+  'OVERLAY': '5',
 };
 
 MDUpdateAction.Tag = '279';

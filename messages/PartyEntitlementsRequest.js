@@ -17,6 +17,8 @@ function PartyEntitlementsRequest (partyEntitlementsRequest) {
 }
 
 PartyEntitlementsRequest.prototype.requestingPartyGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[PartyEntitlementsRequest.Tags.RequestingPartyGrp] === undefined) return null;
   return this.message.groups[PartyEntitlementsRequest.Tags.RequestingPartyGrp]
     .map(function (requestingPartyGrp) {
       return new RequestingPartyGrp(requestingPartyGrp);
@@ -24,6 +26,8 @@ PartyEntitlementsRequest.prototype.requestingPartyGrp = function () {
 };
 
 PartyEntitlementsRequest.prototype.parties = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[PartyEntitlementsRequest.Tags.Parties] === undefined) return null;
   return this.message.groups[PartyEntitlementsRequest.Tags.Parties]
     .map(function (parties) {
       return new Parties(parties);
@@ -31,6 +35,8 @@ PartyEntitlementsRequest.prototype.parties = function () {
 };
 
 PartyEntitlementsRequest.prototype.requestedPartyRoleGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[PartyEntitlementsRequest.Tags.RequestedPartyRoleGrp] === undefined) return null;
   return this.message.groups[PartyEntitlementsRequest.Tags.RequestedPartyRoleGrp]
     .map(function (requestedPartyRoleGrp) {
       return new RequestedPartyRoleGrp(requestedPartyRoleGrp);
@@ -38,6 +44,8 @@ PartyEntitlementsRequest.prototype.requestedPartyRoleGrp = function () {
 };
 
 PartyEntitlementsRequest.prototype.entitlementTypeGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[PartyEntitlementsRequest.Tags.EntitlementTypeGrp] === undefined) return null;
   return this.message.groups[PartyEntitlementsRequest.Tags.EntitlementTypeGrp]
     .map(function (entitlementTypeGrp) {
       return new EntitlementTypeGrp(entitlementTypeGrp);
@@ -45,6 +53,8 @@ PartyEntitlementsRequest.prototype.entitlementTypeGrp = function () {
 };
 
 PartyEntitlementsRequest.prototype.instrumentScopeGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[PartyEntitlementsRequest.Tags.InstrumentScopeGrp] === undefined) return null;
   return this.message.groups[PartyEntitlementsRequest.Tags.InstrumentScopeGrp]
     .map(function (instrumentScopeGrp) {
       return new InstrumentScopeGrp(instrumentScopeGrp);
@@ -52,6 +62,8 @@ PartyEntitlementsRequest.prototype.instrumentScopeGrp = function () {
 };
 
 PartyEntitlementsRequest.prototype.marketSegmentScopeGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[PartyEntitlementsRequest.Tags.MarketSegmentScopeGrp] === undefined) return null;
   return this.message.groups[PartyEntitlementsRequest.Tags.MarketSegmentScopeGrp]
     .map(function (marketSegmentScopeGrp) {
       return new MarketSegmentScopeGrp(marketSegmentScopeGrp);

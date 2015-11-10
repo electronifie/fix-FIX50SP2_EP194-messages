@@ -10,9 +10,9 @@ ContractMultiplierUnit.prototype.value = function () {
 
 
 ContractMultiplierUnit.Keys = {
-  SHARES: '0',
-  HOURS: '1',
-  DAYS: '2',
+  'SHARES': '0',
+  'HOURS': '1',
+  'DAYS': '2',
 };
 
 ContractMultiplierUnit.Tag = '1435';

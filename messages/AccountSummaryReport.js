@@ -18,6 +18,8 @@ function AccountSummaryReport (accountSummaryReport) {
 }
 
 AccountSummaryReport.prototype.settlementAmountGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[AccountSummaryReport.Tags.SettlementAmountGrp] === undefined) return null;
   return this.message.groups[AccountSummaryReport.Tags.SettlementAmountGrp]
     .map(function (settlementAmountGrp) {
       return new SettlementAmountGrp(settlementAmountGrp);
@@ -25,6 +27,8 @@ AccountSummaryReport.prototype.settlementAmountGrp = function () {
 };
 
 AccountSummaryReport.prototype.marginAmount = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[AccountSummaryReport.Tags.MarginAmount] === undefined) return null;
   return this.message.groups[AccountSummaryReport.Tags.MarginAmount]
     .map(function (marginAmount) {
       return new MarginAmount(marginAmount);
@@ -32,6 +36,8 @@ AccountSummaryReport.prototype.marginAmount = function () {
 };
 
 AccountSummaryReport.prototype.parties = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[AccountSummaryReport.Tags.Parties] === undefined) return null;
   return this.message.groups[AccountSummaryReport.Tags.Parties]
     .map(function (parties) {
       return new Parties(parties);
@@ -39,6 +45,8 @@ AccountSummaryReport.prototype.parties = function () {
 };
 
 AccountSummaryReport.prototype.collateralAmountGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[AccountSummaryReport.Tags.CollateralAmountGrp] === undefined) return null;
   return this.message.groups[AccountSummaryReport.Tags.CollateralAmountGrp]
     .map(function (collateralAmountGrp) {
       return new CollateralAmountGrp(collateralAmountGrp);
@@ -46,6 +54,8 @@ AccountSummaryReport.prototype.collateralAmountGrp = function () {
 };
 
 AccountSummaryReport.prototype.payCollectGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[AccountSummaryReport.Tags.PayCollectGrp] === undefined) return null;
   return this.message.groups[AccountSummaryReport.Tags.PayCollectGrp]
     .map(function (payCollectGrp) {
       return new PayCollectGrp(payCollectGrp);
@@ -53,6 +63,8 @@ AccountSummaryReport.prototype.payCollectGrp = function () {
 };
 
 AccountSummaryReport.prototype.positionAmountData = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[AccountSummaryReport.Tags.PositionAmountData] === undefined) return null;
   return this.message.groups[AccountSummaryReport.Tags.PositionAmountData]
     .map(function (positionAmountData) {
       return new PositionAmountData(positionAmountData);

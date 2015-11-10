@@ -10,16 +10,16 @@ AssetClass.prototype.value = function () {
 
 
 AssetClass.Keys = {
-  INTEREST_RATE: '1',
-  CURRENCY: '2',
-  CREDIT: '3',
-  EQUITY: '4',
-  COMMODITY: '5',
-  OTHER: '6',
-  CASH: '7',
-  DEBT: '8',
-  FUND: '9',
-  LOAN_FACILITY: '10',
+  'INTEREST_RATE': '1',
+  'CURRENCY': '2',
+  'CREDIT': '3',
+  'EQUITY': '4',
+  'COMMODITY': '5',
+  'OTHER': '6',
+  'CASH': '7',
+  'DEBT': '8',
+  'FUND': '9',
+  'LOAN_FACILITY': '10',
 };
 
 AssetClass.Tag = '1938';

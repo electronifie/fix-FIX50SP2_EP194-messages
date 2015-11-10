@@ -10,8 +10,8 @@ DeliveryStreamTitleTransferCondition.prototype.value = function () {
 
 
 DeliveryStreamTitleTransferCondition.Keys = {
-  TRANSFERS_WITH_RISK_OF_LOSS: '0',
-  DOES_NOT_TRANSFER_WITH_RISK_OF_LOSS: '1',
+  'TRANSFERS_WITH_RISK_OF_LOSS': '0',
+  'DOES_NOT_TRANSFER_WITH_RISK_OF_LOSS': '1',
 };
 
 DeliveryStreamTitleTransferCondition.Tag = '41069';

@@ -10,11 +10,11 @@ StreamAsgnRejReason.prototype.value = function () {
 
 
 StreamAsgnRejReason.Keys = {
-  UNKNOWN_CLIENT: '0',
-  EXCEEDS_MAXIMUM_SIZE: '1',
-  UNKNOWN_OR_INVALID_CURRENCY_PAIR: '2',
-  NO_AVAILABLE_STREAM: '3',
-  OTHER: '99',
+  'UNKNOWN_CLIENT': '0',
+  'EXCEEDS_MAXIMUM_SIZE': '1',
+  'UNKNOWN_OR_INVALID_CURRENCY_PAIR': '2',
+  'NO_AVAILABLE_STREAM': '3',
+  'OTHER': '99',
 };
 
 StreamAsgnRejReason.Tag = '1502';

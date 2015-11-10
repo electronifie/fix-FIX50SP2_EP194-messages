@@ -10,8 +10,8 @@ PaymentStreamRateSpreadPositionType.prototype.value = function () {
 
 
 PaymentStreamRateSpreadPositionType.Keys = {
-  SHORT: '0',
-  LONG: '1',
+  'SHORT': '0',
+  'LONG': '1',
 };
 
 PaymentStreamRateSpreadPositionType.Tag = '40795';

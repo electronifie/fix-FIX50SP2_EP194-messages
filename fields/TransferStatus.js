@@ -10,12 +10,12 @@ TransferStatus.prototype.value = function () {
 
 
 TransferStatus.Keys = {
-  RECEIVED: '0',
-  REJECTED_BY_INTERMEDIARY: '1',
-  ACCEPT_PENDING: '2',
-  ACCEPTED: '3',
-  DECLINED: '4',
-  CANCELLED: '5',
+  'RECEIVED': '0',
+  'REJECTED_BY_INTERMEDIARY': '1',
+  'ACCEPT_PENDING': '2',
+  'ACCEPTED': '3',
+  'DECLINED': '4',
+  'CANCELLED': '5',
 };
 
 TransferStatus.Tag = '2442';

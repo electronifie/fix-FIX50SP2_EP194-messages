@@ -10,9 +10,9 @@ PartyDetailDefinitionStatus.prototype.value = function () {
 
 
 PartyDetailDefinitionStatus.Keys = {
-  ACCEPTED: '0',
-  ACCEPTED_WITH_CHANGES: '1',
-  REJECTED: '2',
+  'ACCEPTED': '0',
+  'ACCEPTED_WITH_CHANGES': '1',
+  'REJECTED': '2',
 };
 
 PartyDetailDefinitionStatus.Tag = '1879';

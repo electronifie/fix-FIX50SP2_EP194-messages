@@ -10,8 +10,8 @@ RelatedPositionIDSource.prototype.value = function () {
 
 
 RelatedPositionIDSource.Keys = {
-  POSITION_MAINTENANCE_REPORT_ID_POSMAINTRPTID: '1',
-  TRANSFER_ID: '2',
+  'POSITION_MAINTENANCE_REPORT_ID_POSMAINTRPTID': '1',
+  'TRANSFER_ID': '2',
 };
 
 RelatedPositionIDSource.Tag = '1863';

@@ -10,11 +10,11 @@ CollAsgnTransType.prototype.value = function () {
 
 
 CollAsgnTransType.Keys = {
-  NEW: '0',
-  REPLACE: '1',
-  CANCEL: '2',
-  RELEASE: '3',
-  REVERSE: '4',
+  'NEW': '0',
+  'REPLACE': '1',
+  'CANCEL': '2',
+  'RELEASE': '3',
+  'REVERSE': '4',
 };
 
 CollAsgnTransType.Tag = '903';

@@ -10,9 +10,9 @@ PaymentDateRelativeTo.prototype.value = function () {
 
 
 PaymentDateRelativeTo.Keys = {
-  TRADE_DATE: '0',
-  SETTLEMENT_DATE: '1',
-  EFFECTIVE_DATE: '2',
+  'TRADE_DATE': '0',
+  'SETTLEMENT_DATE': '1',
+  'EFFECTIVE_DATE': '2',
 };
 
 PaymentDateRelativeTo.Tag = '41156';

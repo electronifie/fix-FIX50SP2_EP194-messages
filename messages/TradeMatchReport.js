@@ -21,6 +21,8 @@ function TradeMatchReport (tradeMatchReport) {
 }
 
 TradeMatchReport.prototype.applicationSequenceControl = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[TradeMatchReport.Tags.ApplicationSequenceControl] === undefined) return null;
   return this.message.groups[TradeMatchReport.Tags.ApplicationSequenceControl]
     .map(function (applicationSequenceControl) {
       return new ApplicationSequenceControl(applicationSequenceControl);
@@ -28,6 +30,8 @@ TradeMatchReport.prototype.applicationSequenceControl = function () {
 };
 
 TradeMatchReport.prototype.instrmtMatchSideGrp = function () {
+  if (this.message.groups === undefined) return null;
+  if (this.message.groups[TradeMatchReport.Tags.InstrmtMatchSideGrp] === undefined) return null;
   return this.message.groups[TradeMatchReport.Tags.InstrmtMatchSideGrp]
     .map(function (instrmtMatchSideGrp) {
       return new InstrmtMatchSideGrp(instrmtMatchSideGrp);

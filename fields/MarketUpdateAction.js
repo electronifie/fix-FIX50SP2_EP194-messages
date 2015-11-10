@@ -10,9 +10,9 @@ MarketUpdateAction.prototype.value = function () {
 
 
 MarketUpdateAction.Keys = {
-  ADD: 'A',
-  DELETE: 'D',
-  MODIFY: 'M',
+  'ADD': 'A',
+  'DELETE': 'D',
+  'MODIFY': 'M',
 };
 
 MarketUpdateAction.Tag = '1395';
